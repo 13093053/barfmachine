@@ -1,0 +1,31 @@
+Everyone is present.
+Venue: Studielanschap Elektrotechniek
+
+Action point:
+1. Koen v. Vliet is in charge of the folder structure in GitHub and will send the link to the lecturers in Project Management
+	- Deadline: 16-02-2015 23:59 o'clock
+
+2. Koen v. Vliet is in charge of  the WBS/PBS
+	- Deadline: 20-02-2015 before the meeting with the projectcoach
+
+3. Daan will contact Jesse op den Brouw for possible meetings
+	- Deadline: A.S.A.P.
+	- Daan will write the agenda and send it to Jesse (coach)
+	- With a cc to all the team membrs
+
+
+4. All mails are to be written in English
+
+5. Kevin Oei is in charge for putting all the pieces together regarding the action plan.
+	- Division of tasks (Action Plan):
+		* Achtergronden:	Andrew Lau
+		* Kwaliteitsbewaking:	Andrew Lau
+		* Kosten en Baten:	Andrew Lau
+		* Risico's :		Koen v. Vliet
+		* Projectgrenzen: 	Koen v. Vliet
+		* Projectorganisatie: 	Kevin Oei
+		* Projectactiviteiten:	Kevin Oei
+		* Projectresultaten:	Kevin Oei
+		* tussenresultaten:	Daan Conijn
+		* Planning:		Daan Conijn
+
