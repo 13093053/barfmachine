@@ -100,6 +100,24 @@ Koen van Vliet
 
 \begin_layout Date
 23 February 2015, Delft
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+For some reason, the texts are centered when I view this document in PDF
+ (Luatex).
+ Can this be fixed?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
 \begin_inset Newpage pagebreak
 \end_inset
 
