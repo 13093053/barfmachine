@@ -75,11 +75,18 @@ Quality
 \end_layout
 
 \begin_layout Subsection
-Preamplifier
+Preamplifie
 \end_layout
 
 \begin_layout Standard
-Blablabla.......
+The specifications of the preamplifier are given in the projectbook.
+ The components must be calculated to meet the specifications and the components
+ must be wel soldered.
+ Multisim or Capture Lite (Orcad) can be used to verify the calculations.
+ After the soldering is complete, the preamplifier must be tested by adding
+ measurement points and measuring these points to verify if the preamplifier
+ meets the required specifications.
+ Simulations can also be used to simplify the verification.
 \end_layout
 
 \begin_layout Subsection
@@ -87,7 +94,14 @@ Power amplifier
 \end_layout
 
 \begin_layout Standard
-Blablabla.........
+The specifications of the power amplifier are given in the projectbook.
+ must be wel soldered.
+ Multisim or Capture Lite (Orcad) can be used to verify the calculations.
+ After the soldering is complete, the power amplifier must be tested by
+ adding measurement points and measuring these points to verify if the power
+ amplifier meets the required specifications.
+ Simulations can also be used to simplify the verification.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -95,7 +109,10 @@ Digital part
 \end_layout
 
 \begin_layout Standard
-Blablabla......
+The functionality of the digital part is unknown and therefore must be improvise
+d and realised by the project team.
+ project coach must approve the improvised features before it can be realised.
+ The digital part must ultimately be tested after the realisation proces.
 \end_layout
 
 \begin_layout Subsection
