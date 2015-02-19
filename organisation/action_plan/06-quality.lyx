@@ -74,5 +74,50 @@
 Quality
 \end_layout
 
+\begin_layout Subsection
+Preamplifier
+\end_layout
+
+\begin_layout Standard
+Blablabla.......
+\end_layout
+
+\begin_layout Subsection
+Power amplifier
+\end_layout
+
+\begin_layout Standard
+Blablabla.........
+\end_layout
+
+\begin_layout Subsection
+Digital part
+\end_layout
+
+\begin_layout Standard
+Blablabla......
+\end_layout
+
+\begin_layout Subsection
+Documentation
+\end_layout
+
+\begin_layout Standard
+All documents are to be written in English without grammar mistakes.
+ If a project member is not sure how an English word is written, they can
+ search online, ask other project team members or consult mrs.
+ Laponder.
+ All documents must also be writtin in LaTeX.
+ Every project team member must provide feedback for each others assigned
+ documents.
+ The documents will be placed in the GitHub repository where the documents
+ are accessible to every project team members.
+ GitHub is used for this project, because all documents can be easily monitored.
+ GitHub also gives an overview of modified documents and who modified the
+ documents.
+ This prevents possible miscommunication between the project team members
+ and loss in documents and information regarding the contents of the documents.
+\end_layout
+
 \end_body
 \end_document
