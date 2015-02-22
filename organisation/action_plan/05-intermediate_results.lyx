@@ -163,9 +163,19 @@ Cooperation agreement
 \begin_inset Text
 
 \begin_layout Plain Layout
-An argeement that contains the following: Contact information of all group
- member, time of the official meeting, unwanted behaviour, possible penalties
- and banning of a group member.
+An argeement
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+agreement
+\end_layout
+
+\end_inset
+
+ that contains the following: Contact information of all group member, time
+ of the official meeting, unwanted behaviour, possible penalties and banning
+ of a group member.
  
 \end_layout
 
@@ -283,9 +293,18 @@ Calculation report
 \begin_inset Text
 
 \begin_layout Plain Layout
-Calculation and selection of a suitable monolithic power amplifier, Calculation
- of the heat sink for the power amplifier and Calculation and selection
- of a suitable transformer for the power supply.
+Calculation and selection of a suitable monolithic power amplifier, 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+klein letter?
+\end_layout
+
+\end_inset
+
+Calculation of the heat sink for the power amplifier and Calculation and
+ selection of a suitable transformer for the power supply.
 \end_layout
 
 \end_inset

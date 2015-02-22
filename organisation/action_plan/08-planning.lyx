@@ -76,10 +76,31 @@ Planning
 
 \begin_layout Standard
 Scheduling is a imortant part of an project.
- If there is no Schedule then there can occur postponements in the project
- or controversies between the group members.
+ If there is no
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+kleinletter?
+\end_layout
+
+\end_inset
+
+ Schedule then there can occur postponements in the project or controversies
+ between the group members.
  The activities will be scheduled so the work can be done purposeful and
- successfull.
+ successfull
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1 l.
+ dus successful
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3423,6 +3444,19 @@ L (Poster presentation)
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+komt er nog een schema met de blokjes en pijltjes?
+\end_layout
 
 \end_inset
 
