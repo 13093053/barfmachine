@@ -507,7 +507,27 @@ Lecturer in Project Management
 \end_layout
 
 \begin_layout Standard
-[sample text]
+Progress and management of the project should be reported to the project
+ coordinator, by means of this action plan and several reports as described
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:05_Intermediate-results"
+
+\end_inset
+
+.
+ Communication with the project coordinator will be done through email.
+ For the team's internal communication, the instant-messaging app Telegram
+ will be used.
+ Being cloud-based and supporting many mobile as well as desktop environments,
+ members will not be restricted by the type of devices they have and missed
+ messages can always be caught up with.
+ For the creation of all documentation, LyX will be used.
+ Its LaTeX-based nature makes it very suitable for collaboration on the
+ same document.
+ Finally, Git will be used in conjunction with GitHub to allow the distribution
+ of all files and convenient collaboration on the written documents.
 \end_layout
 
 \end_body

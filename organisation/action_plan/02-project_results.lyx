@@ -74,5 +74,358 @@
 Project results
 \end_layout
 
+\begin_layout Standard
+The main objective of the project is the design and realisation of an active
+ loudspeaker as specified by BARK.
+ The recent dramatic price drop for these type of devices is one of the
+ reasons for the project's conception.
+ Additionally, the setup of these speakers allow for significant advantages
+ such as avoiding large cables, cheaper electronic circuits as well as greater
+ simplicity in designing these circuits.
+ On top of featuring built-in power amplifiers, BARK also requires that
+ the loudspeaker contains a digital system which will control the entire
+ setup (the DCU).
+ This decision was made in light of the emerging trend of digitizing electronic
+ products.
+ A working demonstration model of the team's designed loudspeaker is to
+ be presented on the 29th of June.
+ 
+\end_layout
+
+\begin_layout Standard
+The following specifications and preconditions were given for the loudspeaker's
+ components:
+\end_layout
+
+\begin_layout Subsection
+Preamplifier
+\end_layout
+
+\begin_layout Paragraph
+A.
+ Overall specifications preamplifier
+\end_layout
+
+\begin_layout Standard
+Balance control in flat position, tone (bass and treble) control switched
+ off, volume control at maximum.
+\end_layout
+
+\begin_layout Enumerate
+input impedance: minimum 100 kΩ
+\end_layout
+
+\begin_layout Enumerate
+output impedance: maximum 100 Ω
+\end_layout
+
+\begin_layout Enumerate
+sensitivity : 2 V output voltage in 
+\shape italic
+R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+
+\shape default
+ = 20 kΩ at 200 mV input
+\end_layout
+
+\begin_layout Enumerate
+frequency range: 2 Hz to 400 kHz (-3 dB) at 
+\shape italic
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+out
+\end_layout
+
+\end_inset
+
+
+\shape default
+ = 500 mV, 
+\shape italic
+R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+
+\shape default
+ = 20 kΩ
+\end_layout
+
+\begin_layout Enumerate
+output voltage: at least 7 V sinusoidal with 
+\shape italic
+R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+
+\shape default
+ = 20 kΩ , ƒ = 1 kHz
+\end_layout
+
+\begin_layout Paragraph
+B.
+ Balance control specifications
+\end_layout
+
+\begin_layout Enumerate
+range ±6 dB (within ±0.5 dB) difference between right and left channels
+\end_layout
+
+\begin_layout Enumerate
+in flat position +2 dB (within ±0.5 dB)
+\end_layout
+
+\begin_layout Enumerate
+approximate logarithmic control function
+\end_layout
+
+\begin_layout Enumerate
+no DC current through the potentiometer nor the wiper
+\end_layout
+
+\begin_layout Paragraph
+C.
+ Bass and treble control specifications
+\end_layout
+
+\begin_layout Enumerate
+treble: Cut-off frequency adjustable between 2.5 and 10 kHz.
+ Maximum boost or attenuation 10 dB (±1 dB) at 2.5 kHz.
+ From 100 kHz and up the transfer function must approach value 1 (0 dB).
+\end_layout
+
+\begin_layout Enumerate
+bass: Cut-off frequency adjustable between 100 Hz and 400 Hz.
+ Maximum boost or attenuation 10 dB (±1 dB) at 400 Hz.
+ From 10 Hz and below the transfer function must approach value 1 (0 dB).
+\end_layout
+
+\begin_layout Enumerate
+approximate logarithmic control functions for cut-off frequencies and boost
+ / attenuation adjustments
+\end_layout
+
+\begin_layout Enumerate
+no DC currents through potentiometers nor wipers
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+option
+\series default
+: tone controls are switched on and off without any clicking noises from
+ the speakers
+\end_layout
+
+\begin_layout Paragraph
+D.
+ Volume control specifications
+\end_layout
+
+\begin_layout Enumerate
+approximately logarithmic control function
+\end_layout
+
+\begin_layout Enumerate
+no DC current through the potentiometer nor the wiper
+\end_layout
+
+\begin_layout Paragraph
+Preconditions
+\end_layout
+
+\begin_layout Enumerate
+The potentiometers for balance, bass, treble and volume control are 10 kΩ
+ linear.
+\end_layout
+
+\begin_layout Enumerate
+The potentiometers for the adjustment of the bass / treble cut-off frequencies
+ are 10 kΩ logarithmic.
+\end_layout
+
+\begin_layout Enumerate
+All the preamplifier’s opamps are low noise NE5532 type.
+ The NE5532 is a dual opamp version of the NE5534.
+ Both Multisim and Pspice contain suitable models for the NE5532 and the
+ NE5534.
+\end_layout
+
+\begin_layout Enumerate
+The simulation results of the sub circuits and the preamplifier are represented
+ by the transfer function (amplitude and phase characteristics).
+ These simulation results must be compared with the transfer function gained
+ by measurement.
+ Draw your conclusions.
+\end_layout
+
+\begin_layout Subsection
+Power amplifier specifications
+\end_layout
+
+\begin_layout Standard
+The power amplifier has the following specifications:
+\end_layout
+
+\begin_layout Enumerate
+input impedance at least 50 kΩ
+\end_layout
+
+\begin_layout Enumerate
+output power: 15 W sine in 
+\shape italic
+R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+
+\shape default
+ = 8 Ω at 1 kHz
+\end_layout
+
+\begin_layout Enumerate
+frequency range: 10 Hz to 100 kHz (-3 dB) at 
+\shape italic
+P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+
+\shape default
+ = 0.5 W in 8 Ω
+\end_layout
+
+\begin_layout Standard
+For simplicity of design, the power amplifier should be a monolithic component.
+\end_layout
+
+\begin_layout Subsection
+Power supply
+\end_layout
+
+\begin_layout Standard
+The power supply must supply all rated voltages and current in the system
+ as to be determined by the project team.
+ The power supply should be constructed using linear regulators.
+ The projected efficiency should be 80% or better.
+\end_layout
+
+\begin_layout Subsection
+Digital Part
+\end_layout
+
+\begin_layout Standard
+The functionality of the digital system is yet unknown.
+ Since BARK mainly deals with analogue electronics systems, the company
+ would like you to develop attractive features that have to be implemented
+ within the duration of the project.
+ The proposed features have to be discussed with your coach.
+ The system should at least have
+\end_layout
+
+\begin_layout Itemize
+An ATmega32 microcontroller or similar;
+\end_layout
+
+\begin_layout Itemize
+Some kind of interaction with the analogue part of the system.
+\end_layout
+
+\begin_layout Subsection
+Final results
+\end_layout
+
+\begin_layout Standard
+Apart from presenting a working demonstration model of the speaker, a final
+ design report must be handed in on Friday 12 June no later than 17:00 in
+ twofold to the project coordinator (Jesse op den Brouw) as well as using
+ the digital platform Ephorus.
+ This report must at least contain the following:
+\end_layout
+
+\begin_layout Enumerate
+Summary;
+\end_layout
+
+\begin_layout Enumerate
+Introduction on the subject;
+\end_layout
+
+\begin_layout Enumerate
+Complete description of the problem including specifications and preconditions;
+\end_layout
+
+\begin_layout Enumerate
+Design overview of the complete system (including digital part, power supply
+ and power amplifier), including how the analog parts are controlled by
+ the digital parts and vice versa.
+\end_layout
+
+\begin_layout Enumerate
+In-depth analysis of the preamplifier with calculations, simulation and
+ measurement results;
+\end_layout
+
+\begin_layout Enumerate
+Design of the power supply;
+\end_layout
+
+\begin_layout Enumerate
+Design of the digital system controlling the preamplifier;
+\end_layout
+
+\begin_layout Enumerate
+Test results;
+\end_layout
+
+\begin_layout Enumerate
+Costing of the complete system;
+\end_layout
+
+\begin_layout Enumerate
+Conclusion and recommendations;
+\end_layout
+
+\begin_layout Enumerate
+Appendices (if any).
+\end_layout
+
+\begin_layout Standard
+A poster presentation needs to be prepared as well, the deadline and date
+ for this is currently unknown.
+\end_layout
+
 \end_body
 \end_document
