@@ -74,5 +74,56 @@
 Project scope
 \end_layout
 
+\begin_layout Standard
+The project scope is limited to researching, designing and building an active
+ speaker system with digital control unit.
+\end_layout
+
+\begin_layout Subsection
+Research and design 
+\end_layout
+
+\begin_layout Standard
+The results of the research and design work will be shared with the client
+ by means of three research papers and several reports.
+ 
+\end_layout
+
+\begin_layout Itemize
+Speaker: The speaker is supplied by the client and therefore this part of
+ the project requires no further research or design work.
+\end_layout
+
+\begin_layout Itemize
+Power amplifier: The amplifier will be designed by the project group and
+ needs to meet the client's specifications.
+\end_layout
+
+\begin_layout Itemize
+Pre amplifier: The pre-amplifier schematics are supplied by the client.
+ Various component values need to be calculated to meet specifications.
+\end_layout
+
+\begin_layout Itemize
+Power supply: The power supply will be designed by the project group and
+ needs to meet the client's specifications.
+\end_layout
+
+\begin_layout Itemize
+Digital control unit: The functionality of this part is unknown.
+ This needs to be discussed with the client to find out exactly what they
+ want.
+\end_layout
+
+\begin_layout Subsection
+Building
+\end_layout
+
+\begin_layout Standard
+The power amplifier, preamplifier, power supply and digital control unit
+ will be assembled and tested by the project group.
+ Test results will be shared with the client in the measurement reports.
+\end_layout
+
 \end_body
 \end_document
