@@ -72,6 +72,13 @@
 
 \begin_layout Section
 Project organisation
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:07_Project-organisation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -348,7 +355,7 @@ Project coordination team
 <lyxtabular version="3" rows="7" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="40line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text

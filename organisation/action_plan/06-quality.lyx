@@ -75,13 +75,41 @@ Quality
 \end_layout
 
 \begin_layout Subsection
+
+\strikeout on
 Preamplifie
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Typo fix: Preamplifier
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 The specifications of the preamplifier are given in the projectbook.
  The components must be calculated to meet the specifications and the components
- must be wel soldered.
+ must be 
+\strikeout on
+wel soldered
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Typo fix: well-soldered
+\end_layout
+
+\end_inset
+
+.
  Multisim or Capture Lite (Orcad) can be used to verify the calculations.
  After the soldering is complete, the preamplifier must be tested by adding
  measurement points and measuring these points to verify if the preamplifier
@@ -114,7 +142,21 @@ The functionality of the digital part is unknown and therefore must be improvise
 d and realised by the project team.
  The improvised features must be discussed with the project coach and the
  project coach must approve the improvised features before it can be realised.
- The digital part must ultimately be tested after the realisation proces.
+ The digital part must ultimately be tested after the realisation 
+\strikeout on
+proces
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Typo fix: process
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -122,15 +164,52 @@ Documentation
 \end_layout
 
 \begin_layout Standard
-All documents are to be written in English without grammar mistakes.
+All documents are to be written in English without grammar
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Misschien beter?: grammatical
+\end_layout
+
+\end_inset
+
+ mistakes.
  If a project member is not sure how an English word is written, they can
  search online, ask other project team members or consult mrs.
  Laponder.
  All documents must also be writtin in LaTeX.
- Every project team member must provide feedback for each others assigned
- documents.
+ Every project team member must provide feedback for 
+\strikeout on
+each others
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Typo fix: each other's
+\end_layout
+
+\end_inset
+
+ assigned documents.
  The documents will be placed in the GitHub repository where the documents
- are accessible to every project team members.
+ are accessible 
+\strikeout on
+to every project team members
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Fix needed: 'for all project members' OF 'for every project member'
+\end_layout
+
+\end_inset
+
+.
  GitHub is used for this project, because all documents can be easily monitored.
  GitHub also gives an overview of modified documents and who modified the
  documents.

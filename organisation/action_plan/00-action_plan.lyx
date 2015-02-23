@@ -9,7 +9,7 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman lmodern
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -79,17 +79,7 @@ Authors:
 \end_layout
 
 \begin_layout Author
-Project groep
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-in Engels, niet ned
-\end_layout
-
-\end_inset
-
- 1 [EQ2]
+Project group 1 [EQ2]
 \begin_inset Newline newline
 \end_inset
 
@@ -113,21 +103,6 @@ Koen van Vliet
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-For some reason, the texts are centered when I view this document in PDF
- (Luatex).
- Can this be fixed?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Date
 \begin_inset Newpage pagebreak
 \end_inset
 

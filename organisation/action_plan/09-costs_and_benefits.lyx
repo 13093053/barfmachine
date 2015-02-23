@@ -76,11 +76,51 @@ Costs and benefits
 
 \begin_layout Standard
 There are costs that must be taken into consideration for carrying out the
- final project (PRO-Q2) of the first two years of the Elektrical and Electronic
- Engineering course at The Hague University of Applied sciences.
+ final project (PRO-Q2) of the first two years of the 
+\strikeout on
+Elektrical and Electronic
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Name fix: Electrical
+\end_layout
+
+\end_inset
+
+ Engineering course at The Hague University of Applied 
+\strikeout on
+sciences
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Stylization fix: Sciences
+\end_layout
+
+\end_inset
+
+.
  There are also benefits for carrying out PRO-Q2.
- The costs and benefits ultimately decides if the project should be carried
- out or not.
+ The costs and benefits ultimately 
+\strikeout on
+decides if
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Grammar/wording fix: decide whether
+\end_layout
+
+\end_inset
+
+ the project should be carried out or not.
  If the costs are higher then the benefits, then a decision must be made
  between abandoning the project or making changes in the project regarding
  the materials, location etc.
@@ -100,13 +140,55 @@ PRO-Q2
 \end_layout
 
 \begin_layout Itemize
-The amount of time that each projectmember worked.
- Each projectmember must work at least 224 hours on the project.
+The amount of time that each 
+\strikeout on
+projectmember
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Uit elkaar: project member
+\end_layout
+
+\end_inset
+
+ worked.
+ Each 
+\strikeout on
+projectmember
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Uit elkaar: project member
+\end_layout
+
+\end_inset
+
+ must work at least 224 hours on the project.
 \end_layout
 
 \begin_layout Itemize
 The necessary components and tools for building the preamplifier, power
- amplifier and the digital part.
+ amplifier and the 
+\strikeout on
+digital part
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Beter: DCU
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -120,8 +202,21 @@ The travel expenses.
 \end_layout
 
 \begin_layout Itemize
-The workplace which is The Hague University of Applied Sciences established
- in Delft.
+The workplace which is The Hague University of Applied 
+\strikeout on
+Sciences
+\strikeout default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Name fix: Science
+\end_layout
+
+\end_inset
+
+ established in Delft.
 \end_layout
 
 \begin_layout Itemize
