@@ -1,0 +1,14 @@
+Notulen 2015-03-03
+
+- Iedereen is aanwezig
+- 1ste vergadering met de projectcoach
+- Enkele opmerkingen over de plan van aanpak:
+	1. Er is een paginanummer op de voorpagina van de plan van aanpak
+	2. Sommige characters worden niet/verkeerd uitgedrukt in de PDF (Zie hoofdstuk 2)
+	3. Het digitale idee is niet in de plan van aanpak beschreven.
+	4. In hoofdstuk 10 kan "Vague project goals" by external risks eruit.
+	5. Verder kleine opmerkingen
+
+- Research papers:
+	Groepen: 1. Kevin & Daan doen onderzoek over EMI (#3)
+		 2. Koen & Andrew doen onderzoek over bridge en unbridge amplifier( #5)

@@ -1,0 +1,31 @@
+== Risk analysis
+During this project there are several risk factors that need to be taken into account. These factors can be divided into two subgroups: internal and external risk factors.
+
+Examples of internal risk factors are:
+Insufficient Leadership: 
+	Not everyone is a born leader. In our group the project leader is choosen based on inexperience rather than experience, because the educational value is more important to us than having the best leader in this position.
+
+Inexperience: 
+	The project members are inexperienced and therefore they might not be up to the task.
+
+Language barrier: 
+	This project's working language is English and therefore all documentation and research papers are written in English. Spelling and grammar mistakes might occur and cause communication errors.
+
+Lack of motivation: 
+	Not all project members share the same interests. If a project member does not enjoy working on his assigned tasks, he might lose interest and become demotivated.
+
+Scope creep:
+	When new features and ideas are added along the way the project might become too big to handle.
+
+Examples of external risk factors are:
+Vague project goals: 
+	When the client's vision is not clear it is impossible to meet expectations.
+	
+Transport failure:
+	When public transit fails the project members will not be able to attend meetings or work sessions.
+
+Supply chain latency:
+	When suppliers are unable to ship in time or at all prototyping can come to a hold.
+
+Change of business case: 
+	When the client's business case changes, the project goals have to be reassessed.
