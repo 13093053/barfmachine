@@ -1,0 +1,174 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Costs and benefits
+\end_layout
+
+\begin_layout Standard
+There are costs that must be taken into consideration for carrying out the
+ final project (PRO-Q2) of the first two years of the Electrical Engineering
+ course at The Hague University of Applied Sciences.
+ There are also benefits for carrying out PRO-Q2.
+ The costs and benefits ultimately decide whether the project should be
+ carried out or not.
+ If the costs are higher then the benefits, then a decision must be made
+ between abandoning the project or making changes in the project regarding
+ the materials, location etc.
+ The costs and benefits are therefore crucial for the project.
+\end_layout
+
+\begin_layout Standard
+The costs for the project 
+\begin_inset Quotes eld
+\end_inset
+
+PRO-Q2
+\begin_inset Quotes erd
+\end_inset
+
+ are:
+\end_layout
+
+\begin_layout Itemize
+The amount of time that each project member worked.
+ Each project member must work at least 224 hours on the project.
+\end_layout
+
+\begin_layout Itemize
+The necessary components and tools for building the preamplifier, power
+ amplifier and the DCU.
+\end_layout
+
+\begin_layout Itemize
+The power supply.
+\end_layout
+
+\begin_layout Itemize
+The travel expenses.
+ Project members have to travel by train, car, bus or bike to reach their
+ workplace.
+\end_layout
+
+\begin_layout Itemize
+The workplace which is The Hague University of Applied Sciences established
+ in Delft.
+\end_layout
+
+\begin_layout Itemize
+Necessary knowledge for carrying out the project PRO-Q2.
+\end_layout
+
+\begin_layout Standard
+The benefits for the project 
+\begin_inset Quotes eld
+\end_inset
+
+PRO-Q2
+\begin_inset Quotes erd
+\end_inset
+
+ are:
+\end_layout
+
+\begin_layout Itemize
+ETCS.
+ The reward for succesfully clearing project PRO-Q2 is 8 ETCS.
+\end_layout
+
+\begin_layout Itemize
+Research papers.
+ 
+\end_layout
+
+\begin_layout Itemize
+Calculation reports.
+\end_layout
+
+\begin_layout Itemize
+Measurements reports.
+\end_layout
+
+\begin_layout Itemize
+Draft of the poster presentation.
+\end_layout
+
+\begin_layout Itemize
+Final design report.
+\end_layout
+
+\begin_layout Itemize
+A fully functional and active loudspeaker.
+\end_layout
+
+\end_body
+\end_document

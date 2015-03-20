@@ -1,0 +1,14 @@
+- Iedereen aanwezig
+- Ideeen voor uitbreiding DCU
+	1. Fouriertransformatie (heeft veel rekenkracht nodig)
+	2. Waveform visualisatie
+	3. BPM detection
+	4. ... Koen heeft de rest van de ideeen
+
+- Fouriertransformatie => Een matric operatie
+- Behalve Atmega kan andere microcontrollers gebruikt worden maar die zelf kopen
+- Euro 150 budjet voor het project PRO-Q2
+- Spullen bij Frank bestellen als de spullen niet beschikbaar zijn.
+- BOM in projectboek
+- Inprincipe geen simulatie in calculation report maar wel indien nodig
+- Volgende meeting: 17-03-2015 15:00uur
