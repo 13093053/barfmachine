@@ -141,10 +141,39 @@ Change of business case: When the client's business case changes, the project
 \end_layout
 
 \begin_layout Standard
-The effect of each risk is calculated in the following table.
+The effect of each risk is calculated in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Risk-effect-calculation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Risk effect calculation
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Risk-effect-calculation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="5">
 <features rotate="0" tabularvalignment="middle">
@@ -624,6 +653,11 @@ Change of business case
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
