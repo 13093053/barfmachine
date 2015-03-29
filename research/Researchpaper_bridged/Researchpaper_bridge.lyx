@@ -105,8 +105,22 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-How do bridged and unbridged amplifiers compare and secondly how do balanced
- and unbalanced amplifiers compare? 
+One of the assignment for the project PRO-Q2 is to write a reseach paper.
+ Each group that consist of two tmembers has to choose a subject related
+ to Electrical Engineering.
+ Although this assignment is more research wise and not practical, it is
+ important to be able to do reseach on various subject.
+ Even in a university of applied science.
+\end_layout
+
+\begin_layout Standard
+The subject that is chosen for this reseach paper are bridged, unbridged,
+ balanced and unbalanced amplifiers.
+ It is chosen for this topic because this topic interest us the most.
+ This research paper explains how bridged and unbridged amplifiers compare
+ with each other.
+ Also it explains how balanced and unbalanced amplifiers compare with each
+ other.
 \end_layout
 
 \begin_layout Standard
@@ -121,43 +135,95 @@ Amplifiers
 \end_layout
 
 \begin_layout Standard
+There are different types of amplifiers but only the following amplifiers
+ will be explained in detail:
+\end_layout
+
+\begin_layout Itemize
+Bridged amplifiers
+\end_layout
+
+\begin_layout Itemize
+Unbridged amplifiers
+\end_layout
+
+\begin_layout Itemize
+Balance amplifiers
+\end_layout
+
+\begin_layout Itemize
+Unbalance amplifiers
+\end_layout
+
+\begin_layout Standard
 Features: increased gain, noise cancellation, low rail voltages, double
  output power
 \end_layout
 
 \begin_layout Subsection
-Bridged amplifiers 
+Bridged amplifiers
 \end_layout
 
 \begin_layout Subsection
-Subsection Unbridged amplifiers 
+Unbridged amplifiers 
 \end_layout
 
 \begin_layout Subsection
-Subsection Balanced amplifiers 
-\end_layout
-
-\begin_layout Subsection
-Subsection Unbalanced amplifiers 
-\end_layout
-
-\begin_layout Subsection
-Subsection Differences and simularities 
-\end_layout
-
-\begin_layout Subsection
-Subsection Advantages and limitations
+Balanced amplifiers 
 \end_layout
 
 \begin_layout Standard
-There are advantages for everything including bridged and balanced amplifiers.
- The advantages are: .........
+Minimizing noise or cancellation
+\end_layout
+
+\begin_layout Subsection
+Unbalanced amplifiers 
+\end_layout
+
+\begin_layout Subsection
+Differences and simularities 
+\end_layout
+
+\begin_layout Subsection
+Advantages and limitations
+\end_layout
+
+\begin_layout Standard
+There are advantages for everything including bridged, unbridged, balanced
+ and unbalance amplifiers.
  
 \end_layout
 
 \begin_layout Standard
-The limitations are ...........
- 
+The advantages are: 
+\end_layout
+
+\begin_layout Itemize
+One
+\end_layout
+
+\begin_layout Itemize
+Two 
+\end_layout
+
+\begin_layout Itemize
+Three
+\end_layout
+
+\begin_layout Standard
+The limitations are:
+\end_layout
+
+\begin_layout Itemize
+One 
+\end_layout
+
+\begin_layout Itemize
+Two
+\end_layout
+
+\begin_layout Itemize
+Three
 \end_layout
 
 \begin_layout Section
