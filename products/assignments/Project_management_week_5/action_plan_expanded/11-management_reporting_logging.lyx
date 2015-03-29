@@ -102,7 +102,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Action Log
+Action log
 \end_layout
 
 \end_inset
@@ -136,7 +136,7 @@ Action ID
 \begin_inset Text
 
 \begin_layout Plain Layout
-Action Name
+Action name
 \end_layout
 
 \end_inset
@@ -163,7 +163,7 @@ Priority
 \begin_inset Text
 
 \begin_layout Plain Layout
-Date Assigned
+Date assigned
 \end_layout
 
 \end_inset
@@ -522,7 +522,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Product Log
+Product log
 \end_layout
 
 \end_inset
@@ -532,7 +532,7 @@ Product Log
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="8">
+<lyxtabular version="3" rows="11" columns="8">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -556,7 +556,7 @@ Product ID
 \begin_inset Text
 
 \begin_layout Plain Layout
-Product Name
+Product name
 \end_layout
 
 \end_inset
@@ -583,7 +583,7 @@ Priority
 \begin_inset Text
 
 \begin_layout Plain Layout
-Date Assigned
+Date assigned
 \end_layout
 
 \end_inset
@@ -630,7 +630,7 @@ Notes
 \begin_inset Text
 
 \begin_layout Plain Layout
-Cooperation Agreement
+Cooperation agreement
 \end_layout
 
 \end_inset
@@ -657,7 +657,7 @@ Normal
 \begin_inset Text
 
 \begin_layout Plain Layout
-09-02-2015
+2015.02.09
 \end_layout
 
 \end_inset
@@ -666,7 +666,7 @@ Normal
 \begin_inset Text
 
 \begin_layout Plain Layout
-16-02-2015
+2015.02.16 12PM
 \end_layout
 
 \end_inset
@@ -704,7 +704,7 @@ Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-Action Plan
+Action plan
 \end_layout
 
 \end_inset
@@ -731,7 +731,7 @@ High
 \begin_inset Text
 
 \begin_layout Plain Layout
-16-02-2015
+2015.02.16
 \end_layout
 
 \end_inset
@@ -740,7 +740,7 @@ High
 \begin_inset Text
 
 \begin_layout Plain Layout
-23-02-2015
+2015.02.23 12PM
 \end_layout
 
 \end_inset
@@ -787,9 +787,7 @@ Research paper 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mr.
- Lau and Mr.
- Vliet
+Andrew Lau & Koen Vliet
 \end_layout
 
 \end_inset
@@ -807,7 +805,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-23-02-2015
+2015.02.23
 \end_layout
 
 \end_inset
@@ -816,7 +814,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-03-04-2015
+2015.04.03 5PM
 \end_layout
 
 \end_inset
@@ -864,9 +862,7 @@ Research paper 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mr.
- Oei and Mr.
- Conijn
+Kevin Oei & Daan Conijn
 \end_layout
 
 \end_inset
@@ -884,7 +880,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-23-02-2015
+2015.02.23
 \end_layout
 
 \end_inset
@@ -893,7 +889,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-03-04-2015
+2015.04.03 5PM
 \end_layout
 
 \end_inset
@@ -931,7 +927,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-Calculation Report
+Calculation report(s)
 \end_layout
 
 \end_inset
@@ -958,7 +954,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-23-02-2015
+2015.02.23
 \end_layout
 
 \end_inset
@@ -967,7 +963,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-03-02-2015
+2015.04.03 5PM
 \end_layout
 
 \end_inset
@@ -1005,7 +1001,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-Measurement Report
+Measurement report(s)
 \end_layout
 
 \end_inset
@@ -1014,7 +1010,7 @@ Measurement Report
 \begin_inset Text
 
 \begin_layout Plain Layout
-All Members
+All members
 \end_layout
 
 \end_inset
@@ -1032,7 +1028,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-
 \end_layout
 
 \end_inset
@@ -1041,7 +1037,7 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2015.05.29 5PM
 \end_layout
 
 \end_inset
@@ -1059,7 +1055,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-
 \end_layout
 
 \end_inset
@@ -1079,7 +1075,16 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
+Draft of the final design report
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All members
 \end_layout
 
 \end_inset
@@ -1097,7 +1102,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-
 \end_layout
 
 \end_inset
@@ -1106,7 +1111,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2015.05.29 5PM
 \end_layout
 
 \end_inset
@@ -1115,16 +1120,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Not Complete
 \end_layout
 
 \end_inset
@@ -1133,7 +1129,155 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
+-
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+008
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Draft of the poster presentation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All members
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2015.06.10 12PM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not Complete
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+009
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Final design report
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All members
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2015.06.12 5PM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not Complete
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+On paper in twofold to Jesse op den Brouw and Ephorus
 \end_layout
 
 \end_inset
@@ -1144,7 +1288,25 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-008
+010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poster presentation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All members
 \end_layout
 
 \end_inset
@@ -1162,7 +1324,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-
 \end_layout
 
 \end_inset
@@ -1171,7 +1333,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+TBA
 \end_layout
 
 \end_inset
@@ -1180,25 +1342,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Not Complete
 \end_layout
 
 \end_inset
@@ -1207,7 +1351,7 @@ Not Complete
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-
 \end_layout
 
 \end_inset
