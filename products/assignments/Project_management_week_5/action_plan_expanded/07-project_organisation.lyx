@@ -515,11 +515,26 @@ Lecturer in Project Management
 
 \begin_layout Standard
 Progress and management of the project should be reported to the project
- coordinator, by means of this action plan and several reports as described
+ coordinator, by means of this action plan, several reports as described
  in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:05_Intermediate-results"
+
+\end_inset
+
+ and the minutes made during each weekly meeting.
+ The progress of the project will also be logged.
+ Each member will be maintaining their own personal log, logging their activitie
+s and timestamping them.
+ There will also be logging of all project activities in general and logging
+ of all project products.
+ These logs will be maintained in the form of tables including things such
+ as dates, associated team members, priority and more.
+ These logs can be found in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:11_Management-Reporting-and-Logging"
 
 \end_inset
 

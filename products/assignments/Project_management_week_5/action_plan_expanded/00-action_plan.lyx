@@ -239,6 +239,17 @@ filename "10-risks.lyx"
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "11-management_repport_logging.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
