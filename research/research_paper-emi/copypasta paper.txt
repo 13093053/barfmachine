@@ -1,0 +1,44 @@
+[noise explanation]
+=============A NOTE ON NOISE IN AUDIO AMPLIFIERS==============================================================
+
+There are a number of noise sources in audio
+amplifiers such as:
+a. Thermal noise in the input coupling circuit
+b. S h o t n o i s e
+c . P a r t i t i o n n o i s e i n p e n t o d e s
+d. F l i c k e r n o i s e
+e. B a l l i s t i c s a n d m i c r o p h o n i c s
+f. Pops
+g. Hum
+
+==============================================================================================================
+
+[EMI explanation]
+===================Suppressing Electromagnetic Interference in Direct Current Converters======================
+
+*beginning of text*
+
+==============================================================================================================
+
+[EMI explanation]
+============Ghost Talk: Mitigating EMI Signal Injection Attacks against Analog Sensors========================
+
+*beginning of text*
+
+==============================================================================================================
+
+[EMI countermeasure 1 (shielding)]
+============The Influence of Alloy Element on Magnesium for Electronic Devices Applications – A Review========
+
+*intro*
+
+*H3*
+
+==============================================================================================================
+
+[EMI countermeasure 2 (filters, differential comparators)]
+============Ghost Talk: Mitigating EMI Signal Injection Attacks against Analog Sensors========================
+
+*Section V*
+
+==============================================================================================================
