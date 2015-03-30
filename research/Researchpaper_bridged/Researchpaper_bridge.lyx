@@ -90,7 +90,7 @@ EQ2.a
 \end_layout
 
 \begin_layout Date
-Date April 4th, 2015
+April 4th, 2015
 \end_layout
 
 \begin_layout Standard
@@ -214,14 +214,15 @@ Differences and simularities
 \end_layout
 
 \begin_layout Standard
+Table 1 gives a overview of the simularities and differences between bridged
+ and unbridged amplifiers.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -414,14 +415,15 @@ Differences
 \end_layout
 
 \begin_layout Standard
+Table 2 gives a overview of the simularities and differences between balanced
+ and unbalanced amplifiers.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -585,10 +587,6 @@ Differences
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1062,10 +1060,6 @@ Disadvantages
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
