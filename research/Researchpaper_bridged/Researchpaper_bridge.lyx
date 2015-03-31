@@ -101,7 +101,7 @@ April 4th, 2015
 \end_layout
 
 \begin_layout Section*
-Introduction 
+Preface
 \end_layout
 
 \begin_layout Standard
@@ -148,11 +148,11 @@ Unbridged amplifiers
 \end_layout
 
 \begin_layout Itemize
-Balance amplifiers
+Balanced amplifiers
 \end_layout
 
 \begin_layout Itemize
-Unbalance amplifiers
+Unbalanced amplifiers
 \end_layout
 
 \begin_layout Standard
@@ -174,23 +174,15 @@ Bridged amplifiers
 \end_layout
 
 \begin_layout Standard
-A bridged amplifier is a combination of two amplifiers.
- A bridged amplifier can be obtained by connecting the two amplifier in
- a bridge style like formation.
- An example of a bridged amplifier is shown in Fig 1.
-\end_layout
-
-\begin_layout Standard
-The output voltage of a bridged amplifier is in an ideal case twice the
- output voltage of an amplifier.
- The bridged amplifier is really helpful when a power supply can not produce
- or supply enough voltage or when an amplifier can not provide enough output.
- Because the output voltage at a bridged amplifier is twice of a single
- amplifier, the output power is also twice of a single amplifier.[1]
-\end_layout
-
-\begin_layout Subsection
-Unbridged amplifiers
+A bridged amplifier consists of two amplifiers driving a load floating in
+ between their outputs[1].
+ Fig.
+ 1 shows a typical bridged amplifier configuration.
+ The second amplifier's output is in anti-phase with the first one, thus
+ doubling the voltage across the shared load.
+ This in turn results in a higher output power.
+ Bridged amplifiers are often used when the power rails do not supply sufficient
+ voltage.[2]
 \end_layout
 
 \begin_layout Subsection
@@ -198,19 +190,17 @@ Balanced amplifiers
 \end_layout
 
 \begin_layout Standard
-The balanced amplifiers can be applied in many different ways.
- It is mostly used for noise cancellation and controlling it's performance.
- Just like the bridged amplifier, the balanced amplifier requires two amplifiers.
- An example of a balanced amplifier is shown in Fig.
- 2
+The balanced amplifier in its most basic configuration consists of a single
+ differential amplifier.
+ It takes a differential signal for an input and drives a single-ended load.
+ Fig2.
+ shows a typical balanced amplifier configuration.
+ The amplifier nullifies the common voltage between inputs, therefore any
+ common noise is rejected.[3].
 \end_layout
 
 \begin_layout Subsection
-Unbalanced amplifiers 
-\end_layout
-
-\begin_layout Subsection
-Differences and simularities 
+Comparison 
 \end_layout
 
 \begin_layout Standard
@@ -247,7 +237,7 @@ Comparison between bridged and unbridged amplifiers
 \begin_inset Text
 
 \begin_layout Plain Layout
-Simularities
+bridged
 \end_layout
 
 \end_inset
@@ -256,7 +246,7 @@ Simularities
 \begin_inset Text
 
 \begin_layout Plain Layout
-Differences
+unbridged
 \end_layout
 
 \end_inset
@@ -267,7 +257,7 @@ Differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+At least two amplifiers
 \end_layout
 
 \end_inset
@@ -276,7 +266,7 @@ Differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+One amplifier
 \end_layout
 
 \end_inset
@@ -287,7 +277,7 @@ Differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Double output power
 \end_layout
 
 \end_inset
@@ -296,7 +286,7 @@ Differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Single output power
 \end_layout
 
 \end_inset
@@ -307,7 +297,7 @@ Differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Double output voltage
 \end_layout
 
 \end_inset
@@ -316,7 +306,7 @@ Differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Single output voltage
 \end_layout
 
 \end_inset
@@ -448,7 +438,7 @@ Comparison between balanced and unbalanced amplifiers
 \begin_inset Text
 
 \begin_layout Plain Layout
-Simularities
+Similarities
 \end_layout
 
 \end_inset
@@ -1130,6 +1120,11 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
+amplifiers? Did you say...
+ amplifiers??? AAAAAMPLIFIERSSS!!! AAAAAAHHHMPLIFIERS! AAAAH HAAAAAHAAAAAHH
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1154,6 +1149,22 @@ High-dynamic Bridge Amplifiers with Generator for Piezoelectric Actuator
 \end_inset
 
 , Soochow University, Soochow, China, July 2011
+\end_layout
+
+\begin_layout Standard
+[2] J.
+ Karki.
+ (2008).
+ Input impedance matching with fully differential amplifiers.
+ [Online].
+ Available: http://www.ti.com
+\end_layout
+
+\begin_layout Standard
+[3] Phillip A.
+ Laplante, Conprehensive Dictionary of Electrical Engineering, 2nd Ed, Boca
+ Raton FL, CRC Press, 2005, pp.
+ 190
 \end_layout
 
 \end_body
