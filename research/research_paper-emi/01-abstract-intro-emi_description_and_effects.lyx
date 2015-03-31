@@ -84,7 +84,9 @@ Audio amplifiers are subject to electromagnetic interference (EMI) and noise.
 status open
 
 \begin_layout Plain Layout
-Might need expanding/partial rewrite after the rest of the paper is finished
+Might need expanding/partial rewrite after the rest of the paper is finished.
+ Why did I even write this already this is supposed to be done after the
+ paper is written lol.
 \end_layout
 
 \end_inset
@@ -104,6 +106,87 @@ Introduction
 This paper is written as part of PRO-Q2, the last project in the 2nd year
  of the Electrical Engineering course at The Hague University of Applied
  Sciences.
+ In order to prove our competence in performing research and practice with
+ writing papers and studying literature, all students participating in PRO-Q2
+ are to write an English paper on a subject that is closely related to the
+ project assignment (designing and realizing a speaker system).
+ Not only will this help gaining experience on writing papers and doing
+ research, but the knowledge gained from the research into the subject will
+ also be of help during the designing and realization of the project's speaker
+ system.
+ For this paper, EMI and noise will be discussed.
+ EMI and noise are known to have adverse effects on the performance of audio
+ amplifiers.
+ It is therefore very important to gain insight into the matter before the
+ design of the audio amplifier begins.
+ An introduction to these terms will be made, explaining what they are and
+ what impact they may have on audio amplifiers.
+ Then, several methods on mitigating/suppressing/eliminating the effects
+ of EMI/noise will be explained in detail.
+ Thus, the questions we intend to answer are as follows:
+\end_layout
+
+\begin_layout Itemize
+What is EMI and noise?
+\end_layout
+
+\begin_layout Itemize
+What effect(s) do(es) EMI and noise have on audio amplifiers?
+\end_layout
+
+\begin_layout Itemize
+What methods can be used to mitigate/suppress/eliminate EMI and/or noise?
+\end_layout
+
+\begin_layout Section
+What is EMI and noise?
+\end_layout
+
+\begin_layout Subsection
+EMI
+\end_layout
+
+\begin_layout Standard
+EMI, short for electromagnetic interference, is the degradation of the effective
+ performance of a system due to electromagnetic disturbances 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+.
+ It can occur anywhere in the electromagnetic spectrum, from 0 Hz up to
+ 20 GHz.
+ It is however most commonly encountered in the radio frequency (RF) range,
+ which is why EMI is also often referred to as radio frequency interference
+ (RFI).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "1"
+key "key-1"
+
+\end_inset
+
+Y.
+ A.
+ Adediran, D.
+ A.
+ Ogundele, E.
+ C.
+ A.
+ Akoma Henry.
+ (2010).
+ 
+\shape italic
+ELECTROMAGNETIC INTERFERENCE: CAUSES, EFFECTS AND MITIGATION
+\shape default
+ [online].
+ Available FTP: unilorin.edu.ng Directory: publications/adediranya File: ELECTROMA
+GNETIC INTERFERENCE CAUSES EFFECTS & MITIGATION.doc
 \end_layout
 
 \end_body
