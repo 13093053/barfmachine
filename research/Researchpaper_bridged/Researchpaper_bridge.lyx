@@ -9,7 +9,7 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman lmodern
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -24,6 +24,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -70,7 +71,7 @@
 \begin_body
 
 \begin_layout Title
-Researchpaper
+Bridged, unbridged, balanced and unbalanced amplifiers
 \begin_inset Newline newline
 \end_inset
 
@@ -78,11 +79,11 @@ PRO-Q2
 \end_layout
 
 \begin_layout Author
-Andrew Lau
+Andrew Lau, 13058339
 \begin_inset Newline newline
 \end_inset
 
-Koen van Vliet
+Koen van Vliet, 130xxxxx
 \begin_inset Newline newline
 \end_inset
 
@@ -130,6 +131,10 @@ The subject that is chosen for this reseach paper are bridged, unbridged,
 
 \end_layout
 
+\begin_layout Abstract
+Abstract -- wd
+\end_layout
+
 \begin_layout Section
 Amplifiers
 \end_layout
@@ -170,7 +175,7 @@ Features: increased gain, noise cancellation, low rail voltages, double
 \end_layout
 
 \begin_layout Subsection
-Bridged amplifiers
+Bridged and unbridged amplifiers
 \end_layout
 
 \begin_layout Standard
@@ -185,18 +190,104 @@ A bridged amplifier consists of two amplifiers driving a load floating in
  voltage.[2]
 \end_layout
 
-\begin_layout Subsection
-Balanced amplifiers 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bridged_amplifier.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unbridged amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The balanced amplifier in its most basic configuration consists of a single
- differential amplifier.
- It takes a differential signal for an input and drives a single-ended load.
- Fig2.
- shows a typical balanced amplifier configuration.
- The amplifier nullifies the common voltage between inputs, therefore any
- common noise is rejected.[3].
+An unbridged amplifier only consist of one amplifier with a negative feedback.
+ Therefore an unbridged amplifier doesn't contain the features of a bridged
+ amplifier (think double voltage and power).
+ An example of an unbridged amplifier is given in Fig.2 
+\end_layout
+
+\begin_layout Subsection
+Balanced and unbalanced amplifiers 
+\end_layout
+
+\begin_layout Standard
+To reduce differential unbalance in amplifiers circuits, negative feedback
+ can be applied.[3] This in turn stabilizes the output.
+ These amplifiers are called balanced amplifiers or closed-loop amplifiers.
+ This refers to the negative feedback loop as shown in Fig 3.
+ 
+\end_layout
+
+\begin_layout Standard
+The unbalanced amplifiers or a single-ended amplifier does not have a feedback
+ loop and therefore the amplification is equal to the open-loop gain.
+ The unbalanced amplifier acts as a comparator.
+ If the input voltages of the unbalanced amplifier differs, then the output
+ voltage will go crazy.
+ The open-loop gain is extremely high.
+ Fig.
+ 3 is an example of an unbalanced amplifier.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename balancedunbalanced.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Balanced (bottom) and unbalanced (top) amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -204,7 +295,7 @@ Comparison
 \end_layout
 
 \begin_layout Standard
-Table 1 gives a overview of the simularities and differences between bridged
+Table 1 gives an overview of the simularities and differences between bridged
  and unbridged amplifiers.
 \end_layout
 
@@ -228,7 +319,7 @@ Comparison between bridged and unbridged amplifiers
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="2">
+<lyxtabular version="3" rows="4" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -257,7 +348,7 @@ unbridged
 \begin_inset Text
 
 \begin_layout Plain Layout
-At least two amplifiers
+Contains two amplifiers
 \end_layout
 
 \end_inset
@@ -266,7 +357,7 @@ At least two amplifiers
 \begin_inset Text
 
 \begin_layout Plain Layout
-One amplifier
+Contains one amplifier
 \end_layout
 
 \end_inset
@@ -293,7 +384,7 @@ Single output power
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -302,91 +393,11 @@ Double output voltage
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Single output voltage
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Single output voltage
 \end_layout
 
 \end_inset
@@ -438,7 +449,7 @@ Comparison between balanced and unbalanced amplifiers
 \begin_inset Text
 
 \begin_layout Plain Layout
-Similarities
+Balanced
 \end_layout
 
 \end_inset
@@ -447,7 +458,7 @@ Similarities
 \begin_inset Text
 
 \begin_layout Plain Layout
-Differences
+Unbalanced
 \end_layout
 
 \end_inset
@@ -458,7 +469,7 @@ Differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low Gain
 \end_layout
 
 \end_inset
@@ -467,7 +478,7 @@ Differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High Gain
 \end_layout
 
 \end_inset
@@ -1161,10 +1172,8 @@ High-dynamic Bridge Amplifiers with Generator for Piezoelectric Actuator
 \end_layout
 
 \begin_layout Standard
-[3] Phillip A.
- Laplante, Conprehensive Dictionary of Electrical Engineering, 2nd Ed, Boca
- Raton FL, CRC Press, 2005, pp.
- 190
+[3] Offner, Franklin F.
+ , Balanced Amplifier, 
 \end_layout
 
 \end_body
