@@ -71,7 +71,7 @@
 \begin_body
 
 \begin_layout Title
-Bridged, unbridged, balanced and unbalanced amplifiers
+Research paper: (Un)bridged and (un)balanced amplifiers
 \begin_inset Newline newline
 \end_inset
 
@@ -83,11 +83,19 @@ Andrew Lau, 13058339
 \begin_inset Newline newline
 \end_inset
 
-Koen van Vliet, 130xxxxx
+Koen van Vliet, 13093053
 \begin_inset Newline newline
 \end_inset
 
-EQ2.a 
+Group 1
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+EQ2.a
 \end_layout
 
 \begin_layout Date
@@ -107,17 +115,18 @@ Preface
 
 \begin_layout Standard
 One of the assignment for the project PRO-Q2 is to write a reseach paper.
- Each group that consist of two tmembers has to choose a subject related
- to Electrical Engineering.
+ Each group, consisting of two members, has to choose a subject related
+ to the Electrical Engineering course.
  Although this assignment is more research wise and not practical, it is
  important to be able to do reseach on various subject.
  Even in a university of applied science, which is well known for practicum.
 \end_layout
 
 \begin_layout Standard
-The subject that is chosen for this reseach paper are bridged, unbridged,
- balanced and unbalanced amplifiers.
- It is chosen for this topic because this topic interest us the most.
+The subject that is chosen for this reseach paper are (un)bridged and (un)balanc
+ed amplifiers.
+ It is chosen for this topic because this topic is the most interesting
+ topic compared to the other topics given by the projectcoach.
  This research paper explains how bridged and unbridged amplifiers compare
  with each other.
  Also it explains how balanced and unbalanced amplifiers compare with each
@@ -132,7 +141,11 @@ The subject that is chosen for this reseach paper are bridged, unbridged,
 \end_layout
 
 \begin_layout Abstract
-Abstract -- wd
+Amplifiers are applied in many electroncal devices.
+ These are for example laptops, mobile phones, microwaves and many more.
+ Examples of an amplifier are bridged, unbridged, balanced and unbalanced
+ amplifiers.
+ 
 \end_layout
 
 \begin_layout Section
@@ -162,7 +175,7 @@ Unbalanced amplifiers
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Features: increased gain, noise cancellation, low rail voltages, double
@@ -185,7 +198,7 @@ A bridged amplifier consists of two amplifiers driving a load floating in
  1 shows a typical bridged amplifier configuration.
  The second amplifier's output is in anti-phase with the first one, thus
  doubling the voltage across the shared load.
- This in turn results in a higher output power.
+ This in turn results doubling the output power.
  Bridged amplifiers are often used when the power rails do not supply sufficient
  voltage.[2]
 \end_layout
@@ -210,7 +223,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Unbridged amplifier
+Bridged amplifier
 \end_layout
 
 \end_inset
@@ -224,10 +237,44 @@ Unbridged amplifier
 \end_layout
 
 \begin_layout Standard
-An unbridged amplifier only consist of one amplifier with a negative feedback.
+An unbridged amplifier only consist of one amplifier with or without a feedback-
+loop.
  Therefore an unbridged amplifier doesn't contain the features of a bridged
- amplifier (think double voltage and power).
+ amplifier (features like double voltage and double power).
  An example of an unbridged amplifier is given in Fig.2 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename unbridged_amplifier.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unbridged amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -248,7 +295,7 @@ The unbalanced amplifiers or a single-ended amplifier does not have a feedback
  The unbalanced amplifier acts as a comparator.
  If the input voltages of the unbalanced amplifier differs, then the output
  voltage will go crazy.
- The open-loop gain is extremely high.
+ The open-loop gain is therefore extremely high.
  Fig.
  3 is an example of an unbalanced amplifier.
 \end_layout
@@ -281,10 +328,6 @@ Balanced (bottom) and unbalanced (top) amplifier
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -295,8 +338,8 @@ Comparison
 \end_layout
 
 \begin_layout Standard
-Table 1 gives an overview of the simularities and differences between bridged
- and unbridged amplifiers.
+Table 1 gives an overview of the comparison between bridged and unbridged
+ amplifiers.
 \end_layout
 
 \begin_layout Standard
@@ -416,8 +459,8 @@ Single output voltage
 \end_layout
 
 \begin_layout Standard
-Table 2 gives a overview of the simularities and differences between balanced
- and unbalanced amplifiers.
+Table 2 gives a overview of the comparison between balanced and unbalanced
+ amplifiers.
 \end_layout
 
 \begin_layout Standard
@@ -440,7 +483,7 @@ Comparison between balanced and unbalanced amplifiers
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
+<lyxtabular version="3" rows="3" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -485,91 +528,11 @@ High Gain
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Negative feedback
 \end_layout
 
 \end_inset
@@ -578,7 +541,7 @@ High Gain
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+No negative feedback
 \end_layout
 
 \end_inset
@@ -597,13 +560,23 @@ High Gain
 \end_layout
 
 \begin_layout Subsection
-Advantages and limitations
+Advantages and disadvantages
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I think we can leave this out.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 There are advantages for everything including bridged, unbridged, balanced
  and unbalance amplifiers.
- In table 1 is a overview of the afvantages and disavantages of the bridged,
+ In table 3 is an overview of the advantages and disadvantages of the bridged,
  unbridged, balanced and unbalanced amplifiers.
 \end_layout
 
@@ -1069,45 +1042,6 @@ Disadvantages
 
 \end_layout
 
-\begin_layout Section
-Applications 
-\end_layout
-
-\begin_layout Standard
-The balanced amplifier is usually used for monolithic mircowave integrated
- circuit.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Portable audio amplifiers, high-end audio equipment
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Implementations 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-With opamps, drawings, how the schematic works etc.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
@@ -1117,6 +1051,22 @@ With opamps, drawings, how the schematic works etc.
 
 \begin_layout Section
 Related work
+\end_layout
+
+\begin_layout Standard
+As mentioned in paragraph 1.2 regarding the implementation of a balanced
+ amplifier, a balanced amplifier can also be implemented by connecting two
+ single-ended amplifiers in parallel.
+ An example of this implementation is a balanced low noise amplifier (LNA).
+ More information about this implemention can be found in reference [1]
+\end_layout
+
+\begin_layout Standard
+In paragraph 1.1 is stated that the output power doubles in a typical bridged
+ amplifier configuration, but not for the boost bridged amplifier.
+ The boost bridged amplifier quadruples the output power.
+ More information regarding the boost bridged amplifier can be found in
+ reference [4]
 \end_layout
 
 \begin_layout Standard
@@ -1131,8 +1081,10 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-amplifiers? Did you say...
- amplifiers??? AAAAAMPLIFIERSSS!!! AAAAAAHHHMPLIFIERS! AAAAH HAAAAAHAAAAAHH
+Ampifiers can be applied in many different ways, depending on the type of
+ amplifier that were explained in this research paper.
+ These different applications are unique in its own ways regardless of the
+ advantages and disadvantages these amplifiers possess.
 \end_layout
 
 \begin_layout Standard
@@ -1172,8 +1124,29 @@ High-dynamic Bridge Amplifiers with Generator for Piezoelectric Actuator
 \end_layout
 
 \begin_layout Standard
-[3] Offner, Franklin F.
- , Balanced Amplifier, 
+[3] F.F.
+ Offner, 
+\begin_inset Quotes eld
+\end_inset
+
+Balanced Amplifier
+\begin_inset Quotes erd
+\end_inset
+
+, Offner Electronics Inc., Chicago, Illinois, March 1947 
+\end_layout
+
+\begin_layout Standard
+[4] M.
+ Prokin, 
+\begin_inset Quotes eld
+\end_inset
+
+Boost Bridged Audio amplifier
+\begin_inset Quotes erd
+\end_inset
+
+, Faculty of Electrical Engineering, Belgrade university, Serbia, May 2001
 \end_layout
 
 \end_body

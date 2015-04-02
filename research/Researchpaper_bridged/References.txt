@@ -10,13 +10,7 @@ http://easy.squareis.com/http/ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arn
 
 http://easy.squareis.com/http/ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=5218043&matchBoolean%3Dtrue%26searchField%3DSearch_All_Text%26queryText%3D%28bridge+amplifiers%29&____x=0385
 
-
-
-
-
 http://www.quora.com/Whats-the-difference-between-a-balanced-and-unbalanced-amplifier
-
-
 
 
 Balanced amplifiers:
@@ -32,8 +26,18 @@ http://easy.squareis.com/http/ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arn
 http://mwrf.com/active-components/balanced-amplifier-aims-low-noise
 
 
+http://easy.squareis.com/http/ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=5383733&matchBoolean%3Dtrue%26searchField%3DSearch_All_Text%26queryText%3D%28single-ended+amplifier%29&____x=0385
 
 
 
 
 
+
+
+
+
+
+
+unbridged:
+
+http://www.audioasylum.com/cgi/t.mpl?f=general&m=488567
