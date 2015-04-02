@@ -1,0 +1,19 @@
+Idea's for measures that can be taken to supress EMI
+Ghost Talk - Mitigating EMI Signal Injection Attacks against Analog Sensors.pdf
+
+1)shielding
+IEEE std 1143-1994.pdf
+
+2)Filter
+naam: EMI filter design third edition Richard Lee Ozenbaugh, Timothy M. Pullen
+Link: https://books.google.nl/books?id=x_HRBQAAQBAJ&pg=PR4&lpg=PR4&dq=emi+filter+design+third+edition+Richard+Lee+Ozenbaugh,+Timothy+M.+Pullen+pdf&source=bl&ots=QZOHUIdS2M&sig=U9OakbE-q50WE2Cafqc-xbRt8JI&hl=nl&sa=X&ei=LcUaVa3TO5HiarDVgbgI&ved=0CCwQ6AEwAg#v=onepage&q&f=false
+
+3)snubber
+A STUDY OF THE EFFECTS OF SNUBBER ON SWITCHING LOSS.pdf
+Design of Snubbers fro Power Circuits-1.pdf
+VermogensElektronica dictaat def.pdf
+
+4)Differential Amplifier
+Design of an Operational Amplifier.pdf
+US5451898.pdf
+US5481225.pdf
