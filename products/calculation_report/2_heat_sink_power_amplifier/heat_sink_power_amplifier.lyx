@@ -123,6 +123,22 @@ April 4th, 2015
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -134,8 +150,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-For the realisation of an active loudspeaker system, calculations are essential.
- In this calculation report the heat sink of the selected monolithic power
+In this calculation report the heat sink of the selected monolithic power
  amplifier is calculated.
 \end_layout
 
@@ -151,11 +166,17 @@ Calculation: Heat Sink Power Amplifier
 \end_layout
 
 \begin_layout Standard
-Imagine that the maximun temperature that the power amplifier can be is
- 150 °C and that the surrounding tempurature goes up to 70 °C.
- The Maximum output power equals to 15 W.
+Imagine that the maximum temperature that the power amplifier can be 150
+ °C and that the surrounding temperature goes up to 70 °C.
+ The maximum output power equals to 15 W.
  Then the total junction-to-ambient thermal resistance must be less than
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+: 
 \begin_inset Formula 
 \begin{equation}
 θ_{ja}=\frac{150-70}{10}=8,0C/W\label{eq:2-1}
@@ -191,8 +212,8 @@ The therminal resistance of the heatsink equals:
 \end_layout
 
 \begin_layout Standard
-To check if the calculations are correct, we determine the temperature of
- the junction as a result of the thermal resistance.
+To check whether the calculations are correct, we determine the temperature
+ of the junction as a result of the thermal resistance.
 \end_layout
 
 \begin_layout Standard
@@ -241,7 +262,7 @@ L
 
 \end_inset
 
- is the load resistance
+ is the load resistance.
 \end_layout
 
 \begin_layout Itemize
@@ -305,7 +326,8 @@ ja
 
 \end_inset
 
- (5,360 °C / W) is lower than 8,0C / W .
+ (5,360 °C / W) is lower than 8,0C / W, which means it meets the required
+ specifications.
 \end_layout
 
 \begin_layout Standard

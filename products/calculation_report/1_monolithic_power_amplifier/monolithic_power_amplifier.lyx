@@ -123,6 +123,22 @@ April 4th, 2015
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -134,8 +150,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-For the realisation of an active loudspeaker system, calculations are essential.
- In this calculation report the monolithic power amplifier is determined
+In this calculation report the monolithic power amplifier is determined
  and calculated.
 \end_layout
 
