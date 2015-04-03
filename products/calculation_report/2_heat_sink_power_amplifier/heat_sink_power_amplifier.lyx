@@ -138,48 +138,103 @@ Calculation: Heat Sink Power Amplifier
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
+Imagine that the maximun temperature that the power amplifier can be is
+ 150C and that the surrounding tempurature goes up to 70C.
+ The Maximum output power equals to 15W.
+ Then the total junction-to-ambient thermal resistence must be less than
+ 
+\begin_inset Formula $θ_{ja}=\frac{150-70}{10}=8,0C/W$
+\end_inset
 
-\begin_layout Plain Layout
-- Calculation and selection of a suitable monolithic power amplifier
+ 
 \end_layout
 
-\begin_layout Plain Layout
-- Calculation of the heat sink for the power amplifier;
+\begin_layout Standard
+The thermal resistence of a metal-metal unterface equals: 
+\begin_inset Formula $θ_{jc}=1,2C/W$
+\end_inset
+
+ 
 \end_layout
 
+\begin_layout Standard
+The therminal resistence of the heatsink equals: 
+\begin_inset Formula $θ_{ca}=θ_{ja}-θ_{jc}=8,0C/W-1,2C/W=6,8C/W$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-The power amplifier has the following specifications: 
+To check if the calculations are correct, we determine the temperature of
+ the junction as a result of the thermal resistance.
 \end_layout
 
-\begin_layout Plain Layout
-1.
- input impedance at least 50 kΩ 
+\begin_layout Standard
+The maximum average power that the IC will be required to dissipate is approxima
+tely:
 \end_layout
 
-\begin_layout Plain Layout
-2.
- output power: 15 W sine in RL = 8 Ω at 1 kHz 
-\end_layout
-
-\begin_layout Plain Layout
-3.
- frequency range: 10 Hz to 100 kHz (−3 dB) at PL = 0.5 W in 8 Ω 
-\end_layout
-
+\begin_layout Standard
+\begin_inset Formula $P_{d}MAX=\frac{V_{S}^{2}}{2π^{2}R_{L}}+P_{Q}=\frac{18^{2}}{2π^{2}*8}+10=12,05W$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V_{s}$
+\end_inset
+
+ is the total power supply voltage across the power amplifier.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{L}$
+\end_inset
+
+ is the load resistance
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{Q}$
+\end_inset
+
+ is the quiescent power dissipation of the amplifier.
+ The maximun power of the power amplifier is 15W and the maximum required
+ power is 15W.
+ Therefore 
+\begin_inset Formula $P_{Q}=25W-15W=10W$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The maximum temperature is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=P_{d}MAX*θ_{ja}=12,05*8=96,4C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+96,4C is higher than 70,0C and therefore the new 
+\begin_inset Formula $θ_{ja}=\frac{150-96,4}{10}=5,36C/W$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The new 
+\begin_inset Formula $θ_{ja}$
+\end_inset
+
+ (5,36C/W) is lower than 8,0C/W .
 \end_layout
 
 \begin_layout Standard
@@ -190,18 +245,11 @@ The power amplifier has the following specifications:
 \end_layout
 
 \begin_layout Section
-Conclusion
+References
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Appendices
+The link to the datasheet of LM1875: http://www.farnell.com/datasheets/1703151.pdf
 \end_layout
 
 \end_body

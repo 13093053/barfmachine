@@ -134,61 +134,83 @@ For the realisation of an active loudspeaker system, calculations are essential.
 \end_layout
 
 \begin_layout Section
-Calculation: Monolithic Power Amplifier
+Monolithic Power Amplifier
+\end_layout
+
+\begin_layout Subsection
+Requirements
 \end_layout
 
 \begin_layout Standard
-Amplifier code for farnell : 1842519
-\end_layout
-
-\begin_layout Standard
-It is chosen for this amplifier because bla bla bla..........
- it is marvalous!
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-- Calculation and selection of a suitable monolithic power amplifier
-\end_layout
-
-\begin_layout Plain Layout
-- Calculation of the heat sink for the power amplifier;
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
 The power amplifier has the following specifications: 
 \end_layout
 
-\begin_layout Plain Layout
-1.
- input impedance at least 50 kΩ 
+\begin_layout Itemize
+Input impedance at least 50 kΩ 
 \end_layout
 
-\begin_layout Plain Layout
-2.
- output power: 15 W sine in RL = 8 Ω at 1 kHz 
+\begin_layout Itemize
+Output power: 15 W sine in RL = 8 Ω at 1 kHz 
 \end_layout
 
-\begin_layout Plain Layout
-3.
- frequency range: 10 Hz to 100 kHz (−3 dB) at PL = 0.5 W in 8 Ω 
+\begin_layout Itemize
+Frequency range: 10 Hz to 100 kHz (−3 dB) at PL = 0.5 W in 8 Ω 
 \end_layout
 
+\begin_layout Subsection
+Chosen Power Amplifier
+\end_layout
+
+\begin_layout Standard
+For the power amplifier it is chosen for LM1875 (farnell code: 1468913).
+ It is chosen for this power amplifier, because LM1875 meets the requirements.
+\end_layout
+
+\begin_layout Subsection
+Calculations
+\end_layout
+
+\begin_layout Standard
+For determining the maximum output voltage and current, it is assumend the
+ amplifiier drives an 8 Ohm load at 15 Watts.
+ 
+\end_layout
+
+\begin_layout Standard
+The formula for the power equals to: 
+\begin_inset Formula $P=U*I$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Therefore the following formulas can be derived:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{OUT,max}=\sqrt{P*R}=\sqrt{15*8}=11V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The amplifier has a bandwidth of 70kHz at 20W output power, however the
+ desired dynamic range of 10-100kHz can be easily achieved at lower power
+ output.
+\end_layout
+
+\begin_layout Standard
+According to the datasheet from LM1875 the supply voltage need to be approximate
+ly ± 18V to accomodate to the 15W output power.
 \end_layout
 
 \begin_layout Standard
@@ -199,31 +221,12 @@ The power amplifier has the following specifications:
 \end_layout
 
 \begin_layout Section
-Conclusion
+Reference
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-I wonder if this is relevant.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Appendices
+[1] Link to the datasheet of the LM1875: http://www.farnell.com/datasheets/1703151.
+pdf
 \end_layout
 
 \end_body
