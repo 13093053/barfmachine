@@ -475,6 +475,10 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -524,7 +528,10 @@ Balanced Amplifier
 \end_layout
 
 \begin_layout Standard
-[4] 
+[4] D.L.
+ Danyuk and G.V.
+ Pilko, Bridge amplifier with Feedforward error correction, ELECTRONICS
+ LETTERS, May 1992
 \end_layout
 
 \end_body
