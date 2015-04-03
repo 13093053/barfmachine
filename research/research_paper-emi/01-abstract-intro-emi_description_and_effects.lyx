@@ -127,11 +127,7 @@ This paper is written as part of PRO-Q2, the last project in the 2nd year
 \end_layout
 
 \begin_layout Itemize
-What is EMI and noise?
-\end_layout
-
-\begin_layout Itemize
-What effect(s) do(es) EMI and noise have on audio amplifiers?
+What is EMI and noise and what effect(s) do they have on audio amplifiers??
 \end_layout
 
 \begin_layout Itemize
@@ -139,7 +135,7 @@ What methods can be used to mitigate/suppress/eliminate EMI and/or noise?
 \end_layout
 
 \begin_layout Section
-What is EMI and noise?
+EMI/noise and their effect on audio amplifiers
 \end_layout
 
 \begin_layout Subsection
@@ -148,45 +144,117 @@ EMI
 
 \begin_layout Standard
 EMI, short for electromagnetic interference, is the degradation of the effective
- performance of a system due to electromagnetic disturbances 
+ performance of a system due to electromagnetic disturbances.
+ It can occur anywhere in the electromagnetic spectrum, from 0 Hz up to
+ 20 GHz.
+ It is however most commonly encountered in the radio frequency (RF) range,
+ in which case EMI is also often referred to as radio frequency interference
+ (RFI).
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1"
 
 \end_inset
 
-.
- It can occur anywhere in the electromagnetic spectrum, from 0 Hz up to
- 20 GHz.
- It is however most commonly encountered in the radio frequency (RF) range,
- which is why EMI is also often referred to as radio frequency interference
- (RFI).
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "1"
-key "key-1"
+ EMI has become a significant and (in some cases) complex issue, as its
+ presence does not only negatively impact the performance of devices, but
+ may also impact the health of living organisms.
+ Sources of EMI are as diverse as they are aplenty.
+ There are natural sources such as cosmic radiation and discharges originating
+ from the atmosphere (lightning being one of many examples), and there are
+ sources created by man such power lines, radio transmitters, igniters,
+ generators, etcetera.
+ The consequences of EMI can range from mildly annoying (noise in AM radio
+ receivers due to lightning, TV and radio signals being disturbed by operating
+ vacuum cleaners) to even life-threatening and lethal situations (pacemakers
+ failing prematurely, electrically powered wheelchairs being set in motion
+ because of radio- and microwaves, military helicopters crashing) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
 
 \end_inset
 
-Y.
- A.
- Adediran, D.
- A.
- Ogundele, E.
- C.
- A.
- Akoma Henry.
- (2010).
+.
+ Audio amplifiers are also sensitive victims to EMI, since the audio signals
+ they process should be as close to the original signal as possible, safe
+ for the amplification applied.
+ When not properly protected against EMI, noise may manifest into these
+ signals, causing undesirable audible alterations to the final output (the
+ sound that can be heard coming from the speakers).
+ It is clear that, in case of audio amplifiers where sensitive audio signals
+ are present, appropriate measures should be taken to mitigate the effects
+ of EMI and achieve high-quality performance.
+\end_layout
+
+\begin_layout Subsection
+Noise
+\end_layout
+
+\begin_layout Standard
+A possible result from EMI on electrical devices is the introduction of
+ noise on signal paths.
+ In electronics, noise is an unintended arbitrary change in the electric
+ signal.
+ In the case of audio amplifiers, there are certain types of noise that
+ may affect the amplifier.
+ A couple of these noise types will be explained in further detail, to give
+ an idea of what kind of factors play a role in the creation of noise.
+ Some examples of noise in audio amplifiers are:
+\end_layout
+
+\begin_layout Itemize
+Thermal noise
+\end_layout
+
+\begin_layout Itemize
+Shot noise
+\end_layout
+
+\begin_layout Itemize
+Flicker noise
+\end_layout
+
+\begin_layout Standard
+Thermal noise (also referred to as Johnson–Nyquist noise) originates from
+ the random thermal movement of charge carriers, in almost all cases these
+ carriers are electrons.
+ This type of noise occurs in any kind of impedance, and its magnitude is
+ independent from the voltage applied.
  
-\shape italic
-ELECTROMAGNETIC INTERFERENCE: CAUSES, EFFECTS AND MITIGATION
-\shape default
- [online].
- Available FTP: unilorin.edu.ng Directory: publications/adediranya File: ELECTROMA
-GNETIC INTERFERENCE CAUSES EFFECTS & MITIGATION.doc
+\end_layout
+
+\begin_layout Standard
+Shot noise is also caused by electrons.
+ When electrons traverse barriers (such as a gap), the times at which they
+ arrive on the other side of the barrier are discrete.
+ The amount of discrete arrivals of these electrons are so numerous that
+ they greatly resemble a continuous current.
+ However, because this transfer of electrons is actually discrete rather
+ than continuous, shot noise is generated 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Flicker noise (also commonly known as 1/f noise or pink noise) is caused
+ by local variations of the emission rate of the cathode.
+ As one of its names already suggests, flicker noise is dependent on frequency.
+ In this case, the magnitude of the noise increases as the frequency lowers.
+\end_layout
+
+\begin_layout Standard
+As already mentioned earlier, noise can be introduced through EMI.
+ When noise is introduced to the audio signal in an audio amplifier, its
+ output will be affected negatively, from buzzing to static noise and pops.
+ Noise creates random changes on a signal, and this is something that should
+ be avoided when it comes to audio signals in amplifiers.
 \end_layout
 
 \end_body

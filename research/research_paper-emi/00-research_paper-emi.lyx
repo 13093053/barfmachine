@@ -3,6 +3,11 @@
 \begin_document
 \begin_header
 \textclass IEEEtran
+\begin_preamble
+\usepackage[left,modulo]{lineno}
+\linenumbers
+\setlength\linenumbersep{2pt}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -92,6 +97,89 @@ filename "01-abstract-intro-emi_description_and_effects.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "1"
+key "key-1"
+
+\end_inset
+
+Y.
+ A.
+ Adediran, D.
+ A.
+ Ogundele, E.
+ C.
+ A.
+ Akoma Henry.
+ (2010).
+ 
+\shape italic
+ELECTROMAGNETIC INTERFERENCE: CAUSES, EFFECTS AND MITIGATION
+\shape default
+ [online].
+ Available FTP: unilorin.edu.ng Directory: publications/adediranya File: ELECTROMA
+GNETIC INTERFERENCE CAUSES EFFECTS & MITIGATION.doc
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "2"
+key "key-2"
+
+\end_inset
+
+H.
+ Li et al, 
+\begin_inset Quotes eld
+\end_inset
+
+Suppressing electromagnetic interference in direct current converters,
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\shape italic
+IEEE Circuits and Systems Magazine
+\shape default
+, vol.
+ 9, pp.
+ 10-28, Dec.
+ 2009
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "3"
+key "key-3"
+
+\end_inset
+
+H.
+ J.
+ Woll, F.
+ L.
+ Putzrath, 
+\begin_inset Quotes eld
+\end_inset
+
+A note on noise in audio amplifiers,
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\shape italic
+Transactions of the IRE Professional Group on Audio
+\shape default
+, vol.
+ AU-2, pp.
+ 39-42, Mar.-Apr.
+ 1954
 \end_layout
 
 \end_body
