@@ -304,6 +304,34 @@ key "key-08"
 
 \end_inset
 
+P.
+ J.
+ van Duijsen, 
+\begin_inset Quotes eld
+\end_inset
+
+Snubbers,
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\shape italic
+Vermogenselektronica - Schakelende Voedingen
+\shape default
+, 1st ed.
+ Haagse Hogeschool, 2014, ch.
+ 22, p.
+ 161.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "9"
+key "key-09"
+
+\end_inset
+
 R.
  Severns, 
 \shape italic
@@ -315,8 +343,8 @@ Design of snubbers for power circuits
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "9"
-key "key-09"
+label "10"
+key "key-10"
 
 \end_inset
 
@@ -345,8 +373,8 @@ Industry Applications Society Ann.
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "10"
-key "key-10"
+label "11"
+key "key-11"
 
 \end_inset
 
@@ -372,8 +400,8 @@ IEEE Transactions on Electromagnetic Compatibility
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "11"
-key "key-11"
+label "12"
+key "key-12"
 
 \end_inset
 
@@ -395,8 +423,8 @@ Bias circuit and differential amplifier having stabilized output swing,
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "12"
-key "key-12"
+label "13"
+key "key-13"
 
 \end_inset
 

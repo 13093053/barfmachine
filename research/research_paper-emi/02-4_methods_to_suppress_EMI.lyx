@@ -215,20 +215,10 @@ The RCD snubber has a few advantages over the RC snubber such as being able
  snubber and the losses of given values of the capacitor will be decreased.
  However there is a downside to having a RCD snubber.
  
-\color red
-On count of the diode across the resistor
+\color black
+On account of the diode across the resistor.
+
 \color inherit
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-This sentence makes no sense, needs to be discussed and fixed
-\end_layout
-
-\end_inset
-
-.
  When de capacitor is being charged, the effective value of the resistor
  is approximately zero.
  Due to this not being an optimal value for a given capacitor, the voltages
