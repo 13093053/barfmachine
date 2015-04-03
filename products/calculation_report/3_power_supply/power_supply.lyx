@@ -3,13 +3,17 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage[left,modulo]{lineno}
+\linenumbers
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman lmodern
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -24,6 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -86,7 +91,7 @@ Andrew Lau, 13058339
 \begin_inset Newline newline
 \end_inset
 
-Kevin Oei,13090062
+Kevin Oei, 13090062
 \begin_inset Newline newline
 \end_inset
 
@@ -129,8 +134,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-For the realisation of an active loudspeaker system, calculations are essential.
- In this calculation report the power supply is calculated.
+In this calculation report the power supply is calculated.
  Also a suitable transformer is selected for the power supply and the reason
  of the selection.
 \end_layout
@@ -147,17 +151,12 @@ Calculation: Power Supply
 \end_layout
 
 \begin_layout Standard
-For the transformer it is chosen for ........
- 
-\end_layout
-
-\begin_layout Standard
 In Fig 1.
- is a proposed power supply given.
+ a proposed power supply is illustrated.
 \end_layout
 
 \begin_layout Standard
-For the 
+For the [insert the rest of explanation here]
 \end_layout
 
 \begin_layout Standard
@@ -167,22 +166,32 @@ For the
 
 \end_layout
 
-\begin_layout Section
-References
-\end_layout
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
 
-\begin_layout Standard
-[1] P.J.
+\end_inset
+
+P.
+ J.
  van Duijsen, 
+\begin_inset Quotes eld
+\end_inset
+
+Gelijkrichters,
 \begin_inset Quotes erd
 \end_inset
 
-Gelijkrichters
-\begin_inset Quotes erd
-\end_inset
-
-, in Vermogenselektronica Schakelende Voeding, The Netherlands, The Haagse
- Hogeschool, Novemver 2014 
+ in 
+\shape italic
+Vermogenselektronica - Schakelende Voedingen
+\shape default
+, 1st ed.
+ Haagse Hogeschool, 2014, ch.
+ 2, sec.
+ 1, pp.
+ 9-12.
 \end_layout
 
 \end_body
