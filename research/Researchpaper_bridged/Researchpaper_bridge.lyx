@@ -475,10 +475,14 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
+Bridged amplifiers can be used to increase power output when supply voltages
+ are low.
+ With balanced amplifiers the gain can be controlled by setting up a feedback
+ loop.
+ This stabilizes the output.
+ Unbalanced amplifiers lack this feature and are therefore not suited for
+ audio applications.
+ 
 \begin_inset Newpage pagebreak
 \end_inset
 
