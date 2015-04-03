@@ -147,24 +147,17 @@ Calculation: Power Supply
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Calculation and selection of a suitable transformer for the power supply.
+For the transformer it is chosen for ........
+ 
 \end_layout
 
-\begin_layout Plain Layout
-The power supply must supply all rated voltages and current in the system
- as to be determined by the project team.
- The power supply should be constructed using linear regulators.
- The projected efficiency should be 80% or better.
- (Here we can use that book from blok 2.)
+\begin_layout Standard
+In Fig 1.
+ is a proposed power supply given.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+For the 
 \end_layout
 
 \begin_layout Standard
@@ -175,18 +168,21 @@ The power supply must supply all rated voltages and current in the system
 \end_layout
 
 \begin_layout Section
-Conclusion
+References
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+[1] P.J.
+ van Duijsen, 
+\begin_inset Quotes erd
 \end_inset
 
+Gelijkrichters
+\begin_inset Quotes erd
+\end_inset
 
-\end_layout
-
-\begin_layout Section
-Appendices
+, in Vermogenselektronica Schakelende Voeding, The Netherlands, The Haagse
+ Hogeschool, Novemver 2014 
 \end_layout
 
 \end_body
