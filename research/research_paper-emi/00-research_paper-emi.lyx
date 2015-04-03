@@ -99,11 +99,21 @@ filename "01-abstract-intro-emi_description_and_effects.lyx"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "02-4_methods_to_suppress_EMI.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "1"
-key "key-1"
+key "key-01"
 
 \end_inset
 
@@ -129,7 +139,7 @@ GNETIC INTERFERENCE CAUSES EFFECTS & MITIGATION.doc
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "2"
-key "key-2"
+key "key-02"
 
 \end_inset
 
@@ -149,14 +159,14 @@ IEEE Circuits and Systems Magazine
 , vol.
  9, pp.
  10-28, Dec.
- 2009
+ 2009.
 \end_layout
 
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "3"
-key "key-3"
+key "key-03"
 
 \end_inset
 
@@ -179,7 +189,230 @@ Transactions of the IRE Professional Group on Audio
 , vol.
  AU-2, pp.
  39-42, Mar.-Apr.
- 1954
+ 1954.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "4"
+key "key-04"
+
+\end_inset
+
+
+\shape italic
+IEEE Guide on Shielding Practice for Low Voltage Cables
+\shape default
+, IEEE Std 1143, 1994.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "5"
+key "key-05"
+
+\end_inset
+
+R.
+ L.
+ Ozenbaugh, T.
+ M.
+ Pullen, 
+\begin_inset Quotes eld
+\end_inset
+
+Introduction,
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\shape italic
+EMI Filter Design
+\shape default
+, 3rd ed.
+ Boca Raton, CRC Press, 2012, ch.
+ 1, sec.
+ 1, pp.
+ 1-1.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "6"
+key "key-06"
+
+\end_inset
+
+P.
+ J.
+ van Duijsen, 
+\begin_inset Quotes eld
+\end_inset
+
+Magnetische componenten,
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\shape italic
+Vermogenselektronica - Schakelende Voedingen
+\shape default
+, 1st ed.
+ Haagse Hogeschool, 2014, ch.
+ 16, sec.
+ 3-5, pp.
+ 119-121.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "7"
+key "key-07"
+
+\end_inset
+
+P.
+ J.
+ van Duijsen, 
+\begin_inset Quotes eld
+\end_inset
+
+Flyback converter,
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\shape italic
+Vermogenselektronica - Schakelende Voedingen
+\shape default
+, 1st ed.
+ Haagse Hogeschool, 2014, ch.
+ 10, sec.
+ 2, pp.
+ 55-57.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "8"
+key "key-08"
+
+\end_inset
+
+R.
+ Severns, 
+\shape italic
+Design of snubbers for power circuits
+\shape default
+, International Rectifier Corporation, 2006
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "9"
+key "key-09"
+
+\end_inset
+
+S.
+ Yuvarajan, R.
+ Nelson, D.
+ Quek, 
+\begin_inset Quotes eld
+\end_inset
+
+A study of the effects of snubber on switching loss and EMI in an MCT converter,
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\shape italic
+Industry Applications Society Ann.
+ Meeting, 1994., Conf.
+ Rec.
+ of the 1994 IEEE
+\shape default
+, Denver, CO, 1994, pp.
+ 1344-1349.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "10"
+key "key-10"
+
+\end_inset
+
+F.
+ Fiori, 
+\begin_inset Quotes eld
+\end_inset
+
+Design of an Operational Amplifier Input Stage Immune to EMI,
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\shape italic
+IEEE Transactions on Electromagnetic Compatibility
+\shape default
+, vol.
+ 49, pp.
+ 834-839, Nov.
+ 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "11"
+key "key-11"
+
+\end_inset
+
+M.
+ G.
+ Johnson, 
+\begin_inset Quotes eld
+\end_inset
+
+Bias circuit and differential amplifier having stabilized output swing,
+\begin_inset Quotes erd
+\end_inset
+
+ U.S.
+ Patent 5 451 898, Nov.
+ 12, 1995.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "12"
+key "key-12"
+
+\end_inset
+
+J.
+ Lumsden, A.
+ Flum, 
+\begin_inset Quotes eld
+\end_inset
+
+Variable gain differential amplifier circuit,
+\begin_inset Quotes erd
+\end_inset
+
+ U.S.
+ Patent 5 481 225, Jan.
+ 2, 1996.
 \end_layout
 
 \end_body

@@ -127,7 +127,7 @@ This paper is written as part of PRO-Q2, the last project in the 2nd year
 \end_layout
 
 \begin_layout Itemize
-What is EMI and noise and what effect(s) do they have on audio amplifiers??
+What is EMI and noise and what effect(s) do they have on audio amplifiers?
 \end_layout
 
 \begin_layout Itemize
@@ -153,7 +153,7 @@ EMI, short for electromagnetic interference, is the degradation of the effective
  
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-1"
+key "key-01"
 
 \end_inset
 
@@ -172,7 +172,7 @@ key "key-1"
  because of radio- and microwaves, military helicopters crashing) 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-2"
+key "key-02"
 
 \end_inset
 
@@ -235,7 +235,7 @@ Shot noise is also caused by electrons.
  than continuous, shot noise is generated 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-3"
+key "key-03"
 
 \end_inset
 
