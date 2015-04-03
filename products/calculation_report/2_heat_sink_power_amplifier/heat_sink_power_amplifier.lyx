@@ -3,13 +3,17 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage[left,modulo]{lineno}
+\linenumbers
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman lmodern
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -24,6 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -147,27 +152,39 @@ Calculation: Heat Sink Power Amplifier
 
 \begin_layout Standard
 Imagine that the maximun temperature that the power amplifier can be is
- 150C and that the surrounding tempurature goes up to 70C.
- The Maximum output power equals to 15W.
- Then the total junction-to-ambient thermal resistence must be less than
+ 150 °C and that the surrounding tempurature goes up to 70 °C.
+ The Maximum output power equals to 15 W.
+ Then the total junction-to-ambient thermal resistance must be less than
  
-\begin_inset Formula $θ_{ja}=\frac{150-70}{10}=8,0C/W$
+\begin_inset Formula 
+\begin{equation}
+θ_{ja}=\frac{150-70}{10}=8,0C/W\label{eq:2-1}
+\end{equation}
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-The thermal resistence of a metal-metal unterface equals: 
-\begin_inset Formula $θ_{jc}=1,2C/W$
+The thermal resistance of a metal-metal interface equals: 
+\begin_inset Formula 
+\begin{equation}
+θ_{jc}=1,2C/W\label{eq:2-2}
+\end{equation}
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-The therminal resistence of the heatsink equals: 
-\begin_inset Formula $θ_{ca}=θ_{ja}-θ_{jc}=8,0C/W-1,2C/W=6,8C/W$
+The therminal resistance of the heatsink equals: 
+\begin_inset Formula 
+\begin{equation}
+θ_{ca}=θ_{ja}-θ_{jc}=8,0C/W-1,2C/W=6,8C/W\label{eq:2-3}
+\end{equation}
+
 \end_inset
 
 
@@ -180,39 +197,72 @@ To check if the calculations are correct, we determine the temperature of
 
 \begin_layout Standard
 The maximum average power that the IC will be required to dissipate is approxima
-tely:
+tely 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P_{d}MAX=\frac{V_{S}^{2}}{2π^{2}R_{L}}+P_{Q}=\frac{18^{2}}{2π^{2}*8}+10=12,05W$
+\begin_inset Formula 
+\begin{equation}
+P_{d}MAX=\frac{V_{S}^{2}}{2π^{2}R_{L}}+P_{Q}=\frac{18^{2}}{2π^{2}*8}+10=12,05W\label{eq:2-4}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $V_{s}$
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
 \end_inset
 
  is the total power supply voltage across the power amplifier.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $R_{L}$
+R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
 \end_inset
 
  is the load resistance
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $P_{Q}$
+P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
 \end_inset
 
  is the quiescent power dissipation of the amplifier.
- The maximun power of the power amplifier is 15W and the maximum required
- power is 15W.
+ The maximun power of the power amplifier is 15 W and the maximum required
+ power is 15 W.
  Therefore 
-\begin_inset Formula $P_{Q}=25W-15W=10W$
+\begin_inset Formula 
+\begin{equation}
+P_{Q}=25W-15W=10W\label{eq:2-5}
+\end{equation}
+
 \end_inset
 
 
@@ -223,26 +273,39 @@ The maximum temperature is:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $T=P_{d}MAX*θ_{ja}=12,05*8=96,4C$
+\begin_inset Formula 
+\begin{equation}
+T=P_{d}MAX*θ_{ja}=12,05*8=96,4\textdegree C\label{eq:2-6}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-96,4C is higher than 70,0C and therefore the new 
-\begin_inset Formula $θ_{ja}=\frac{150-96,4}{10}=5,36C/W$
+96,4 °C is higher than 70,0 °C and therefore the new 
+\begin_inset Formula 
+\begin{equation}
+θ_{ja}=\frac{150-96,4}{10}=5,36\textdegree C/W\label{eq:2-7}
+\end{equation}
+
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-The new 
-\begin_inset Formula $θ_{ja}$
+The new θ
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+ja
+\end_layout
+
 \end_inset
 
- (5,36C/W) is lower than 8,0C/W .
+ (5,360 °C / W) is lower than 8,0C / W .
 \end_layout
 
 \begin_layout Standard
@@ -252,12 +315,29 @@ The new
 
 \end_layout
 
-\begin_layout Section
-References
-\end_layout
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
 
-\begin_layout Standard
-The link to the datasheet of LM1875: http://www.farnell.com/datasheets/1703151.pdf
+\end_inset
+
+Texas Instruments.
+ (2004, May).
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+LM1875 20W Audio Power Amplifier
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ [online].
+ Available: http://www.farnell.com/datasheets/1703151.pdf [April 3, 2015].
 \end_layout
 
 \end_body
