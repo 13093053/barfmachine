@@ -118,19 +118,48 @@ One of the assignment for the project PRO-Q2 is to write a reseach paper.
  Each group, consisting of two members, has to choose a subject related
  to the Electrical Engineering course.
  Although this assignment is more research wise and not practical, it is
- important to be able to do reseach on various subject.
+ important to be able to do research on various subjects.
  Even in a university of applied science, which is well known for practicum.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+fixed typo: reseach = research , subject = subjects
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 The subject that is chosen for this reseach paper are (un)bridged and (un)balanc
 ed amplifiers.
- It is chosen for this topic because this topic is the most interesting
- topic compared to the other topics given by the projectcoach.
+ This topic was chosen as it appeared to be the most interesting of all
+ the available options given by the project coach.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Removed the amount of topic in this sentence.
+\end_layout
+
+\end_inset
+
  This research paper explains how bridged and unbridged amplifiers compare
- with each other.
- Also it explains how balanced and unbalanced amplifiers compare with each
+ to each other.
+ It also explains how balanced and unbalanced amplifiers compare to each
  other.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Replaced "with each" = "to each"
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -143,7 +172,7 @@ ed amplifiers.
 \begin_layout Abstract
 Amplifiers are applied in many electroncal devices.
  These are for example laptops, mobile phones, microwaves and many more.
- Examples of an amplifier are bridged, unbridged, balanced and unbalanced
+ Examples of amplifiers are bridged, unbridged, balanced and unbalanced
  amplifiers.
  
 \end_layout
@@ -357,8 +386,17 @@ To reduce differential unbalance in amplifiers circuits, negative feedback
 \end_layout
 
 \begin_layout Standard
-The unbalanced amplifiers does not have a feedback loop and therefore the
+The unbalanced amplifiers do not have a feedback loop and therefore the
  amplification is equal to the open-loop gain.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Changed "amplifiers does not have" = 'amplifiers do not have"
+\end_layout
+
+\end_inset
+
  This open-loop gain is typically very high.
  With ideal opamps the gain is infinite.
  Therefore an unbalanced amplifier acts as a comparator.
