@@ -202,7 +202,7 @@ A simple RC snubber consists of a small resistor that is placed in series
  not consist of high amounts of energy 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-07,key-08"
+key "key-07,key-08,key-09"
 
 \end_inset
 
@@ -225,7 +225,7 @@ On account of the diode across the resistor.
  will be surpassing those of an optimized RC snubber 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-08"
+key "key-09"
 
 \end_inset
 
@@ -238,7 +238,7 @@ So if a proper snubber is used to suppress EMI, multiple of the intermediate
  For that reason, it is clear EMI can be supressed by snubbers 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-09"
+key "key-10"
 
 \end_inset
 
@@ -268,7 +268,7 @@ The differential amplifier consists of an operational amplifier.
  signal, subsequently filtering out the noise 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-10,key-11,key-12"
+key "key-11,key-12,key-13"
 
 \end_inset
 
@@ -286,7 +286,34 @@ C.
 \shape italic
 Low-Noise Electronic System Design
 \shape default
-, Wiley-Interscience, 1993
+, Wiley-Interscience, 1993.
+\end_layout
+
+\begin_layout Itemize
+D.
+ Foo Kune, J.
+ Backesy, S.
+ S.
+ Clarkz, D.
+ Kramer, M.
+ Reynolds, K.
+ Fu, Y.
+ Kimk, and W.
+ Xu, 
+\begin_inset Quotes eld
+\end_inset
+
+Ghost Talk: Mitigating EMI Signal Injection Attacks against Analog Sensors,
+\begin_inset Quotes erd
+\end_inset
+
+ in
+\shape slanted
+ 2013 IEEE Symposium on Security and Privacy
+\shape default
+, pp.
+ 154-155, May.
+ 2013.
 \end_layout
 
 \begin_layout Section
