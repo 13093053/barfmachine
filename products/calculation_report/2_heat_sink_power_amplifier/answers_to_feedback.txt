@@ -1,0 +1,42 @@
+Question: Why did you assumed the surrounding temperatuur to be 70 degrees? Is this not to overspecified?
+Answer: Maybe it should be like between 20 and 25 degrees but the 70 is just an example. It can really go up to 
+	70 degrees if it's for example near a stove where you cook.
+
+
+Question: Where does this 10 comes from in the denumerator?
+Answer: The 10 comes from 25 - 15. The 15 is from the maximum outputpower and the 25 is can be read from a graph in the datasheet. The graph is called
+	Power Dissipation vs. Power Output
+
+
+Question: Is it not strange to say, required maximum power? What do you mean actually?
+Answer: ???? I forgot this Koen :o
+
+
+
+Question: Explain eq4
+Answer: The eq was given in the datasheet. I can't really explain it :o
+
+
+
+
+Question: So, what is your conclusion then? What heat sink should you use? 
+Answer: I though heatsink wasn't suppose to be chosen. (not stated in the projectbook). conclusion: we can use a cheap heatsink because of the low thermal resistance of the heatsink (6.8))
+	somethinh like that.
+
+
+
+
+
+Question: How and did you made a choice on your power amplifier? Not mentioned in the report.
+Answer: The choise of the power amplifier was made but why must it be mentioned or explained in a heatsink report??? -.-. 
+	The chosen power amplifier is explained in the power amplifier calculation report. The how part is: by comparing the results of the
+	"berekeningen" and comparing them with the components in farnell. 
+
+
+
+
+
+
+
+
+in line 22. It should be 25W instead of 15W.
