@@ -166,8 +166,8 @@ Calculation: Heat Sink Power Amplifier
 \end_layout
 
 \begin_layout Standard
-Imagine that the maximum temperature that the power amplifier can be 150
- °C and that the surrounding temperature goes up to 70 °C.
+Imagine that the maximum temperature of the power amplifier can be 150 °C
+ and that the surrounding temperature goes up to 70 °C.
  The maximum output power equals to 15 W.
  Then the total junction-to-ambient thermal resistance must be less than
 \begin_inset CommandInset citation
@@ -179,7 +179,7 @@ key "key-1"
 : 
 \begin_inset Formula 
 \begin{equation}
-θ_{ja}=\frac{150-70}{10}=8,0C/W\label{eq:2-1}
+θ_{ja}=\frac{150-70}{10}=8,0\text{º}C/W\label{eq:2-1}
 \end{equation}
 
 \end_inset
@@ -191,7 +191,7 @@ key "key-1"
 The thermal resistance of a metal-metal interface equals: 
 \begin_inset Formula 
 \begin{equation}
-θ_{jc}=1,2C/W\label{eq:2-2}
+θ_{jc}=1,2\text{º}C/W\label{eq:2-2}
 \end{equation}
 
 \end_inset
@@ -200,10 +200,10 @@ The thermal resistance of a metal-metal interface equals:
 \end_layout
 
 \begin_layout Standard
-The therminal resistance of the heatsink equals: 
+The thermal resistance of the heatsink equals: 
 \begin_inset Formula 
 \begin{equation}
-θ_{ca}=θ_{ja}-θ_{jc}=8,0C/W-1,2C/W=6,8C/W\label{eq:2-3}
+θ_{ca}=θ_{ja}-θ_{jc}=8,0\text{º}C/W-1,2\text{º}C/W=6,8\text{º}C/W\label{eq:2-3}
 \end{equation}
 
 \end_inset
@@ -231,7 +231,7 @@ key "key-1"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-P_{d}MAX=\frac{V_{S}^{2}}{2π^{2}R_{L}}+P_{Q}=\frac{18^{2}}{2π^{2}*8}+10=12,05W\label{eq:2-4}
+P_{d}MAX=\frac{V_{S}^{2}}{2π^{2}R_{L}}+P_{Q}=\frac{18^{2}}{2π^{2}\cdot8}+10=12,05W\label{eq:2-4}
 \end{equation}
 
 \end_inset
@@ -296,7 +296,7 @@ The maximum temperature is:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-T=P_{d}MAX*θ_{ja}=12,05*8=96,4\textdegree C\label{eq:2-6}
+T=P_{d}MAX\cdotθ_{ja}=12,05\cdot8=96,4\text{º}C\label{eq:2-6}
 \end{equation}
 
 \end_inset
@@ -308,7 +308,7 @@ T=P_{d}MAX*θ_{ja}=12,05*8=96,4\textdegree C\label{eq:2-6}
 96,4 °C is higher than 70,0 °C and therefore the new 
 \begin_inset Formula 
 \begin{equation}
-θ_{ja}=\frac{150-96,4}{10}=5,36\textdegree C/W\label{eq:2-7}
+θ_{ja}=\frac{150-96,4}{10}=5,36\text{º}C/W\label{eq:2-7}
 \end{equation}
 
 \end_inset
@@ -326,7 +326,7 @@ ja
 
 \end_inset
 
- (5,360 °C / W) is lower than 8,0C / W, which means it meets the required
+ (5,360 °C/W) is lower than 8,0 °C/W, which means it meets the required
  specifications.
 \end_layout
 

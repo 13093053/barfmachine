@@ -227,7 +227,7 @@ For determining the maximum output voltage and current, it is assumed the
 The formula for the power equals to: 
 \begin_inset Formula 
 \begin{equation}
-P=U*I\label{eq:2-1}
+P=U\cdot I\label{eq:2-1}
 \end{equation}
 
 \end_inset
@@ -242,7 +242,7 @@ Therefore the following formulas can be derived:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{OUT,max}=\sqrt{P*R}=\sqrt{15*8}=11V\label{eq:2-2}
+U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:2-2}
 \end{equation}
 
 \end_inset
