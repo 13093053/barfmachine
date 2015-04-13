@@ -30,7 +30,7 @@ Answer: I though heatsink wasn't suppose to be chosen. (not stated in the projec
 Question: How and did you made a choice on your power amplifier? Not mentioned in the report.
 Answer: The choise of the power amplifier was made but why must it be mentioned or explained in a heatsink report??? -.-. 
 	The chosen power amplifier is explained in the power amplifier calculation report. The how part is: by comparing the results of the
-	"berekeningen" and comparing them with the components in farnell. 
+	calculations and comparing them with the components in farnell. 
 
 
 

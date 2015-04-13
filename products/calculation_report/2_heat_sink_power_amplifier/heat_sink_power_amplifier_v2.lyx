@@ -1,0 +1,471 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage[left,modulo]{lineno}
+\linenumbers
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calculation Report: Heat Sink Power Amplifier
+\begin_inset Newline newline
+\end_inset
+
+PRO-Q2
+\end_layout
+
+\begin_layout Author
+Daan Conijn, 13023217
+\begin_inset Newline newline
+\end_inset
+
+Andrew Lau, 13058339
+\begin_inset Newline newline
+\end_inset
+
+Kevin Oei,13090062
+\begin_inset Newline newline
+\end_inset
+
+Koen van Vliet, 13093053
+\begin_inset Newline newline
+\end_inset
+
+Group 1
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+EQ2.a
+\begin_inset Newline newline
+\end_inset
+
+EQ2.c
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+April 4th, 2015
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+In this calculation report the heat sink of the selected monolithic power
+ amplifier is calculated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Calculation: Heat Sink Power Amplifier
+\end_layout
+
+\begin_layout Standard
+The power amplifier that is chosen for the active loudspeaker is LM1875
+ (Farnell code: 1468913).
+\end_layout
+
+\begin_layout Standard
+Imagine that the maximum die temperature of the power amplifier can be is
+ 150 °C and that the surrounding temperature goes up to 70 °C.
+ The maximum output power of the power amplifier equals to 15 W and the
+ maximum power of the power ampilifier equals to 25W.
+ Then the total junction-to-ambient thermal resistance must be less than
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+θ_{ja}=\frac{T_{JMAX}-T_{AMB}}{P_{Q}}=\frac{150-70}{25-15}=8,0\text{º}C/W\label{eq:2-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+JMAX
+\end_layout
+
+\end_inset
+
+is the maximum temperature that the power amplifier can take before shutting
+ down.
+\end_layout
+
+\begin_layout Itemize
+T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+AMB
+\end_layout
+
+\end_inset
+
+is the surrounding temperature of the power amplifier.
+\end_layout
+
+\begin_layout Itemize
+P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
+\end_inset
+
+ is the quiescent power dissipation of the amplifier.
+ 
+\end_layout
+
+\begin_layout Standard
+The thermal resistance of a metal-metal interface when dry equals: 
+\begin_inset Formula 
+\begin{equation}
+θ_{jc}=1,2\text{º}C/W\label{eq:2-2}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The thermal resistance of the heatsink equals: 
+\begin_inset Formula 
+\begin{equation}
+θ_{ca}=θ_{ja}-θ_{jc}=8,0\text{º}C/W-1,2\text{º}C/W=6,8\text{º}C/W\label{eq:2-3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To check whether the calculations are correct, we determine the temperature
+ of the junction as a result of the thermal resistance.
+\end_layout
+
+\begin_layout Standard
+The maximum average power that the IC will be required to dissipate is approxima
+tely 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P_{d}MAX=\frac{V_{S}^{2}}{2π^{2}R_{L}}+P_{Q}=\frac{18^{2}}{2π^{2}\cdot8}+10=12,05W\label{eq:2-4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+ is the total power supply voltage across the power amplifier.
+\end_layout
+
+\begin_layout Itemize
+R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ is the load resistance.
+\end_layout
+
+\begin_layout Itemize
+P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
+\end_inset
+
+ is the quiescent power dissipation of the amplifier.
+ The maximun power of the power amplifier is 25 W and the maximum required
+ power is 15 W.
+ Therefore 
+\begin_inset Formula 
+\begin{equation}
+P_{Q}=25W-15W=10W\label{eq:2-5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The new maximum die temperature is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+T_{JMAX}=P_{d}MAX\cdotθ_{ja}=12,05\cdot8=96,4\text{º}C\label{eq:2-6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+96,4 °C is lower than 150 °C and therefore the new junction-to-ambient thermal
+ resistance equals to:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+In the last report this was a mistake (150-96,4).
+ It should be 96,4 -70 since the ambient temperature must remain the same.
+ Sorry for the inconvience.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+θ_{ja}=\frac{96,4-70}{10}=2,64\text{º}C/W\label{eq:2-7}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The new θ
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+ja
+\end_layout
+
+\end_inset
+
+ (2,64 °C/W) is lower than 8,0 °C/W, which means that the calculations of
+ the heatsink meets the required specifications.
+\end_layout
+
+\begin_layout Standard
+Therefore the new thermal resistance of the heatsink equals:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+θ_{ca}=θ_{ja}-θ_{jc}=2,64\text{º}C/W-1,2\text{º}C/W=1,44\text{º}C/W\label{eq:2-8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+A heatsink with a thermal resistance lower than
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 1,44
+ º
+C/W must be used in order for the power amplifier, LM1875, to function properly
+ without overheating.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Texas Instruments.
+ (2004, May).
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+LM1875 20W Audio Power Amplifier
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ [online].
+ Available: http://www.farnell.com/datasheets/1703151.pdf [April 3, 2015].
+\end_layout
+
+\end_body
+\end_document
