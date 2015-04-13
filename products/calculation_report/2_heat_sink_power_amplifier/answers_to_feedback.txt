@@ -9,18 +9,18 @@ Answer: The 10 comes from 25 - 15. The 15 is from the maximum outputpower and th
 
 
 Question: Is it not strange to say, required maximum power? What do you mean actually?
-Answer: ???? I forgot this Koen :o
+Answer: It's the maximun average power that the IC can dissipate before it overheats and shuts down.
 
 
 
 Question: Explain eq4
-Answer: The eq was given in the datasheet. I can't really explain it :o
+Answer: The eq was given in the datasheet. It can't be really explain.
 
 
 
 
 Question: So, what is your conclusion then? What heat sink should you use? 
-Answer: I though heatsink wasn't suppose to be chosen. (not stated in the projectbook). conclusion: we can use a cheap heatsink because of the low thermal resistance of the heatsink (6.8))
+Answer: I though heatsink wasn't suppose to be chosen. (not stated in the projectbook). conclusion: we can use a heatsink with a thermal resistance lower than 6,8 C/W
 	somethinh like that.
 
 
