@@ -3,13 +3,17 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage[left,modulo]{lineno}
+\linenumbers
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman lmodern
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -24,6 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -118,6 +123,22 @@ April 4th, 2015
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -129,9 +150,8 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-For the realisation of an active loudspeaker system, calculations are essential.
- In this calculation report the monolithic power amplifier is chosen and
- calculated.
+In this calculation report the monolithic power amplifier is determined
+ and calculated.
 \end_layout
 
 \begin_layout Standard
@@ -154,15 +174,33 @@ The power amplifier has the following specifications:
 \end_layout
 
 \begin_layout Itemize
-Input impedance at least 50 kΩ 
+Input impedance of at least 50 kΩ 
 \end_layout
 
 \begin_layout Itemize
-Output power: 15 W sine in RL = 8 Ω at 1 kHz 
+Output power: 15 W sine in R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+load
+\end_layout
+
+\end_inset
+
+ = 8 Ω at 1 kHz 
 \end_layout
 
 \begin_layout Itemize
-Frequency range: 10 Hz to 100 kHz (−3 dB) at PL = 0.5 W in 8 Ω 
+Frequency range: 10 Hz to 100 kHz (−3 dB) at P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+load
+\end_layout
+
+\end_inset
+
+ = 0.5 W in 8 Ω 
 \end_layout
 
 \begin_layout Subsection
@@ -170,8 +208,9 @@ Chosen Power Amplifier
 \end_layout
 
 \begin_layout Standard
-For the power amplifier it is chosen for LM1875 (farnell code: 1468913).
- It is chosen for this power amplifier, because LM1875 meets the requirements.
+For the power amplifier, the LM1875 (Farnell code: 1468913) was chosen.
+ This specific power amplifier has been chosen because the LM1875 meets
+ the specified requirements.
 \end_layout
 
 \begin_layout Subsection
@@ -179,14 +218,18 @@ Calculations
 \end_layout
 
 \begin_layout Standard
-For determining the maximum output voltage and current, it is assumend the
- amplifiier drives an 8 Ohm load at 15 Watts.
+For determining the maximum output voltage and current, it is assumed the
+ amplifiier drives an 8 Ω load at 15 W.
  
 \end_layout
 
 \begin_layout Standard
 The formula for the power equals to: 
-\begin_inset Formula $P=U*I$
+\begin_inset Formula 
+\begin{equation}
+P=U\cdot I\label{eq:2-1}
+\end{equation}
+
 \end_inset
 
 
@@ -197,28 +240,43 @@ Therefore the following formulas can be derived:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U_{OUT,max}=\sqrt{P*R}=\sqrt{15*8}=11V$
+\begin_inset Formula 
+\begin{equation}
+U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:2-2}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A$
+\begin_inset Formula 
+\begin{equation}
+I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A\label{eq:2-3}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-The amplifier has a bandwidth of 70kHz at 20W output power, however the
- desired dynamic range of 10-100kHz can be easily achieved at lower power
- output.
+The amplifier has a bandwidth of 70 kHz at 20 W output power, however the
+ desired dynamic range of 10 Hz to 100 kHz can be easily achieved at lower
+ power output.
 \end_layout
 
 \begin_layout Standard
-According to the datasheet from LM1875 the supply voltage need to be approximate
-ly ± 18V to accomodate to the 15W output power.
+According to the datasheet from LM1875 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+ the supply voltage need to be approximately ± 18 V to accomodate to the
+ 15 W output power.
 \end_layout
 
 \begin_layout Standard
@@ -228,13 +286,29 @@ ly ± 18V to accomodate to the 15W output power.
 
 \end_layout
 
-\begin_layout Section
-Reference
-\end_layout
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
 
-\begin_layout Standard
-[1] Link to the datasheet of the LM1875: http://www.farnell.com/datasheets/1703151.
-pdf
+\end_inset
+
+Texas Instruments.
+ (2004, May).
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+LM1875 20W Audio Power Amplifier
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ [online].
+ Available: http://www.farnell.com/datasheets/1703151.pdf [April 3, 2015].
 \end_layout
 
 \end_body

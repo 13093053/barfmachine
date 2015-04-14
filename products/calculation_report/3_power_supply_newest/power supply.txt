@@ -1,0 +1,5 @@
+The power amplifier needs a supply of +-18V DC. To accomodate for this the power supply will consist of a power transformer with one primary winding and two secondary windings to provide 18V for the positive and negative rail. After the transformer comes a bridge rectifier which converts the AC signal to DC. At last it will pass trough some filter capacitors to smooth out the voltage. Optionally an inductor can be used in between the filter capacitor and the bridge rectifier to reduce the inrush current.
+
+To account for the bridge rectifier diode voltage drop the transformer used for this power supply is rated 19v.
+
+The energy efficiency of the power supply needs to be 80% or more efficient. The 0.7V voltage drop of the bridge rectifier makes the power supply 3% less efficient. There will also be energy loss in the power transformer.

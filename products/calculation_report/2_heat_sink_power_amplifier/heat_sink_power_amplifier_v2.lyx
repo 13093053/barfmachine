@@ -166,9 +166,15 @@ Calculation: Heat Sink Power Amplifier
 \end_layout
 
 \begin_layout Standard
-Imagine that the maximum temperature of the power amplifier can be 150 °C
- and that the surrounding temperature goes up to 70 °C.
- The maximum output power equals to 15 W.
+The power amplifier that is chosen for the active loudspeaker is LM1875
+ (Farnell code: 1468913).
+\end_layout
+
+\begin_layout Standard
+Imagine that the maximum die temperature of the power amplifier can be is
+ 150 °C and that the surrounding temperature goes up to 70 °C.
+ The maximum output power of the power amplifier equals to 15 W and the
+ maximum power of the power ampilifier equals to 25W.
  Then the total junction-to-ambient thermal resistance must be less than
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -179,16 +185,57 @@ key "key-1"
 : 
 \begin_inset Formula 
 \begin{equation}
-θ_{ja}=\frac{150-70}{10}=8,0\text{º}C/W\label{eq:2-1}
+θ_{ja}=\frac{T_{JMAX}-T_{AMB}}{P_{Q}}=\frac{150-70}{25-15}=8,0\text{º}C/W\label{eq:2-1}
 \end{equation}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Itemize
+T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+JMAX
+\end_layout
+
+\end_inset
+
+is the maximum temperature that the power amplifier can take before shutting
+ down.
+\end_layout
+
+\begin_layout Itemize
+T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+AMB
+\end_layout
+
+\end_inset
+
+is the surrounding temperature of the power amplifier.
+\end_layout
+
+\begin_layout Itemize
+P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
+\end_inset
+
+ is the quiescent power dissipation of the amplifier.
  
 \end_layout
 
 \begin_layout Standard
-The thermal resistance of a metal-metal interface equals: 
+The thermal resistance of a metal-metal interface when dry equals: 
 \begin_inset Formula 
 \begin{equation}
 θ_{jc}=1,2\text{º}C/W\label{eq:2-2}
@@ -276,7 +323,7 @@ Q
 \end_inset
 
  is the quiescent power dissipation of the amplifier.
- The maximun power of the power amplifier is 15 W and the maximum required
+ The maximun power of the power amplifier is 25 W and the maximum required
  power is 15 W.
  Therefore 
 \begin_inset Formula 
@@ -290,13 +337,13 @@ P_{Q}=25W-15W=10W\label{eq:2-5}
 \end_layout
 
 \begin_layout Standard
-The maximum temperature is:
+The new maximum die temperature is:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-T=P_{d}MAX\cdotθ_{ja}=12,05\cdot8=96,4\text{º}C\label{eq:2-6}
+T_{JMAX}=P_{d}MAX\cdotθ_{ja}=12,05\cdot8=96,4\text{º}C\label{eq:2-6}
 \end{equation}
 
 \end_inset
@@ -305,10 +352,23 @@ T=P_{d}MAX\cdotθ_{ja}=12,05\cdot8=96,4\text{º}C\label{eq:2-6}
 \end_layout
 
 \begin_layout Standard
-96,4 °C is higher than 70,0 °C and therefore the new 
+96,4 °C is lower than 150 °C and therefore the new junction-to-ambient thermal
+ resistance equals to:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+In the last report this was a mistake (150-96,4).
+ It should be 96,4 -70 since the ambient temperature must remain the same.
+ Sorry for the inconvience.
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula 
 \begin{equation}
-θ_{ja}=\frac{150-96,4}{10}=5,36\text{º}C/W\label{eq:2-7}
+θ_{ja}=\frac{96,4-70}{10}=2,64\text{º}C/W\label{eq:2-7}
 \end{equation}
 
 \end_inset
@@ -326,8 +386,53 @@ ja
 
 \end_inset
 
- (5,360 °C/W) is lower than 8,0 °C/W, which means it meets the required
- specifications.
+ (2,64 °C/W) is lower than 8,0 °C/W, which means that the calculations of
+ the heatsink meets the required specifications.
+\end_layout
+
+\begin_layout Standard
+Therefore the new thermal resistance of the heatsink equals:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+θ_{ca}=θ_{ja}-θ_{jc}=2,64\text{º}C/W-1,2\text{º}C/W=1,44\text{º}C/W\label{eq:2-8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+A heatsink with a thermal resistance lower than
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 1,44
+ º
+C/W must be used in order for the power amplifier, LM1875, to function properly
+ without overheating.
 \end_layout
 
 \begin_layout Standard
