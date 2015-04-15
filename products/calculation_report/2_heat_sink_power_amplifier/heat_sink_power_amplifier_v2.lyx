@@ -172,8 +172,8 @@ The power amplifier that is chosen for the active loudspeaker is LM1875
 
 \begin_layout Standard
 Fig.
- 1gives insight how the heatsink and power amplifier are connected with
- each other and the locations of the part names.
+ 1 gives insight how the heatsink and power amplifier are connected with
+ each other.
 \end_layout
 
 \begin_layout Standard
@@ -199,7 +199,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The heatsink and power amplifier
+A sketch of the heatsink and power amplifier
 \end_layout
 
 \end_inset
@@ -217,11 +217,20 @@ The heatsink and power amplifier
 \end_layout
 
 \begin_layout Standard
-Imagine that the maximum die temperature of the power amplifier can be is
- 150 °C and that the surrounding temperature goes up to 70 °C.
- The maximum output power of the power amplifier equals to 15 W and the
- maximum power of the power ampilifier equals to 25W.
- Then the total junction-to-ambient thermal resistance must be less than
+Imagine the maximum junction temperature of the power amplifier that can
+ be is 150 °C and that the ambient temperature goes up to 25 °C.
+ The power dissipation for an 18V power supply and an output power of 15W
+ is equal to 10W.
+ The power dissipation can be found in a graph called 
+\begin_inset Quotes eld
+\end_inset
+
+Power Dissipation vs Power Output
+\begin_inset Quotes erd
+\end_inset
+
+ in the datasheet of LM1875.
+ The total junction-to-ambient thermal resistance must be less than
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1"
@@ -231,7 +240,7 @@ key "key-1"
 : 
 \begin_inset Formula 
 \begin{equation}
-θ_{ja}=\frac{T_{JMAX}-T_{AMB}}{P_{Q}}=\frac{150-70}{25-15}=8,0\text{º}C/W\label{eq:2-1}
+θ_{ja}=\frac{T_{JMAX}-T_{AMB}}{P_{Q}}=\frac{150-25}{10}=12,5000\text{º}C/W\label{eq:2-1}
 \end{equation}
 
 \end_inset
@@ -249,8 +258,8 @@ JMAX
 
 \end_inset
 
-is the maximum temperature that the power amplifier can take before shutting
- down.
+is the maximum junction temperature that the power amplifier can handle
+ before shutting down.
 \end_layout
 
 \begin_layout Itemize
@@ -263,7 +272,7 @@ AMB
 
 \end_inset
 
-is the surrounding temperature of the power amplifier.
+is the ambient temperature of the power amplifier.
 \end_layout
 
 \begin_layout Itemize
@@ -281,10 +290,10 @@ Q
 \end_layout
 
 \begin_layout Standard
-The thermal resistance of a metal-metal interface when dry equals: 
+The thermal resistance of a metal-metal interface when dry equals to: 
 \begin_inset Formula 
 \begin{equation}
-θ_{jc}=1,2\text{º}C/W\label{eq:2-2}
+θ_{metal-to-metal}=1,2\text{º}C/W\label{eq:2-2}
 \end{equation}
 
 \end_inset
@@ -293,10 +302,10 @@ The thermal resistance of a metal-metal interface when dry equals:
 \end_layout
 
 \begin_layout Standard
-The thermal resistance of the heatsink equals: 
+The thermal resistance of the heatsink equals to: 
 \begin_inset Formula 
 \begin{equation}
-θ_{ca}=θ_{ja}-θ_{jc}=8,0\text{º}C/W-1,2\text{º}C/W=6,8\text{º}C/W\label{eq:2-3}
+θ_{heatsink}=θ_{ja}-θ_{metal-to-metal}=12,5\text{º}C/W-1,2\text{º}C/W=11,3\text{º}C/W\label{eq:2-3}
 \end{equation}
 
 \end_inset
@@ -305,13 +314,15 @@ The thermal resistance of the heatsink equals:
 \end_layout
 
 \begin_layout Standard
-To check whether the calculations are correct, we determine the temperature
- of the junction as a result of the thermal resistance.
+To check whether the calculations are correct, the temperature of the junction
+ is determined as a result of the thermal resistance.
 \end_layout
 
 \begin_layout Standard
-The maximum average power that the IC will be required to dissipate is approxima
-tely 
+The formula used to calculate the maximum avarage power of power amplifier,
+ LM1875, is found in the datasheet.
+ The maximum average power that the power amplifier will be required to
+ dissipate before overheating is approximately 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1"
@@ -369,12 +380,19 @@ Q
 \end_inset
 
  is the quiescent power dissipation of the amplifier.
- The maximun power of the power amplifier is 25 W and the maximum required
- power is 15 W.
- Therefore 
+ The power dissipation can be found in a graph called 
+\begin_inset Quotes eld
+\end_inset
+
+Power Dissipation vs Power Output
+\begin_inset Quotes erd
+\end_inset
+
+ in the datasheet of LM1875.
+ 
 \begin_inset Formula 
 \begin{equation}
-P_{Q}=25W-15W=10W\label{eq:2-5}
+P_{Q}=10W\label{eq:2-5}
 \end{equation}
 
 \end_inset
@@ -389,7 +407,7 @@ The new maximum die temperature is:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-T_{JMAX}=P_{d}MAX\cdotθ_{ja}=12,05\cdot8=96,4\text{º}C\label{eq:2-6}
+T_{JMAX}=P_{d}MAX\cdotθ_{ja}=12,05\cdot12,5=150,625\text{º}C\label{eq:2-6}
 \end{equation}
 
 \end_inset
@@ -398,23 +416,11 @@ T_{JMAX}=P_{d}MAX\cdotθ_{ja}=12,05\cdot8=96,4\text{º}C\label{eq:2-6}
 \end_layout
 
 \begin_layout Standard
-96,4 °C is lower than 150 °C and therefore the new junction-to-ambient thermal
- resistance equals to:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-In the last report this was a mistake (150-96,4).
- It should be 96,4 -70 since the ambient temperature must remain the same.
- Sorry for the inconvience.
-\end_layout
-
-\end_inset
-
- 
+150,625 °C is slightly higher than 150 °C and therefore the new junction-to-ambi
+ent thermal resistance equals to: 
 \begin_inset Formula 
 \begin{equation}
-θ_{ja}=\frac{96,4-70}{10}=2,64\text{º}C/W\label{eq:2-7}
+θ_{ja}=\frac{150,625-25}{10}=12,5625\text{º}C/W\label{eq:2-7}
 \end{equation}
 
 \end_inset
@@ -432,8 +438,8 @@ ja
 
 \end_inset
 
- (2,64 °C/W) is lower than 8,0 °C/W, which means that the calculations of
- the heatsink meets the required specifications.
+ (12,5625 °C/W) is approximately equal to 12,5000 °C/W, which means that
+ the calculations of the heatsink meets the required specifications.
 \end_layout
 
 \begin_layout Standard
@@ -443,7 +449,7 @@ Therefore the new thermal resistance of the heatsink equals:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-θ_{ca}=θ_{ja}-θ_{jc}=2,64\text{º}C/W-1,2\text{º}C/W=1,44\text{º}C/W\label{eq:2-8}
+θ_{heatsink}=θ_{ja}-θ_{metal-to-metal}=12,5625\text{º}C/W-1,2\text{º}C/W=11,3625\text{º}C/W\label{eq:2-8}
 \end{equation}
 
 \end_inset
@@ -475,8 +481,8 @@ A heatsink with a thermal resistance lower than
 \uwave off
 \noun off
 \color none
- 1,44 ºC/W must be used in order for the power amplifier, LM1875, to function
- properly without overheating.
+ 11,3625 ºC/W must be used in order for the power amplifier, LM1875, to
+ function properly without overheating and shutting down.
 \end_layout
 
 \begin_layout Standard
