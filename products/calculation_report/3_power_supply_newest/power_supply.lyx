@@ -178,7 +178,7 @@ Input: 230V AC
 \end_layout
 
 \begin_layout Itemize
-Output: 2x 18V DC (20W), 2x 15V DC, 1x 5V DC
+Output: 2x 18V DC (25W), 2x 15V DC, 1x 5V DC
 \end_layout
 
 \begin_layout Itemize
@@ -247,7 +247,7 @@ The transformer current per secondary winding is equal to:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $I=\frac{P}{2U}=\frac{20}{36}=0.556A$
+\begin_inset Formula $I=\frac{P}{2U}=\frac{25}{36}=0.694A$
 \end_inset
 
 
@@ -327,7 +327,7 @@ Multicomp MCTA050/18 (Farnell:9530380)
 
 \begin_layout Standard
 The nominal current of the secondary windings of this transformer is equal
- to 0.420A while the power amplifier drains 0.556A from the supply at max
+ to 0.420A while the power amplifier drains 0.694A from the supply at max
  power.
  The capacitors in the power supply will smooth out the load on the transformer
  so it does not exceed the nominal current.
