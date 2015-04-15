@@ -194,19 +194,19 @@ Power supply design
 \end_layout
 
 \begin_layout Standard
-The power amplifier needs a supply of +-18V DC.
+The power amplifier needs a supply of ±18V DC.
  To accomodate for this the power supply will consist of a power transformer
  with one primary winding and two secondary windings.
  After the transformer comes a bridge rectifier which converts the AC signal
  to DC.
- Then finally the signal will pass trough some filter capacitors to smooth
- out the voltage.
- Optionally an inductor can be used in between the filter capacitors and
+ Then finally the signal will pass through several filter capacitors to
+ smooth out the voltage.
+ Optionally an inductor can be used in-between the filter capacitors and
  the bridge rectifier to reduce the inrush current.
 \end_layout
 
 \begin_layout Standard
-The pre-amplifier will run off +-15V DC which is provided by a regulator
+The pre-amplifier will run off ±15V DC which is provided by a regulator
  stage after the power supply.
  The same thing goes for the digital systems which will run off 5V DC.
 \end_layout
@@ -225,7 +225,11 @@ The winding turn ratio between the primary and the secondary windings of
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{U_{p}}{U_{s}}=\frac{N_{p}}{N_{s}}$
+\begin_inset Formula 
+\begin{equation}
+\frac{U_{p}}{U_{s}}=\frac{N_{p}}{N_{s}}\label{eq:winding_turn_ratio}
+\end{equation}
+
 \end_inset
 
 
@@ -236,7 +240,11 @@ The primary voltage is 230V and the secondary voltage is 18V.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{N_{p}}{N_{s}}=\frac{230}{18}$
+\begin_inset Formula 
+\begin{equation}
+\frac{N_{p}}{N_{s}}=\frac{230}{18}\label{eq:ratio_230-18}
+\end{equation}
+
 \end_inset
 
 
@@ -247,7 +255,11 @@ The transformer current per secondary winding is equal to:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $I=\frac{P}{2U}=\frac{25}{36}=0.694A$
+\begin_inset Formula 
+\begin{equation}
+I=\frac{P}{2U}=\frac{25}{36}=0.694A\label{eq:transformer_current}
+\end{equation}
+
 \end_inset
 
 
@@ -258,13 +270,17 @@ Power efficiency
 \end_layout
 
 \begin_layout Standard
-The energy efficiency of the power supply needs to be 80% or more efficient.
+The energy efficiency of the power supply needs to be 80% or more.
  The 0.7V voltage drop of the bridge rectifier makes the power supply about
  4% less efficient.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\eta=\frac{19-0.7}{19}=0.96$
+\begin_inset Formula 
+\begin{equation}
+\eta=\frac{19-0.7}{19}=0.96\label{eq:supply_efficiency}
+\end{equation}
+
 \end_inset
 
 
@@ -283,14 +299,18 @@ key "key-2"
 \end_layout
 
 \begin_layout Standard
-The linear regulators used to power the pre-amplifier and the digital systems
+The linear regulators used to power the preamplifier and the digital systems
  are very inefficient, but, since these parts of the audio system consume
  very little energy compared to the power amplifier, the loss is neglectable.
- The power-amplifier's power is not regulated.
+ The power amplifier's power is not regulated.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\eta_{total}=0.87*0.96=0.8352$
+\begin_inset Formula 
+\begin{equation}
+\eta_{total}=0.87\cdot0.96=0.8352\label{eq:overall_efficiency}
+\end{equation}
+
 \end_inset
 
 
@@ -305,7 +325,7 @@ Selection of power transformer
 \end_layout
 
 \begin_layout Standard
-A torodial power transformer was chosen because it is more efficient than
+A toroidal power transformer was chosen because it is more efficient than
  traditional transformers.
  The primary voltage is 230V and the secondary voltages are both 18V.
 \end_layout
@@ -322,7 +342,7 @@ key "key-2"
 \end_layout
 
 \begin_layout Itemize
-Multicomp MCTA050/18 (Farnell:9530380)
+Multicomp MCTA050/18 (Farnell code: 9530380)
 \end_layout
 
 \begin_layout Standard
@@ -379,12 +399,16 @@ Multicomp.
 \begin_inset Quotes eld
 \end_inset
 
+
+\shape italic
 Toroidal Transformers, General Purpose
+\shape default
+
 \begin_inset Quotes erd
 \end_inset
 
  [online].
- Available: http://www.farnell.com/datasheets/1829278.pdf
+ Available: http://www.farnell.com/datasheets/1829278.pdf [April 15, 2015]
 \end_layout
 
 \end_body

@@ -174,11 +174,11 @@ The power amplifier has the following specifications:
 \end_layout
 
 \begin_layout Itemize
-Input impedance of at least 50 kΩ 
+Input impedance of at least 50kΩ 
 \end_layout
 
 \begin_layout Itemize
-Output power: 15 W sine in R
+Output power: 15W sine in R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -187,11 +187,11 @@ load
 
 \end_inset
 
- = 8 Ω at 1 kHz 
+ = 8Ω at 1kHz 
 \end_layout
 
 \begin_layout Itemize
-Frequency range: 10 Hz to 100 kHz (−3 dB) at P
+Frequency range: 10Hz to 100kHz (−3 dB) at P
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -200,7 +200,7 @@ load
 
 \end_inset
 
- = 0.5 W in 8 Ω 
+ = 0.5W in 8Ω 
 \end_layout
 
 \begin_layout Subsection
@@ -212,7 +212,7 @@ For the power amplifier, the LM1875 (Farnell code: 1468913) was chosen.
  This specific power amplifier has been chosen because the LM1875 meets
  the specified requirements.
  The amplifier is also designed to suppress low-frequency noise such as
- the 50 Hz hum originating from the mains, as seen in figure 7 of the datasheet.
+ the 50Hz hum originating from the mains, as seen in figure 7 of the datasheet.
  This is an important property when it comes to the performance of audio
  amplifiers.
 \end_layout
@@ -287,7 +287,7 @@ in
 
 \end_inset
 
- is required to be at least 50 kΩ.
+ is required to be at least 50kΩ.
  Thus, the chosen value of R
 \begin_inset script subscript
 
@@ -297,12 +297,12 @@ in
 
 \end_inset
 
-will have to be at least 50 kΩ in order to meet the specified requirement.
+will have to be at least 50kΩ in order to meet the specified requirement.
 \end_layout
 
 \begin_layout Standard
 For determining the maximum output voltage and current, it is assumed the
- amplifier drives an 8 Ω load at 15 W.
+ amplifier drives an 8Ω load at 15W.
  
 \end_layout
 
@@ -336,7 +336,7 @@ U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outmax_formula}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A\label{eq:I-outmax_formula}
+I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1.37A\label{eq:I-outmax_formula}
 \end{equation}
 
 \end_inset
@@ -345,11 +345,11 @@ I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A\label{eq:I-outmax_formu
 \end_layout
 
 \begin_layout Standard
-The amplifier has a bandwidth of 70 kHz at 20 W output power.
- However, the desired dynamic range of 10 Hz to 100 kHz can be easily achieved
+The amplifier has a bandwidth of 70kHz at 20W output power.
+ However, the desired dynamic range of 10Hz to 100kHz can be easily achieved
  at lower power outputs.
  No additional calculations need to be done for the power amplifier in order
- to realize a frequency range of 10 Hz to 10 kHz.
+ to realize a frequency range of 10Hz to 10kHz.
  The dynamic range can be controlled through software since the filters
  on the preamplifier are controlled by the digital control unit.
  According to the datasheet from LM1875 
@@ -359,8 +359,8 @@ key "key-1"
 
 \end_inset
 
- the supply voltage needs to be approximately ±18 V to accomodate to the
- 15 W output power.
+ the supply voltage needs to be approximately ±18V to accomodate to the
+ 15W output power.
 \end_layout
 
 \begin_layout Standard
@@ -398,7 +398,7 @@ out,max
 
 \end_inset
 
- = 11 V and U
+ = 11V and U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -407,16 +407,16 @@ in
 
 \end_inset
 
- = 18 V (the voltage delivered by the supply), the gain will be 
-\begin_inset Formula $\frac{11}{18}\approx0,61$
+ = 18V (the voltage delivered by the supply), the gain will be 
+\begin_inset Formula $\frac{11}{18}\approx0.61$
 \end_inset
 
 .
  Expressed in decibels, this is equal to 
-\begin_inset Formula $20\cdot\log(\frac{11}{18})\approx-4,28$
+\begin_inset Formula $20\cdot\log(\frac{11}{18})\approx-4.28$
 \end_inset
 
- dB.
+dB.
 \end_layout
 
 \begin_layout Standard
@@ -459,7 +459,7 @@ out
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{11}{18}=\frac{Z_{out}}{50\cdot10^{3}}\Longrightarrow Z_{out}=50\cdot10^{3}\cdot\frac{11}{18}\approx30,6\Omega\label{eq:Z_out_deduction}
+\frac{11}{18}=\frac{Z_{out}}{50\cdot10^{3}}\Longrightarrow Z_{out}=50\cdot10^{3}\cdot\frac{11}{18}\approx30.6\Omega\label{eq:Z_out_deduction}
 \end{equation}
 
 \end_inset
