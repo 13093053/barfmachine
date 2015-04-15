@@ -218,8 +218,87 @@ Calculations
 \end_layout
 
 \begin_layout Standard
+Since the LM1875 is used as an inverting amplifier, the impedance Z
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+in
+\end_layout
+
+\end_inset
+
+ will be equal to R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ as depicted in the following diagram.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename inverting_op_amp.PNG
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inverting amplifier diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+in
+\end_layout
+
+\end_inset
+
+ is required to be at least 50 kΩ.
+ Thus, the chosen value of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+will have to be at least 50 kΩ in order to meet the specified requirement.
+\end_layout
+
+\begin_layout Standard
 For determining the maximum output voltage and current, it is assumed the
- amplifiier drives an 8 Ω load at 15 W.
+ amplifier drives an 8 Ω load at 15 W.
  
 \end_layout
 
@@ -227,7 +306,7 @@ For determining the maximum output voltage and current, it is assumed the
 The formula for the power equals to: 
 \begin_inset Formula 
 \begin{equation}
-P=U\cdot I\label{eq:2-1}
+P=U\cdot I\label{eq:power_equation}
 \end{equation}
 
 \end_inset
@@ -242,7 +321,7 @@ Therefore the following formulas can be derived:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:2-2}
+U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outmax_equation}
 \end{equation}
 
 \end_inset
@@ -253,7 +332,7 @@ U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:2-2}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A\label{eq:2-3}
+I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A\label{eq:I-outmax_equation}
 \end{equation}
 
 \end_inset
@@ -262,21 +341,126 @@ I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A\label{eq:2-3}
 \end_layout
 
 \begin_layout Standard
-The amplifier has a bandwidth of 70 kHz at 20 W output power, however the
- desired dynamic range of 10 Hz to 100 kHz can be easily achieved at lower
- power output.
-\end_layout
-
-\begin_layout Standard
-According to the datasheet from LM1875 
+The amplifier has a bandwidth of 70 kHz at 20 W output power.
+ However, the desired dynamic range of 10 Hz to 100 kHz can be easily achieved
+ at lower power outputs.
+ No additional calculations need to be done for the power amplifier in order
+ to realize a frequency range of 10 Hz to 10 kHz.
+ The dynamic range can be controlled through software since the filters
+ on the preamplifier are controlled by the digital control unit.
+ According to the datasheet from LM1875 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1"
 
 \end_inset
 
- the supply voltage need to be approximately ± 18 V to accomodate to the
+ the supply voltage needs to be approximately ±18 V to accomodate to the
  15 W output power.
+\end_layout
+
+\begin_layout Standard
+With this information, the voltage gain can be determined by using the following
+ formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A=\frac{U_{out}}{U_{in}}\label{eq:gain_equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+out
+\end_layout
+
+\end_inset
+
+ = U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+out,max
+\end_layout
+
+\end_inset
+
+ = 11 V and U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+in
+\end_layout
+
+\end_inset
+
+ = 18 V (the voltage delivered by the supply), the gain will be 
+\begin_inset Formula $\frac{11}{18}\approx0,61$
+\end_inset
+
+.
+ Expressed in decibels, this is equal to 
+\begin_inset Formula $20\cdot\log(\frac{11}{18})\approx-4,28$
+\end_inset
+
+ dB.
+\end_layout
+
+\begin_layout Standard
+It is now also possible to deduce the output impedance Z
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+out
+\end_layout
+
+\end_inset
+
+ using the following equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{U_{out}}{U_{in}}=\frac{Z_{out}}{Z_{in}}\label{eq:volt-ratio_impedance-ratio}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Filling in the known values, Z
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+out
+\end_layout
+
+\end_inset
+
+ can be determined as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{11}{18}=\frac{Z_{out}}{50\cdot10^{3}}\Longrightarrow Z_{out}=50\cdot10^{3}\cdot\frac{11}{18}\approx30,6\Omega\label{eq:Z_out_deduction}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
