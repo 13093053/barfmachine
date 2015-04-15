@@ -150,8 +150,8 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-In this calculation report the monolithic power amplifier is determined
- and calculated.
+In this calculation report a transformer is selected and the efficiency
+ of the power supply is determined.
 \end_layout
 
 \begin_layout Standard
@@ -178,7 +178,7 @@ Input: 230V AC
 \end_layout
 
 \begin_layout Itemize
-Output: 2x 18V DC, 20W
+Output: 2x 18V DC (20W), 2x 15V DC, 1x 5V DC
 \end_layout
 
 \begin_layout Itemize
@@ -203,6 +203,12 @@ The power amplifier needs a supply of +-18V DC.
  out the voltage.
  Optionally an inductor can be used in between the filter capacitors and
  the bridge rectifier to reduce the inrush current.
+\end_layout
+
+\begin_layout Standard
+The pre-amplifier will run off +-15V DC which is provided by a regulator
+ stage after the power supply.
+ The same thing goes for the digital systems which will run off 5V DC.
 \end_layout
 
 \begin_layout Subsection
@@ -236,14 +242,23 @@ The primary voltage is 230V and the secondary voltage is 18V.
 
 \end_layout
 
+\begin_layout Standard
+The transformer current per secondary winding is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=\frac{P}{2U}=\frac{20}{36}=0.556A$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Power efficiency
 \end_layout
 
 \begin_layout Standard
 The energy efficiency of the power supply needs to be 80% or more efficient.
- To account for the bridge rectifier diode voltage drop the transformer
- used for this power supply is rated at least 18.7V.
  The 0.7V voltage drop of the bridge rectifier makes the power supply about
  4% less efficient.
 \end_layout
@@ -257,6 +272,32 @@ The energy efficiency of the power supply needs to be 80% or more efficient.
 
 \begin_layout Standard
 There will also be energy loss in the power transformer.
+ The power transformer we chose is 87% efficient
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The linear regulators used to power the pre-amplifier and the digital systems
+ are very inefficient, but, since these parts of the audio system consume
+ very little energy compared to the power amplifier, the loss is neglectable.
+ The power-amplifier's power is not regulated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{total}=0.87*0.96=0.8352$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The overall efficiency of the power supply is about 84%.
 \end_layout
 
 \begin_layout Subsection
@@ -264,7 +305,32 @@ Selection of power transformer
 \end_layout
 
 \begin_layout Standard
+A torodial power transformer was chosen because it is more efficient than
+ traditional transformers.
+ The primary voltage is 230V and the secondary voltages are both 18V.
+\end_layout
 
+\begin_layout Standard
+This transformer meets the specifications
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Multicomp MCTA050/18 (Farnell:9530380)
+\end_layout
+
+\begin_layout Standard
+The nominal current of the secondary windings of this transformer is equal
+ to 0.420A while the power amplifier drains 0.556A from the supply at max
+ power.
+ The capacitors in the power supply will smooth out the load on the transformer
+ so it does not exceed the nominal current.
 \end_layout
 
 \begin_layout Standard
@@ -297,6 +363,28 @@ LM1875 20W Audio Power Amplifier
 
  [online].
  Available: http://www.farnell.com/datasheets/1703151.pdf [April 3, 2015].
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "2"
+key "key-2"
+
+\end_inset
+
+Multicomp.
+ (2014, June).
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Toroidal Transformers, General Purpose
+\begin_inset Quotes erd
+\end_inset
+
+ [online].
+ Available: http://www.farnell.com/datasheets/1829278.pdf
 \end_layout
 
 \end_body
