@@ -171,6 +171,52 @@ The power amplifier that is chosen for the active loudspeaker is LM1875
 \end_layout
 
 \begin_layout Standard
+Fig.
+ 1gives insight how the heatsink and power amplifier are connected with
+ each other and the locations of the part names.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_picture_of_the_power_amp.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The heatsink and power amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Imagine that the maximum die temperature of the power amplifier can be is
  150 °C and that the surrounding temperature goes up to 70 °C.
  The maximum output power of the power amplifier equals to 15 W and the
@@ -429,10 +475,8 @@ A heatsink with a thermal resistance lower than
 \uwave off
 \noun off
 \color none
- 1,44
- º
-C/W must be used in order for the power amplifier, LM1875, to function properly
- without overheating.
+ 1,44 ºC/W must be used in order for the power amplifier, LM1875, to function
+ properly without overheating.
 \end_layout
 
 \begin_layout Standard
