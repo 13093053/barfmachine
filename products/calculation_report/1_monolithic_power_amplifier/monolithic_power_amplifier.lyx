@@ -211,6 +211,10 @@ Chosen Power Amplifier
 For the power amplifier, the LM1875 (Farnell code: 1468913) was chosen.
  This specific power amplifier has been chosen because the LM1875 meets
  the specified requirements.
+ The amplifier is also designed to suppress low-frequency noise such as
+ the 50 Hz hum originating from the mains, as seen in figure 7 of the datasheet.
+ This is an important property when it comes to the performance of audio
+ amplifiers.
 \end_layout
 
 \begin_layout Subsection
@@ -306,7 +310,7 @@ For determining the maximum output voltage and current, it is assumed the
 The formula for the power equals to: 
 \begin_inset Formula 
 \begin{equation}
-P=U\cdot I\label{eq:power_equation}
+P=U\cdot I\label{eq:power_formula}
 \end{equation}
 
 \end_inset
@@ -321,7 +325,7 @@ Therefore the following formulas can be derived:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outmax_equation}
+U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outmax_formula}
 \end{equation}
 
 \end_inset
@@ -332,7 +336,7 @@ U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outmax_equation}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A\label{eq:I-outmax_equation}
+I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1,37A\label{eq:I-outmax_formula}
 \end{equation}
 
 \end_inset
@@ -367,7 +371,7 @@ With this information, the voltage gain can be determined by using the following
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A=\frac{U_{out}}{U_{in}}\label{eq:gain_equation}
+A=\frac{U_{out}}{U_{in}}\label{eq:gain_formula}
 \end{equation}
 
 \end_inset
