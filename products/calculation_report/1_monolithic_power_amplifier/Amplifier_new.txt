@@ -1,0 +1,28 @@
+The voltage gain can be determined by using the following formula.
+
+G = Uout/Uin
+
+Uout = OUt,max = 11V and the supply delivers Uin = 18v, thus this will conclude in the following:
+
+G = 11/18 = 0.6111 V
+
+If gain needs the be determined in dB then gain dB = 20log(g)
+
+gain dB = 20log(0.6111) = -4.2776 dB
+
+
+Due to the use of a inverting amplifier configuration the following formula will apply
+
+Zin = R1
+
+Since Zin need to be atleast 50K the resistor R1 needs to be equal or more then 50k.
+
+
+To calculate the output impedance the following formula can be used
+
+Vout/Vin = Zout/Zin
+
+11/18 = Zout / 50*10^3 = 30555.55556 ohm
+
+
+
