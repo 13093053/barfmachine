@@ -349,7 +349,7 @@ The amplifier has a bandwidth of 70kHz at 20W output power.
  However, the desired dynamic range of 10Hz to 100kHz can be easily achieved
  at lower power outputs.
  No additional calculations need to be done for the power amplifier in order
- to realize a frequency range of 10Hz to 10kHz.
+ to realize a frequency range of 10Hz to 100kHz.
  The dynamic range can be controlled through software since the filters
  on the preamplifier are controlled by the digital control unit.
  According to the datasheet from LM1875 

@@ -479,7 +479,7 @@ A heat sink with a thermal resistance lower than
 \uwave off
 \noun off
 \color none
- 11.3625 ºC/W must be used in order for the power amplifier, LM1875, to function
+ 11.3625ºC/W must be used in order for the power amplifier, LM1875, to function
  properly without overheating and shutting down.
 \end_layout
 
