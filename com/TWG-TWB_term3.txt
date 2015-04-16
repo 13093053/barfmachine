@@ -1,0 +1,14 @@
+TWG:
+-Quick action after receiving feedback.
+-No exceeding of the budget (yet).
+-Document collaboration.
+-Weekly meetings.
+-Use of GitHub.
+-Team Spirit.
+-Creative ideas.
+
+TWB/TCBi:
+-Coach availability (meetings).
+-Massive procrastination.
+-We should come together more often to work on the project.
+-Communication between members can be improved (response times w/ instant messaging).
