@@ -325,7 +325,6 @@ Therefore the following formulas can be derived:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outmax_formula}
 \end{equation}
 
 \end_inset
@@ -336,7 +335,26 @@ U_{OUT,max}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outmax_formula}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-I_{OUT,max}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1.37A\label{eq:I-outmax_formula}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
 \end{equation}
 
 \end_inset
