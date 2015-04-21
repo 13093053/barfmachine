@@ -325,6 +325,7 @@ Therefore the following formulas can be derived:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
+U_{OUT,eff}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outeff_formula}
 \end{equation}
 
 \end_inset
@@ -335,6 +336,7 @@ Therefore the following formulas can be derived:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
+U_{OUT,max}=U_{OUT,eff}\cdot\sqrt{2}=15.556\label{eq:U-outmax_formula}
 \end{equation}
 
 \end_inset
@@ -345,6 +347,7 @@ Therefore the following formulas can be derived:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
+I_{OUT,eff}=\sqrt{\frac{P}{R}}=\sqrt{\frac{15}{8}}=1.37A\label{eq:I-outeff_formula}
 \end{equation}
 
 \end_inset
@@ -355,6 +358,7 @@ Therefore the following formulas can be derived:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
+I_{OUT,max}=I_{OUT,eff}\cdot\sqrt{2}=1.94A\label{eq:I-outmax_formula}
 \end{equation}
 
 \end_inset
