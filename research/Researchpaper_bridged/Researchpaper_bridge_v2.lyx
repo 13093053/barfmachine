@@ -231,7 +231,39 @@ Bridged and unbridged amplifiers
 A bridged amplifier consists of two amplifiers driving a load floating in
  between their outputs[1].
  Fig.
- 1 shows a typical bridged amplifier.
+ 1 shows a general shape of a bridged amplifier and fig.
+ 2 shows an example of a bridged amplifier.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+Insert picture here.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+General shape of a bridged amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -311,7 +343,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Bridged amplifier
+An example of a bridged amplifier
 \end_layout
 
 \end_inset
