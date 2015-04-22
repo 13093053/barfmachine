@@ -225,7 +225,7 @@ Features: increased gain, noise cancellation, low rail voltages, double
 \end_layout
 
 \begin_layout Subsection
-Bridged and unbridged amplifiers
+Bridged and Unbridged Amplifiers
 \end_layout
 
 \begin_layout Standard
@@ -245,6 +245,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename bridged_amp_basic.jpg
+	scale 50
 
 \end_inset
 
@@ -268,11 +269,31 @@ General shape of a bridged amplifier
 
 \end_layout
 
+\begin_layout Subsubsection
+Example of a Bridged Amplifier
+\end_layout
+
+\begin_layout Standard
+Bridged amplifiers are often used when the power rails do not supply sufficient
+ voltage.[2]
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 I_{load}=\frac{U_{amp1}-U_{amp2}}{2R_{load}}\label{eq: a_1}
 \end{equation}
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not sure if this is relevant.
+ The formula I load.
+\end_layout
 
 \end_inset
 
@@ -298,7 +319,7 @@ see
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{amp}=U_{amp2}=-U_{amp1}\label{eq:a_2}
+U_{amp}=U_{amp2}=-U_{amp1}\label{eq: U_amp}
 \end{equation}
 
 \end_inset
@@ -309,16 +330,12 @@ U_{amp}=U_{amp2}=-U_{amp1}\label{eq:a_2}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{load}=I_{load}*2R_{load}=\frac{2U_{amp}}{2R_{load}}*2R_{load}=2U_{amp}\label{eq:a_3}
+U_{load}=I_{load}*2R_{load}=\frac{2U_{amp}}{2R_{load}}*2R_{load}=2U_{amp}\label{eq: U_load}
 \end{equation}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Example of a bridged amplifier
 \end_layout
 
 \begin_layout Standard
@@ -329,10 +346,58 @@ A bridged amplifier can be built using two regular amplifiers instead of
 \end_layout
 
 \begin_layout Standard
-The circuit in Fig2.
- has a total gain of 4.
- Bridged amplifiers are often used when the power rails do not supply sufficient
- voltage.[2]
+The gain of Amp1 is equal to: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain_{Amp1}=-\frac{2\cdot R}{R}=-2\label{eq: gain_amp1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The gain of Amp2 is equal to: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain_{Amp2}=\frac{R+R}{R}=2\label{eq: gain_amp2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The output of Amp1 is connected to the negative terminal of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+load
+\end_layout
+
+\end_inset
+
+ and therefore the circuit in Fig.
+ 2 has a total gain of:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain_{Total}=2+2=4\label{eq: Gain_total}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -366,6 +431,10 @@ An example of a bridged amplifier
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Unbridged Amplifier
 \end_layout
 
 \begin_layout Standard
@@ -409,7 +478,7 @@ Unbridged amplifier
 \end_layout
 
 \begin_layout Subsubsection
-Benefits of bridged amplifiers
+Benefits of Bridged Amplifiers
 \end_layout
 
 \begin_layout Standard
@@ -422,7 +491,7 @@ The two main benefits of using bridged amplifiers over unbridged, as stated
 \end_layout
 
 \begin_layout Subsection
-Balanced and unbalanced amplifiers 
+Balanced and Unbalanced Amplifiers 
 \end_layout
 
 \begin_layout Standard
@@ -436,8 +505,8 @@ A balanced amplifier consists of either one or more amplifiers that amplify
 Related work
 \end_layout
 
-\begin_layout Itemize
-M.
+\begin_layout Standard
+[1] M.
  Prokin, 
 \begin_inset Quotes eld
 \end_inset
