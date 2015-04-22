@@ -347,6 +347,16 @@ A bridged amplifier can be built using two regular amplifiers instead of
 
 \begin_layout Standard
 The gain of Amp1 is equal to: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Here is the proof how the total gain is equal to 4
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
