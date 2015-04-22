@@ -322,13 +322,6 @@ Example of a bridged amplifier
 \end_layout
 
 \begin_layout Standard
-A bridged amplifier can be built using two regular amplifiers instead of
- a monolithic bridge amplifier IC.
- This makes it possible to construct a bridged amplifier with cheap off
- the shelf parts as opposed to using expensive bridged amplifier IC's.
-\end_layout
-
-\begin_layout Standard
 The circuit in Fig2.
  has a total gain of 4.
  Bridged amplifiers are often used when the power rails do not supply sufficient

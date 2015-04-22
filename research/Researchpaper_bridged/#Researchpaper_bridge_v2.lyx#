@@ -243,11 +243,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename bridged_amp_basic.jpg
-
-\end_inset
-
 
 \end_layout
 
@@ -260,6 +255,10 @@ General shape of a bridged amplifier
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -317,22 +316,12 @@ U_{load}=I_{load}*2R_{load}=\frac{2U_{amp}}{2R_{load}}*2R_{load}=2U_{amp}\label{
 
 \end_layout
 
-\begin_layout Subsubsection
-Example of a bridged amplifier
-\end_layout
-
 \begin_layout Standard
-A bridged amplifier can be built using two regular amplifiers instead of
- a monolithic bridge amplifier IC.
- This makes it possible to construct a bridged amplifier with cheap off
- the shelf parts as opposed to using expensive bridged amplifier IC's.
-\end_layout
-
-\begin_layout Standard
-The circuit in Fig2.
+The circuit in Fig1.
  has a total gain of 4.
  Bridged amplifiers are often used when the power rails do not supply sufficient
- voltage.[2]
+ voltage.[2] A bridged amplifier can be built using two regular amplifiers
+ instead of a monolithic bridge amplifier IC.
 \end_layout
 
 \begin_layout Standard
@@ -372,7 +361,7 @@ An example of a bridged amplifier
 An unbridged amplifier only consist of one amplifier.
  Therefore an unbridged amplifier doesn't have the features of a bridged
  amplifier (features like double voltage and double power).
- An example of an unbridged amplifier is given in Fig.3
+ An example of an unbridged amplifier is given in Fig.2 
 \end_layout
 
 \begin_layout Standard
@@ -408,28 +397,114 @@ Unbridged amplifier
 
 \end_layout
 
-\begin_layout Subsubsection
-Benefits of bridged amplifiers
-\end_layout
-
-\begin_layout Standard
-The two main benefits of using bridged amplifiers over unbridged, as stated
- before, are: double output power and lower supply voltage requirements.
- There are some more notable benefits to using bridged amplifiers such as
- power supply noise rejection.
- Any noise introduced by the supply will be cancelled out because the noise
- is common to the outputs driving the floating load.
-\end_layout
-
 \begin_layout Subsection
 Balanced and unbalanced amplifiers 
 \end_layout
 
 \begin_layout Standard
-A balanced amplifier consists of either one or more amplifiers that amplify
- a differential input.
- Any voltage common to these inputs is rejected.
- Common mode noise is therefore canceled out.
+To reduce differential unbalance in amplifiers circuits, negative feedback
+ can be applied.[3] This in turn stabilizes the output.
+ These amplifiers are called balanced amplifiers or closed-loop amplifiers.
+ This refers to the negative feedback loop like the one shown in Fig 3.
+ With the feedback the amplifiers gain can be adjusted.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{in}=U_{x}\label{eq:a_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I^{+}=I^{-}=0A\label{eq:a_5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{x}=U_{out}*\frac{Rg}{Rg+Rf}\label{eq:a_6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A=\frac{U_{out}}{U_{in}}=\frac{R_{g}+R_{f}}{R_{g}}=1+\frac{R_{f}}{R_{g}}\label{eq:a_7}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The unbalanced amplifiers do not have a feedback loop and therefore the
+ amplification is equal to the open-loop gain.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Changed "amplifiers does not have" = 'amplifiers do not have"
+\end_layout
+
+\end_inset
+
+ This open-loop gain is typically very high.
+ With ideal opamps the gain is infinite.
+ Therefore an unbalanced amplifier acts as a comparator.
+ When there is a slight change in voltage in the differential input, the
+ output voltage will shoot up and clip at the supply voltage.
+ Fig.
+ 3 shows an example of a non-inverting unbalanced amplifier.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename balancedunbalanced.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Balanced (bottom) and unbalanced (top) amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

@@ -2,12 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass IEEEtran
-\begin_preamble
-\usepackage[left, modulo]{lineno}
-\linenumbers
-\setlength\linenumbersep{2pt}
-\end_preamble
+\textclass article
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -54,7 +49,6 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
-\boxbgcolor #55aa7f
 \index Index
 \shortcut idx
 \color #008000
@@ -76,21 +70,8 @@
 
 \begin_body
 
-\begin_layout Page headings
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-April 4th, 2015
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Title
-Bridged, Unbridged, Balanced and Unbalanced Amplifiers
+Research paper: (Un)bridged and (un)balanced amplifiers
 \begin_inset Newline newline
 \end_inset
 
@@ -98,59 +79,34 @@ PRO-Q2
 \end_layout
 
 \begin_layout Author
-Andrew Lau
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-1
-\end_layout
-
+Andrew Lau, 13058339
+\begin_inset Newline newline
 \end_inset
 
- Koen van Vliet
-\begin_inset script superscript
+Koen van Vliet, 13093053
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
-2
-\end_layout
-
+Group 1
+\begin_inset Newline newline
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-Electrical Engineering
-\begin_inset Newline newline
-\end_inset
-
-The Hague University of Applied Sciences
-\begin_inset Newline newline
-\end_inset
-
-Delft, Nederland
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-1
+EQ2.a
 \end_layout
 
-\end_inset
-
-A.H.Lau@student.hhs.nl 
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-2
+\begin_layout Date
+April 4th, 2015
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
-K.A.vanVliet@student.hhs.nl
+
 \end_layout
 
 \begin_layout Section*
@@ -162,31 +118,38 @@ One of the assignment for the project PRO-Q2 is to write a reseach paper.
  Each group, consisting of two members, has to choose a subject related
  to the Electrical Engineering course.
  Although this assignment is more research wise and not practical, it is
- important to be able to do research on various subjects.
- Even in a university of applied science, which is well known for practice.
+ important to be able to do reseach on various subject.
+ Even in a university of applied science, which is well known for practicum.
 \end_layout
 
 \begin_layout Standard
 The subject that is chosen for this reseach paper are (un)bridged and (un)balanc
 ed amplifiers.
- This topic was chosen as it appeared to be the most interesting of all
- the available options given by the project coach.
+ It is chosen for this topic because this topic is the most interesting
+ topic compared to the other topics given by the projectcoach.
  This research paper explains how bridged and unbridged amplifiers compare
- to each other.
- It also explains how balanced and unbalanced amplifiers compare to each
+ with each other.
+ Also it explains how balanced and unbalanced amplifiers compare with each
  other.
 \end_layout
 
-\begin_layout Section
-Amplifiers
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Abstract
 Amplifiers are applied in many electroncal devices.
  These are for example laptops, mobile phones, microwaves and many more.
- Examples of amplifiers are bridged, unbridged, balanced and unbalanced
+ Examples of an amplifier are bridged, unbridged, balanced and unbalanced
  amplifiers.
  
+\end_layout
+
+\begin_layout Section
+Amplifiers
 \end_layout
 
 \begin_layout Standard
@@ -232,48 +195,11 @@ Bridged and unbridged amplifiers
 A bridged amplifier consists of two amplifiers driving a load floating in
  between their outputs[1].
  Fig.
- 1 shows a general shape of a bridged amplifier and fig.
- 2 shows an example of a bridged amplifier.
+ 1 shows a typical bridged amplifier.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename bridged_amp_basic.jpg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-General shape of a bridged amplifier
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-I_{load}=\frac{U_{amp1}-U_{amp2}}{2R_{load}}\label{eq: a_1}
-\end{equation}
-
+\begin_inset Formula $I_{load}=\frac{U_{amp1}-U_{amp2}}{2R_{load}}$
 \end_inset
 
 
@@ -296,43 +222,25 @@ see
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{amp}=U_{amp2}=-U_{amp1}\label{eq:a_2}
-\end{equation}
-
+\begin_inset Formula $U_{amp}=U_{amp2}=-U_{amp1}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{load}=I_{load}*2R_{load}=\frac{2U_{amp}}{2R_{load}}*2R_{load}=2U_{amp}\label{eq:a_3}
-\end{equation}
-
+\begin_inset Formula $U_{load}=I_{load}*2R_{load}=\frac{2U_{amp}}{2R_{load}}*2R_{load}=2U_{amp}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
-Example of a bridged amplifier
-\end_layout
-
 \begin_layout Standard
-A bridged amplifier can be built using two regular amplifiers instead of
- a monolithic bridge amplifier IC.
- This makes it possible to construct a bridged amplifier with cheap off
- the shelf parts as opposed to using expensive bridged amplifier IC's.
-\end_layout
-
-\begin_layout Standard
-The circuit in Fig2.
+The circuit in Fig1.
  has a total gain of 4.
  Bridged amplifiers are often used when the power rails do not supply sufficient
- voltage.[2]
+ voltage.[2] A bridged amplifier can be built using two regular amplifiers
+ instead of a monolithic bridge amplifier IC.
 \end_layout
 
 \begin_layout Standard
@@ -344,7 +252,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename bridged_amplifier.jpg
-	scale 40
+	scale 60
 
 \end_inset
 
@@ -355,7 +263,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-An example of a bridged amplifier
+Bridged amplifier
 \end_layout
 
 \end_inset
@@ -372,7 +280,7 @@ An example of a bridged amplifier
 An unbridged amplifier only consist of one amplifier.
  Therefore an unbridged amplifier doesn't have the features of a bridged
  amplifier (features like double voltage and double power).
- An example of an unbridged amplifier is given in Fig.3
+ An example of an unbridged amplifier is given in Fig.2 
 \end_layout
 
 \begin_layout Standard
@@ -408,28 +316,96 @@ Unbridged amplifier
 
 \end_layout
 
-\begin_layout Subsubsection
-Benefits of bridged amplifiers
-\end_layout
-
-\begin_layout Standard
-The two main benefits of using bridged amplifiers over unbridged, as stated
- before, are: double output power and lower supply voltage requirements.
- There are some more notable benefits to using bridged amplifiers such as
- power supply noise rejection.
- Any noise introduced by the supply will be cancelled out because the noise
- is common to the outputs driving the floating load.
-\end_layout
-
 \begin_layout Subsection
 Balanced and unbalanced amplifiers 
 \end_layout
 
 \begin_layout Standard
-A balanced amplifier consists of either one or more amplifiers that amplify
- a differential input.
- Any voltage common to these inputs is rejected.
- Common mode noise is therefore canceled out.
+To reduce differential unbalance in amplifiers circuits, negative feedback
+ can be applied.[3] This in turn stabilizes the output.
+ These amplifiers are called balanced amplifiers or closed-loop amplifiers.
+ This refers to the negative feedback loop like the one shown in Fig 3.
+ With the feedback the amplifiers gain can be adjusted.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{in}=U_{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I^{+}=I^{-}=0A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{x}=U_{out}*\frac{Rg}{Rg+Rf}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\frac{U_{out}}{U_{in}}=\frac{R_{g}+R_{f}}{R_{g}}=1+\frac{R_{f}}{R_{g}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The unbalanced amplifiers does not have a feedback loop and therefore the
+ amplification is equal to the open-loop gain.
+ This open-loop gain is typically very high.
+ With ideal opamps the gain is infinite.
+ Therefore an unbalanced amplifier acts as a comparator.
+ When there is a slight change in voltage in the differential input, the
+ output voltage will shoot up and clip at the supply voltage.
+ Fig.
+ 3 shows an example of a non-inverting unbalanced amplifier.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename balancedunbalanced.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Balanced (bottom) and unbalanced (top) amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -449,19 +425,27 @@ Boost Bridged Audio amplifier
 , Faculty of Electrical Engineering, Belgrade university, Serbia, May 2001
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Conclusion 
 \end_layout
 
 \begin_layout Standard
-Bridged amplifiers can be used to increase power output when supply voltages
- are low.
- With balanced amplifiers the gain can be controlled by setting up a feedback
- loop.
- This stabilizes the output.
- Unbalanced amplifiers lack this feature and are therefore not suited for
- audio applications.
+Amplifiers can be applied in many different ways, depending on the type
+ of amplifier that were explained in this research paper.
+ These different applications are unique in its own ways regardless of the
+ advantages and disadvantages these amplifiers possess.
  
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -504,13 +488,6 @@ Balanced Amplifier
 \end_inset
 
 , Offner Electronics Inc., Chicago, Illinois, March 1947 
-\end_layout
-
-\begin_layout Standard
-[4] D.L.
- Danyuk and G.V.
- Pilko, Bridge amplifier with Feedforward error correction, ELECTRONICS
- LETTERS, May 1992
 \end_layout
 
 \end_body
