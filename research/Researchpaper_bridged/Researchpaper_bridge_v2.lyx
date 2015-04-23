@@ -234,6 +234,8 @@ A bridged amplifier consists of two amplifiers driving a load floating in
  Fig.
  1 shows a general shape of a bridged amplifier and fig.
  2 shows an example of a bridged amplifier.
+ Bridged amplifiers are often used when the power rails do not supply sufficient
+ voltage[2] and in single supply applications[3].
 \end_layout
 
 \begin_layout Standard
@@ -271,11 +273,6 @@ General shape of a bridged amplifier
 
 \begin_layout Subsubsection
 Example of a Bridged Amplifier
-\end_layout
-
-\begin_layout Standard
-Bridged amplifiers are often used when the power rails do not supply sufficient
- voltage.[2]
 \end_layout
 
 \begin_layout Standard
@@ -444,14 +441,15 @@ An example of a bridged amplifier
 \end_layout
 
 \begin_layout Subsubsection
-Unbridged Amplifier
+Unbridged Amplifiers
 \end_layout
 
 \begin_layout Standard
 An unbridged amplifier only consist of one amplifier.
- Therefore an unbridged amplifier doesn't have the features of a bridged
- amplifier (features like double voltage and double power).
- An example of an unbridged amplifier is given in Fig.3
+ Its output signal is single-ended and therefore an unbridged amplifier
+ doesn't have the features of a bridged amplifier (features like double
+ voltage and double power).
+ An example of an unbridged non-inverting amplifier is given in Fig.3
 \end_layout
 
 \begin_layout Standard
@@ -500,15 +498,48 @@ The two main benefits of using bridged amplifiers over unbridged, as stated
  is common to the outputs driving the floating load.
 \end_layout
 
+\begin_layout Subsubsection
+Applications of bridged amplifiers
+\end_layout
+
+\begin_layout Standard
+Bridged amplifiers are commonly used in hi-fi, professional audio equipment,
+ battery powered speaker amplifiers and car audio.
+ In battery powered speakers and car audio systems there is a limited supply
+ voltage, so in this case the bridged amplifier is used to double the output
+ voltage.
+ In hi-fi and professional audio equipment supply voltage is usually not
+ an issue, so here bridged amplifiers are used to drive speakers at high
+ power.
+ The outcome may seem similar, but the bridged amplifiers in these applications
+ are used for different reasons.
+\end_layout
+
 \begin_layout Subsection
 Balanced and Unbalanced Amplifiers 
 \end_layout
 
 \begin_layout Standard
 A balanced amplifier consists of either one or more amplifiers that amplify
- a differential input.
+ a differential signal.
+ The difference between the two input voltages is amplified.
  Any voltage common to these inputs is rejected.
  Common mode noise is therefore canceled out.
+\end_layout
+
+\begin_layout Standard
+Balanced amplifiers can also take single-ended input signals.
+\end_layout
+
+\begin_layout Subsubsection
+Applications of balanced amplifiers
+\end_layout
+
+\begin_layout Standard
+Balanced amplifiers are commonly used in professional audio equipment to
+ reduce noise introduced in long cables.
+ Mains hum caused by ground loops is also eliminated, since the signal ground
+ is not directly connected to the amplifier's ground.
 \end_layout
 
 \begin_layout Section
@@ -590,6 +621,20 @@ Balanced Amplifier
  Danyuk and G.V.
  Pilko, Bridge amplifier with Feedforward error correction, ELECTRONICS
  LETTERS, May 1992
+\end_layout
+
+\begin_layout Standard
+[5] PAGE 3, http://www.apexanalog.com/wp-content/uploads/2012/10/AN20U_F.pdf
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not IEEE style yet
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
