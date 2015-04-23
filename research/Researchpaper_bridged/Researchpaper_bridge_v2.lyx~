@@ -234,6 +234,9 @@ A bridged amplifier consists of two amplifiers driving a load floating in
  Fig.
  1 shows a general shape of a bridged amplifier and fig.
  2 shows an example of a bridged amplifier.
+ Bridged amplifiers are often used when the power rails do not supply sufficient
+ voltage[2] and in single supply applications[3].
+ A bridged amplifier is typically used in an output stage.
 \end_layout
 
 \begin_layout Standard
@@ -274,130 +277,11 @@ Example of a Bridged Amplifier
 \end_layout
 
 \begin_layout Standard
-Bridged amplifiers are often used when the power rails do not supply sufficient
- voltage.[2]
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-I_{load}=\frac{U_{amp1}-U_{amp2}}{2R_{load}}\label{eq: a_1}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not sure if this is relevant.
- The formula I load.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The second amplifier's output is in anti-phase with the first one, thus
- doubling the voltage across the shared load.
- The current however remains the same since both amplifiers 
-\begin_inset Quotes eld
-\end_inset
-
-see
-\begin_inset Quotes erd
-\end_inset
-
- Rload.
- The output power across the load is effectively doubled.
- Assume:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{amp}=U_{amp2}=-U_{amp1}\label{eq: U_amp}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{load}=I_{load}*2R_{load}=\frac{2U_{amp}}{2R_{load}}*2R_{load}=2U_{amp}\label{eq: U_load}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 A bridged amplifier can be built using two regular amplifiers instead of
  a monolithic bridge amplifier IC.
  This makes it possible to construct a bridged amplifier with cheap off
  the shelf parts as opposed to using expensive bridged amplifier IC's.
-\end_layout
-
-\begin_layout Standard
-The gain of Amp1 is equal to: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Gain_{Amp1}=-\frac{2\cdot R}{R}=-2\label{eq: gain_amp1}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The gain of Amp2 is equal to: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Gain_{Amp2}=\frac{R+R}{R}=2\label{eq: gain_amp2}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The output of Amp1 is connected to the negative terminal of R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-load
-\end_layout
-
-\end_inset
-
- and therefore the circuit in Fig.
- 2 has a total gain of:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Gain_{Total}=2+2=4\label{eq: Gain_total}
-\end{equation}
-
-\end_inset
-
-
+ This is demonstrated in Fig2.
 \end_layout
 
 \begin_layout Standard
@@ -433,15 +317,126 @@ An example of a bridged amplifier
 
 \end_layout
 
+\begin_layout Standard
+The second amplifier's output is in anti-phase with the first one, thus
+ doubling the voltage across the shared load.
+ The current however remains the same since both amplifiers 
+\begin_inset Quotes eld
+\end_inset
+
+see
+\begin_inset Quotes erd
+\end_inset
+
+ Rload.
+ The output power across the load is effectively doubled.
+ Assume:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The amount of formulas could be reduced.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I_{load}=\frac{U_{amp1}-U_{amp2}}{2R_{load}}\label{eq: a_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{amp}=U_{amp2}=-U_{amp1}\label{eq: U_amp}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{load}=I_{load}*2R_{load}=\frac{2U_{amp}}{2R_{load}}*2R_{load}=2U_{amp}\label{eq: U_load}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The gain of both amps is equal to 2, but amp1 inverts the signal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain_{Amp1}=-\frac{2\cdot R}{R}=-2\label{eq: gain_amp1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain_{Amp2}=\frac{R+R}{R}=2\label{eq: gain_amp2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The output of Amp1 is connected to the negative terminal of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+load
+\end_layout
+
+\end_inset
+
+ and therefore the circuit in Fig.
+ 2 has a total gain of 4.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain_{Total}=2+2=4\label{eq: Gain_total}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
-Unbridged Amplifier
+Unbridged Amplifiers
 \end_layout
 
 \begin_layout Standard
 An unbridged amplifier only consist of one amplifier.
- Therefore an unbridged amplifier doesn't have the features of a bridged
- amplifier (features like double voltage and double power).
- An example of an unbridged amplifier is given in Fig.3
+ Its output signal is single-ended as opposed to differential and therefore
+ an unbridged amplifier requires a higher supply voltage and output voltage
+ than a bridged amplifier to yield the same result.
+ An example of an unbridged non-inverting amplifier is given in Fig.3
 \end_layout
 
 \begin_layout Standard
@@ -490,15 +485,122 @@ The two main benefits of using bridged amplifiers over unbridged, as stated
  is common to the outputs driving the floating load.
 \end_layout
 
+\begin_layout Subsubsection
+Applications of bridged amplifiers
+\end_layout
+
+\begin_layout Standard
+Bridged amplifiers are commonly used in hi-fi, professional audio equipment,
+ battery powered speaker amplifiers and car audio.
+ In battery powered speakers and car audio systems there is a limited supply
+ voltage, so in this case the bridged amplifier is used to double the output
+ voltage.
+ In hi-fi and professional audio equipment supply voltage is usually not
+ an issue, so here bridged amplifiers are used to drive speakers at high
+ power.
+ The outcome may seem similar, but the bridged amplifiers in these applications
+ are used for different reasons.
+\end_layout
+
 \begin_layout Subsection
 Balanced and Unbalanced Amplifiers 
 \end_layout
 
 \begin_layout Standard
 A balanced amplifier consists of either one or more amplifiers that amplify
- a differential input.
- Any voltage common to these inputs is rejected.
+ a differential signal.
+ The difference between the two input voltages is amplified.
+ High-end audio equipment uses balanced interconnects, which means the signaling
+ is differential.
+ Balanced amplifiers are typically used in the input stage of a device.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Insert image of basic principle of balanced amp, please.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example of a balanced amplifier
+\end_layout
+
+\begin_layout Standard
+A balanced amplifier can be constructed using a single opamp.
+ The differential signal is fed into the opamp's inverting and non-inverting
+ inputs.
+ The opamp then amplifies the difference in voltage between the inputs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename balanced_amplifier.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example of a balanced amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Advantages of balanced amplifiers
+\end_layout
+
+\begin_layout Standard
+Since the voltage between the inputs is amplified, any voltage common to
+ these inputs is rejected.
  Common mode noise is therefore canceled out.
+ Mains hum caused by ground loops can be eliminated, since the signal ground
+ does not have to be connected directly to the ground of the amplifier.
+\end_layout
+
+\begin_layout Subsubsection
+Applications of balanced amplifiers
+\end_layout
+
+\begin_layout Standard
+Balanced amplifiers are commonly used in professional audio equipment to
+ reduce common mode noise introduced in long cables.
+ It's also used to eliminate ground loops.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Some more applications wanted
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -525,12 +627,17 @@ Conclusion
 \begin_layout Standard
 Bridged amplifiers can be used to increase power output when supply voltages
  are low.
- With balanced amplifiers the gain can be controlled by setting up a feedback
- loop.
- This stabilizes the output.
- Unbalanced amplifiers lack this feature and are therefore not suited for
- audio applications.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Something about balanced amplifiers
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -580,6 +687,32 @@ Balanced Amplifier
  Danyuk and G.V.
  Pilko, Bridge amplifier with Feedforward error correction, ELECTRONICS
  LETTERS, May 1992
+\end_layout
+
+\begin_layout Standard
+[5] PAGE 3, http://www.apexanalog.com/wp-content/uploads/2012/10/AN20U_F.pdf
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not IEEE style yet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[6]Douglas Self, 
+\begin_inset Quotes eld
+\end_inset
+
+Small Signal Audio Design
+\begin_inset Quotes erd
+\end_inset
+
+, Elsevier Ltd.,Oxford, UK
 \end_layout
 
 \end_body
