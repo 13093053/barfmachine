@@ -172,8 +172,8 @@ The power amplifier that is chosen for the active loudspeaker is LM1875
 
 \begin_layout Standard
 Fig.
- 1 gives insight on how the heat sink and power amplifier are connected
- with each other.
+ 1 gives insight on how the heat sink and power amplifier will look like
+ when connected with each other.
 \end_layout
 
 \begin_layout Standard
@@ -201,7 +201,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A sketch of the heat sink and power amplifier
+A sketch of the heat sink and power amplifier together
 \end_layout
 
 \end_inset
@@ -217,8 +217,8 @@ A sketch of the heat sink and power amplifier
 \begin_layout Standard
 Imagine that the maximum junction temperature of the power amplifier can
  reach up to 150°C and that the ambient temperature goes up to 25°C.
- The power dissipation for an 18V power supply and an output power of 15W
- is equal to 10W.
+ The power dissipation for an 18V power supply and an effective output power
+ of 15W is equal to 10W.
  The power dissipation can be found in a graph called 
 \begin_inset Quotes eld
 \end_inset
@@ -456,17 +456,6 @@ Therefore the new thermal resistance of the heat sink equals:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Conclusion
-\end_layout
-
-\begin_layout Standard
 A heat sink with a thermal resistance lower than
 \family roman
 \series medium
@@ -481,6 +470,35 @@ A heat sink with a thermal resistance lower than
 \color none
  11.3625ºC/W must be used in order for the power amplifier, LM1875, to function
  properly without overheating and shutting down.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ The heatsink that is chosen for the power amplifier is FISCHER ELEKTRONIK
+ SK 129 50,8 STS (Farnell-code: 1319813).
+ It is chosen for this heatsink because the thermal resistance of this heatsink
+ is 5,3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ºC/W, which is lower than 
+11.3625ºC/W.
 \end_layout
 
 \begin_layout Standard
