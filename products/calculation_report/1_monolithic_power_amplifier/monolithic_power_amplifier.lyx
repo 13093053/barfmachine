@@ -119,7 +119,7 @@ EQ2.c
 \end_layout
 
 \begin_layout Date
-April 4th, 2015
+April 23rd, 2015
 \end_layout
 
 \begin_layout Standard
@@ -336,7 +336,7 @@ U_{OUT,eff}=\sqrt{P\cdot R}=\sqrt{15\cdot8}=11V\label{eq:U-outeff_formula}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{OUT,max}=U_{OUT,eff}\cdot\sqrt{2}=15.556\label{eq:U-outmax_formula}
+U_{OUT,max}=U_{OUT,eff}\cdot\sqrt{2}=15.556V\label{eq:U-outmax_formula}
 \end{equation}
 
 \end_inset
@@ -442,7 +442,7 @@ dB.
 \end_layout
 
 \begin_layout Standard
-It is now also possible to deduce the output impedance Z
+It is now possible to deduce the output impedance Z
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -451,7 +451,7 @@ out
 
 \end_inset
 
- using the following equation:
+ by using the following equation:
 \end_layout
 
 \begin_layout Standard

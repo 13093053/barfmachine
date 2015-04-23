@@ -119,7 +119,7 @@ EQ2.c
 \end_layout
 
 \begin_layout Date
-April 4th, 2015
+April 23rd, 2015
 \end_layout
 
 \begin_layout Standard
@@ -167,7 +167,7 @@ Calculation: Heat Sink Power Amplifier
 
 \begin_layout Standard
 The power amplifier that is chosen for the active loudspeaker is LM1875
- (Farnell code: 1468913).
+ (Farnell-code: 1468913).
 \end_layout
 
 \begin_layout Standard
@@ -283,7 +283,7 @@ Q
 
 \end_inset
 
- is the quiescent power dissipation of the amplifier.
+ is the quiescent power dissipation of the power amplifier.
  
 \end_layout
 
@@ -442,7 +442,7 @@ ja
 \end_layout
 
 \begin_layout Standard
-Therefore the new thermal resistance of the heat sink equals:
+Therefore the new thermal resistance of the heat sink is equal to:
 \end_layout
 
 \begin_layout Standard
@@ -483,10 +483,10 @@ A heat sink with a thermal resistance lower than
 \uwave default
 \noun default
 \color inherit
- The heatsink that is chosen for the power amplifier is FISCHER ELEKTRONIK
+ The heat sink that is chosen for the power amplifier is FISCHER ELEKTRONIK
  SK 129 50,8 STS (Farnell-code: 1319813).
- It is chosen for this heatsink because the thermal resistance of this heatsink
- is 5,3
+ It is chosen for this heat sink because the thermal resistance of this
+ heat sink is 5,3
 \family roman
 \series medium
 \shape up
