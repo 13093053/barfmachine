@@ -151,7 +151,7 @@ Introduction
 
 \begin_layout Standard
 In this calculation report the heat sink of the selected monolithic power
- amplifier is calculated.
+ amplifier is determined and calculated.
 \end_layout
 
 \begin_layout Standard
@@ -217,8 +217,8 @@ A sketch of the heat sink and power amplifier together
 \begin_layout Standard
 Imagine that the maximum junction temperature of the power amplifier can
  reach up to 150°C and that the ambient temperature goes up to 25°C.
- The power dissipation for an 18V power supply and an effective output power
- of 15W is equal to 10W.
+ The power dissipation for an 18V power supply and an output power of 15W
+ is equal to 10W.
  The power dissipation can be found in a graph called 
 \begin_inset Quotes eld
 \end_inset
@@ -257,7 +257,7 @@ JMAX
 \end_inset
 
 is the maximum junction temperature that the power amplifier can handle
- before shutting down.
+ before overheating and shutting down.
 \end_layout
 
 \begin_layout Itemize
@@ -288,7 +288,8 @@ Q
 \end_layout
 
 \begin_layout Standard
-The thermal resistance of a metal-metal interface when dry equals to: 
+The thermal resistance of a metal-metal interface when dry is equal to:
+ 
 \begin_inset Formula 
 \begin{equation}
 θ_{metal-to-metal}=1,2\text{º}C/W\label{eq:2-2}
@@ -300,7 +301,7 @@ The thermal resistance of a metal-metal interface when dry equals to:
 \end_layout
 
 \begin_layout Standard
-The thermal resistance of the heat sink equals to: 
+The thermal resistance of the heat sink is equal to: 
 \begin_inset Formula 
 \begin{equation}
 θ_{heatsink}=θ_{ja}-θ_{metal-to-metal}=12,5\text{º}C/W-1,2\text{º}C/W=11,3\text{º}C/W\label{eq:2-3}
@@ -497,8 +498,7 @@ A heat sink with a thermal resistance lower than
 \uwave off
 \noun off
 \color none
-ºC/W, which is lower than 
-11.3625ºC/W.
+ºC/W, which is lower than 11.3625ºC/W.
 \end_layout
 
 \begin_layout Standard
