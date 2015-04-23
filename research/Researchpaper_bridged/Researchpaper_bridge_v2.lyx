@@ -167,8 +167,8 @@ One of the assignment for the project PRO-Q2 is to write a reseach paper.
 \end_layout
 
 \begin_layout Standard
-The subject that is chosen for this reseach paper are (un)bridged and (un)balanc
-ed amplifiers.
+The subject that is chosen for this reseach paper are bridged, unbridged,
+ balanced and unbalanced amplifiers.
  This topic was chosen as it appeared to be the most interesting of all
  the available options given by the project coach.
  This research paper explains how bridged and unbridged amplifiers compare
@@ -208,20 +208,6 @@ Balanced amplifiers
 
 \begin_layout Itemize
 Unbalanced amplifiers
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Features: increased gain, noise cancellation, low rail voltages, double
- output power.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -331,16 +317,6 @@ see
  Rload.
  The output power across the load is effectively doubled.
  Assume:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-The amount of formulas could be reduced.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -516,11 +492,34 @@ A balanced amplifier consists of either one or more amplifiers that amplify
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Insert image of basic principle of balanced amp, please.
+\begin_inset Graphics
+	filename basic_balanced.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A basic balanced amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -537,12 +536,151 @@ A balanced amplifier can be constructed using a single opamp.
  The differential signal is fed into the opamp's inverting and non-inverting
  inputs.
  The opamp then amplifies the difference in voltage between the inputs.
-\begin_inset Note Note
-status open
+ In order for balance to be achieved, R
+\begin_inset script subscript
 
 \begin_layout Plain Layout
-Some calculations required
+1
 \end_layout
+
+\end_inset
+
+ must be equal to R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ must be equal to R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The gain with In
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+ active is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain_{In-}=-\frac{R2}{R1}\label{eq: Vout_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The output voltage with In
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+ active is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Vout_{In-}=Gain_{In-}\cdot In_{-}=-\frac{R2}{R1}\cdot In_{-}\label{eq: Vout_1-2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The gain with In
+\begin_inset script subscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ active is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain_{In+}=\frac{R4}{R3+R4}\cdot(1+\frac{R2}{R1})\label{eq: Vout_1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The output voltage with In
+\begin_inset script subscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ active is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Vout_{In+}=Gain_{In+}\cdot In_{+}=\frac{R4}{R3+R4}\cdot(1+\frac{R2}{R1})\cdot In_{+}\label{eq: Vout_1-2-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The total output voltage is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Vout=Vout_{In+}+Vout_{In-}=-\frac{R2}{R1}\cdot In_{-}+\frac{R4}{R3+R4}\cdot(1+\frac{R2}{R1})\cdot In_{+}\label{eq: Vout_1-2-1-1}
+\end{equation}
 
 \end_inset
 
@@ -558,6 +696,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename balanced_amplifier.jpg
+	scale 50
 
 \end_inset
 
@@ -601,16 +740,6 @@ Applications of balanced amplifiers
 Balanced amplifiers are commonly used in professional audio equipment to
  reduce common mode noise introduced in long cables.
  It's also used to eliminate ground loops.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Some more applications wanted
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -637,17 +766,8 @@ Conclusion
 \begin_layout Standard
 Bridged amplifiers can be used to increase power output when supply voltages
  are low.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Something about balanced amplifiers
-\end_layout
-
-\end_inset
-
-
+ Balanced amplifier can be used in professional audio equipment to reduce
+ common mode noise introduced in long cables and eliminate ground loops.
 \end_layout
 
 \begin_layout Section
@@ -700,21 +820,14 @@ Balanced Amplifier
 \end_layout
 
 \begin_layout Standard
-[5] PAGE 3, http://www.apexanalog.com/wp-content/uploads/2012/10/AN20U_F.pdf
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not IEEE style yet
-\end_layout
-
-\end_inset
-
-
+[5] Unknown author.
+ (October 2012).
+ Bridge Mode Operation of Power Operational Amplifiers [online].
+ Available: http://www.apexanalog.com
 \end_layout
 
 \begin_layout Standard
-[6]Douglas Self, 
+[6] Douglas Self, 
 \begin_inset Quotes eld
 \end_inset
 
