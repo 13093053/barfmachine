@@ -150,7 +150,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-In this calculation report the monolithic power amplifier is determined
+In this calculation report, the monolithic power amplifier is determined
  and calculated.
 \end_layout
 
@@ -208,7 +208,7 @@ Chosen Power Amplifier
 \end_layout
 
 \begin_layout Standard
-For the power amplifier, the LM1875 (Farnell code: 1468913) was chosen.
+For the power amplifier, the LM1875 (Farnell-code: 1468913) was chosen.
  This specific power amplifier has been chosen because the LM1875 meets
  the specified requirements.
  The amplifier is also designed to suppress low-frequency noise such as
@@ -406,12 +406,12 @@ Since U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
-out
+out 
 \end_layout
 
 \end_inset
 
- = U
+= U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -420,7 +420,7 @@ out,max
 
 \end_inset
 
- = 11V and U
+ = 15,556V and U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -430,12 +430,12 @@ in
 \end_inset
 
  = 18V (the voltage delivered by the supply), the gain will be 
-\begin_inset Formula $\frac{11}{18}\approx0.61$
+\begin_inset Formula $\frac{15,556}{18}\approx0.864$
 \end_inset
 
 .
  Expressed in decibels, this is equal to 
-\begin_inset Formula $20\cdot\log(\frac{11}{18})\approx-4.28$
+\begin_inset Formula $20\cdot\log(\frac{15,556}{18})\approx-1.27$
 \end_inset
 
 dB.
@@ -481,7 +481,7 @@ out
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{11}{18}=\frac{Z_{out}}{50\cdot10^{3}}\Longrightarrow Z_{out}=50\cdot10^{3}\cdot\frac{11}{18}\approx30.6\Omega\label{eq:Z_out_deduction}
+\frac{15,556}{18}=\frac{Z_{out}}{50\cdot10^{3}}\Longrightarrow Z_{out}=50\cdot10^{3}\cdot\frac{15,556}{18}\approx43211\Omega\label{eq:Z_out_deduction}
 \end{equation}
 
 \end_inset

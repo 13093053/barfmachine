@@ -151,7 +151,7 @@ Introduction
 
 \begin_layout Standard
 In this calculation report the heat sink of the selected monolithic power
- amplifier is calculated.
+ amplifier is determined and calculated.
 \end_layout
 
 \begin_layout Standard
@@ -172,8 +172,8 @@ The power amplifier that is chosen for the active loudspeaker is LM1875
 
 \begin_layout Standard
 Fig.
- 1 gives insight on how the heat sink and power amplifier are connected
- with each other.
+ 1 gives insight on how the heat sink and power amplifier will look like
+ when connected with each other.
 \end_layout
 
 \begin_layout Standard
@@ -201,7 +201,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A sketch of the heat sink and power amplifier
+A sketch of the heat sink and power amplifier together
 \end_layout
 
 \end_inset
@@ -257,7 +257,7 @@ JMAX
 \end_inset
 
 is the maximum junction temperature that the power amplifier can handle
- before shutting down.
+ before overheating and shutting down.
 \end_layout
 
 \begin_layout Itemize
@@ -288,7 +288,8 @@ Q
 \end_layout
 
 \begin_layout Standard
-The thermal resistance of a metal-metal interface when dry equals to: 
+The thermal resistance of a metal-metal interface when dry is equal to:
+ 
 \begin_inset Formula 
 \begin{equation}
 θ_{metal-to-metal}=1,2\text{º}C/W\label{eq:2-2}
@@ -300,7 +301,7 @@ The thermal resistance of a metal-metal interface when dry equals to:
 \end_layout
 
 \begin_layout Standard
-The thermal resistance of the heat sink equals to: 
+The thermal resistance of the heat sink is equal to: 
 \begin_inset Formula 
 \begin{equation}
 θ_{heatsink}=θ_{ja}-θ_{metal-to-metal}=12,5\text{º}C/W-1,2\text{º}C/W=11,3\text{º}C/W\label{eq:2-3}
@@ -456,17 +457,6 @@ Therefore the new thermal resistance of the heat sink equals:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Conclusion
-\end_layout
-
-\begin_layout Standard
 A heat sink with a thermal resistance lower than
 \family roman
 \series medium
@@ -481,6 +471,34 @@ A heat sink with a thermal resistance lower than
 \color none
  11.3625ºC/W must be used in order for the power amplifier, LM1875, to function
  properly without overheating and shutting down.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ The heatsink that is chosen for the power amplifier is FISCHER ELEKTRONIK
+ SK 129 50,8 STS (Farnell-code: 1319813).
+ It is chosen for this heatsink because the thermal resistance of this heatsink
+ is 5,3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ºC/W, which is lower than 11.3625ºC/W.
 \end_layout
 
 \begin_layout Standard
