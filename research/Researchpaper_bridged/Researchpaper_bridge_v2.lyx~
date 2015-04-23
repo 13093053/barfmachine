@@ -234,7 +234,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename bridged_amp_basic.jpg
-	scale 50
+	scale 35
 
 \end_inset
 
@@ -492,11 +492,35 @@ A balanced amplifier consists of either one or more amplifiers that amplify
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Insert image of basic principle of balanced amp, please.
+\begin_inset Graphics
+	filename basic_balanced.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A basic balanced amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -656,7 +680,7 @@ The total output voltage is equal to:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Vout=Vout_{In+}+Vout_{In-}=-\frac{R2}{R1}\cdot In_{-}+\frac{R4}{R3+R4}\cdot(1+\frac{R2}{R1})\cdot In_{+}\label{eq: Vout_1-2-1-1}
+Vout=-\frac{R2}{R1}\cdot In_{-}+\frac{R4}{R3+R4}\cdot(1+\frac{R2}{R1})\cdot In_{+}\label{eq: Vout_1-2-1-1}
 \end{equation}
 
 \end_inset
@@ -717,16 +741,6 @@ Applications of balanced amplifiers
 Balanced amplifiers are commonly used in professional audio equipment to
  reduce common mode noise introduced in long cables.
  It's also used to eliminate ground loops.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Some more applications wanted
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -753,17 +767,8 @@ Conclusion
 \begin_layout Standard
 Bridged amplifiers can be used to increase power output when supply voltages
  are low.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Something about balanced amplifiers
-\end_layout
-
-\end_inset
-
-
+ Balanced amplifier can be used in professional audio equipment to reduce
+ common mode noise introduced in long cables and eliminate ground loops.
 \end_layout
 
 \begin_layout Section
@@ -816,21 +821,14 @@ Balanced Amplifier
 \end_layout
 
 \begin_layout Standard
-[5] PAGE 3, http://www.apexanalog.com/wp-content/uploads/2012/10/AN20U_F.pdf
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not IEEE style yet
-\end_layout
-
-\end_inset
-
-
+[5] Unknown author.
+ (October 2012).
+ Bridge Mode Operation of Power Operational Amplifiers [online].
+ Available: http://www.apexanalog.com
 \end_layout
 
 \begin_layout Standard
-[6]Douglas Self, 
+[6] Douglas Self, 
 \begin_inset Quotes eld
 \end_inset
 

@@ -81,7 +81,7 @@
 status open
 
 \begin_layout Plain Layout
-April 4th, 2015
+April 23rd, 2015
 \end_layout
 
 \end_inset
@@ -234,7 +234,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename bridged_amp_basic.jpg
-	scale 50
+	scale 35
 
 \end_inset
 
@@ -500,6 +500,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename basic_balanced.jpg
+	scale 50
 
 \end_inset
 
@@ -679,7 +680,7 @@ The total output voltage is equal to:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Vout=Vout_{In+}+Vout_{In-}=-\frac{R2}{R1}\cdot In_{-}+\frac{R4}{R3+R4}\cdot(1+\frac{R2}{R1})\cdot In_{+}\label{eq: Vout_1-2-1-1}
+Vout=-\frac{R2}{R1}\cdot In_{-}+\frac{R4}{R3+R4}\cdot(1+\frac{R2}{R1})\cdot In_{+}\label{eq: Vout_1-2-1-1}
 \end{equation}
 
 \end_inset
