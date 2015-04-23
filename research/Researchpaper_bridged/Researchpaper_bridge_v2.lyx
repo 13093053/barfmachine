@@ -171,10 +171,7 @@ The subject that is chosen for this reseach paper are bridged, unbridged,
  balanced and unbalanced amplifiers.
  This topic was chosen as it appeared to be the most interesting of all
  the available options given by the project coach.
- This research paper explains how bridged and unbridged amplifiers compare
- to each other.
- It also explains how balanced and unbalanced amplifiers compare to each
- other.
+ 
 \end_layout
 
 \begin_layout Section
@@ -207,7 +204,7 @@ Balanced amplifiers
 \end_layout
 
 \begin_layout Itemize
-Unbalanced amplifiers
+Unbalanced amplifier
 \end_layout
 
 \begin_layout Subsection
@@ -217,9 +214,8 @@ Bridged and Unbridged Amplifiers
 \begin_layout Standard
 A bridged amplifier consists of two amplifiers driving a load floating in
  between their outputs[1].
- Fig.
- 1 shows a general shape of a bridged amplifier and fig.
- 2 shows an example of a bridged amplifier.
+ Fig1 shows a general shape of a bridged amplifier and Fig2 shows an example
+ of a bridged amplifier.
  Bridged amplifiers are often used when the power rails do not supply sufficient
  voltage[2] and in single supply applications[3].
  A bridged amplifier is typically used in an output stage.
@@ -388,8 +384,7 @@ load
 
 \end_inset
 
- and therefore the circuit in Fig.
- 2 has a total gain of 4.
+ and therefore the circuit in Fig2 has a total gain of 4.
 \end_layout
 
 \begin_layout Standard
@@ -412,7 +407,7 @@ An unbridged amplifier only consist of one amplifier.
  Its output signal is single-ended as opposed to differential and therefore
  an unbridged amplifier requires a higher supply voltage and output voltage
  than a bridged amplifier to yield the same result.
- An example of an unbridged non-inverting amplifier is given in Fig.3
+ An example of an unbridged non-inverting amplifier is given in Fig3.
 \end_layout
 
 \begin_layout Standard
@@ -533,7 +528,8 @@ Example of a balanced amplifier
 \end_layout
 
 \begin_layout Standard
-A balanced amplifier can be constructed using a single opamp.
+A balanced amplifier can be constructed using a single opamp as seen in
+ Fig5.
  The differential signal is fed into the opamp's inverting and non-inverting
  inputs.
  The opamp then amplifies the difference in voltage between the inputs.
@@ -713,6 +709,53 @@ Example of a balanced amplifier
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Unbalanced amplifier
+\end_layout
+
+\begin_layout Standard
+An unbalanced amplifier is the opposite of a balanced amplifier.
+ An unbalanced amplifier has a single-ended input which is more susceptible
+ to common mode noise.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename single_ended.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Single-ended unbalanced amplifier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
