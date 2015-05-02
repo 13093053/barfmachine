@@ -1,0 +1,72 @@
+Power supply:
+1x euro connector for power cable rated 230VAC 2,5A
+1x power switch rated 230VAC 2,5A
+1x power transformer (Farnell:9530380)
+1x diode bridge rectifier OR 4x diode
+1x fuse holder (panel mount) + fuse 230v ?A, slow
+
+4x 470uF ELCO capacitor (35v, 105C:low ESR)
+2x 100nF ceramic capacitor (35v)
+2x 2.2k resistor 1/2W
+(for disipating charge in capacitors when switched off. discharging takes about 2 seconds without additional load)
+2x fuse holder (trough-hole) + fuse 230v 1A, slow
+
+1x 7805 positive voltage regulator
+1x 7833 positive voltage regulator
+1x 7815 positive voltage regulator
+1x 7915 negative voltage regulator
+4x 10uF capacitor (35v, 105C:low ESR)
+4x TO220-compatible heatsink
+
+Power amplifier:
+1x Prototype board (round copper islands) 50x70mm
+
+1x 0.33uF capacitor 16v, 85C
+1x 50k resistor 1/4W
+1x 10k resistor 1/4W
+1x 45k resistor 1/4W
+1x LM1875 Op-Amp
+2x 10uF ELCO capacitor 35V,105C:low ESR
+2x 100nF ceramic capacitor 50V
+1x TO220-compatible heatsink (Farnell:1319813)
+
+Pre-amplifier:
+1x Prototype board (round copper islands) 90x70mm
+
+6x Low-noise precision op-amp
+6x 8pin dip socket
+6x 10k potentiometer (logaritmic & panel mount)
+bunch of resistors
+bunch of capacitors
+1/4" audio jack 3 pole (panel mount)
+
+Optional balanced audio input stage:
+1x Low-noise precision op-amp
+bunch of resistors
+1x XLR jack
+
+Digital control unit:
+1x Prototype board (round copper islands) 90x70mm
+
+1x Atmega328p
+1x 28pin DIP socket
+1x 16MHz crystal
+2x 22pF capacitor
+1x 100k resistor 1/4W
+1x 1uF capacitor
+1x tactile button NO (reset button)
+
+1x DB9 connector male (panel mount)
+1x MAX232 level shifter
+5x 1uF capacitor 16v,85C
+
+2x Din5 jack (panel mount)
+1x Opto-coupler
+1x 1n4148 high-speed switching diode
+1x 2n3904 general purpose npn switching transistor
+bunch of resistors
+
+6x 10k digital potentiometer
+6x ?pin dip socket
+bunch of capacitors
+
