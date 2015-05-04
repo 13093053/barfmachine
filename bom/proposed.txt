@@ -1,4 +1,6 @@
 Power supply:
+1x copper-clad board single-sided 15cm × 7cm
+6x screw terminal 2-pole
 1x euro connector for power cable rated 230VAC 2,5A
 1x power switch rated 230VAC 2,5A
 1x power transformer (Farnell:9530380)
@@ -20,6 +22,7 @@ Power supply:
 
 Power amplifier:
 1x Prototype board (round copper islands) 50x70mm
+4x screw terminal 2-pole
 
 1x 0.33uF capacitor 16v, 85C
 1x 50k resistor 1/4W
@@ -32,6 +35,8 @@ Power amplifier:
 
 Pre-amplifier:
 1x Prototype board (round copper islands) 90x70mm
+4x screw terminal 2-pole
+1x screw terminal 12-pole
 
 6x Low-noise precision op-amp
 6x 8pin dip socket
