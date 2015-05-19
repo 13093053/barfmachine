@@ -12,7 +12,8 @@ dcu.o: ../dcu.c \
   v:/avrstud.001/winavr-20100110/lib/gcc/../../avr/include/stdio.h \
   v:\avrstud.001\winavr-20100110\bin\../lib/gcc/avr/4.3.3/include/stdarg.h \
   v:\avrstud.001\winavr-20100110\bin\../lib/gcc/avr/4.3.3/include/stddef.h \
-  v:/avrstud.001/winavr-20100110/lib/gcc/../../avr/include/avr/interrupt.h
+  v:/avrstud.001/winavr-20100110/lib/gcc/../../avr/include/avr/interrupt.h \
+  ../midi.h ../uart.c
 
 v:/avrstud.001/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:
 
@@ -41,3 +42,7 @@ v:\avrstud.001\winavr-20100110\bin\../lib/gcc/avr/4.3.3/include/stdarg.h:
 v:\avrstud.001\winavr-20100110\bin\../lib/gcc/avr/4.3.3/include/stddef.h:
 
 v:/avrstud.001/winavr-20100110/lib/gcc/../../avr/include/avr/interrupt.h:
+
+../midi.h:
+
+../uart.c:
