@@ -4,7 +4,7 @@
  * Description: Digital control unit firmware for speaker system
  * Status: - 
  * Notes: 	- Check for MSB in parameters. If high: error condition
- * 			- Implement status LED's
+ * 			- Implement status LEDs
  */
 #include <avr/io.h>
 #include <stdio.h>
@@ -28,7 +28,7 @@ int main(void) {
 	int i;
 	
 
-	/* Debug LED's */
+	/* Debug LEDs */
 	DDRB = 0xFF;
 	/* Setup serial comms (9600-8-n-1) */
     UCSRA = 0x00;
@@ -41,9 +41,9 @@ int main(void) {
 	SPSR = (1<<0);
 	SPCR = (1<<7) | (1<<6) | (1<<4);
 
-	/* Reset digital potentiometers */
+	/* Reset digital potentiometers (127 is the flat position) */
 	static char potpos[6] = {127};
-	// Connect terminals
+	/* Connect terminals */
 	for (i = 0; i < sizeof(potpos); i++) {
 		setPot(i,potpos[i]);
 	}
@@ -57,7 +57,7 @@ int main(void) {
 		char s[50];
 		while (rxcnt == 0);
 		cmd = ugetc();
-		if(cmd & 0x80) {
+		if (cmd & 0x80) {
 			cmd = cmd & ~(1<<7);
 			while (rxcnt == 0);
 			cc = ugetc();
@@ -70,11 +70,11 @@ int main(void) {
 							potpos[(int)cc] = vv;
 							setPot(cc,potpos[(int)cc]);
 							break;
-				//case 'r':	for (i = 0; i < sizeof(potpos); i++) {
-				//				potpos[i] = 127;
-				//				setPot(i,potpos[i]);
-				//			}
-				//			break;
+				/*case 'r':	for (i = 0; i < sizeof(potpos); i++) {
+								potpos[i] = 127;
+								setPot(i,potpos[i]);
+							}
+							break; */
 				default:	uputs("What?");
 			}
 		}
@@ -83,14 +83,14 @@ int main(void) {
 }
 
 char spiSend(char val) {
-	SPDR = val;						// Transmit data
-	while ((SPSR & (1<<7)) == 0);	// Wait for spi transfer to finish.
-	val = SPDR;						// Receive data
+	SPDR = val;						/* Transmit data */
+	while ((SPSR & (1<<7)) == 0);	/* Wait for SPI transfer to finish. */
+	val = SPDR;						/* Receive data */
 	return val;
 }
 
 void setPot(char pot,char val) {
-	//spiSend(val);
+	/*spiSend(val);*/
 	PORTB = ~(1<<pot);
 
 }
@@ -103,7 +103,7 @@ ISR (USART_RXC_vect) {
 	}
 	else {
 	    c = UDR;
-	    //PORTB = ~c;
+	    /*PORTB = ~c;*/
 		if (rxcnt < 64) {
 			sb[rxp & 63] = c;
 			rxp = (rxp + 1) & 63;
@@ -123,7 +123,7 @@ void uputc(char c) {
 void uputs(char str[]) {
 	int i;
 	for (i = 0; str[i] != '\0'; i++) {
-		uputc(str[i] | 0x80);		// | 0x80 is debug code
+		uputc(str[i] | 0x80);		/* | 0x80 is debug code*/
 	}
 }
 
@@ -132,7 +132,7 @@ char ugetc() {
 	int offset;
 	offset = (rxp - rxcnt) & 63;
 	c = sb[offset];
-	rxcnt --;
+	rxcnt--;
 	return c;
 }
 
