@@ -71,11 +71,28 @@
 \begin_body
 
 \begin_layout Section
-The problem, specifications and preconditions
+The project problem, specifications and preconditions
 \end_layout
 
 \begin_layout Standard
-[Detailed description of problem, specs and precons]
+The project problem introduces the fictional company BARK, a small yet well-know
+n manufacturer of loudspeakers.
+ For some time, BARK has contemplated the development of a series of active
+ speakers using built-in power amplifiers.
+ The market price of these types of speakers have shown a significant reduction
+ in the recent years, thus making it an interesting move for the company.
+ Speakers with this setup offer a range of great advantages, including the
+ avoidance of large speaker cables, the possibility of using cheaper electronic
+ crossover circuits and a straight-forward design of the circuits.
+ [CONTINUE STORY..]
+\end_layout
+
+\begin_layout Subsection
+The problem
+\end_layout
+
+\begin_layout Standard
+[The concrete problem]
 \end_layout
 
 \end_body
