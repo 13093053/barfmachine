@@ -138,6 +138,135 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Section
+The objective of the measurement
+\end_layout
+
+\begin_layout Standard
+The objective of the measurement is to get more insight how the tone control
+ function.
+\end_layout
+
+\begin_layout Section
+Measurement setup
+\end_layout
+
+\begin_layout Standard
+The tone control consist of a bandpass filter, a treble control and a bass
+ control.
+ Figure 1 gives a schematic of the bandpass filter.
+\end_layout
+
+\begin_layout Standard
+Figure 1 gives a schematic of the balance control.
+ The schematic of the balance control in figure 1 is slightly different
+ than the balance control from the projectbook.
+ The capacitors C4 and C5 are included and these capacitors prevent direct
+ current flowing through the potentiometer and the wiper.
+ Both capacitors have a value of 1mF because these values have almost no
+ effect on the gain of the balance control.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Documents/GitHub/barkmachine/products/measurement_reports/balance_control/design/design.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Balance control schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The balance control is soldered on a circuit board as seen in figure 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/measurement_reports/no_pic.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Balance control on a circuit board
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The balance control is connected to the following equipment:
+\end_layout
+
+\begin_layout Itemize
+The input of the balance amplifier is connected to a function generator,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+function generator type
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The input signal is a sinus with an amplitude of 1V
+\end_layout
+
+\begin_layout Itemize
+A power supply is connected to the positive (+15V) and negative (-15V) terminals
+ of the amplifier.
+\end_layout
+
+\begin_layout Itemize
+The signals 'out' and 'in' are measured by using the oscilloscope.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
 Bass and treble control specifications
 \end_layout
 
@@ -164,39 +293,7 @@ Approximate logarithmic control functions for cut-off frequencies and boost
 No DC currents through potentiometers nor wipers
 \end_layout
 
-\begin_layout Section
-Design
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Design tone control
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The tone control consist of a bandpass filter and the bass control and treble
- control.
-\end_layout
-
-\begin_layout Section
+\begin_layout Subsection
 Calculations
 \end_layout
 
@@ -344,7 +441,7 @@ R_{16}=100Ohm
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Simulations
 \end_layout
 
@@ -417,7 +514,7 @@ Simulation minimum position
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Measurements 
 \end_layout
 
@@ -434,6 +531,10 @@ We need to build this Scheisse before next week friday or else we're dead
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Conclusion
 \end_layout
 
 \end_body

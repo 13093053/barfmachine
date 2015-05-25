@@ -138,6 +138,128 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Section
+The objective of the measurement
+\end_layout
+
+\begin_layout Standard
+The objective of the measurement is to get more insight how the balance
+ control function.
+\end_layout
+
+\begin_layout Section
+Measurement setup
+\end_layout
+
+\begin_layout Standard
+Figure 1 gives a schematic of the volume control.
+ The schematic of the volume control in figure 1 is slightly different than
+ the volume control from the projectbook.
+ The capacitors C9 and C10 are included and these capacitors prevent direct
+ current flowing through the potentiometer and the wiper.
+ Both capacitors have a value of 1mF because these values have almost no
+ effect on the gain of the volume control.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename design/design.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Volume control schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The volume control is soldered on a circuit board as seen in figure 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/measurement_reports/no_pic.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Volume control on a circuit board
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The volume control is connected to the following equipment:
+\end_layout
+
+\begin_layout Itemize
+The input of the volume control is connected to a function generator, 
+\begin_inset Quotes eld
+\end_inset
+
+function generator type
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The input signal is a sinus with an amplitude of 1V
+\end_layout
+
+\begin_layout Itemize
+A power supply is connected to the positive (+15V) and negative (-15V) terminals
+ of the amplifiers.
+\end_layout
+
+\begin_layout Itemize
+The signals 'out' and 'in' are measured by using the oscilloscope.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
 Overall Specifications Preamplifier
 \end_layout
 
@@ -166,7 +288,7 @@ Frequency range: 2 Hz to 400 kHz (−3 dB) at Vout = 500 mV, RL = 20 kΩ
 Output voltage: at least 7 V sinusoidal with RL = 20 kΩ, f = 1 kHz
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Volume Control Specifications
 \end_layout
 
@@ -178,51 +300,7 @@ Approximately logarithmic control function
 No DC current through the potentiometer nor the wiper
 \end_layout
 
-\begin_layout Section
-Design
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename design/design.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Design balance control
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The capacitors C9 and C10 prevent direct current flowing through the potentiomet
-er and the wiper.
- Both capacitors have a value of 1mF because these values have a very small
- effect on the gain of the volume control.
-\end_layout
-
-\begin_layout Section
+\begin_layout Subsection
 Calculations
 \end_layout
 
@@ -370,7 +448,7 @@ R_{16}=100Ohm
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Simulations
 \end_layout
 
@@ -481,7 +559,7 @@ Simulation minimum position
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Measurements 
 \end_layout
 
@@ -498,6 +576,15 @@ We need to build this Scheisse before next week friday or else we're dead
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Results and comparison between the results are presented here.
+ Here also a conclusion.
 \end_layout
 
 \end_body
