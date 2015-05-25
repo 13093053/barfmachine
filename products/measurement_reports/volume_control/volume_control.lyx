@@ -71,7 +71,7 @@
 \begin_body
 
 \begin_layout Title
-Measurement Report: Balance Control
+Measurement Report: Volume Control
 \begin_inset Newline newline
 \end_inset
 
@@ -137,40 +137,45 @@ thispagestyle{empty}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
+\begin_layout Section
+Overall Specifications Preamplifier
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
+Balance control in flat position, tone (bass and treble) control switched
+ off, volume control at maximum.
+\end_layout
 
+\begin_layout Itemize
+Input impedance: minimum 100 kΩ 
+\end_layout
 
+\begin_layout Itemize
+Output impedance: maximum 100 Ω 
+\end_layout
+
+\begin_layout Itemize
+Sensitivity : 2 V output voltage in RL = 20 kΩ at 200 mV input 
+\end_layout
+
+\begin_layout Itemize
+Frequency range: 2 Hz to 400 kHz (−3 dB) at Vout = 500 mV, RL = 20 kΩ 
+\end_layout
+
+\begin_layout Itemize
+Output voltage: at least 7 V sinusoidal with RL = 20 kΩ, f = 1 kHz
 \end_layout
 
 \begin_layout Section
-Balance control specifications
+Volume Control Specifications
 \end_layout
 
 \begin_layout Itemize
-range ±6 dB (within ±0.5 dB) difference between right and left channels 
+Approximately logarithmic control function 
 \end_layout
 
 \begin_layout Itemize
-In flat position +2 dB (within ±0.5 dB) 
-\end_layout
-
-\begin_layout Itemize
-Approximate logarithmic control function 
-\end_layout
-
-\begin_layout Itemize
-No DC current through the potentiometer nor the wiper 
+No DC current through the potentiometer nor the wiper
 \end_layout
 
 \begin_layout Section
@@ -186,6 +191,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename design/design.png
+	scale 50
 
 \end_inset
 
@@ -204,20 +210,16 @@ Design balance control
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-The capacitors C4 and C5 prevent direct current flowing through the potentiomete
-r and the wiper.
- Both capacitors have a value of 1mF because these values have almost no
- effect on the Gain of the balance control.
+The capacitors C9 and C10 prevent direct current flowing through the potentiomet
+er and the wiper.
+ Both capacitors have a value of 1mF because these values have a very small
+ effect on the gain of the volume control.
 \end_layout
 
 \begin_layout Section
@@ -225,13 +227,17 @@ Calculations
 \end_layout
 
 \begin_layout Standard
-The formula for the gain of balance control is equal to:
+With an input voltage of 200mV, an output voltage of 2V must be acquired
+ with the balance control in flat position, tone (bass and treble) control
+ switched off and the volume control at maximum With a gain of approximately
+ 1,26 in the balance control and a gain of 1 in the tone control, the voltage
+ at the input of the volume control is approximately equal to:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Gain=\frac{R_{1}||R_{H}+R_{L}+R_{2}}{R_{L}+R_{2}}=1+\frac{R_{1}||R_{H}}{R_{L}+R_{2}}
+U_{input-volume-control}=1,26\cdot1\cdot200mV=252mV
 \end{equation}
 
 \end_inset
@@ -240,14 +246,16 @@ Gain=\frac{R_{1}||R_{H}+R_{L}+R_{2}}{R_{L}+R_{2}}=1+\frac{R_{1}||R_{H}}{R_{L}+R_
 \end_layout
 
 \begin_layout Standard
-It is known that the gain must be 2dB in flat position.
- Therefore the gain can be derived:
+The input voltage of the volume control is now known and because the volume
+ control is at maximum, the voltage at the output of U5 is equal to the
+ input voltage of the volume control.
+ The values of R17 and R18 can be calculated.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-20\cdot log(A_{flat-position})=2dB
+\frac{R_{18}}{R_{17}}\cdot U_{input-volume-control}=2V
 \]
 
 \end_inset
@@ -258,18 +266,15 @@ It is known that the gain must be 2dB in flat position.
 \begin_layout Standard
 \begin_inset Formula 
 \[
-log(A_{flat-position})=\frac{1}{10}
+\frac{R_{18}}{R_{17}}\cdot0,252V=2V
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A_{flat-position}=10^{\frac{1}{10}}\approx1,26
+\frac{R_{18}}{R_{17}}=7,94
 \end{equation}
 
 \end_inset
@@ -278,223 +283,15 @@ A_{flat-position}=10^{\frac{1}{10}}\approx1,26
 \end_layout
 
 \begin_layout Standard
-The gain must be 6dB when the potentiometer is turned all the way at one
- end.
- Therefore the gain can be derived:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-20\cdot log(A_{high})=6dB
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-log(A_{high})=\frac{3}{10}
-\]
-
-\end_inset
-
-
+The ratio between R18 and R17 is 7,94.
+ The values of the R18 and R17 can be determined.
+ Therefore it is chosen for the following values:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A_{high}=10^{\frac{3}{10}}\approx2
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-(2) can be filled in (1) and R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-H
-\end_layout
-
-\end_inset
-
- and R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-L
-\end_layout
-
-\end_inset
-
- are 5000Ohm.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-1,26=\frac{5000\cdot R_{1}}{(R_{1}+5000)\cdot(R_{2}+5000)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{2}+5000=\frac{5000\cdot R_{1}}{1,26\cdot(R_{1}+5000)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-R_{2}=\frac{3700\cdot R_{1}-6,5\cdot10^{6}}{1,26\cdot R_{1}+1300)}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-(3) can be substitute in (1) and R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-H
-\end_layout
-
-\end_inset
-
- = 10000Ohm and R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-L
-\end_layout
-
-\end_inset
-
- = 0Ohm.
- R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-L
-\end_layout
-
-\end_inset
-
-is actually equal to 0,5Ohm but because the value is very small, R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-L
-\end_layout
-
-\end_inset
-
- can be omitted.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-2=1+\frac{10000\cdot R_{1}}{(R_{1}+10000)\cdot R_{2}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-R_{2}=\frac{10000\cdot R_{1}}{(R_{1}+10000)}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-(5) can be substituted in (4) and therefore the value of R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-
- can be calculated.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{3700\cdot R_{1}-6,5\cdot10^{6}}{1,26\cdot R_{1}+1300)}=\frac{10000\cdot R_{1}}{(R_{1}+10000)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-2600R_{1}^{2}+13\cdot10^{6}\cdot R_{1}=3700\cdot R_{1}^{2}+30,5\cdot10^{6}\cdot R_{1}-6,5\cdot10^{10}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-1100R_{1}^{2}+17,5\cdot10^{6}\cdot R_{1}-6,5\cdot10^{10}=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{1}R_{1}=\frac{17,5\cdot10^{6}±24336187}{2200}
-\]
-
-\end_inset
-
-dB
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-R_{1}=3107,35\approx3107Ohm
+R_{18}=7940Ohm
 \end{equation}
 
 \end_inset
@@ -505,7 +302,7 @@ R_{1}=3107,35\approx3107Ohm
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{1}=-19016Ohm
+R_{17}=1000Ohm
 \end{equation}
 
 \end_inset
@@ -514,32 +311,58 @@ R_{1}=-19016Ohm
 \end_layout
 
 \begin_layout Standard
-A resistor can never have a negative value so therefore R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-
- is equal to 3107Ohm.
- To calculate R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-2
-\end_layout
+With the volume control at minimum, the gain is should be very low (- infinite
+ dB) but that is in practice impossible.
+ Therefore simulations are required to determine what the gain can be if
+ the volume control is almost to the minimum (99%) The gain with the volume
+ control almost to the minimum is approximately -50dB.
+ The gain with the potentiometer in mid position (50%) is equal to:
+\begin_inset Formula 
+\[
+17,95dB-(\frac{17,95dB--50dB}{2})=-16dB
+\]
 
 \end_inset
 
- , (6) can be filled in in (4) or (5).
+
+\end_layout
+
+\begin_layout Standard
+Resistor R16 can be calculated to aquire an approximate logarithmic control
+ function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot log|-\frac{R_{16}}{5000+R_{16}}\cdot\frac{7940}{1000}|=-16dB
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+log(\frac{R_{16}}{5000+R_{16}}\cdot\frac{7940}{1000})=-\frac{16}{20}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{R_{16}}{5000+R_{16}}\cdot\frac{7940}{1000}=10^{-\frac{16}{20}}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{2}=\frac{10000\cdot3107}{(3107+10000)}=2370Ohm
+R_{16}=100Ohm
 \end{equation}
 
 \end_inset
@@ -559,7 +382,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename simulations/flat_position.png
+	filename simulation/max_position_volume_control.png
 	scale 40
 
 \end_inset
@@ -571,17 +394,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simulation flat position
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not sure about the frequency part.
+Simulation maximum position
 \end_layout
 
 \end_inset
@@ -606,7 +419,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename simulations/high_6db.png
+	filename simulation/mid_position_volume_control.png
 	scale 40
 
 \end_inset
@@ -618,7 +431,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simulation high position
+Simulation middle position
 \end_layout
 
 \end_inset
@@ -639,7 +452,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename simulations/low_0db.png
+	filename simulation/min_position_volume_control.png
 	scale 40
 
 \end_inset
@@ -651,11 +464,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simulation low position
+Simulation minimum position
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
