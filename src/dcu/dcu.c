@@ -13,9 +13,9 @@
 #include "uart.c"
 
 
-char sb[64];
-volatile char rxcnt = 0;
-volatile char rxp = 0;
+char sb[64];				/* The buffer for the USART input. Incoming MIDI messages are stored in here. */
+volatile char rxcnt = 0;	/* rxcnt is used when determining the offset, which is used to pick the right index when reading sb */
+volatile char rxp = 0;		/* rxp will loop from (decimal) 0 to 63, used in determining the index of sb that needs to be approached */
 
 
 void uputc(char c);
@@ -107,7 +107,7 @@ ISR (USART_RXC_vect) {
 		if (rxcnt < 64) {
 			sb[rxp & 63] = c;
 			rxp = (rxp + 1) & 63;
-			rxcnt ++;
+			rxcnt++;
 		}
 		else {
 			uputc('!');
@@ -115,11 +115,13 @@ ISR (USART_RXC_vect) {
 	}
 }
 
+/* Temporary function for PC debugging */
 void uputc(char c) {
 	while (~UCSRA & 1<<UDRE);
 	UDR = c;
 }
 
+/* Temporary function for PC debugging */
 void uputs(char str[]) {
 	int i;
 	for (i = 0; str[i] != '\0'; i++) {
@@ -127,6 +129,7 @@ void uputs(char str[]) {
 	}
 }
 
+/* Temporary function for PC debugging */
 char ugetc() {
 	char c;
 	int offset;

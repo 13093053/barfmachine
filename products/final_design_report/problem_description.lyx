@@ -84,7 +84,17 @@ n manufacturer of loudspeakers.
  Speakers with this setup offer a range of great advantages, including the
  avoidance of large speaker cables, the possibility of using cheaper electronic
  crossover circuits and a straight-forward design of the circuits.
- [CONTINUE STORY..]
+ 
+\end_layout
+
+\begin_layout Standard
+It is likely that buyers of these active speakers also have the intention
+ of buying a high-end stereo preamplifier.
+ These types of preamplifiers are known to be expensive and uncommon.
+ For this reason, BARK developed a new preamplifier to be built into the
+ speaker system.
+ The specifications of the preamplifier have already been established by
+ a previous team.
 \end_layout
 
 \begin_layout Subsection
@@ -92,7 +102,23 @@ The problem
 \end_layout
 
 \begin_layout Standard
-[The concrete problem]
+In light of the recent digitization of every electronic product, BARK decided
+ that it also wants the speaker and its electronics to be controlled by
+ a digital system of some sorts.
+ However, being a loudspeaker manufacturer, their knowledge of analogue
+ and digital electronic systems is somewhat limited.
+ A series of researches are to be conducted in order to gain the required
+ knowledge and skills in these fields.
+ The project team is to design an active loudspeaker system and realise
+ a demonstration model according to the specifications and preconditions
+ given.
+ By the end of the project, the live demonstration should prove the correct
+ operation.
+ Documentation and a cost calculation are also to be provided.
+\end_layout
+
+\begin_layout Subsection
+Specifications and preconditions
 \end_layout
 
 \end_body
