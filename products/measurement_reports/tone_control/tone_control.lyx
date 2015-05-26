@@ -153,11 +153,84 @@ Measurement setup
 \begin_layout Standard
 The tone control consist of a bandpass filter, a treble control and a bass
  control.
- Figure 1 gives a schematic of the bandpass filter.
+ Figure 1 gives a schematic of the bandpass filter and figure 2 gives a
+ schematic of the bass control and the treble control.
 \end_layout
 
 \begin_layout Standard
-Figure 1 gives a schematic of the balance control.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename design/design_bandpassfilter.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bandpass filter schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename design/bass_and_treble.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+bass and treble control schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 3 gives a schematic of the tone control.
  The schematic of the balance control in figure 1 is slightly different
  than the balance control from the projectbook.
  The capacitors C4 and C5 are included and these capacitors prevent direct
@@ -174,19 +247,16 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../Documents/GitHub/barkmachine/products/measurement_reports/balance_control/design/design.png
-	scale 80
+	filename design/tone_control.png
+	scale 50
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Balance control schematic
+Tone control schematic
 \end_layout
 
 \end_inset
@@ -200,7 +270,7 @@ Balance control schematic
 \end_layout
 
 \begin_layout Standard
-The balance control is soldered on a circuit board as seen in figure 2.
+The tone control is soldered on a circuit board as seen in figure 2.
 \end_layout
 
 \begin_layout Standard
@@ -236,12 +306,11 @@ Balance control on a circuit board
 \end_layout
 
 \begin_layout Standard
-The balance control is connected to the following equipment:
+The tone control is connected to the following equipment:
 \end_layout
 
 \begin_layout Itemize
-The input of the balance amplifier is connected to a function generator,
- 
+The input of the tone amplifier is connected to a function generator, 
 \begin_inset Quotes eld
 \end_inset
 
@@ -297,18 +366,21 @@ No DC currents through potentiometers nor wipers
 Calculations
 \end_layout
 
+\begin_layout Subsubsection
+Bandpass filter
+\end_layout
+
 \begin_layout Standard
-With an input voltage of 200mV, an output voltage of 2V must be acquired
- with the balance control in flat position, tone (bass and treble) control
- switched off and the volume control at maximum With a gain of approximately
- 1,26 in the balance control and a gain of 1 in the tone control, the voltage
- at the input of the volume control is approximately equal to:
+The frequency range must be between 2Hz and 400kHz and the gain at these
+ frequencies must be -3dB.
+ Therefore the resistors and capacitors can be calculated for the bandpass
+ filter with the formula:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{input-volume-control}=1,26\cdot1\cdot200mV=252mV
+f_{cut-off}=\frac{1}{2π\cdot R\cdot C}
 \end{equation}
 
 \end_inset
@@ -317,35 +389,18 @@ U_{input-volume-control}=1,26\cdot1\cdot200mV=252mV
 \end_layout
 
 \begin_layout Standard
-The input voltage of the volume control is now known and because the volume
- control is at maximum, the voltage at the output of U5 is equal to the
- input voltage of the volume control.
- The values of R17 and R18 can be calculated.
+For the design of the bandpass filter, it is chosen for a resistor of 1kOhm.
+ The capacitors can now be calculated.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{R_{18}}{R_{17}}\cdot U_{input-volume-control}=2V
-\]
-
-\end_inset
-
-
+For the LPF part of the bandpass filter is the capacitor equal to:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{R_{18}}{R_{17}}\cdot0,252V=2V
-\]
-
-\end_inset
-
-
 \begin_inset Formula 
 \begin{equation}
-\frac{R_{18}}{R_{17}}=7,94
+C=\frac{1}{2π\cdot400\cdot10^{3}\cdot1000}=400pF
 \end{equation}
 
 \end_inset
@@ -354,15 +409,47 @@ The input voltage of the volume control is now known and because the volume
 \end_layout
 
 \begin_layout Standard
-The ratio between R18 and R17 is 7,94.
- The values of the R18 and R17 can be determined.
- Therefore it is chosen for the following values:
+For the HPF part of the bandpass filter is the capacitor equal to:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{18}=7940Ohm
+C=\frac{1}{2π\cdot2\cdot1000}=80uF
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Bass and treble contol
+\end_layout
+
+\begin_layout Paragraph
+Cut-off point high:
+\end_layout
+
+\begin_layout Standard
+At frequency of 10kHz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+10000=\frac{1}{2π\cdot R\cdot C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=\frac{1}{2π\cdot R\cdot10000}
 \end{equation}
 
 \end_inset
@@ -371,9 +458,24 @@ R_{18}=7940Ohm
 \end_layout
 
 \begin_layout Standard
+At frequency of 2,5kHz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2500=\frac{1}{2π\cdot(R+10000)\cdot C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{17}=1000Ohm
+C=\frac{1}{2π\cdot(R+10000)\cdot2500}
 \end{equation}
 
 \end_inset
@@ -382,47 +484,13 @@ R_{17}=1000Ohm
 \end_layout
 
 \begin_layout Standard
-With the volume control at minimum, the gain is should be very low (- infinite
- dB) but that is in practice impossible.
- Therefore simulations are required to determine what the gain can be if
- the volume control is almost to the minimum (99%) The gain with the volume
- control almost to the minimum is approximately -50dB.
- The gain with the potentiometer in mid position (50%) is equal to:
-\begin_inset Formula 
-\[
-17,95dB-(\frac{17,95dB--50dB}{2})=-16dB
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Resistor R16 can be calculated to aquire an approximate logarithmic control
- function:
+Substitube (4) in (5) to calculate resistor
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-20\cdot log|-\frac{R_{16}}{5000+R_{16}}\cdot\frac{7940}{1000}|=-16dB
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-log(\frac{R_{16}}{5000+R_{16}}\cdot\frac{7940}{1000})=-\frac{16}{20}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\frac{R_{16}}{5000+R_{16}}\cdot\frac{7940}{1000}=10^{-\frac{16}{20}}
+\frac{1}{2π\cdot R\cdot10000}=\frac{1}{2π\cdot(R+10000)\cdot C}
 \]
 
 \end_inset
@@ -433,7 +501,119 @@ log(\frac{R_{16}}{5000+R_{16}}\cdot\frac{7940}{1000})=-\frac{16}{20}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{16}=100Ohm
+R=3333,33Ohm
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute (6) in (4) or (5) to calculate the capacitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=\frac{1}{2π\cdot(3333,33+10000)\cdot2500}=4,8nF
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Cut-off point low:
+\end_layout
+
+\begin_layout Standard
+At frequency of 400Hz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+400=\frac{1}{2π\cdot R\cdot C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=\frac{1}{2π\cdot R\cdot400}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At frequency of 100Hz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+100=\frac{1}{2π\cdot(R+10000)\cdot C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=\frac{1}{2π\cdot(R+10000)\cdot100}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitube (8) in (9) to calculate resistor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{2π\cdot R\cdot400}=\frac{1}{2π\cdot(R+10000)\cdot100}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R=3333,33Ohm
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute (10) in (8) or (9) to calculate the capacitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C=\frac{1}{2π\cdot(3333,33+10000)\cdot2500}=119nF
 \end{equation}
 
 \end_inset
@@ -452,6 +632,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename simulations/high_pos.png
+	scale 40
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -475,6 +662,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename simulations/mid_pos.png
+	scale 40
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -498,6 +692,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename simulations/low_pos.png
+	scale 40
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
