@@ -121,5 +121,219 @@ In light of the recent digitization of every electronic product, BARK decided
 Specifications and preconditions
 \end_layout
 
+\begin_layout Standard
+The specifications and preconditions given by BARK encompass both the analogue
+ as well as the digital part of the to-be-designed system.
+ The following components are described:
+\end_layout
+
+\begin_layout Itemize
+Preamplifier
+\end_layout
+
+\begin_layout Itemize
+Power amplifier
+\end_layout
+
+\begin_layout Itemize
+Power supply
+\end_layout
+
+\begin_layout Itemize
+Digital part
+\end_layout
+
+\begin_layout Subsubsection
+Preamplifier
+\end_layout
+
+\begin_layout Standard
+The configuration of the preamplifier has already been partially determined.
+ The values of the components have to be calculated and additional components
+ have to be implemented in order to make the design of the preamplifier
+ meet the required specifications.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Would be nice if we could somehow include the schematic as shown in the
+ project manual.
+ Not sure what the best way to do it would be.
+ Need your help/input.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The specifications are as follows:
+\end_layout
+
+\begin_layout Paragraph
+Overall specifications preamplifier
+\end_layout
+
+\begin_layout Standard
+Balance control in flat position, tone (bass and treble) control switched
+ off, volume control at maximum.
+\end_layout
+
+\begin_layout Enumerate
+Input impedance: minimum 100kΩ
+\end_layout
+
+\begin_layout Enumerate
+Output impedance: maximum 100Ω
+\end_layout
+
+\begin_layout Enumerate
+Sensitivity : 2V output voltage in R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ = 20kΩ at 200 mV input
+\end_layout
+
+\begin_layout Enumerate
+Frequency range: 2Hz to 400kHz (-3 dB) at V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+out
+\end_layout
+
+\end_inset
+
+ = 500mV, R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ = 20kΩ
+\end_layout
+
+\begin_layout Enumerate
+Output voltage: at least 7V sinusoidal with R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ = 20kΩ , f = 1kHz
+\end_layout
+
+\begin_layout Paragraph
+Balance control specifications
+\end_layout
+
+\begin_layout Enumerate
+Range ±6 dB (within ±0.5dB) difference between right and left channels
+\end_layout
+
+\begin_layout Enumerate
+In flat position +2dB (within ±0.5dB)
+\end_layout
+
+\begin_layout Enumerate
+Approximate logarithmic control function
+\end_layout
+
+\begin_layout Enumerate
+No DC current through the potentiometer nor the wiper
+\end_layout
+
+\begin_layout Paragraph
+Bass and treble control specifications
+\end_layout
+
+\begin_layout Enumerate
+Treble: Cut-off frequency adjustable between 2.5 and 10kHz.
+ Maximum boost or attenuation 10dB (±1dB) at 2.5kHz.
+ From 100 kHz and up the transfer function must approach value 1 (0dB).
+\end_layout
+
+\begin_layout Enumerate
+Bass: Cut-off frequency adjustable between 100Hz and 400Hz.
+ Maximum boost or attenuation 10 dB (±1dB) at 400Hz.
+ From 10Hz and below the transfer function must approach value 1 (0dB).
+\end_layout
+
+\begin_layout Enumerate
+Approximate logarithmic control functions for cut-off frequencies and boost
+ / attenuation adjustments
+\end_layout
+
+\begin_layout Enumerate
+No DC currents through potentiometers nor wipers
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Option
+\series default
+: tone controls are switched on and off without any clicking noises from
+ the speakers
+\end_layout
+
+\begin_layout Paragraph
+Volume control specifications
+\end_layout
+
+\begin_layout Enumerate
+Approximately logarithmic control function
+\end_layout
+
+\begin_layout Enumerate
+No DC current through the potentiometer nor the wiper
+\end_layout
+
+\begin_layout Standard
+The preconditions are as follows:
+\end_layout
+
+\begin_layout Enumerate
+The potentiometers for balance, bass, treble and volume control are 10kΩ
+ linear.
+\end_layout
+
+\begin_layout Enumerate
+The potentiometers for the adjustment of the bass / treble cut-off frequencies
+ are 10kΩ logarithmic.
+\end_layout
+
+\begin_layout Enumerate
+All the preamplifier’s opamps are low noise NE5532 type.
+ The NE5532 is a dual opamp version of the NE5534.
+ Both Multisim and Pspice contain suitable models for the NE5532 and the
+ NE5534.
+\end_layout
+
+\begin_layout Enumerate
+The simulation results of the sub circuits and the preamplifier are represented
+ by the transfer function (amplitude and phase characteristics).
+ These simulation results must be compared with the transfer function gained
+ by measurement.
+ Draw your conclusions.
+\end_layout
+
+\begin_layout Subsubsection
+Power amplifier specifications
+\end_layout
+
 \end_body
 \end_document
