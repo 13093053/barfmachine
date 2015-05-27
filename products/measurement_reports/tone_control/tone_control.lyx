@@ -151,10 +151,7 @@ Measurement setup
 \end_layout
 
 \begin_layout Standard
-The tone control consist of a bandpass filter, a treble control and a bass
- control.
- Figure 1 gives a schematic of the bandpass filter and figure 2 gives a
- schematic of the bass control and the treble control.
+Figure 1 gives a schematic of the tone control.
 \end_layout
 
 \begin_layout Standard
@@ -165,7 +162,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename design/design_bandpassfilter.png
+	filename design/tone_control.png
+	scale 80
 
 \end_inset
 
@@ -176,43 +174,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Bandpass filter schematic
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename design/bass_and_treble.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-bass and treble control schematic
+Tone control schematic
 \end_layout
 
 \end_inset
@@ -231,42 +193,14 @@ bass and treble control schematic
 
 \begin_layout Standard
 Figure 3 gives a schematic of the tone control.
- The schematic of the balance control in figure 1 is slightly different
- than the balance control from the projectbook.
- The capacitors C4 and C5 are included and these capacitors prevent direct
+ The schematic of the tone control in figure 1 had undergone some adjustments.
+ The capacitors C7 and C8 are included and these capacitors prevent direct
  current flowing through the potentiometer and the wiper.
- Both capacitors have a value of 1mF because these values have almost no
- effect on the gain of the balance control.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename design/tone_control.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Tone control schematic
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ Both capacitors have a value of 22uF because these values have almost no
+ effect on the gain of the tone control and these values are available at
+ the lab.
+ Capacitors C9 and C10 are included around the OPAMP U4.
+ The capacitors C9 and C10 ensures a bandpass filter is obtained.
 \end_layout
 
 \begin_layout Standard
@@ -366,8 +300,270 @@ No DC currents through potentiometers nor wipers
 Calculations
 \end_layout
 
+\begin_layout Standard
+The tone control contains two lowpass filters, two highpass filters and
+ a bandpass filters as seen in figure 3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename design/tone_control_detailed.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tone control details
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Square 1: A highpass filter with a cut-off frequency adjustable between
+ 2,5kHz and 10kHz
+\end_layout
+
+\begin_layout Standard
+Square 2: A lowpass filter with a cut-off frequency adjustable between 100Hz
+ and 400Hz
+\end_layout
+
+\begin_layout Standard
+Square 3: A lowpass filter with a cut-off frequency of 100kHz
+\end_layout
+
+\begin_layout Standard
+Square 4: A highpass filter with a cut-off frequency of 10Hz 
+\end_layout
+
+\begin_layout Standard
+Square 5: A bandpass filter with a cut-off frequency of 2Hz and 400kHz
+\end_layout
+
 \begin_layout Subsubsection
-Bandpass filter
+Square 1
+\end_layout
+
+\begin_layout Standard
+At frequency of 10kHz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+10000=\frac{1}{2π\cdot R_{12}\cdot C_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{3}=\frac{1}{2π\cdot R_{12}\cdot10000}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At frequency of 2,5kHz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2500=\frac{1}{2π\cdot(R_{12}+10000)\cdot C_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{3}=\frac{1}{2π\cdot(R_{12}+10000)\cdot2500}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitube (4) in (5) to calculate resistor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{2π\cdot R_{12}\cdot10000}=\frac{1}{2π\cdot(R_{12}+10000)\cdot C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{12}=3333,33Ohm
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute (6) in (4) or (5) to calculate the capacitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{3}=\frac{1}{2π\cdot(3333,33+10000)\cdot2500}=4,8nF
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Square 2
+\end_layout
+
+\begin_layout Standard
+At frequency of 400Hz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+400=\frac{1}{2π\cdot R_{10}\cdot C_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{2}=\frac{1}{2π\cdot R_{10}\cdot400}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At frequency of 100Hz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+100=\frac{1}{2π\cdot(R_{10}+10000)\cdot C_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{2}=\frac{1}{2π\cdot(R_{10}+10000)\cdot100}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitube (8) in (9) to calculate resistor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{2π\cdot R_{10}\cdot400}=\frac{1}{2π\cdot(R_{10}+10000)\cdot100}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{10}=3333,33Ohm
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute (10) in (8) or (9) to calculate the capacitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{2}=\frac{1}{2π\cdot(3333,33+10000)\cdot2500}=119nF
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Square 3
+\end_layout
+
+\begin_layout Subsubsection
+Square 4
+\end_layout
+
+\begin_layout Subsubsection
+Square 5
 \end_layout
 
 \begin_layout Standard
@@ -389,7 +585,7 @@ f_{cut-off}=\frac{1}{2π\cdot R\cdot C}
 \end_layout
 
 \begin_layout Standard
-For the design of the bandpass filter, it is chosen for a resistor of 1kOhm.
+For the design of the bandpass filter, it is chosen for resistors of 1kOhm.
  The capacitors can now be calculated.
 \end_layout
 
@@ -416,204 +612,6 @@ For the HPF part of the bandpass filter is the capacitor equal to:
 \begin_inset Formula 
 \begin{equation}
 C=\frac{1}{2π\cdot2\cdot1000}=80uF
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Bass and treble contol
-\end_layout
-
-\begin_layout Paragraph
-Cut-off point high:
-\end_layout
-
-\begin_layout Standard
-At frequency of 10kHz
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-10000=\frac{1}{2π\cdot R\cdot C}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-C=\frac{1}{2π\cdot R\cdot10000}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-At frequency of 2,5kHz
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-2500=\frac{1}{2π\cdot(R+10000)\cdot C}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-C=\frac{1}{2π\cdot(R+10000)\cdot2500}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Substitube (4) in (5) to calculate resistor
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{1}{2π\cdot R\cdot10000}=\frac{1}{2π\cdot(R+10000)\cdot C}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-R=3333,33Ohm
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Substitute (6) in (4) or (5) to calculate the capacitor
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-C=\frac{1}{2π\cdot(3333,33+10000)\cdot2500}=4,8nF
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
-Cut-off point low:
-\end_layout
-
-\begin_layout Standard
-At frequency of 400Hz
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-400=\frac{1}{2π\cdot R\cdot C}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-C=\frac{1}{2π\cdot R\cdot400}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-At frequency of 100Hz
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-100=\frac{1}{2π\cdot(R+10000)\cdot C}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-C=\frac{1}{2π\cdot(R+10000)\cdot100}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Substitube (8) in (9) to calculate resistor
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{1}{2π\cdot R\cdot400}=\frac{1}{2π\cdot(R+10000)\cdot100}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-R=3333,33Ohm
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Substitute (10) in (8) or (9) to calculate the capacitor
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-C=\frac{1}{2π\cdot(3333,33+10000)\cdot2500}=119nF
 \end{equation}
 
 \end_inset

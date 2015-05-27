@@ -142,8 +142,8 @@ The objective of the measurement
 \end_layout
 
 \begin_layout Standard
-The objective of the measurement is to get more insight how the balance
- control function.
+The objective of the measurement is to get more insight how the volume control
+ function.
 \end_layout
 
 \begin_layout Section
@@ -154,10 +154,10 @@ Measurement setup
 Figure 1 gives a schematic of the volume control.
  The schematic of the volume control in figure 1 is slightly different than
  the volume control from the projectbook.
- The capacitors C9 and C10 are included and these capacitors prevent direct
+ The capacitors C12 and C13 are included and these capacitors prevent direct
  current flowing through the potentiometer and the wiper.
- Both capacitors have a value of 1mF because these values have almost no
- effect on the gain of the volume control.
+ Both capacitors have a value of 220uF because these values have almost
+ no effect on the gain of the volume control and .
 \end_layout
 
 \begin_layout Standard
@@ -173,7 +173,7 @@ status open
 
 \end_inset
 
-
+the
 \end_layout
 
 \begin_layout Plain Layout

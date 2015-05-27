@@ -160,6 +160,8 @@ The objective of the measurement
 \begin_layout Standard
 The objective of the measurement is to get more insight how the balance
  control function.
+ Also it needs to be certain that the simulations, calculations and measurements
+ correspond with each other.
 \end_layout
 
 \begin_layout Section
@@ -170,9 +172,9 @@ Measurement setup
 Figure 1 gives a schematic of the balance control.
  The schematic of the balance control in figure 1 is slightly different
  than the balance control from the projectbook.
- The capacitors C4 and C5 are included and these capacitors prevent direct
+ The capacitors C5 and C6 are included and these capacitors prevent direct
  current flowing through the potentiometer and the wiper.
- Both capacitors have a value of 1mF because these values have almost no
+ Both capacitors have a value of 22uF because these values almost have no
  effect on the gain of the balance control.
 \end_layout
 
@@ -637,28 +639,6 @@ status open
 \begin_inset Graphics
 	filename simulations/flat_position.png
 	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Simulation flat position
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not sure about the frequency part.
-\end_layout
 
 \end_inset
 
