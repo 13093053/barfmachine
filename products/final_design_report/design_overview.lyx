@@ -101,7 +101,136 @@ Preamplifier
 \end_layout
 
 \begin_layout Standard
-[Preamp design overview]
+The design of the preamplifier can be split up in the following parts:
+\end_layout
+
+\begin_layout Itemize
+Balance control
+\end_layout
+
+\begin_layout Itemize
+Tone (bass and treble) control
+\end_layout
+
+\begin_layout Itemize
+Volume control
+\end_layout
+
+\begin_layout Standard
+These parts will be looked at in greater detail separately, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-preamplifier"
+
+\end_inset
+
+ shows a schematic overview of the entire preamplifier to show the connection
+ between the different parts.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename design_preamplifier_with_division.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic preamplifier
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-preamplifier"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Balance control
+\end_layout
+
+\begin_layout Standard
+[Put the most important facts and noteworthy information here]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../measurement_reports/balance_control/design/design.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of balance control
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tone control
+\end_layout
+
+\begin_layout Standard
+[Info & schematic here]
+\end_layout
+
+\begin_layout Subsubsection
+Volume control
+\end_layout
+
+\begin_layout Standard
+[Info & schematic here]
 \end_layout
 
 \begin_layout Subsection
