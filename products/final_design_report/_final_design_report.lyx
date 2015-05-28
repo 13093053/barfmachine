@@ -204,6 +204,17 @@ filename "problem_description.lyx"
 
 \begin_inset CommandInset include
 LatexCommand input
+filename "design_overview.lyx"
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
 filename "preamplifier_analysis.lyx"
 
 \end_inset

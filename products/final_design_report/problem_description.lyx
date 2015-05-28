@@ -160,6 +160,7 @@ Would be nice if we could somehow include the schematic as shown in the
  project manual.
  Not sure what the best way to do it would be.
  Need your help/input.
+ Same goes for the two figures that follow in the project manual.
 \end_layout
 
 \end_inset
@@ -333,6 +334,85 @@ The simulation results of the sub circuits and the preamplifier are represented
 
 \begin_layout Subsubsection
 Power amplifier specifications
+\end_layout
+
+\begin_layout Enumerate
+Input impedance of at least 50kΩ 
+\end_layout
+
+\begin_layout Enumerate
+Output power: 15W sine in R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+load
+\end_layout
+
+\end_inset
+
+ = 8Ω at 1kHz 
+\end_layout
+
+\begin_layout Enumerate
+Frequency range: 10Hz to 100kHz (−3 dB) at P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+load
+\end_layout
+
+\end_inset
+
+ = 0.5W in 8Ω
+\end_layout
+
+\begin_layout Standard
+For simplicity of design, the power amplifier should be a monolithic component.
+\end_layout
+
+\begin_layout Subsubsection
+Power supply
+\end_layout
+
+\begin_layout Standard
+The power supply must supply all rated voltages and current in the system
+ as to be determined by the project team.
+ The power supply should be constructed using linear regulators.
+ The projected efficiency should be 80% or better.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should I somehow try to paraphrase this? It's copied over from the project
+ manual right now.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Digital part
+\end_layout
+
+\begin_layout Standard
+The project team is to determine and develop the functionality of the digital
+ part of the system.
+ BARK mainly deals with analogue electronics, and so the project team is
+ asked to help develop attractive features that are to be implemented within
+ the project's duration.
+ The features should be discussed with the project coach beforehand.
+ The system will consist of at least:
+\end_layout
+
+\begin_layout Itemize
+An ATmega32 microcontroller or similar;
+\end_layout
+
+\begin_layout Itemize
+Some kind of interaction with the analogue part of the system.
 \end_layout
 
 \end_body
