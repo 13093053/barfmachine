@@ -214,8 +214,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename design/photo_2015-05-29_23-47-17.jpg
-	scale 50
+	filename design/photo_2015-05-29_23-49-16.jpg
+	height 50pheight%
 
 \end_inset
 
@@ -226,7 +226,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The build power amplifier
+The built power amplifier
 \end_layout
 
 \end_inset
@@ -289,7 +289,7 @@ Simulations
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -558,7 +558,14 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-[Conclusion]
+The power amplifier's gain decreases when there is a low impedance load
+ on the output.
+ The test setup had long wires to wirewound resistors which resulted in
+ parasitic inductance on the output.
+ This is why the gain increases as the frequency increases.
+ The impedance at high frequencies is higher because of the series inductance
+ in the load decreases.
+ The power amplifier meets the specifications under all test conditions.
 \end_layout
 
 \begin_layout Standard
