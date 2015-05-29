@@ -92,8 +92,9 @@ status open
 \end_inset
 
 .
- An overview of the design will be presented, and the sections that follow
- will offer a more detailed look into the analysis/design of the parts.
+ An overview of the system's design will be presented in this section, and
+ the sections that follow will offer a more detailed look into the analysis/desi
+gn of the parts.
 \end_layout
 
 \begin_layout Subsection
@@ -222,7 +223,41 @@ Tone control
 \end_layout
 
 \begin_layout Standard
-[Info & schematic here]
+[Put the most important facts and noteworthy information here]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../measurement_reports/tone_control/design/tone_control.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of tone control
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -230,7 +265,45 @@ Volume control
 \end_layout
 
 \begin_layout Standard
-[Info & schematic here]
+[Put the most important facts and noteworthy information here]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../measurement_reports/volume_control/design/design.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of volume control
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -238,7 +311,128 @@ Power amplifier
 \end_layout
 
 \begin_layout Standard
-[Power amp design overview]
+The schematic of the power amplifier design is as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-power-amp"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename schematic_power_amp.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of power amplifier
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-power-amp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that pins 1 and 3 of the line-in (named 'LINE' in the schematic) are
+ both connected to ground.
+ This allows for plugging of the mating connector without having to worry
+ about the connector being plugged in the wrong way around.
+ It is also worth noting that a 100Ω resistance is connected in series with
+ the input to protect the amplifier against overvoltage.
+ The added resistance allows the clamping diodes inside the amplifier to
+ deal with any excess voltage.
+\end_layout
+
+\begin_layout Standard
+The PCB design of the power amplifier is as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PCB-design-power-amp"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename board_power_amp.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB board design of power amplifier
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PCB-design-power-amp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should we note that the PCB design was not actually realized due to time
+ constraints? Or shall we leave that remark for a later section?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -254,15 +448,32 @@ DCU
 \end_layout
 
 \begin_layout Standard
-The following features have been chosen for the implementation of the DCU:
+The following features and choices have been chosen/made for the implementation
+ of the DCU:
 \end_layout
 
 \begin_layout Itemize
-Digital control of the balance, tone, bass, treble and volume controls.
+For the microcontroller, an ATmega328P 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Was it with or without the P? I wasn't sure.
+\end_layout
+
+\end_inset
+
+ will be used since it bears lot of similarity with the ATmega32 which the
+ team is most familiar with.
 \end_layout
 
 \begin_layout Itemize
-Use of MIDI messages to pass commands to the DCU
+The DCU will allow digital control of the balance, tone, bass, treble and
+ volume controls through the use of digital potentiometers.
+\end_layout
+
+\begin_layout Itemize
+MIDI messages will be used to pass commands to the DCU
 \end_layout
 
 \end_body
