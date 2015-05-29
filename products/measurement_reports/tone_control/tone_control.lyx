@@ -559,6 +559,61 @@ Square 3
 \end_layout
 
 \begin_layout Standard
+The maximum value of a ceramic capacitor available in the lab at the Hague
+ University is 820nF.
+ 
+\end_layout
+
+\begin_layout Standard
+Capacitor C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+
+ is decided and with a cut-off frequency of 10Hz for the HPF, the resistor
+ R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ can be calculated with the formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{6}=\frac{1}{2π\cdot C_{11}\cdot10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{6}=19409Ohm
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Square 4
+\end_layout
+
+\begin_layout Standard
 The maximum boost or attenuation of the bass must be 10dB at 400Hz and the
  maximum boost or attenuation of the treble must be 10dB at 2,5kHz.
  
@@ -668,38 +723,11 @@ The resistors R
 
  can be any values, as long as the values of the resistors meets the requirement
  for the boost to be 10dB with the potentiometer in maximum position and
- attenuation of -10dB in minimum position.
+ attenuation of 10dB in minimum position.
 \end_layout
 
 \begin_layout Standard
-For the calculation of R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-7 
-\end_layout
-
-\end_inset
-
-and R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-8
-\end_layout
-
-\end_inset
-
-, it is chosen for R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-
- with a value of 1000Ohm and it is best if R
+It is best if R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -745,13 +773,13 @@ can be calculated by substituting the value of R
 
 \end_inset
 
- in (9) or (10)
+ in (10) or (11)
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{R_{7}||R_{8}+1000}{R_{7}||R_{8}}=10^{\frac{1}{2}}
+\frac{R_{7}||R_{8}+19409}{R_{7}||R_{8}}=10^{\frac{1}{2}}
 \]
 
 \end_inset
@@ -762,7 +790,7 @@ can be calculated by substituting the value of R
 \begin_layout Standard
 \begin_inset Formula 
 \[
-R_{7}||R_{8}+1000=3,16\cdot R_{7}||R_{8}
+R_{7}||R_{8}+19409=3,16\cdot R_{7}||R_{8}
 \]
 
 \end_inset
@@ -773,7 +801,7 @@ R_{7}||R_{8}+1000=3,16\cdot R_{7}||R_{8}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-R_{7}||R_{8}=463Ohm
+R_{7}||R_{8}=8900Ohm
 \]
 
 \end_inset
@@ -784,7 +812,7 @@ R_{7}||R_{8}=463Ohm
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{7}=R_{8}=926Ohm
+R_{7}=R_{8}=17800Ohm
 \end{equation}
 
 \end_inset
@@ -793,26 +821,7 @@ R_{7}=R_{8}=926Ohm
 \end_layout
 
 \begin_layout Standard
-With R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-7 
-\end_layout
-
-\end_inset
-
-and R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-8
-\end_layout
-
-\end_inset
-
- calculated and a cut-off frequency of 100kHz for the LPF, the capacitor
- C
+With a cut-off frequency of 100kHz for the LPF, the capacitor C
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -827,7 +836,7 @@ and R
 \begin_layout Standard
 \begin_inset Formula 
 \[
-C_{4}=\frac{1}{2π\cdot R_{7}||R_{8}\cdot100\cdot10^{3}}
+C_{4}=\frac{1}{2πR_{7}||R_{8}\cdot100\cdot10^{3}}
 \]
 
 \end_inset
@@ -838,56 +847,7 @@ C_{4}=\frac{1}{2π\cdot R_{7}||R_{8}\cdot100\cdot10^{3}}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-C_{4}=3,43nF
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Square 4
-\end_layout
-
-\begin_layout Standard
-Resistor R
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-
- is already decided and with a cut-off frequency of 10Hz for the HPF, the
- capacitor C
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-11
-\end_layout
-
-\end_inset
-
- can be calculated with the formula:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-C_{11}=\frac{1}{2π\cdot R_{6}\cdot10}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-C_{4}=15,9uF
+C_{4}=180pF
 \end{equation}
 
 \end_inset
@@ -918,8 +878,66 @@ f_{cut-off}=\frac{1}{2π\cdot R\cdot C}
 \end_layout
 
 \begin_layout Standard
-For the design of the bandpass filter, it is chosen for resistors of 1kOhm.
- The capacitors can now be calculated.
+For the design of the bandpass filter, it is chosen for capacitor C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+
+ with a value of 820nF.
+ The resistors can now be calculated.
+\end_layout
+
+\begin_layout Standard
+For the HPF part of the bandpass filter is the resistor R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+ equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{4}=\frac{1}{2π\cdot2\cdot820\cdot10^{-9}}=97045Ohm
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The balance control and the volume control regulates the gain of the preamplifie
+r.
+ Therefore the bandpass filter does not need to amplify the signal.
+ Thus it is neccessary for R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+ to be equal to R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+to attain a gain of 1 (0dB).
 \end_layout
 
 \begin_layout Standard
@@ -929,22 +947,7 @@ For the LPF part of the bandpass filter is the capacitor equal to:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-C=\frac{1}{2π\cdot400\cdot10^{3}\cdot1000}=400pF
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-For the HPF part of the bandpass filter is the capacitor equal to:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-C=\frac{1}{2π\cdot2\cdot1000}=80uF
+C_{10}=\frac{1}{2π\cdot400\cdot10^{3}\cdot97045}=4,1pF
 \end{equation}
 
 \end_inset
