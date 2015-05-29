@@ -239,17 +239,7 @@ Tone control on a circuit board
 \end_layout
 
 \begin_layout Standard
-Not all componenents
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-components
-\end_layout
-
-\end_inset
-
- are seen in the tone control in figure 2.
+Not all components are seen in the tone control in figure 2.
  The potentiometers and capacitors are attached on a breadboard.
  With cables, the components on the breadboard are connected with the the
  tone control on the circuit board.
@@ -1201,79 +1191,6 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-The bode plots of the measurement and simulation are closely matched in
- 
-\begin_inset Quotes eld
-\end_inset
-
-maximum boost
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-bass and treble off
-\begin_inset Quotes erd
-\end_inset
-
- but differs in 
-\begin_inset Quotes eld
-\end_inset
-
-maximum attenuation
-\begin_inset Quotes erd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In the bode plot of the measurement in maximum attenuation, is the maximum
- attenuation of the bass approximately 8,5dB and the maximum attenuation
- of the treble is approximately 3dB.
- In the simulation however is the maximum attenuation of the bass and treble
- 10dB.
- A possible reason why there is a difference between the measurement and
- simulation in maximum attenuation is because the potentiometers and capacitors
- are attached on the breadboard and not soldered.
- This can have influence on the measurements.
-\end_layout
-
-\begin_layout Standard
-The tone control meets the specification in 
-\begin_inset Quotes eld
-\end_inset
-
-maximum boost
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-bass and treble off
-\begin_inset Quotes erd
-\end_inset
-
- but not in 
-\begin_inset Quotes eld
-\end_inset
-
-maximum attenuation
-\begin_inset Quotes erd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 Alternative conclusion.The bode plots of the measurement and simulation are
  closely matched.
  There is however a problem with the bode plot of the measurement in maximum
@@ -1372,7 +1289,7 @@ used for building the tone control are not the same than the ones that were
 are chosen as close as possible to the calculated components.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 The tone control meets the specification in 
 \begin_inset Quotes eld
 \end_inset
@@ -1398,11 +1315,6 @@ maximum attenuation
 \end_inset
 
 .
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
