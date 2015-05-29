@@ -164,7 +164,8 @@ The objective of the measurement
 
 \begin_layout Standard
 The objective of the measurement is to get more insight in how the volume
- control functions.
+ control functions and to determine whether or not it meets the specifications
+ stated in the project book .
  Also the measurement is a preperation for the assessment of the project
  
 \begin_inset Quotes eld
@@ -175,16 +176,6 @@ PRO-Q2
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Any ideas Daan?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -252,6 +243,13 @@ Volume control schematic
 
 \begin_layout Standard
 The volume control is soldered on a circuit board as seen in figure 2.
+ The potentiometer and the capacitors are not yet soldered on the circuit
+ board.
+ The capacitors and potentiometer are on a breadboard and the breadboard
+ is connected to the circuit board.
+ This way the capacitors and potentiometer can always be replaced in case
+ if something is wrong with the componenents.
+ Figure 3 gives a breadboard with the componenents attached.
 \end_layout
 
 \begin_layout Standard
@@ -262,7 +260,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/measurement_reports/no_pic.png
+	filename design/design_volume_control_circuit_board.jpg
+	scale 5
 
 \end_inset
 
@@ -287,6 +286,39 @@ Volume control on a circuit board
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/measurement_reports/breadboard_with_components.jpg
+	scale 5
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Breadboard with the components attached
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The volume control is connected to the following equipment:
 \end_layout
 
@@ -295,7 +327,7 @@ The input of the volume control is connected to a function generator,
 \begin_inset Quotes eld
 \end_inset
 
-function generator type
+BK PRECISION 4052
 \begin_inset Quotes erd
 \end_inset
 
@@ -304,7 +336,7 @@ function generator type
 \begin_inset script subscript
 
 \begin_layout Plain Layout
-piek
+pk-pk
 \end_layout
 
 \end_inset
@@ -319,21 +351,11 @@ A power supply is connected to the positive (+15V) and negative (-15V) terminals
 
 \begin_layout Itemize
 The signals 'output' and 'input' are measured by using the oscilloscope
- type 
+ 
 \begin_inset Quotes eld
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-type of the oscilloscoop
-\end_layout
-
-\end_inset
-
-
+TEKTRONIX DPO2004B
 \begin_inset Quotes erd
 \end_inset
 
@@ -608,7 +630,7 @@ Tina-TI
 \end_layout
 
 \begin_layout Standard
-Figure 3 gives the bode plot of the volume control in maximum position.
+Figure 4 gives the bode plot of the volume control in maximum position.
 \end_layout
 
 \begin_layout Standard
@@ -645,7 +667,7 @@ Simulation maximum position
 \end_layout
 
 \begin_layout Standard
-Figure 4 gives the bode plot of the volume control in middle position.
+Figure 5 gives the bode plot of the volume control in middle position.
 \end_layout
 
 \begin_layout Standard
@@ -682,7 +704,7 @@ Simulation middle position
 \end_layout
 
 \begin_layout Standard
-Figure 5 gives the bode plot of the volume control in minimum position.
+Figure 6 gives the bode plot of the volume control in minimum position.
 \end_layout
 
 \begin_layout Standard
@@ -723,7 +745,7 @@ Measurements
 \end_layout
 
 \begin_layout Standard
-The results of the measurements can be found  appendix.
+The results of the measurements can be found in appendix.
 \end_layout
 
 \begin_layout Standard
@@ -850,7 +872,7 @@ First of all, the gain of the measurement in maximum position (Figure 6)
 Secondly, the gain of the measurement in minumum position (Figure 8) is
  approximately 28dB higher than the gain of the simulation in minimum position
  (Figure 5) In an ideal situation, the gain is suppost to be lower than
- -50dB (probaly even -infinete dB).
+ -50dB (probaly even -infinite dB).
  A possibility why the gain of the measurement in minumum position is higher
  than the simulation is of the existing noise that the volume control produce.
 \end_layout
@@ -859,16 +881,11 @@ Secondly, the gain of the measurement in minumum position (Figure 8) is
 There are also simularities between the measurement and the simulations.
  The gain of the measurement and the simulation are both approximately the
  same in middle and maximum position at a frequency range of 100Hz - 400kHz.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Any idea Daan?
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+The volume control meets the specifications in maximum and middle position
+ but not in minimum position.
 \end_layout
 
 \begin_layout Standard

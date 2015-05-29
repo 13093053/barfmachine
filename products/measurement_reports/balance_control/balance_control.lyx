@@ -163,8 +163,9 @@ The objective of the measurement
 \end_layout
 
 \begin_layout Standard
-The objective of the measurement is to get more insight how the balance
- control function.
+The objective of the measurement is to get more insight in how the balance
+ control function and to determine whether the balance control meets the
+ specifications.
  Also the measurement is a preperation for the assessment of the project
  
 \begin_inset Quotes eld
@@ -235,7 +236,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/measurement_reports/no_pic.png
+	filename design/balance_control_circuit_board.jpg
+	scale 5
 
 \end_inset
 
@@ -269,7 +271,7 @@ The input of the balance amplifier is connected to a function generator,
 \begin_inset Quotes eld
 \end_inset
 
-function generator type
+BK PRECISION 4052
 \begin_inset Quotes erd
 \end_inset
 
@@ -278,7 +280,7 @@ function generator type
 \begin_inset script subscript
 
 \begin_layout Plain Layout
-piek
+pk-pk
 \end_layout
 
 \end_inset
@@ -292,7 +294,15 @@ A power supply is connected to the positive (+15V) and negative (-15V) terminals
 \end_layout
 
 \begin_layout Itemize
-The signals 'out' and 'in' are measured by using the oscilloscope.
+The signals 'out' and 'in' are measured by using the oscilloscope, 
+\begin_inset Quotes eld
+\end_inset
+
+TEKTRONIX DPO2004B
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -971,6 +981,11 @@ The similarity between the bode plot of the measurement in flat position
  decreases by approximately 1dB at a frequency of approximately 2000Hz.
  Disturbances in the surrounding area of the circuit or noise can be a possible
  reason why this phenomenon occurs.
+\end_layout
+
+\begin_layout Standard
+Despite the differences between the measurements and simulations, the balance
+ control still meets the specifications.
 \end_layout
 
 \begin_layout Standard

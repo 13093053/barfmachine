@@ -143,7 +143,8 @@ The objective of the measurement
 
 \begin_layout Standard
 The objective of the measurement is to get more insight how the tone control
- function.
+ functions and to determine whether the tone control meets the specifications.
+ Also it is a preperation for the assessment of PRO-Q2.
 \end_layout
 
 \begin_layout Section
@@ -192,15 +193,15 @@ Tone control schematic
 \end_layout
 
 \begin_layout Standard
-Figure 3 gives a schematic of the tone control.
- The schematic of the tone control in figure 1 had undergone some adjustments.
+The schematic of the tone control in figure 1 has undergone some adjustments.
  The capacitors C7 and C8 are included and these capacitors prevent direct
  current flowing through the potentiometer and the wiper.
  Both capacitors have a value of 22uF because these values have almost no
  effect on the gain of the tone control and these values are available at
  the lab.
- Capacitors C9 and C10 are included around the OPAMP U4.
- The capacitors C9 and C10 ensures a bandpass filter is obtained.
+ Capacitors C9 and C10 are included around OPAMP U4.
+ The capacitors C9 and C10 ensures that a bandpass filter (cut-off frequencies
+ of 2Hz and 400kHz) is obtained.
 \end_layout
 
 \begin_layout Standard
@@ -215,18 +216,16 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/measurement_reports/no_pic.png
+	filename design/tone_control_circuit_board.jpg
+	scale 5
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Balance control on a circuit board
+Tone control on a circuit board
 \end_layout
 
 \end_inset
@@ -240,20 +239,36 @@ Balance control on a circuit board
 \end_layout
 
 \begin_layout Standard
+Not all componenents are seen in the tone control in figure 2.
+ The potentiometers and capacitors are attached on a breadboard.
+ With cables, the components on the breadboard are connected with the the
+ tone control on the circuit board.
+\end_layout
+
+\begin_layout Standard
 The tone control is connected to the following equipment:
 \end_layout
 
 \begin_layout Itemize
-The input of the tone amplifier is connected to a function generator, 
+The input of the tone control is connected to a function generator, 
 \begin_inset Quotes eld
 \end_inset
 
-function generator type
+BK PRECISION 4052
 \begin_inset Quotes erd
 \end_inset
 
 .
- The input signal is a sinus with an amplitude of 1V
+ The input signal is a sinus with an amplitude of 252mV
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+pk-pk
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -262,7 +277,16 @@ A power supply is connected to the positive (+15V) and negative (-15V) terminals
 \end_layout
 
 \begin_layout Itemize
-The signals 'out' and 'in' are measured by using the oscilloscope.
+The signals 'output' and 'input' are measured by using the oscilloscope,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+TEKTRONIX DPO2004B
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -349,11 +373,11 @@ Square 2: A lowpass filter with a cut-off frequency adjustable between 100Hz
 \end_layout
 
 \begin_layout Standard
-Square 3: A lowpass filter with a cut-off frequency of 100kHz
+Square 3: A highpass filter with a cut-off frequency of 10Hz 
 \end_layout
 
 \begin_layout Standard
-Square 4: A highpass filter with a cut-off frequency of 10Hz 
+Square 4: A lowpass filter with a cut-off frequency of 100kHz
 \end_layout
 
 \begin_layout Standard
@@ -417,7 +441,7 @@ C_{3}=\frac{1}{2π\cdot(R_{12}+10000)\cdot2500}
 \end_layout
 
 \begin_layout Standard
-Substitube (4) in (5) to calculate resistor
+Substitube (1) in (2) to calculate resistor
 \end_layout
 
 \begin_layout Standard
@@ -443,7 +467,7 @@ R_{12}=3333,33Ohm
 \end_layout
 
 \begin_layout Standard
-Substitute (6) in (4) or (5) to calculate the capacitor
+Substitute (3) in (1) or (2) to calculate the capacitor
 \end_layout
 
 \begin_layout Standard
@@ -514,7 +538,7 @@ C_{2}=\frac{1}{2π\cdot(R_{10}+10000)\cdot100}
 \end_layout
 
 \begin_layout Standard
-Substitube (8) in (9) to calculate resistor
+Substitube (5) in (6) to calculate resistor
 \end_layout
 
 \begin_layout Standard
@@ -540,7 +564,7 @@ R_{10}=3333,33Ohm
 \end_layout
 
 \begin_layout Standard
-Substitute (10) in (8) or (9) to calculate the capacitor
+Substitute (7) in (5) or (6) to calculate the capacitor
 \end_layout
 
 \begin_layout Standard
@@ -722,8 +746,7 @@ The resistors R
 \end_inset
 
  can be any values, as long as the values of the resistors meets the requirement
- for the boost to be 10dB with the potentiometer in maximum position and
- attenuation of 10dB in minimum position.
+ for the boost to be 10dB with the potentiometer in maximum position.
 \end_layout
 
 \begin_layout Standard
@@ -960,6 +983,18 @@ Simulations
 \end_layout
 
 \begin_layout Standard
+The software 
+\begin_inset Quotes eld
+\end_inset
+
+Tina-TI
+\begin_inset Quotes erd
+\end_inset
+
+ is used for the simulation of the tone control.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -976,7 +1011,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simulation maximum position
+Simulation maximum boost
 \end_layout
 
 \end_inset
@@ -1006,7 +1041,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simulation middle position
+Simulation bass and treble off
 \end_layout
 
 \end_inset
@@ -1036,7 +1071,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simulation minimum position
+Simulation maximum attenuation
 \end_layout
 
 \end_inset
@@ -1054,13 +1089,96 @@ Measurements
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+The results of the measurements are in appendix.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-We need to build this Scheisse before next week friday or else we're dead
- like fish.
- Need to make measurements and stuff.
+\begin_inset Graphics
+	filename measurement/max_boost.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation maximum boost
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename measurement/bass_treble_off.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation maximum attenuation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename measurement/max_attenuation.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation bass and treble off
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1070,6 +1188,75 @@ We need to build this Scheisse before next week friday or else we're dead
 
 \begin_layout Section
 Conclusion
+\end_layout
+
+\begin_layout Standard
+The bode plots of the measurement and simulation are closely matched in
+ 
+\begin_inset Quotes eld
+\end_inset
+
+maximum boost
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+bass and treble off
+\begin_inset Quotes erd
+\end_inset
+
+ but differs in 
+\begin_inset Quotes eld
+\end_inset
+
+maximum attenuation
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the bode plot of the measurement in maximum attenuation, is the maximum
+ attenuation of the bass approximately 8,5dB and the maximum attenuation
+ of the treble is approximately 3dB.
+ In the simulation however is the maximum attenuation of the bass and treble
+ 10dB.
+ A possible reason why there is a difference between the measurement and
+ simulation in maximum attenuation is because the potentiometers and capacitors
+ are attached on the breadboard and not soldered.
+ This can have influence on the measurements.
+\end_layout
+
+\begin_layout Standard
+The tone control meets the specification in 
+\begin_inset Quotes eld
+\end_inset
+
+maximum boost
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+bass and treble off
+\begin_inset Quotes erd
+\end_inset
+
+ but not in 
+\begin_inset Quotes eld
+\end_inset
+
+maximum attenuation
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1093,7 +1280,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Measurements bass and treble at -10dB
+Measurements maximum attenuation
 \end_layout
 
 \end_inset
@@ -1132,7 +1319,7 @@ in
 
 \end_inset
 
-
+(mV)
 \end_layout
 
 \end_inset
@@ -1150,7 +1337,7 @@ out
 
 \end_inset
 
-
+ (mV)
 \end_layout
 
 \end_inset
@@ -1179,7 +1366,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1188,7 +1375,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,06 
 \end_layout
 
 \end_inset
@@ -1197,7 +1384,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-3,326628435 
 \end_layout
 
 \end_inset
@@ -1217,7 +1404,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1226,7 +1413,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,05 
 \end_layout
 
 \end_inset
@@ -1235,7 +1422,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-4,910253356 
 \end_layout
 
 \end_inset
@@ -1255,7 +1442,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,08 
 \end_layout
 
 \end_inset
@@ -1264,7 +1451,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,03 
 \end_layout
 
 \end_inset
@@ -1273,7 +1460,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-8,519374645 
 \end_layout
 
 \end_inset
@@ -1293,7 +1480,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1302,7 +1489,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,048 
 \end_layout
 
 \end_inset
@@ -1311,7 +1498,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-5,264828695 
 \end_layout
 
 \end_inset
@@ -1331,7 +1518,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1340,7 +1527,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,059 
 \end_layout
 
 \end_inset
@@ -1349,7 +1536,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-3,47261321 
 \end_layout
 
 \end_inset
@@ -1369,7 +1556,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1378,7 +1565,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,067 
 \end_layout
 
 \end_inset
@@ -1387,7 +1574,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,368157389 
 \end_layout
 
 \end_inset
@@ -1407,7 +1594,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1416,7 +1603,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,081 
 \end_layout
 
 \end_inset
@@ -1425,7 +1612,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,719953065 
 \end_layout
 
 \end_inset
@@ -1445,7 +1632,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1454,7 +1641,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -1463,7 +1650,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,199684418 
 \end_layout
 
 \end_inset
@@ -1483,7 +1670,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1492,7 +1679,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1501,7 +1688,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -1521,7 +1708,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1530,7 +1717,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1539,7 +1726,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -1559,7 +1746,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1568,7 +1755,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1577,7 +1764,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -1597,7 +1784,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1606,7 +1793,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1615,7 +1802,45 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
+0
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,089 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,089 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
 \end_layout
 
 \end_inset
@@ -1635,7 +1860,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,089 
 \end_layout
 
 \end_inset
@@ -1644,7 +1869,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,085 
 \end_layout
 
 \end_inset
@@ -1653,7 +1878,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,399421619 
 \end_layout
 
 \end_inset
@@ -1673,7 +1898,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -1682,7 +1907,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,074 
 \end_layout
 
 \end_inset
@@ -1691,7 +1916,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-1,505019048 
 \end_layout
 
 \end_inset
@@ -1711,7 +1936,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -1720,7 +1945,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,067 
 \end_layout
 
 \end_inset
@@ -1729,7 +1954,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,563354135 
 \end_layout
 
 \end_inset
@@ -1749,7 +1974,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -1758,7 +1983,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,066 
 \end_layout
 
 \end_inset
@@ -1767,7 +1992,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,693971478 
 \end_layout
 
 \end_inset
@@ -1787,7 +2012,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -1796,7 +2021,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,066 
 \end_layout
 
 \end_inset
@@ -1805,7 +2030,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,693971478 
 \end_layout
 
 \end_inset
@@ -1825,7 +2050,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,091 
 \end_layout
 
 \end_inset
@@ -1834,7 +2059,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,068 
 \end_layout
 
 \end_inset
@@ -1843,7 +2068,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,530649592 
 \end_layout
 
 \end_inset
@@ -1863,7 +2088,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,091 
 \end_layout
 
 \end_inset
@@ -1872,7 +2097,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,066 
 \end_layout
 
 \end_inset
@@ -1881,7 +2106,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,789949136 
 \end_layout
 
 \end_inset
@@ -1901,7 +2126,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,092 
 \end_layout
 
 \end_inset
@@ -1910,7 +2135,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,072 
 \end_layout
 
 \end_inset
@@ -1919,7 +2144,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,129106618 
 \end_layout
 
 \end_inset
@@ -1939,7 +2164,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,092 
 \end_layout
 
 \end_inset
@@ -1948,7 +2173,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -1957,7 +2182,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,585787522 
 \end_layout
 
 \end_inset
@@ -1977,7 +2202,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,091 
 \end_layout
 
 \end_inset
@@ -1986,7 +2211,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,08 
 \end_layout
 
 \end_inset
@@ -1995,14 +2220,14 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-1,119028107 
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2011,40 +2236,11 @@ Gain (dB)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-500000
+0,093 
 \end_layout
 
 \end_inset
@@ -2053,16 +2249,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+0,079 
 \end_layout
 
 \end_inset
@@ -2071,7 +2258,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-1,417117145 
 \end_layout
 
 \end_inset
@@ -2099,7 +2286,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Measurements bass and treble at 0dB
+Measurements bass and treble switched off
 \end_layout
 
 \end_inset
@@ -2138,7 +2325,7 @@ in
 
 \end_inset
 
-
+ (mV)
 \end_layout
 
 \end_inset
@@ -2156,7 +2343,7 @@ out
 
 \end_inset
 
-
+(mV)
 \end_layout
 
 \end_inset
@@ -2185,7 +2372,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2194,7 +2381,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,062 
 \end_layout
 
 \end_inset
@@ -2203,7 +2390,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-3,041819653 
 \end_layout
 
 \end_inset
@@ -2223,7 +2410,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2232,7 +2419,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087
 \end_layout
 
 \end_inset
@@ -2241,7 +2428,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,099268391 
 \end_layout
 
 \end_inset
@@ -2261,7 +2448,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,089 
 \end_layout
 
 \end_inset
@@ -2270,7 +2457,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,093
 \end_layout
 
 \end_inset
@@ -2279,7 +2466,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,381858838 
 \end_layout
 
 \end_inset
@@ -2299,7 +2486,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -2308,7 +2495,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,093 
 \end_layout
 
 \end_inset
@@ -2317,7 +2504,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,480005528 
 \end_layout
 
 \end_inset
@@ -2337,7 +2524,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2346,7 +2533,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,092 
 \end_layout
 
 \end_inset
@@ -2355,7 +2542,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,386103104 
 \end_layout
 
 \end_inset
@@ -2375,7 +2562,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2384,7 +2571,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,092
 \end_layout
 
 \end_inset
@@ -2393,7 +2580,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,386103104 
 \end_layout
 
 \end_inset
@@ -2413,7 +2600,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2422,7 +2609,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,091 
 \end_layout
 
 \end_inset
@@ -2431,7 +2618,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,291174403 
 \end_layout
 
 \end_inset
@@ -2451,7 +2638,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2460,7 +2647,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -2469,7 +2656,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,195196746 
 \end_layout
 
 \end_inset
@@ -2489,7 +2676,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2498,7 +2685,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,091 
 \end_layout
 
 \end_inset
@@ -2507,7 +2694,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,291174403 
 \end_layout
 
 \end_inset
@@ -2527,7 +2714,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2536,7 +2723,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -2545,7 +2732,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,195196746 
 \end_layout
 
 \end_inset
@@ -2565,7 +2752,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2574,7 +2761,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,092
 \end_layout
 
 \end_inset
@@ -2583,7 +2770,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,386103104 
 \end_layout
 
 \end_inset
@@ -2603,7 +2790,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2612,7 +2799,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09
 \end_layout
 
 \end_inset
@@ -2621,7 +2808,45 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
+0,195196746 
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,089 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,09 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,097050056 
 \end_layout
 
 \end_inset
@@ -2641,7 +2866,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2650,7 +2875,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -2659,7 +2884,45 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
+0,195196746 
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,088
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,09 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,195196746 
 \end_layout
 
 \end_inset
@@ -2679,7 +2942,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -2688,7 +2951,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,089 
 \end_layout
 
 \end_inset
@@ -2697,7 +2960,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,097050056 
 \end_layout
 
 \end_inset
@@ -2717,7 +2980,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -2726,7 +2989,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2735,7 +2998,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,195196746 
 \end_layout
 
 \end_inset
@@ -2755,7 +3018,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,091 
 \end_layout
 
 \end_inset
@@ -2764,7 +3027,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,089 
 \end_layout
 
 \end_inset
@@ -2773,7 +3036,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,193027714 
 \end_layout
 
 \end_inset
@@ -2793,7 +3056,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -2802,7 +3065,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2811,7 +3074,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,195196746 
 \end_layout
 
 \end_inset
@@ -2831,7 +3094,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,091 
 \end_layout
 
 \end_inset
@@ -2840,7 +3103,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,09 
 \end_layout
 
 \end_inset
@@ -2849,7 +3112,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,095977658 
 \end_layout
 
 \end_inset
@@ -2869,7 +3132,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,091 
 \end_layout
 
 \end_inset
@@ -2878,7 +3141,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -2887,7 +3150,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-0,291174403 
 \end_layout
 
 \end_inset
@@ -2907,7 +3170,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,092 
 \end_layout
 
 \end_inset
@@ -2916,7 +3179,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,085 
 \end_layout
 
 \end_inset
@@ -2925,45 +3188,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-200000
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+-0,687378033 
 \end_layout
 
 \end_inset
@@ -2983,7 +3208,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,093 
 \end_layout
 
 \end_inset
@@ -2992,7 +3217,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,066 
 \end_layout
 
 \end_inset
@@ -3001,14 +3226,14 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,97878026 
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3017,40 +3242,11 @@ Gain (dB)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-500000
+0,093
 \end_layout
 
 \end_inset
@@ -3059,16 +3255,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+0,057 
 \end_layout
 
 \end_inset
@@ -3077,7 +3264,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-4,252161858 
 \end_layout
 
 \end_inset
@@ -3105,7 +3292,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Measurements bass and treble at 10dB
+Measurements maximum boost
 \end_layout
 
 \end_inset
@@ -3115,7 +3302,7 @@ Measurements bass and treble at 10dB
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="25" columns="4">
+<lyxtabular version="3" rows="27" columns="4">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -3191,7 +3378,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3200,7 +3387,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,0664 
 \end_layout
 
 \end_inset
@@ -3209,7 +3396,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-2,347023465 
 \end_layout
 
 \end_inset
@@ -3229,7 +3416,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3238,7 +3425,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,133 
 \end_layout
 
 \end_inset
@@ -3247,7 +3434,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3,686647767 
 \end_layout
 
 \end_inset
@@ -3267,7 +3454,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -3276,7 +3463,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,223 
 \end_layout
 
 \end_inset
@@ -3285,7 +3472,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8,276128236 
 \end_layout
 
 \end_inset
@@ -3305,7 +3492,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,085 
 \end_layout
 
 \end_inset
@@ -3314,7 +3501,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,271 
 \end_layout
 
 \end_inset
@@ -3323,7 +3510,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10,0710073 
 \end_layout
 
 \end_inset
@@ -3343,7 +3530,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,085 
 \end_layout
 
 \end_inset
@@ -3352,7 +3539,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,265 
 \end_layout
 
 \end_inset
@@ -3361,7 +3548,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+9,876538964 
 \end_layout
 
 \end_inset
@@ -3381,7 +3568,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,085 
 \end_layout
 
 \end_inset
@@ -3390,7 +3577,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,246 
 \end_layout
 
 \end_inset
@@ -3399,7 +3586,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+9,230323628 
 \end_layout
 
 \end_inset
@@ -3419,7 +3606,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -3428,7 +3615,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,179 
 \end_layout
 
 \end_inset
@@ -3437,7 +3624,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6,367091595 
 \end_layout
 
 \end_inset
@@ -3457,7 +3644,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -3466,7 +3653,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,144 
 \end_layout
 
 \end_inset
@@ -3475,7 +3662,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4,477280817 
 \end_layout
 
 \end_inset
@@ -3495,7 +3682,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -3504,7 +3691,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,126 
 \end_layout
 
 \end_inset
@@ -3513,7 +3700,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3,317441877 
 \end_layout
 
 \end_inset
@@ -3533,7 +3720,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3542,7 +3729,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,115 
 \end_layout
 
 \end_inset
@@ -3551,7 +3738,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2,423571755 
 \end_layout
 
 \end_inset
@@ -3571,7 +3758,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3580,7 +3767,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,104 
 \end_layout
 
 \end_inset
@@ -3589,7 +3776,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1,550281734 
 \end_layout
 
 \end_inset
@@ -3609,7 +3796,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3618,7 +3805,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,112 
 \end_layout
 
 \end_inset
@@ -3627,7 +3814,45 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
+2,193975401 
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,087 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,123 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,007717176 
 \end_layout
 
 \end_inset
@@ -3647,7 +3872,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3656,7 +3881,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,13 
 \end_layout
 
 \end_inset
@@ -3665,7 +3890,45 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
+3,488481994 
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,081 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,136 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,50107779 
 \end_layout
 
 \end_inset
@@ -3685,7 +3948,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3694,7 +3957,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,184 
 \end_layout
 
 \end_inset
@@ -3703,7 +3966,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6,505971408 
 \end_layout
 
 \end_inset
@@ -3723,7 +3986,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -3732,7 +3995,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,225 
 \end_layout
 
 \end_inset
@@ -3741,7 +4004,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8,353681337 
 \end_layout
 
 \end_inset
@@ -3761,7 +4024,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,089 
 \end_layout
 
 \end_inset
@@ -3770,7 +4033,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,25 
 \end_layout
 
 \end_inset
@@ -3779,7 +4042,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8,971000041 
 \end_layout
 
 \end_inset
@@ -3799,7 +4062,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -3808,7 +4071,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,25 
 \end_layout
 
 \end_inset
@@ -3817,7 +4080,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+9,268831149 
 \end_layout
 
 \end_inset
@@ -3837,7 +4100,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,086 
 \end_layout
 
 \end_inset
@@ -3846,7 +4109,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,264 
 \end_layout
 
 \end_inset
@@ -3855,7 +4118,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+9,742109513 
 \end_layout
 
 \end_inset
@@ -3875,7 +4138,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3884,7 +4147,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,197 
 \end_layout
 
 \end_inset
@@ -3893,7 +4156,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7,098939471 
 \end_layout
 
 \end_inset
@@ -3913,7 +4176,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,087 
 \end_layout
 
 \end_inset
@@ -3922,7 +4185,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,127 
 \end_layout
 
 \end_inset
@@ -3931,7 +4194,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3,285689367 
 \end_layout
 
 \end_inset
@@ -3951,7 +4214,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -3960,7 +4223,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -3969,7 +4232,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -3989,7 +4252,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,088 
 \end_layout
 
 \end_inset
@@ -3998,7 +4261,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,07 
 \end_layout
 
 \end_inset
@@ -4007,7 +4270,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-1,987692643 
 \end_layout
 
 \end_inset
@@ -4027,7 +4290,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,089 
 \end_layout
 
 \end_inset
@@ -4036,7 +4299,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,06 
 \end_layout
 
 \end_inset
@@ -4045,7 +4308,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-3,424775125 
 \end_layout
 
 \end_inset
@@ -4065,7 +4328,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,089 
 \end_layout
 
 \end_inset
@@ -4074,7 +4337,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,05 
 \end_layout
 
 \end_inset
@@ -4083,7 +4346,7 @@ Gain (dB)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-5,008400046 
 \end_layout
 
 \end_inset
