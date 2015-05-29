@@ -80,7 +80,7 @@ As already hinted, the system primarily consists of four subsystems.
  component (referred to as 'DCU' from here on, short for 'Digital Control
  Unit').
  While the design for the preamplifier is already predetermined for the
- most part, all other parts have to be designed from scratch 
+ most part, all other parts have to be designed from scratch
 \begin_inset Note Note
 status open
 
@@ -92,9 +92,10 @@ status open
 \end_inset
 
 .
- An overview of the system's design will be presented in this section, and
- the sections that follow will offer a more detailed look into the analysis/desi
-gn of the parts.
+ An overview of the system's design will be presented in this section, with
+ minor to no additional clarifications on the design itself.
+ The sections that follow will offer a detailed look into the analysis/design
+ of the parts.
 \end_layout
 
 \begin_layout Subsection
@@ -464,9 +465,6 @@ name "fig:PCB-design-power-amp"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -485,7 +483,115 @@ Power supply
 \end_layout
 
 \begin_layout Standard
-[Power supply design overview]
+The schematic of the power supply is as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-power-supply"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename schematic_power_supply.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of power supply
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-power-supply"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The PCB design of the power supply is as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PCB-design-power-supply"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename board_power_supply.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB board design of power supply
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PCB-design-power-supply"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -498,7 +604,7 @@ The following features and choices have been chosen/made for the implementation
 \end_layout
 
 \begin_layout Itemize
-For the microcontroller, an ATmega328P 
+For the microcontroller, an ATmega328P
 \begin_inset Note Note
 status open
 
