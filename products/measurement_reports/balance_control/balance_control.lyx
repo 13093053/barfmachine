@@ -213,8 +213,26 @@ reference "fig:Schematic-balance-control"
 
  is slightly different from the balance control as described in the project
  manual.
- The capacitors C5 and C6 are included and these capacitors prevent direct
- current flowing through the potentiometer and the wiper.
+ The capacitors C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+ and C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ are included and these capacitors prevent direct current flowing through
+ the potentiometer and the wiper.
  
 \end_layout
 

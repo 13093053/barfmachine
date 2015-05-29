@@ -6,7 +6,6 @@
 \begin_preamble
 \usepackage[left, modulo]{lineno}
 \linenumbers
-\setlength\linenumbersep{2pt}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -14,7 +13,7 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman lmodern
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -61,7 +60,7 @@
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
-\defskip smallskip
+\defskip bigskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -164,18 +163,19 @@ The objective of the measurement
 
 \begin_layout Standard
 The objective of the measurement is to get more insight in how the volume
- control functions and to determine whether or not it meets the specifications
- stated in the project book .
- Also the measurement is a preperation for the assessment of the project
- 
-\begin_inset Quotes eld
+ control functions and to determine whether it meets the specifications
+ stated in the project book.
+ The measurement is also
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Changed from "Also the measurement is"
+\end_layout
+
 \end_inset
 
-PRO-Q2
-\begin_inset Quotes erd
-\end_inset
-
-.
+ a preparation for the assessment of the project.
 \end_layout
 
 \begin_layout Section
@@ -183,9 +183,38 @@ Measurement setup
 \end_layout
 
 \begin_layout Standard
-Figure 1 gives a schematic of the volume control.
- The schematic of the volume control in figure 1 is slightly different than
- the volume control from the projectbook.
+Figure 1 shows the
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+'gives a' isn't a legit English saying
+\end_layout
+
+\end_inset
+
+ schematic of the volume control.
+ The schematic of the volume control in figure 1 is slightly different from
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+'from', not 'than'
+\end_layout
+
+\end_inset
+
+ the volume control in the project manual
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+'project manual', not 'projectbook'
+\end_layout
+
+\end_inset
+
+.
  The capacitors C
 \begin_inset script subscript
 
@@ -217,6 +246,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename design/design.png
+	lyxscale 80
 	scale 50
 
 \end_inset
@@ -245,11 +275,11 @@ Volume control schematic
 The volume control is soldered on a circuit board as seen in figure 2.
  The potentiometer and the capacitors are not yet soldered on the circuit
  board.
- The capacitors and potentiometer are on bread board and with cables, the
- bread board is connected to the circuit board.
+ The capacitors and potentiometer are placed on a breadboard and with cables,
+ the breadboard is connected to the circuit board.
  This way the capacitors and potentiometer can always be replaced in case
- if something is wrong with the capacitors and potentiometer.
- Figure 3 gives a breadboard with the componenents attached.
+ something is wrong with the capacitors and/or potentiometer.
+ Figure 3 shows the breadboard with the componenents attached.
 \end_layout
 
 \begin_layout Standard
@@ -261,6 +291,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename design/design_volume_control_circuit_board.jpg
+	lyxscale 20
 	scale 5
 
 \end_inset
@@ -293,7 +324,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/measurement_reports/breadboard_with_components.jpg
+	filename ../breadboard_with_components.jpg
+	lyxscale 20
 	scale 5
 
 \end_inset
@@ -332,7 +364,7 @@ BK PRECISION 4052
 \end_inset
 
 .
- The input signal is a sinus with an amplitude of 252mV
+ The input signal is a sine with an amplitude of 252mV
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -341,7 +373,7 @@ pk-pk
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Itemize
@@ -359,7 +391,7 @@ TEKTRONIX DPO2004B
 \begin_inset Quotes erd
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Section
@@ -367,7 +399,7 @@ Specifications
 \end_layout
 
 \begin_layout Subsection
-Overall Specifications Preamplifier
+Overall specifications preamplifier
 \end_layout
 
 \begin_layout Standard
@@ -376,27 +408,63 @@ Balance control in flat position, tone (bass and treble) control switched
 \end_layout
 
 \begin_layout Itemize
-Input impedance: minimum 100 kΩ 
+Input impedance: minimum 100kΩ 
 \end_layout
 
 \begin_layout Itemize
-Output impedance: maximum 100 Ω 
+Output impedance: maximum 100Ω 
 \end_layout
 
 \begin_layout Itemize
-Sensitivity : 2 V output voltage in RL = 20 kΩ at 200 mV input 
+Sensitivity : 2V output voltage in R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ = 20 kΩ at 200mV input 
 \end_layout
 
 \begin_layout Itemize
-Frequency range: 2 Hz to 400 kHz (−3 dB) at Vout = 500 mV, RL = 20 kΩ 
+Frequency range: 2Hz to 400kHz (−3dB) at V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+out
+\end_layout
+
+\end_inset
+
+ = 500mV, R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ = 20kΩ 
 \end_layout
 
 \begin_layout Itemize
-Output voltage: at least 7 V sinusoidal with RL = 20 kΩ, f = 1 kHz
+Output voltage: at least 7V sinusoidal with R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ = 20kΩ, f = 1kHz
 \end_layout
 
 \begin_layout Subsection
-Volume Control Specifications
+Volume control specifications
 \end_layout
 
 \begin_layout Itemize
@@ -418,9 +486,10 @@ Calculations
 \begin_layout Standard
 With an input voltage of 200mV, an output voltage of 2V must be acquired
  with the balance control in flat position, tone (bass and treble) control
- switched off and the volume control at maximum With a gain of approximately
- 1,26 in the balance control and a gain of 1 in the tone control, the voltage
- at the input of the volume control is approximately equal to:
+ switched off and the volume control at maximum.
+ With a gain of approximately 1,26 in the balance control and a gain of
+ 1 in the tone control, the voltage at the input of the volume control is
+ approximately equal to:
 \end_layout
 
 \begin_layout Standard
@@ -436,8 +505,16 @@ U_{input-volume-control}=1,26\cdot1\cdot200mV=252mV
 
 \begin_layout Standard
 The input voltage of the volume control is now known and because the volume
- control is at maximum, the voltage at the output of U5 is equal to the
- input voltage of the volume control.
+ control is at maximum, the voltage at the output of U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+ is equal to the input voltage of the volume control.
  The values of R
 \begin_inset script subscript
 
@@ -509,7 +586,7 @@ The ratio between R
 \end_inset
 
  is 7,94.
- The values of the R
+ The values of R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -528,14 +605,54 @@ The ratio between R
 \end_inset
 
  can be determined.
- Therefore it is chosen for the following values:
+ The following values have been chosen for R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+'Therefore it is chosen for the following values' isn't a legit English
+ saying
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{18}=7940Ohm
+R_{18}=7940\Omega
 \end{equation}
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+You can get the Omega character from the maths toolbar at the bottom (if
+ you have made it visible)
+\end_layout
 
 \end_inset
 
@@ -545,7 +662,7 @@ R_{18}=7940Ohm
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{17}=1000Ohm
+R_{17}=1000\Omega
 \end{equation}
 
 \end_inset
@@ -554,11 +671,12 @@ R_{17}=1000Ohm
 \end_layout
 
 \begin_layout Standard
-With the volume control at minimum, the gain is should be very low (- infinite
- dB) but that is in practice impossible.
+With the volume control at minimum, the gain should be very low (-∞dB) but
+ that is impossible in practice.
  Therefore simulations are required to determine what the gain can be if
- the volume control is almost to the minimum (99%) The gain with the volume
- control almost to the minimum is approximately -50dB.
+ the volume control is almost set to the minimum (99%).
+ The gain with the volume control set almost to the minimum is approximately
+ -50dB.
  The gain with the potentiometer in middle position (50%) is equal to:
 \begin_inset Formula 
 \[
@@ -571,8 +689,26 @@ With the volume control at minimum, the gain is should be very low (- infinite
 \end_layout
 
 \begin_layout Standard
-Resistor R16 can be calculated to aquire an approximate logarithmic control
- function:
+Resistor R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+
+ can be calculated to acquire
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+'acquire', not 'aquire'
+\end_layout
+
+\end_inset
+
+ an approximate logarithmic control function:
 \end_layout
 
 \begin_layout Standard
@@ -605,7 +741,7 @@ log(\frac{R_{16}}{5000+R_{16}}\cdot\frac{7940}{1000})=-\frac{16}{20}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{16}=100Ohm
+R_{16}=100\Omega
 \end{equation}
 
 \end_inset
@@ -618,19 +754,11 @@ Simulations
 \end_layout
 
 \begin_layout Standard
-The software 
-\begin_inset Quotes eld
-\end_inset
-
-Tina-TI
-\begin_inset Quotes erd
-\end_inset
-
- was used for the simulation of the volume control.
+The software 'Tina-TI' was used for the simulation of the volume control.
 \end_layout
 
 \begin_layout Standard
-Figure 4 gives the bode plot of the volume control in maximum position.
+Figure 4 shows the bode plot of the volume control in maximum position.
 \end_layout
 
 \begin_layout Standard
@@ -642,6 +770,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename simulation/max_position_volume_control.png
+	lyxscale 50
 	scale 40
 
 \end_inset
@@ -667,7 +796,7 @@ Simulation maximum position
 \end_layout
 
 \begin_layout Standard
-Figure 5 gives the bode plot of the volume control in middle position.
+Figure 5 shows the bode plot of the volume control in middle position.
 \end_layout
 
 \begin_layout Standard
@@ -679,6 +808,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename simulation/mid_position_volume_control.png
+	lyxscale 50
 	scale 40
 
 \end_inset
@@ -704,7 +834,7 @@ Simulation middle position
 \end_layout
 
 \begin_layout Standard
-Figure 6 gives the bode plot of the volume control in minimum position.
+Figure 6 shows the bode plot of the volume control in minimum position.
 \end_layout
 
 \begin_layout Standard
@@ -716,6 +846,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename simulation/min_position_volume_control.png
+	lyxscale 50
 	scale 40
 
 \end_inset
@@ -745,7 +876,7 @@ Measurements
 \end_layout
 
 \begin_layout Standard
-The results of the measurements can be found in appendix.
+The results of the measurements can be found in the appendix.
 \end_layout
 
 \begin_layout Standard
@@ -858,29 +989,39 @@ There are differences between the bode plot provided by the measurements
 \end_layout
 
 \begin_layout Standard
-First of all, the gain of the measurement in maximum position (Figure 6)
+First of all, the gain of the measurement in maximum position (figure 6)
  begins approximately at -17dB and rises to approximately 17dB.
- The gain of the simulation in maximum position (Figure 3) begins approximately
+ The gain of the simulation in maximum position (figure 3) begins approximately
  at -6dB and rises to 17,95dB.
  In an ideal situation the gain should be approximately 17dB throughout
  the whole frequency range (2Hz-400kHz).
- The reason for the gain to begin with a negative gain, is because of the
- existing capacitors that ensures a highpass filter effect.
+ The reason for the gain to begin with a negative value, is because of the
+ existing capacitors that ensure a high-pass filter effect.
 \end_layout
 
 \begin_layout Standard
-Secondly, the gain of the measurement in minumum position (Figure 8) is
- approximately 28dB higher than the gain of the simulation in minimum position
- (Figure 5) In an ideal situation, the gain is suppost to be lower than
- -50dB (probaly even -infinite dB).
- A possibility why the gain of the measurement in minumum position is higher
+Secondly, the gain of the measurement in minimum position (figure 8) is
+ approximately 28dB higher than the gain of the simulation in minimum
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Typoed a few times as 'minumum'
+\end_layout
+
+\end_inset
+
+ position (figure 5).
+ In an ideal situation, the gain is supposed to be lower than -50dB (probably
+ even -∞dB).
+ A possibility why the gain of the measurement in minimum position is higher
  than the simulation is of the existing noise that the volume control produce.
 \end_layout
 
 \begin_layout Standard
 There are also simularities between the measurement and the simulations.
  The gain of the measurement and the simulation are both approximately the
- same in middle and maximum position at a frequency range of 100Hz - 400kHz.
+ same in middle and maximum position at a frequency range of 100Hz-400kHz.
 \end_layout
 
 \begin_layout Standard
