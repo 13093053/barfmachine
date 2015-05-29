@@ -146,9 +146,9 @@ The objective of the measurement
 \end_layout
 
 \begin_layout Standard
-The objective of the measurement is to get more insight in how the balance
- control functions and to determine whether the power amplifier meets the
- specifications.
+The objective of the measurement is to get more insight in how the power
+ amplifier functions and to determine whether the power amplifier meets
+ the specifications.
  The measurement is also a preparation for the assessment of the project.
 \end_layout
 
@@ -157,7 +157,14 @@ Measurement setup
 \end_layout
 
 \begin_layout Standard
-Figure [insert cross-reference here] shows the schematic of the power amplifier.
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Power-amplifier-schematic"
+
+\end_inset
+
+shows the schematic of the power amplifier.
 \end_layout
 
 \begin_layout Standard
@@ -167,6 +174,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename design/Schematic_power_amp.png
+
+\end_inset
+
 
 \end_layout
 
@@ -182,6 +194,38 @@ name "fig:Power-amplifier-schematic"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/measurement_report/psu.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The build power amplifier
 \end_layout
 
 \end_inset
