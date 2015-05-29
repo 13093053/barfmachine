@@ -127,7 +127,6 @@ reference "fig:Schematic-preamplifier"
 
  shows a schematic overview of the entire preamplifier to show the connection
  between the different parts.
- 
 \end_layout
 
 \begin_layout Standard
@@ -176,12 +175,23 @@ name "fig:Schematic-preamplifier"
 
 \end_layout
 
+\begin_layout Standard
+All parts of the preamplifier have been realized on prototyping boards.
+\end_layout
+
 \begin_layout Subsubsection
 Balance control
 \end_layout
 
 \begin_layout Standard
-[Put the most important facts and noteworthy information here]
+The schematic of the balance control is as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-balance-control"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -206,6 +216,13 @@ status open
 
 \begin_layout Plain Layout
 Schematic of balance control
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-balance-control"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -223,7 +240,14 @@ Tone control
 \end_layout
 
 \begin_layout Standard
-[Put the most important facts and noteworthy information here]
+The schematic of the balance control is as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-tone-control"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -248,6 +272,13 @@ status open
 
 \begin_layout Plain Layout
 Schematic of tone control
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-tone-control"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -265,7 +296,14 @@ Volume control
 \end_layout
 
 \begin_layout Standard
-[Put the most important facts and noteworthy information here]
+The schematic of the balance control is as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-volume-control"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -290,6 +328,13 @@ status open
 
 \begin_layout Plain Layout
 Schematic of volume control
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-volume-control"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
