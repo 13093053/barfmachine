@@ -239,7 +239,17 @@ Tone control on a circuit board
 \end_layout
 
 \begin_layout Standard
-Not all componenents are seen in the tone control in figure 2.
+Not all componenents
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+components
+\end_layout
+
+\end_inset
+
+ are seen in the tone control in figure 2.
  The potentiometers and capacitors are attached on a breadboard.
  With cables, the components on the breadboard are connected with the the
  tone control on the circuit board.
@@ -1299,8 +1309,10 @@ Alternative conclusion.The bode plots of the measurement and simulation are
 
 ensures a cut-off frequency larger than 100kHz.
  This means that the gain will reach 0dB at a frequency higher than 100kHz
- after the treble and the bandpassfilter takes over at 400kHz to further
+ after the treble but the bandpassfilter takes over at 400kHz to further
  decrease the gain.
+ The tone control therefore doesn't have time to rise to 0dB before being
+ taken over by the bandpass filter.
  The value of the components C
 \begin_inset script subscript
 

@@ -166,8 +166,17 @@ The objective of the measurement
 The objective of the measurement is to get more insight in how the balance
  control function and to determine whether the balance control meets the
  specifications.
- Also the measurement is a preperation for the assessment of the project
- 
+ Also the measurement is a preperation
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+preparation
+\end_layout
+
+\end_inset
+
+ for the assessment of the project 
 \begin_inset Quotes eld
 \end_inset
 
@@ -389,7 +398,17 @@ L
 \end_layout
 
 \begin_layout Standard
-The formula for the gain of balance control is equal to:
+The formula for the gain of 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the
+\end_layout
+
+\end_inset
+
+balance control is equal to:
 \end_layout
 
 \begin_layout Standard
@@ -442,7 +461,17 @@ A_{flat-position}=10^{\frac{1}{10}}\approx1,26
 \end_layout
 
 \begin_layout Standard
-The gain must be 6dB the balance control is in maximum position.
+The gain must be 6dB
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+if
+\end_layout
+
+\end_inset
+
+ the balance control is in maximum position.
  Therefore the gain can be derived with the potentiometer in maximum position:
 \end_layout
 
@@ -979,8 +1008,17 @@ The gain is not 6dB throughout the entire frequency range (2Hz-400kHz) in
 The similarity between the bode plot of the measurement in flat position
  and the bode plot of the measurement in maximum position is that the gain
  decreases by approximately 1dB at a frequency of approximately 2000Hz.
- Disturbances in the surrounding area of the circuit or noise can be a possible
- reason why this phenomenon occurs.
+ Disturbances in the surrounding area of the circuit or noise can be a
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+are possible reasons
+\end_layout
+
+\end_inset
+
+ possible reason why this phenomenon occurs.
 \end_layout
 
 \begin_layout Standard
