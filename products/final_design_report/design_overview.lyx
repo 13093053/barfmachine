@@ -627,5 +627,61 @@ The DCU will allow digital control of the balance, tone, bass, treble and
 MIDI messages will be used to pass commands to the DCU
 \end_layout
 
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-DCU"
+
+\end_inset
+
+ shows a very basic schematic of the DCU's functionality.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename schematic_DCU.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of DCU
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-DCU"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
