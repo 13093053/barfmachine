@@ -4,9 +4,8 @@
 \begin_header
 \textclass article
 \begin_preamble
-\usepackage[left, modulo]{lineno}
+\usepackage[left,modulo]{lineno}
 \linenumbers
-\setlength\linenumbersep{2pt}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -14,7 +13,7 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman lmodern
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -61,7 +60,7 @@
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
-\defskip smallskip
+\defskip bigskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -81,6 +80,19 @@ Measurement Report: Balance Control
 \end_inset
 
 PRO-Q2
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Document settings were incorrect.
+ Use BigSkip for paragraph separation and Latin New Roman for Roman font
+ please.
+ Also removed an unnecessary line from the preamble.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author
@@ -164,27 +176,9 @@ The objective of the measurement
 
 \begin_layout Standard
 The objective of the measurement is to get more insight in how the balance
- control function and to determine whether the balance control meets the
+ control functions and to determine whether the balance control meets the
  specifications.
- Also the measurement is a preperation
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-preparation
-\end_layout
-
-\end_inset
-
- for the assessment of the project 
-\begin_inset Quotes eld
-\end_inset
-
-PRO-Q2
-\begin_inset Quotes erd
-\end_inset
-
-.
+ The measurement is also a preparation for the assessment of the project.
 \end_layout
 
 \begin_layout Section
@@ -192,9 +186,33 @@ Measurement setup
 \end_layout
 
 \begin_layout Standard
-Figure 1 gives a schematic of the balance control.
- The schematic of the balance control in figure 1 is slightly different
- than the balance control from the projectbook.
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-balance-control"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remember to use cross-references when referencing figures/tables/etc.
+\end_layout
+
+\end_inset
+
+ shows the schematic of the balance control.
+ The schematic of the balance control in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-balance-control"
+
+\end_inset
+
+ is slightly different from the balance control as described in the project
+ manual.
  The capacitors C5 and C6 are included and these capacitors prevent direct
  current flowing through the potentiometer and the wiper.
  
@@ -221,6 +239,13 @@ status open
 
 \begin_layout Plain Layout
 Balance control schematic
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-balance-control"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -234,7 +259,14 @@ Balance control schematic
 \end_layout
 
 \begin_layout Standard
-The balance control is soldered on a circuit board as seen in figure 2.
+The balance control is soldered on a circuit board as seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Balance-control-on-circuit-board"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -246,6 +278,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename design/balance_control_circuit_board.jpg
+	lyxscale 20
 	scale 5
 
 \end_inset
@@ -258,6 +291,13 @@ status open
 
 \begin_layout Plain Layout
 Balance control on a circuit board
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Balance-control-on-circuit-board"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -285,11 +325,31 @@ BK PRECISION 4052
 \end_inset
 
 .
- The input signal is a sinus with an amplitude of 200mV
+ The input signal is a sine
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The english word for sinus is 'sine'
+\end_layout
+
+\end_inset
+
+ with an amplitude of 200mV
 \begin_inset script subscript
 
 \begin_layout Plain Layout
 pk-pk
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Forgot a period here ;)
 \end_layout
 
 \end_inset
@@ -323,7 +383,7 @@ Balance control specifications
 \end_layout
 
 \begin_layout Itemize
-range ±6 dB (within ±0.5 dB) difference between right and left channels 
+Range ±6 dB (within ±0.5 dB) difference between right and left channels 
 \end_layout
 
 \begin_layout Itemize
@@ -404,7 +464,7 @@ The formula for the gain of the balance control is equal to:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Gain=\frac{R_{1}||R_{H}+R_{L}+R_{2}}{R_{L}+R_{2}}=1+\frac{R_{1}||R_{H}}{R_{L}+R_{2}}
+Gain=\frac{R_{1}//R_{H}+R_{L}+R_{2}}{R_{L}+R_{2}}=1+\frac{R_{1}//R}{R_{L}+R_{2}}\label{eq:Gain-balance-control}
 \end{equation}
 
 \end_inset
@@ -442,7 +502,7 @@ log(A_{flat-position})=\frac{1}{10}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A_{flat-position}=10^{\frac{1}{10}}\approx1,26
+A_{flat-position}=10^{\frac{1}{10}}\approx1,26\label{eq:Gain-flat-position}
 \end{equation}
 
 \end_inset
@@ -480,7 +540,7 @@ log(A_{high})=\frac{3}{10}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A_{high}=10^{\frac{3}{10}}\approx2
+A_{high}=10^{\frac{3}{10}}\approx2\label{eq:Gain-high-position}
 \end{equation}
 
 \end_inset
@@ -489,7 +549,31 @@ A_{high}=10^{\frac{3}{10}}\approx2
 \end_layout
 
 \begin_layout Standard
-(2) can be filled in (1) and R
+Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-flat-position"
+
+\end_inset
+
+can be substituted
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Better than 'filled in'
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-balance-control"
+
+\end_inset
+
+ and R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -507,7 +591,7 @@ L
 
 \end_inset
 
- are 5000Ohm.
+ are 5000Ω.
 \end_layout
 
 \begin_layout Standard
@@ -535,7 +619,7 @@ R_{2}+5000=\frac{5000\cdot R_{1}}{1,26\cdot(R_{1}+5000)}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{2}=\frac{3700\cdot R_{1}-6,5\cdot10^{6}}{1,26\cdot R_{1}+1300)}
+R_{2}=\frac{3700\cdot R_{1}-6,5\cdot10^{6}}{1,26\cdot R_{1}+1300)}\label{eq:R2-equation1}
 \end{equation}
 
 \end_inset
@@ -544,7 +628,20 @@ R_{2}=\frac{3700\cdot R_{1}-6,5\cdot10^{6}}{1,26\cdot R_{1}+1300)}
 \end_layout
 
 \begin_layout Standard
-(3) can be substitute in (1) and R
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-high-position"
+
+\end_inset
+
+can be substitute in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-balance-control"
+
+\end_inset
+
+, R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -553,7 +650,7 @@ H
 
 \end_inset
 
- = 10000Ohm and R
+ = 10000Ω and R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -562,7 +659,7 @@ L
 
 \end_inset
 
- = 0Ohm.
+ = 0Ω.
  The value of R
 \begin_inset script subscript
 
@@ -572,7 +669,7 @@ L
 
 \end_inset
 
-is actually very small (±0,5Ohm) but because the value is very small, R
+is actually very small (±0,5Ω) but because the value is very small, R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -598,7 +695,7 @@ L
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{2}=\frac{10000\cdot R_{1}}{(R_{1}+10000)}
+R_{2}=\frac{10000\cdot R_{1}}{(R_{1}+10000)}\label{eq:R2-equation2}
 \end{equation}
 
 \end_inset
@@ -607,7 +704,20 @@ R_{2}=\frac{10000\cdot R_{1}}{(R_{1}+10000)}
 \end_layout
 
 \begin_layout Standard
-(5) can be substituted in (4) and therefore the value of R
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation2"
+
+\end_inset
+
+can be substituted in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation1"
+
+\end_inset
+
+ and therefore the value of R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -666,7 +776,7 @@ R_{1}R_{1}=\frac{17,5\cdot10^{6}±24336187}{2200}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{1}=3107,35\approx3107Ohm
+R_{1}=3107,35\approx3107\Omega\label{eq:R1-equation}
 \end{equation}
 
 \end_inset
@@ -677,7 +787,7 @@ R_{1}=3107,35\approx3107Ohm
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{1}=-19016Ohm
+R_{1}=-19016\Omega
 \end{equation}
 
 \end_inset
@@ -695,7 +805,7 @@ A resistor can never have a negative value so therefore R
 
 \end_inset
 
- is equal to 3107Ohm.
+ is equal to 3107Ω.
  To calculate R
 \begin_inset script subscript
 
@@ -705,13 +815,34 @@ A resistor can never have a negative value so therefore R
 
 \end_inset
 
- , (6) can be filled in in (4) or (5).
+ , 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R1-equation"
+
+\end_inset
+
+ can be filled in in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation1"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation2"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{2}=\frac{10000\cdot3107}{(3107+10000)}=2370Ohm
+R_{2}=\frac{10000\cdot3107}{(3107+10000)}=2370\Omega
 \end{equation}
 
 \end_inset
@@ -724,19 +855,29 @@ Simulations
 \end_layout
 
 \begin_layout Standard
-The software 
-\begin_inset Quotes eld
-\end_inset
+The software 'Tina-TI'
+\begin_inset Note Note
+status open
 
-Tina-TI
-\begin_inset Quotes erd
+\begin_layout Plain Layout
+Double quotes are only used for quoting if I'm not mistaken.
+ In this case, single quotes or no quotes at all would be appropriate.
+\end_layout
+
 \end_inset
 
  is used for the simulation of the balance control.
 \end_layout
 
 \begin_layout Standard
-Figure 4 gives the bode plot of the balance control in maximum position.
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Simulation-maximum-position"
+
+\end_inset
+
+ shows the bode plot of the balance control in maximum position.
  
 \end_layout
 
@@ -749,6 +890,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename simulations/high_6db.png
+	lyxscale 50
 	scale 40
 
 \end_inset
@@ -761,6 +903,13 @@ status open
 
 \begin_layout Plain Layout
 Simulation maximum position
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-maximum-position"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -774,7 +923,14 @@ Simulation maximum position
 \end_layout
 
 \begin_layout Standard
-Figure 5 gives the bode plot of the balancecontrol in flat position.
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Simulation-flat-position"
+
+\end_inset
+
+ gives the bode plot of the balancecontrol in flat position.
 \end_layout
 
 \begin_layout Standard
@@ -786,6 +942,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename simulations/flat_position.png
+	lyxscale 50
 	scale 40
 
 \end_inset
@@ -798,6 +955,13 @@ status open
 
 \begin_layout Plain Layout
 Simulation flat position
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-flat-position"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -815,7 +979,14 @@ Simulation flat position
 \end_layout
 
 \begin_layout Standard
-Figure 6 gives the bode plot of the balance control in minimum position.
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Simulation-minimum-position"
+
+\end_inset
+
+ gives the bode plot of the balance control in minimum position.
 \end_layout
 
 \begin_layout Standard
@@ -827,6 +998,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename simulations/low_0db.png
+	lyxscale 50
 	scale 40
 
 \end_inset
@@ -839,6 +1011,13 @@ status open
 
 \begin_layout Plain Layout
 Simulation minimum position
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-minimum-position"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -856,7 +1035,7 @@ Measurements
 \end_layout
 
 \begin_layout Standard
-The results of the measurements are in appendix.
+The results of the measurements can be found in the appendix.
 \end_layout
 
 \begin_layout Standard
@@ -961,8 +1140,8 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-The bode plot of the measurement in minimum position is closely matched
- with the bode plot of the simulation in minimum position.
+The bode plot of the measurement in minimum position closely approaches
+ the bode plot of the simulation in minimum position.
  There is however differences between the bode plots in flat position and
  maximum position.
  
@@ -971,23 +1150,37 @@ The bode plot of the measurement in minimum position is closely matched
 \begin_layout Standard
 The gain is not 2dB throughout the entire frequency range (2Hz-400kHz) in
  the measurement in flat position.
- In the simulation in flat position is the gain around 2 dB in the frequency
- range of 10Hz -400kHz.
+ In the simulation in flat position, the gain is approximately 2dB in the
+ frequency range of 10Hz-400kHz.
  
 \end_layout
 
 \begin_layout Standard
 The gain is not 6dB throughout the entire frequency range (2Hz-400kHz) in
  the measurement in maximum position.
- In the simulation in maximum position is the gain around 6 dB in the frequency
- range of 10Hz -400kHz.
+ In the simulation in maximum position, the gain is approximately 6dB in
+ the frequency range of 10Hz-400kHz.
  
 \end_layout
 
 \begin_layout Standard
 The similarity between the bode plot of the measurement in flat position
  and the bode plot of the measurement in maximum position is that the gain
- decreases by approximately 1dB at a frequency of approximately 2000Hz.
+ decreases by approximately 1dB at a frequency of approximately 2kHz
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Changed this from 
+\begin_inset Quotes eld
+\end_inset
+
+2000Hz"
+\end_layout
+
+\end_inset
+
+.
  Disturbances in the surrounding area of the circuit or noise are possible
  reasons why this phenomenon occurs.
 \end_layout
