@@ -245,10 +245,30 @@ Volume control schematic
 The volume control is soldered on a circuit board as seen in figure 2.
  The potentiometer and the capacitors are not yet soldered on the circuit
  board.
- The capacitors and potentiometer are on a breadboard and the breadboard
- is connected to the circuit board.
+ The capacitors and potentiometer 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+bread board and with cables, the bread board is connected to the circuit
+ board
+\end_layout
+
+\end_inset
+
+are on a breadboard and the breadboard is connected to the circuit board.
  This way the capacitors and potentiometer can always be replaced in case
- if something is wrong with the componenents.
+ if something is wrong with the componenents
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+capacitors and potentiometer
+\end_layout
+
+\end_inset
+
+.
  Figure 3 gives a breadboard with the componenents attached.
 \end_layout
 
