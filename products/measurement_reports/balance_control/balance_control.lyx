@@ -245,7 +245,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename design/design.png
-	scale 80
 
 \end_inset
 
@@ -297,7 +296,7 @@ status open
 \begin_inset Graphics
 	filename design/balance_control_circuit_board.jpg
 	lyxscale 20
-	scale 5
+	width 100col%
 
 \end_inset
 
@@ -429,7 +428,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename design/position_of_r_high_and_r_low.png
-	scale 80
 
 \end_inset
 
@@ -909,7 +907,7 @@ status open
 \begin_inset Graphics
 	filename simulations/high_6db.png
 	lyxscale 50
-	scale 40
+	width 100col%
 
 \end_inset
 
@@ -961,7 +959,7 @@ status open
 \begin_inset Graphics
 	filename simulations/flat_position.png
 	lyxscale 50
-	scale 40
+	width 100col%
 
 \end_inset
 
@@ -1017,7 +1015,7 @@ status open
 \begin_inset Graphics
 	filename simulations/low_0db.png
 	lyxscale 50
-	scale 40
+	width 100col%
 
 \end_inset
 
@@ -1065,7 +1063,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename measurement/bode_plot_max_pos.png
-	scale 60
+	width 100col%
 
 \end_inset
 
@@ -1095,7 +1093,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename measurement/bode_plot_flat_pos.png
-	scale 60
+	width 100col%
 
 \end_inset
 
@@ -1125,7 +1123,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename measurement/bode_plot_min_pos.png
-	scale 60
+	width 100col%
 
 \end_inset
 

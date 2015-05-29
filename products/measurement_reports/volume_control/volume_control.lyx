@@ -247,7 +247,7 @@ status open
 \begin_inset Graphics
 	filename design/design.png
 	lyxscale 80
-	scale 50
+	width 100col%
 
 \end_inset
 
@@ -292,7 +292,7 @@ status open
 \begin_inset Graphics
 	filename design/design_volume_control_circuit_board.jpg
 	lyxscale 20
-	scale 5
+	width 100col%
 
 \end_inset
 
@@ -326,7 +326,7 @@ status open
 \begin_inset Graphics
 	filename ../breadboard_with_components.jpg
 	lyxscale 20
-	scale 5
+	width 100col%
 
 \end_inset
 
@@ -771,7 +771,7 @@ status open
 \begin_inset Graphics
 	filename simulation/max_position_volume_control.png
 	lyxscale 50
-	scale 40
+	width 100col%
 
 \end_inset
 
@@ -809,7 +809,7 @@ status open
 \begin_inset Graphics
 	filename simulation/mid_position_volume_control.png
 	lyxscale 50
-	scale 40
+	width 100col%
 
 \end_inset
 
@@ -847,7 +847,7 @@ status open
 \begin_inset Graphics
 	filename simulation/min_position_volume_control.png
 	lyxscale 50
-	scale 40
+	width 100col%
 
 \end_inset
 
@@ -888,7 +888,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename measurement/bode_plot_high.bmp
-	scale 60
+	width 100col%
 
 \end_inset
 
@@ -921,7 +921,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename measurement/bode_plot_middle_position.png
-	scale 60
+	width 100col%
 
 \end_inset
 
@@ -951,7 +951,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename measurement/bode_plot_low_position.png
-	scale 60
+	width 100col%
 
 \end_inset
 
