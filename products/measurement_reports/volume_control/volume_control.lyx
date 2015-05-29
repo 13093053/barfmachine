@@ -355,15 +355,8 @@ The volume control is connected to the following equipment:
 \end_layout
 
 \begin_layout Itemize
-The input of the volume control is connected to a function generator, 
-\begin_inset Quotes eld
-\end_inset
-
-BK PRECISION 4052
-\begin_inset Quotes erd
-\end_inset
-
-.
+The input of the volume control is connected to a function generator, 'BK
+ PRECISION 4052'.
  The input signal is a sine with an amplitude of 252mV
 \begin_inset script subscript
 
@@ -383,15 +376,7 @@ A power supply is connected to the positive (+15V) and negative (-15V) terminals
 
 \begin_layout Itemize
 The signals 'output' and 'input' are measured by using the oscilloscope
- 
-\begin_inset Quotes eld
-\end_inset
-
-TEKTRONIX DPO2004B
-\begin_inset Quotes erd
-\end_inset
-
-.
+ 'TEKTRONIX DPO2004B'.
 \end_layout
 
 \begin_layout Section

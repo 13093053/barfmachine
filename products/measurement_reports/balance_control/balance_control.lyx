@@ -333,15 +333,7 @@ The balance control is connected to the following equipment:
 
 \begin_layout Itemize
 The input of the balance amplifier is connected to a function generator,
- 
-\begin_inset Quotes eld
-\end_inset
-
-BK PRECISION 4052
-\begin_inset Quotes erd
-\end_inset
-
-.
+ 'BK PRECISION 4052'.
  The input signal is a sine
 \begin_inset Note Note
 status open
@@ -380,15 +372,8 @@ A power supply is connected to the positive (+15V) and negative (-15V) terminals
 \end_layout
 
 \begin_layout Itemize
-The signals 'out' and 'in' are measured by using the oscilloscope, 
-\begin_inset Quotes eld
-\end_inset
-
-TEKTRONIX DPO2004B
-\begin_inset Quotes erd
-\end_inset
-
-.
+The signals 'out' and 'in' are measured by using the oscilloscope, 'TEKTRONIX
+ DPO2004B'.
 \end_layout
 
 \begin_layout Section
