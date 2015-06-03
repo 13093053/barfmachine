@@ -55,17 +55,18 @@ int main(void) {
     while (1) {
 		char cmd, cc, vv;
 		char s[50];
-		while (rxcnt == 0);
+		while (rxcnt == 0); /* Wait for buffer to be empty */
 		cmd = ugetc();
-		if (cmd & 0x80) {
-			cmd = cmd & ~(1<<7);
+		if (cmd & 0x80) { /* Check if 0b1xxxxxxx (valid MIDI command) */
+			cmd = cmd & 0xF0; /* Only the 4 most significant bits are relevant for the switch case */
 			while (rxcnt == 0);
-			cc = ugetc();
+			cc = ugetc(); /* Acquire controller number */
 			while (rxcnt == 0);
-			vv = ugetc();
+			vv = ugetc(); /* Acquire controller value */
 			/* Check command type */
 			switch (cmd) {
-				case 'a':	snprintf(s, sizeof(s), "Controller %d = %d", cc, vv);
+				/* 0xB0 is control change */
+				case 0xB0:	snprintf(s, sizeof(s), "Controller %d = %d", cc, vv);
 							uputs(s);
 							potpos[(int)cc] = vv;
 							setPot(cc,potpos[(int)cc]);
