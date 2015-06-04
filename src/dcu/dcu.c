@@ -41,7 +41,7 @@ int main(void) {
 	SPSR = (1<<0);
 	SPCR = (1<<7) | (1<<6) | (1<<4);
 
-	/* Reset digital potentiometers (127 is the flat position) */
+	/* Reset digital potentiometers (127 is the max position) */
 	static char potpos[6] = {127};
 	/* Connect terminals */
 	for (i = 0; i < sizeof(potpos); i++) {
@@ -58,40 +58,55 @@ int main(void) {
 		while (rxcnt == 0); /* Wait for buffer to be empty */
 		cmd = ugetc();
 		if (cmd & 0x80) { /* Check if 0b1xxxxxxx (valid MIDI command) */
-			cmd = cmd & 0xF0; /* Only the 4 most significant bits are relevant for the switch case */
 			while (rxcnt == 0);
 			cc = ugetc(); /* Acquire controller number */
-			while (rxcnt == 0);
-			vv = ugetc(); /* Acquire controller value */
-			/* Check command type */
-			switch (cmd) {
-				/* 0xB0 is control change */
-				case 0xB0:	snprintf(s, sizeof(s), "Controller %d = %d", cc, vv);
-							uputs(s);
-							potpos[(int)cc] = vv;
-							setPot(cc,potpos[(int)cc]);
-							break;
-				/*case 'r':	for (i = 0; i < sizeof(potpos); i++) {
-								potpos[i] = 127;
-								setPot(i,potpos[i]);
-							}
-							break; */
-				default:	uputs("What?");
+			if (~cc & 0x80) { /* Check if 0b0xxxxxxx (valid controller number value) */
+				while (rxcnt == 0);
+				vv = ugetc(); /* Acquire controller value */
+				if (~vv & 0x80) { /* Check if 0b0xxxxxxx (valid controller value) */
+					/* Check command type */
+					switch (cmd) {
+						/* 0xB0 is control change */
+						case CTRL_CH:	snprintf(s, sizeof(s), "Controller %d = %d", cc, vv);
+										uputs(s);
+										potpos[(int)cc] = vv;
+										setPot(cc,potpos[(int)cc]);
+										break;
+						/*case 'r':	for (i = 0; i < sizeof(potpos); i++) {
+										potpos[i] = 127;
+										setPot(i,potpos[i]);
+									}
+									break; */
+						default:		uputs("What?");
+					}
+				}
 			}
 		}
 	}
     return 0;
 }
 
-char spiSend(char val) {
+char spiSend(int pot, char val) {
+	/* Controller number (aka pot ID) is needed too because it's needed in the memory address (see below) */
+	/* Write operations are 16-bit commands. How to handle these? */
+	/* Write operations have the folling syntax: */
+	/* AAAA.CCDD.DDDD.DDDD where A is memory address, C is command and D is data. See pg.47 of DigiPot datasheet */
 	SPDR = val;						/* Transmit data */
 	while ((SPSR & (1<<7)) == 0);	/* Wait for SPI transfer to finish. */
 	val = SPDR;						/* Receive data */
 	return val;
 }
 
-void setPot(char pot,char val) {
-	/*spiSend(val);*/
+void setPot(int pot,char val) {
+	switch (pot) {
+		/* There are only 4 DigiPot ICs, thus only 4 cases */
+		case 1: /* code to select ~CS of correct DigiPot */
+		case 2: /* code to select ~CS of correct DigiPot */
+		case 3: /* code to select ~CS of correct DigiPot */
+		case 4: /* code to select ~CS of correct DigiPot */
+		default: uputs("Invalid potmeter ID selected.");
+	}
+	/*spiSend(pot, val);*/
 	PORTB = ~(1<<pot);
 
 }
@@ -130,7 +145,6 @@ void uputs(char str[]) {
 	}
 }
 
-/* Temporary function for PC debugging */
 char ugetc() {
 	char c;
 	int offset;
