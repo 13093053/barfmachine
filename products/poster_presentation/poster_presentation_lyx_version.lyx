@@ -1,0 +1,984 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass a0poster
+\begin_preamble
+\usepackage{multicol}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Bark Machine
+\end_layout
+
+\begin_layout Author
+Daan Conijn, Andrew Lau, Kevin Oei, Koen van Vliet
+\end_layout
+
+\begin_layout Date
+May 29th, 2015
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{3}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The objective of the measurement
+\end_layout
+
+\begin_layout Standard
+The objective of the measurement is to get more insight in how the balance
+ control functions and to determine whether the balance control meets the
+ specifications.
+ The measurement is also a preparation for the assessment of the project.
+\end_layout
+
+\begin_layout Section
+Measurement setup
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-balance-control"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remember to use cross-references when referencing figures/tables/etc.
+\end_layout
+
+\end_inset
+
+ shows the schematic of the balance control.
+ The schematic of the balance control in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-balance-control"
+
+\end_inset
+
+ is slightly different from the balance control as described in the project
+ manual.
+ The capacitors C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+ and C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ are included and these capacitors prevent direct current flowing through
+ the potentiometer and the wiper.
+ 
+\end_layout
+
+\begin_layout Standard
+The balance control is connected to the following equipment:
+\end_layout
+
+\begin_layout Itemize
+The input of the balance amplifier is connected to a function generator,
+ 'BK PRECISION 4052'.
+ The input signal is a sine
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The english word for sinus is 'sine'
+\end_layout
+
+\end_inset
+
+ with an amplitude of 200mV
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+pk-pk
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Forgot a period here ;)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A power supply is connected to the positive (+15V) and negative (-15V) terminals
+ of the amplifier.
+\end_layout
+
+\begin_layout Itemize
+The signals 'out' and 'in' are measured by using the oscilloscope, 'TEKTRONIX
+ DPO2004B'.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
+Balance control specifications
+\end_layout
+
+\begin_layout Itemize
+Range ±6 dB (within ±0.5 dB) difference between right and left channels 
+\end_layout
+
+\begin_layout Itemize
+In flat position +2 dB (within ±0.5 dB) 
+\end_layout
+
+\begin_layout Itemize
+Approximate logarithmic control function 
+\end_layout
+
+\begin_layout Itemize
+No DC current through the potentiometer nor the wiper 
+\end_layout
+
+\begin_layout Subsection
+Calculations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Positions of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H 
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ of the potentiometer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The formula for the gain of the balance control is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain=\frac{R_{1}//R_{H}+R_{L}+R_{2}}{R_{L}+R_{2}}=1+\frac{R_{1}//R}{R_{L}+R_{2}}\label{eq:Gain-balance-control}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is known that the gain must be 2dB in flat position.
+ Therefore the gain can be derived:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot log(A_{flat-position})=2dB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+log(A_{flat-position})=\frac{1}{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A_{flat-position}=10^{\frac{1}{10}}\approx1,26\label{eq:Gain-flat-position}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The gain must be 6dB if the balance control is in maximum position.
+ Therefore the gain can be derived with the potentiometer in maximum position:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot log(A_{high})=6dB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+log(A_{high})=\frac{3}{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A_{high}=10^{\frac{3}{10}}\approx2\label{eq:Gain-high-position}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-flat-position"
+
+\end_inset
+
+can be substituted
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Better than 'filled in'
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-balance-control"
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ are 5,000Ω.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1,26=\frac{5,000\cdot R_{1}}{(R_{1}+5,000)\cdot(R_{2}+5,000)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{2}+5000=\frac{5,000\cdot R_{1}}{1.26\cdot(R_{1}+5,000)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{2}=\frac{3,700\cdot R_{1}-6.5\cdot10^{6}}{1.26\cdot R_{1}+1,300)}\label{eq:R2-equation1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-high-position"
+
+\end_inset
+
+can be substitute in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-balance-control"
+
+\end_inset
+
+, R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ = 10,000Ω and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ = 0Ω.
+ The value of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+is actually very small (±0,5Ω) but because the value is very small, R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ can be omitted.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2=1+\frac{10,000\cdot R_{1}}{(R_{1}+10,000)\cdot R_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{2}=\frac{10,000\cdot R_{1}}{(R_{1}+10,000)}\label{eq:R2-equation2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation2"
+
+\end_inset
+
+can be substituted in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation1"
+
+\end_inset
+
+ and therefore the value of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ can be calculated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{3,700\cdot R_{1}-6.5\cdot10^{6}}{1.26\cdot R_{1}+1,300)}=\frac{10,000\cdot R_{1}}{(R_{1}+10,000)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2,600R_{1}^{2}+13\cdot10^{6}\cdot R_{1}=3,700\cdot R_{1}^{2}+30.5\cdot10^{6}\cdot R_{1}-6.5\cdot10^{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1,100R_{1}^{2}+17.5\cdot10^{6}\cdot R_{1}-6.5\cdot10^{10}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}R_{1}=\frac{17.5\cdot10^{6}±24,336,187}{2,200}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{1}=3,107.35\approx3,107\Omega\label{eq:R1-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{1}=-19,016\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A resistor can never have a negative value so therefore R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ is equal to 3,107Ω.
+ To calculate R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ , 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R1-equation"
+
+\end_inset
+
+ can be filled in in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation1"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{2}=\frac{10,000\cdot3,107}{(3,107+10,000)}=2,370\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Simulations
+\end_layout
+
+\begin_layout Standard
+The software 'Tina-TI'
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Double quotes are only used for quoting if I'm not mistaken.
+ In this case, single quotes or no quotes at all would be appropriate.
+\end_layout
+
+\end_inset
+
+ is used for the simulation of the balance control.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Simulation-maximum-position"
+
+\end_inset
+
+ shows the bode plot of the balance control in maximum position.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation maximum position
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-maximum-position"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Simulation-flat-position"
+
+\end_inset
+
+ gives the bode plot of the balancecontrol in flat position.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation flat position
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-flat-position"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Simulation-minimum-position"
+
+\end_inset
+
+ gives the bode plot of the balance control in minimum position.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation minimum position
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-minimum-position"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Measurements 
+\end_layout
+
+\begin_layout Standard
+The results of the measurements can be found in the appendix.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bode plot of the measurement in maximum position
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bode plot of the measurement in flat position
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../final_design_report/schematic_DCU.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bode plot of the measurement in minimum position
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+The bode plot of the measurement in minimum position closely approaches
+ the bode plot of the simulation in minimum position.
+ There is however differences between the bode plots in flat position and
+ maximum position.
+ 
+\end_layout
+
+\begin_layout Standard
+The gain is not 2dB throughout the entire frequency range (2Hz-400kHz) in
+ the measurement in flat position.
+ In the simulation in flat position, the gain is approximately 2dB in the
+ frequency range of 10Hz-400kHz.
+ 
+\end_layout
+
+\begin_layout Standard
+The gain is not 6dB throughout the entire frequency range (2Hz-400kHz) in
+ the measurement in maximum position.
+ In the simulation in maximum position, the gain is approximately 6dB in
+ the frequency range of 10Hz-400kHz.
+ 
+\end_layout
+
+\begin_layout Standard
+The similarity between the bode plot of the measurement in flat position
+ and the bode plot of the measurement in maximum position is that the gain
+ decreases by approximately 1dB at a frequency of approximately 2kHz
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Changed this from "2000Hz".
+ I wonder whether the same should be done for other cases like this one?
+\end_layout
+
+\end_inset
+
+.
+ Disturbances in the surrounding area of the circuit or noise are possible
+ reasons why this phenomenon occurs.
+\end_layout
+
+\begin_layout Standard
+Despite the differences between the measurements and simulations, the balance
+ control still meets the specifications.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
