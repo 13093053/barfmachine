@@ -88,8 +88,8 @@ int main(void) {
 
 char spiSend(int pot, char val) {
 	/* Controller number (aka pot ID) is needed too because it's needed in the memory address (see below) */
-	/* Write operations are 16-bit commands. How to handle these? */
-	/* Write operations have the folling syntax: */
+	/* Read/write operations are 16-bit commands. How to handle these? */
+	/* Read/write operations have the folling syntax: */
 	/* AAAA.CCDD.DDDD.DDDD where A is memory address, C is command and D is data. See pg.47 of DigiPot datasheet */
 	SPDR = val;						/* Transmit data */
 	while ((SPSR & (1<<7)) == 0);	/* Wait for SPI transfer to finish. */
@@ -100,10 +100,10 @@ char spiSend(int pot, char val) {
 void setPot(int pot,char val) {
 	switch (pot) {
 		/* There are only 4 DigiPot ICs, thus only 4 cases */
-		case 1: /* code to select ~CS of correct DigiPot */
-		case 2: /* code to select ~CS of correct DigiPot */
-		case 3: /* code to select ~CS of correct DigiPot */
-		case 4: /* code to select ~CS of correct DigiPot */
+		case 1: /* code to select ~CS of correct DigiPot and disable the other ones */
+		case 2: /* code to select ~CS of correct DigiPot and disable the other ones */
+		case 3: /* code to select ~CS of correct DigiPot and disable the other ones */
+		case 4: /* code to select ~CS of correct DigiPot and disable the other ones */
 		default: uputs("Invalid potmeter ID selected.");
 	}
 	/*spiSend(pot, val);*/
