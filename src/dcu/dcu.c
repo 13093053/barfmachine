@@ -30,6 +30,7 @@ int main(void) {
 
 	/* Debug LEDs */
 	DDRB = 0xFF;
+	/* DDR_digipotCS = 0xFF */
 	/* Setup serial comms (9600-8-n-1) */
     UCSRA = 0x00;
     UCSRB = 0x18 | (1<<7);
@@ -66,17 +67,16 @@ int main(void) {
 				if (~vv & 0x80) { /* Check if 0b0xxxxxxx (valid controller value) */
 					/* Check command type */
 					switch (cmd) {
-						/* 0xB0 is control change */
 						case CTRL_CH:	snprintf(s, sizeof(s), "Controller %d = %d", cc, vv);
 										uputs(s);
 										potpos[(int)cc] = vv;
 										setPot(cc,potpos[(int)cc]);
 										break;
-						/*case 'r':	for (i = 0; i < sizeof(potpos); i++) {
-										potpos[i] = 127;
-										setPot(i,potpos[i]);
-									}
-									break; */
+						/*case 'r':		for (i = 0; i < sizeof(potpos); i++) {
+											potpos[i] = 127;
+											setPot(i,potpos[i]);
+										}
+										break; */
 						default:		uputs("What?");
 					}
 				}
