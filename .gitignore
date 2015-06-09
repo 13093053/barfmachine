@@ -1,5 +1,5 @@
 *.lyx~
 *.lyx#
-*.aws
 *.xlsx#
 *.aws
+src/dcu/default/

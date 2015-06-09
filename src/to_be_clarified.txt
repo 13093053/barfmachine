@@ -1,5 +1,3 @@
 -What ports are the CS signals to the DigiPots connected to? (Needed for sending the signals the right way and setting up the appropriate DDR)
--What port is the SPI bus connected to? (Needed for setting up the right DDR)
--How are 16-bit commands sent to the DigiPots? In two turns (considering only one byte can be transmitted over SPI at a time)? See pg.47 of datasheet
 
 -Are there any specific settings I need to set for the DigiPots other than enabling/disabling/reading/writing?
