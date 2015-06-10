@@ -182,15 +182,15 @@ Balance control in flat position, tone (bass and treble) control switched
 \end_layout
 
 \begin_layout Enumerate
-Input impedance: minimum 100kΩ
+Input impedance: minimum 100 kΩ
 \end_layout
 
 \begin_layout Enumerate
-Output impedance: maximum 100Ω
+Output impedance: maximum 100 Ω
 \end_layout
 
 \begin_layout Enumerate
-Sensitivity : 2V output voltage in R
+Sensitivity : 2 V output voltage in R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -199,11 +199,11 @@ L
 
 \end_inset
 
- = 20kΩ at 200 mV input
+ = 20 kΩ at 200 mV input
 \end_layout
 
 \begin_layout Enumerate
-Frequency range: 2Hz to 400kHz (-3 dB) at V
+Frequency range: 2 Hz to 400 kHz (-3 dB) at V
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -212,7 +212,7 @@ out
 
 \end_inset
 
- = 500mV, R
+ = 500 mV, R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -221,11 +221,11 @@ L
 
 \end_inset
 
- = 20kΩ
+ = 20 kΩ
 \end_layout
 
 \begin_layout Enumerate
-Output voltage: at least 7V sinusoidal with R
+Output voltage: at least 7 V sinusoidal with R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -234,7 +234,7 @@ L
 
 \end_inset
 
- = 20kΩ , f = 1kHz
+ = 20 kΩ , f = 1 kHz
 \end_layout
 
 \begin_layout Paragraph
@@ -242,11 +242,11 @@ Balance control specifications
 \end_layout
 
 \begin_layout Enumerate
-Range ±6 dB (within ±0.5dB) difference between right and left channels
+Range ±6 dB (within ±0.5 dB) difference between right and left channels
 \end_layout
 
 \begin_layout Enumerate
-In flat position +2dB (within ±0.5dB)
+In flat position +2 dB (within ±0.5 dB)
 \end_layout
 
 \begin_layout Enumerate
@@ -262,15 +262,15 @@ Bass and treble control specifications
 \end_layout
 
 \begin_layout Enumerate
-Treble: Cut-off frequency adjustable between 2.5 and 10kHz.
- Maximum boost or attenuation 10dB (±1dB) at 2.5kHz.
- From 100 kHz and up the transfer function must approach value 1 (0dB).
+Treble: Cut-off frequency adjustable between 2.5 and 10 kHz.
+ Maximum boost or attenuation 10 dB (±1 dB) at 2.5 kHz.
+ From 100 kHz and up the transfer function must approach value 1 (0 dB).
 \end_layout
 
 \begin_layout Enumerate
-Bass: Cut-off frequency adjustable between 100Hz and 400Hz.
- Maximum boost or attenuation 10 dB (±1dB) at 400Hz.
- From 10Hz and below the transfer function must approach value 1 (0dB).
+Bass: Cut-off frequency adjustable between 100 Hz and 400 Hz.
+ Maximum boost or attenuation 10 dB (±1 dB) at 400 Hz.
+ From 10 Hz and below the transfer function must approach value 1 (0 dB).
 \end_layout
 
 \begin_layout Enumerate
@@ -308,13 +308,13 @@ The preconditions are as follows:
 \end_layout
 
 \begin_layout Enumerate
-The potentiometers for balance, bass, treble and volume control are 10kΩ
+The potentiometers for balance, bass, treble and volume control are 10 kΩ
  linear.
 \end_layout
 
 \begin_layout Enumerate
 The potentiometers for the adjustment of the bass / treble cut-off frequencies
- are 10kΩ logarithmic.
+ are 10 kΩ logarithmic.
 \end_layout
 
 \begin_layout Enumerate
@@ -337,11 +337,11 @@ Power amplifier specifications
 \end_layout
 
 \begin_layout Enumerate
-Input impedance of at least 50kΩ 
+Input impedance of at least 50 kΩ 
 \end_layout
 
 \begin_layout Enumerate
-Output power: 15W sine in R
+Output power: 15 W sine in R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -350,11 +350,11 @@ load
 
 \end_inset
 
- = 8Ω at 1kHz 
+ = 8 Ω at 1 kHz 
 \end_layout
 
 \begin_layout Enumerate
-Frequency range: 10Hz to 100kHz (−3 dB) at P
+Frequency range: 10 Hz to 100 kHz (−3 dB) at P
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -363,7 +363,7 @@ load
 
 \end_inset
 
- = 0.5W in 8Ω
+ = 0.5 W in 8 Ω
 \end_layout
 
 \begin_layout Standard

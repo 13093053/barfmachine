@@ -413,8 +413,8 @@ Note that pins 1 and 3 of the line-in (named 'LINE' in the schematic) are
  both connected to ground.
  This allows for plugging of the mating connector without having to worry
  about the connector being plugged in the wrong way around.
- It is also worth noting that a 100Ω resistance is connected in series with
- the input to protect the amplifier against overvoltage.
+ It is also worth noting that a 100 Ω resistance is connected in series
+ with the input to protect the amplifier against overvoltage.
  The added resistance allows the clamping diodes inside the amplifier to
  deal with any excess voltage.
 \end_layout
