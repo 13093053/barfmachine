@@ -85,6 +85,13 @@ status open
 
 \begin_layout Plain Layout
 Measurements of the preamplifier maximum attenuation
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:preamplifier_measurements_attenuation"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1245,6 +1252,13 @@ status open
 
 \begin_layout Plain Layout
 Measurements of the preamplifier maximum boost
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:preamplifier_measurements_boost"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

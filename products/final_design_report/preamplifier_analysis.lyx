@@ -75,15 +75,294 @@ Preamplifier analysis
 \end_layout
 
 \begin_layout Subsection
-Calculations 
+Calculations
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsection
 Simulations
 \end_layout
 
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preamplifier_simulation_boost"
+
+\end_inset
+
+ shows a simulation of the bode plot of the preamplifier with the bass and
+ treble both at maximum boost, the volume control in mid position, the balance
+ control in mid position, the bass corner frequency at 400 Hz and the treble
+ corner frequency at 2,5 kHz..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename preamplifier_analysis/simulation_preamplifier_maximum_boost.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bode plot of the preamplifier in maximum boost
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preamplifier_simulation_boost"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preamplifier_simulation_attenuation"
+
+\end_inset
+
+ shows the simulation of the bode plot of the preamplifier with the bass
+ and treble both at maximum attenuation, the volume control in mid position,
+ the balance control in mid position, the bass corner frequency at 400 Hz
+ and the treble corner frequency at 2,5 kHz..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename preamplifier_analysis/simulation_preamplifier_maximum_attenuation.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bode plot of the preamplifier in maximum attenuation
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preamplifier_simulation_attenuation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Measurements
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preamplifier_measurement_boost"
+
+\end_inset
+
+ shows a bode plot of the preamplifier with the bass and treble both at
+ maximum boost, the volume control in mid position, the balance control
+ in mid position, the bass corner frequency at 400 Hz and the treble corner
+ frequency at 2,5 kHz.
+ The measurements for determining the bode plot in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preamplifier_measurement_boost"
+
+\end_inset
+
+ are in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:preamplifier_measurements_boost"
+
+\end_inset
+
+ in appendix.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename preamplifier_analysis/bode_plot_preamplifier_maximum_boost.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bode plot of the preamplifier in maximum boost
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preamplifier_measurement_boost"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preamplifier_measurement_attenuation"
+
+\end_inset
+
+ shows a bode plot of the preamplifier with the bass and treble both at
+ maximum attenuation, the volume control in mid position, the balance control
+ in mid position, the bass corner frequency at 400 Hz and the treble corner
+ frequency at 2,5 kHz.
+ The measurements for determining the bode plot in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preamplifier_measurement_attenuation"
+
+\end_inset
+
+ are in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:preamplifier_measurements_attenuation"
+
+\end_inset
+
+ in appendix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename preamplifier_analysis/bode_plot_preamplifier_maximum_attenuation.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bode plot of the preamplifier in maximum attenuation
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preamplifier_measurement_attenuation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \end_body
