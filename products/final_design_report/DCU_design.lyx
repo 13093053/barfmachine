@@ -77,12 +77,11 @@ DCU design
 \begin_layout Standard
 The DCU's entire functionality was to be determined by the project team.
  The only requirements given by BARK were the use of an ATmega32 microcontroller
- or similar models, and some kind of interaction with the analogue part
- of the system.
- In team 1's case, the DCU allows control of all controls (potentiometers)
+ or similar controllers, and some kind of interaction with the analogue
+ part of the system.
+ In team 1's case, the DCU allows control of all audio controls (potentiometers)
  in the analogue circuits using MIDI messages that, after going through
- the DCU, adjust the values of digital potentiometers which act as the controls
- present in the system.
+ the DCU, adjust the values of digital potentiometers placed in the circuits.
  First, the physical design of the DCU and related components are discussed.
  After that, the code used for the DCU will be looked at.
 \end_layout
@@ -92,7 +91,12 @@ The DCU, related components, and its connection to the rest of the system
 \end_layout
 
 \begin_layout Standard
-mah boi, this peace is what all true warriors strive for
+The choice to use MIDI messages as input for the DCU was made with the idea
+ that MIDI hardware is generally designed for use with music and/or audio.
+ Many MIDI devices include twisting knobs which act as potentiometers, and
+ thus being able to use a MIDI device to control the various controls in
+ the circuitry allows for an intuitive and easily expandable user interface.
+ The type of digital potentiometers used in combination with the DCU is
 \end_layout
 
 \begin_layout Subsection
@@ -100,7 +104,7 @@ C code
 \end_layout
 
 \begin_layout Standard
-#include pootis.h
+[sample code]
 \end_layout
 
 \end_body
