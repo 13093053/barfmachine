@@ -96,7 +96,114 @@ The choice to use MIDI messages as input for the DCU was made with the idea
  Many MIDI devices include twisting knobs which act as potentiometers, and
  thus being able to use a MIDI device to control the various controls in
  the circuitry allows for an intuitive and easily expandable user interface.
- The type of digital potentiometers used in combination with the DCU is
+ The type of digital potentiometers used in combination with the DCU are
+ the [insert type no.] (see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DigiPot-photo"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The [insert type no.]
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:DigiPot-photo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These models hold two potentiometers per package, and expect incoming commands
+ through SPI which makes them easily usable with the ATmega328 which supports
+ a direct SPI connection.
+ As illustrated in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-DCU_2"
+
+\end_inset
+
+, the digital potentiometers allow the DCU to take over control of the balance
+ control, bass cut-off control, treble cut-off control, bass boost control,
+ treble boost control and volume control.
+ In its current state, the code only handles so-called 'Control Change'
+ MIDI messages which indicate the change of a physical control, such as
+ a knob.
+ These messages come with a value indicating the position of the knob, which
+ are processed in the DCU and passed on to the appropriate potentiometer.
+ Only when a new 'Control Change' message is received, will the digital
+ potentiometer(s) be adjusted accordingly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of DCU
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-DCU_2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
