@@ -74,9 +74,16 @@
 Preamplifier analysis
 \end_layout
 
-\begin_layout Standard
-[Indepth analysis of preamplifier including calculations, simulation and
- measurement results]
+\begin_layout Subsection
+Calculations 
+\end_layout
+
+\begin_layout Subsection
+Simulations
+\end_layout
+
+\begin_layout Subsection
+Measurements
 \end_layout
 
 \end_body
