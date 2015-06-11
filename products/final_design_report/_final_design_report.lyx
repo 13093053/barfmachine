@@ -274,6 +274,21 @@ filename "conclusion.lyx"
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset include
+LatexCommand include
+filename "appendix.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
