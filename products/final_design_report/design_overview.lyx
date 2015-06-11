@@ -635,7 +635,7 @@ reference "fig:Schematic-DCU"
 
 \end_inset
 
- shows a very basic schematic of the DCU's functionality.
+ shows a very basic schematic of the DCU's place within the speaker system.
 \end_layout
 
 \begin_layout Standard
@@ -643,10 +643,6 @@ reference "fig:Schematic-DCU"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
