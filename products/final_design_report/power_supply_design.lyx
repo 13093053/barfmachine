@@ -75,7 +75,204 @@ Power supply design
 \end_layout
 
 \begin_layout Standard
-[Design of the power supply]
+The power supply is a linear non-switching supply, which uses a toroidal
+ transformer to take 230V mains down to 36V [reference].
+ The power amplifier and the preamplifier require a split supply by design,
+ so a transformer with two secondary windings is used.
+ After the transformer comes a bridge rectifier which converts the AC signal
+ to DC.
+ Then finally the signal will pass through several filter capacitors to
+ smooth out the voltage.
+ The output voltage can be calculated as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{in,pk-pk}=V_{in}*\sqrt{2}=36*\sqrt{2}=51V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vout=V_{in,pk-pk}-2V_{d(on)}=51-1.4=50V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename schematic_power_supply.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Power supply schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Filter section 
+\end_layout
+
+\begin_layout Standard
+Per rail two filter capacitors are used in order to reduce the ripple voltage
+ caused by the equivalent series resistance.
+ A bypass resistor is put in parallel with the capacitors, so they discharge
+ safely when the power supply is switched off even with no load on the output.
+ 
+\end_layout
+
+\begin_layout Subsection
+Protection 
+\end_layout
+
+\begin_layout Standard
+The power supply is fused on both secondary windings to protect the transformer
+ against high currents.
+ The nominal current of the secondary windings of the transformer is 0.420A
+ while the power amplifier takes 0.694A from the supply at max power .
+ The capacitors in the power supply will smooth out the load on the transformer,
+ so it does not exceed the nominal current.
+ The fuses on the secondary windings are rated 2A, so they only blow on
+ a short circuit.
+ The primary winding could be fused optionally.
+ 
+\end_layout
+
+\begin_layout Subsection
+Regulator section
+\end_layout
+
+\begin_layout Standard
+The preamplifier and DCU require lower voltages, so linear voltage regulators
+ are used to step down the voltage.
+ For the power amplifier, however an unregulated supply is used.
+\end_layout
+
+\begin_layout Subsection
+Efficiency
+\end_layout
+
+\begin_layout Standard
+As said before, the power amplifier's power rails are unregulated.
+ This is required to meet the 80% energy efficiency requirement.
+ If linear regulators were used to regulate 25 down to 20V at 0.5A this would
+ result in a 2.5W loss in the regulator.
+ In this case the energy efficiency would be 80% for the regulator stage
+ alone.
+ The power dissipated in the linear regulators for the preamp and dcu is
+ neglectable, because these parts take very little current compared to the
+ power amplifier.
+ The overall efficiency of the power supply is equal to the efficiency of
+ the transformer multiplied by that of the diode bridge rectifier.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{diode}=\frac{V_{in,pk-pk}-2V_{d(on)}}{V_{in,pk-pk}}=\frac{51-1.4}{51}=0.97$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{transformer}=0.87$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta_{total}=\eta_{diode}*n_{transformer}=0.85$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore the overall efficiency is 85%.
+\end_layout
+
+\begin_layout Subsection
+Board layout
+\end_layout
+
+\begin_layout Standard
+The power supply can be constructed on a single sided board to reduce manufactur
+ing cost.
+ The components are all through-hole, because small surface mount parts
+ cannot handle the high voltages and currents.
+ It also makes soldering a prototype by hand easier.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename board_power_supply.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Power supply board layout
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[reference] Multicomp.
+ (2014, June).
+ "Toroidal Transformers, General Purpose" [on-line].
+ Available: http://www.farnell.com/datasheets/182927 8.pdf [June 15, 2015]
+ 
 \end_layout
 
 \end_body
