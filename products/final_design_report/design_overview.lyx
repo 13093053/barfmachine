@@ -689,18 +689,8 @@ The following features and choices have been chosen/made for the implementation
 \end_layout
 
 \begin_layout Itemize
-For the microcontroller, an ATmega328P
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Was it with or without the P? I wasn't sure.
-\end_layout
-
-\end_inset
-
- will be used since it bears lot of similarity with the ATmega32 which the
- team is most familiar with.
+For the microcontroller, an ATmega328 will be used since it bears a lot
+ of similarity with the ATmega32 which the team is most familiar with.
 \end_layout
 
 \begin_layout Itemize
