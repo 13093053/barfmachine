@@ -1,0 +1,25 @@
+Todo list for the final design report:
+1 Summary
+* Write summary
+
+3 Project problem specs and preconditions
+* Problem analysis
+
+4 Design overview
+* System architecture and how all modules interact with eachother
+
+5 Preamplifier analysis
+* Everything
+
+
+6 Power supply design
+* Fix references
+
+7 DCU design
+* Stuff?
+
+8 Test procedures and test results
+* Copy paste measurement report here I guess?
+
+9 Total cost of system
+* Bill of materials for electronics components as well as cost for the enclosure and PCB.
