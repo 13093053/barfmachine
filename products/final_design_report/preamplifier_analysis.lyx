@@ -74,11 +74,1515 @@
 Preamplifier analysis
 \end_layout
 
+\begin_layout Standard
+The in-depth analysis of the preamplifier consists of calculations, simulations
+ and measurements.
+ The calculations of the balance control, tone control and the volume control
+ were already calculated in the measurement reports but the calculations
+ will again be discussed in this chapter.
+\end_layout
+
 \begin_layout Subsection
 Calculations
 \end_layout
 
+\begin_layout Subsubsection
+Balance control
+\end_layout
+
 \begin_layout Standard
+In this section, the calculations of the components of the balance control
+ are presented.
+\end_layout
+
+\begin_layout Standard
+Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preamplifier_balance_control_potentiometer"
+
+\end_inset
+
+ shows the position of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename preamplifier_analysis/position_of_r_high_and_r_low.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Positions of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H 
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ of the potentiometer in the balance control
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preamplifier_balance_control_potentiometer"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The formula for the gain of the balance control is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gain=\frac{R_{1}//R_{H}+R_{L}+R_{2}}{R_{L}+R_{2}}=1+\frac{R_{1}//R_{H}}{R_{L}+R_{2}}\label{eq:Gain-balance-control}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the manual it is stated that the gain must be +2 dB in flat position.
+ Therefore the gain can be derived:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot log(A_{flat-position})=2\ dB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+log(A_{flat-position})=\frac{1}{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A_{flat-position}=10^{\frac{1}{10}}\approx1,26\label{eq:Gain-flat-position}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the manual it is stated that the gain must be +6 dB if the balance control
+ is in maximum position.
+ Therefore the gain can be derived with the potentiometer in maximum position:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot log(A_{high})=6\ dB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+log(A_{high})=\frac{3}{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A_{high}=10^{\frac{3}{10}}\approx2\label{eq:Gain-high-position}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-flat-position"
+
+\end_inset
+
+can be substituted in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-balance-control"
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ are 5,000Ω.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1,26=\frac{5,000\cdot R_{1}}{(R_{1}+5,000)\cdot(R_{2}+5,000)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{2}+5000=\frac{5,000\cdot R_{1}}{1.26\cdot(R_{1}+5,000)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{2}=\frac{3,700\cdot R_{1}-6.5\cdot10^{6}}{1.26\cdot R_{1}+1,300)}\label{eq:R2-equation1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-high-position"
+
+\end_inset
+
+can be substitute in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gain-balance-control"
+
+\end_inset
+
+, R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ = 10,000 Ω and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ = 0 Ω.
+ The value of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+is actually very small (±0,5 Ω) but because the value is very small, R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ can be omitted.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2=1+\frac{10,000\cdot R_{1}}{(R_{1}+10,000)\cdot R_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{2}=\frac{10,000\cdot R_{1}}{(R_{1}+10,000)}\label{eq:R2-equation2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation2"
+
+\end_inset
+
+can be substituted in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation1"
+
+\end_inset
+
+ and therefore the value of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ can be calculated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{3,700\cdot R_{1}-6.5\cdot10^{6}}{1.26\cdot R_{1}+1,300)}=\frac{10,000\cdot R_{1}}{(R_{1}+10,000)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2,600R_{1}^{2}+13\cdot10^{6}\cdot R_{1}=3,700\cdot R_{1}^{2}+30.5\cdot10^{6}\cdot R_{1}-6.5\cdot10^{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1,100R_{1}^{2}+17.5\cdot10^{6}\cdot R_{1}-6.5\cdot10^{10}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}R_{1}=\frac{17.5\cdot10^{6}±24,336,187}{2,200}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{1}=3,107.35\approx3,107\ \Omega\label{eq:R1-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{1}=-19,016\ \Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A resistor can never have a negative value so therefore R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ is equal to 3,107Ω.
+ To calculate R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ , 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R1-equation"
+
+\end_inset
+
+ can be filled in in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation1"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:R2-equation2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{2}=\frac{10,000\cdot3,107}{(3,107+10,000)}=2,370\ \Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tone control
+\end_layout
+
+\begin_layout Standard
+The tone control is divided into five sections.
+ The tone control contains two low-pass filters, two high-pass filters and
+ a band-pass filters as seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preamplifier_tone_control_divided"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename preamplifier_analysis/tone_control_detailed.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tone control divided in sections
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preamplifier_tone_control_divided"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Section 1: A high-pass filter with a cut-off frequency adjustable between
+ 2,5 kHz and 10 kHz
+\end_layout
+
+\begin_layout Standard
+Section 2: A low-pass filter with a cut-off frequency adjustable between
+ 100 Hz and 400 Hz
+\end_layout
+
+\begin_layout Standard
+Section 3: A high-pass filter with a cut-off frequency of 10 Hz 
+\end_layout
+
+\begin_layout Standard
+Section 4: A low-pass filter with a cut-off frequency of 100 kHz
+\end_layout
+
+\begin_layout Standard
+Section 5: A band-pass filter with a cut-off frequency of 2 Hz and 400 kHz
+\end_layout
+
+\begin_layout Paragraph
+Section 1
+\end_layout
+
+\begin_layout Standard
+The HPF
+\end_layout
+
+\begin_layout Standard
+At a frequency of 10 kHz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+10000=\frac{1}{2π\cdot R_{12}\cdot C_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{3}=\frac{1}{2π\cdot R_{12}\cdot10000}\label{eq:section_1_C3_10}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At a frequency of 2,5 kHz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2500=\frac{1}{2π\cdot(R_{12}+10000)\cdot C_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{3}=\frac{1}{2π\cdot(R_{12}+10000)\cdot2500}\label{eq:section_1_C3_2,5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitube 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_1_C3_10"
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_1_C3_2,5"
+
+\end_inset
+
+ to calculate resistor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{2π\cdot R_{12}\cdot10000}=\frac{1}{2π\cdot(R_{12}+10000)\cdot C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{12}=3333.33\ \Omega\label{eq:section_1_R12}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_1_R12"
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_1_C3_2,5"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_1_C3_10"
+
+\end_inset
+
+to calculate the capacitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{3}=\frac{1}{2π\cdot(3333.33+10000)\cdot2500}=4,8\ nF\label{eq:section_1_C3_calculated}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Section 2
+\end_layout
+
+\begin_layout Standard
+The LPF
+\end_layout
+
+\begin_layout Standard
+At a frequency of 400Hz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+400=\frac{1}{2π\cdot R_{10}\cdot C_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{2}=\frac{1}{2π\cdot R_{10}\cdot400}\label{eq:section_2_C2_400}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At a frequency of 100Hz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+100=\frac{1}{2π\cdot(R_{10}+10000)\cdot C_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{2}=\frac{1}{2π\cdot(R_{10}+10000)\cdot100}\label{eq:section_2_C2_100}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_2_C2_400"
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_2_C2_100"
+
+\end_inset
+
+ to calculate resistor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{2π\cdot R_{10}\cdot400}=\frac{1}{2π\cdot(R_{10}+10000)\cdot100}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{10}=3333,33\ \Omega\label{eq:section_2_R10}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_2_R10"
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_2_C2_400"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_2_C2_100"
+
+\end_inset
+
+ to calculate the capacitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{2}=\frac{1}{2π\cdot(3333,33+10000)\cdot2500}=119\ nF\label{eq:section_2_C2_calculated}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Section 3
+\end_layout
+
+\begin_layout Standard
+The HPF
+\end_layout
+
+\begin_layout Standard
+The maximum value of a ceramic capacitor available in the lab at the Hague
+ University is 820 nF.
+ 
+\end_layout
+
+\begin_layout Standard
+Capacitor C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+
+ is chosen for 820 nF and with a cut-off frequency of 10Hz for the HPF,
+ the resistor R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ can be calculated with the formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{6}=\frac{1}{2π\cdot C_{11}\cdot10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{6}=19,409\ \Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Section 4
+\end_layout
+
+\begin_layout Standard
+The LPF
+\end_layout
+
+\begin_layout Standard
+The maximum boost or attenuation of the bass must be 10dB at 400Hz and the
+ maximum boost or attenuation of the treble must be 10dB at 2.5kHz.
+ 
+\end_layout
+
+\begin_layout Standard
+The gain of the boost is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Gain_{Boost}=\frac{R_{7}//R_{8}+R_{6}}{R_{7}//R_{8}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot log(\frac{R_{7}|//R+R_{6}}{R_{7}|//R})=10\ dB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{R_{7}//R_{8}+R_{6}}{R_{7}//R}=10^{\frac{1}{2}}\label{eq:section_4_gain_boost}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The gain of the attenuation is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Gain_{Attenuation}=\frac{R_{7}//R}{R_{7}//R_{8}+R_{6}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot log(\frac{R_{7}//R_{8}}{R_{7}//R_{8}+R_{6}})=-10\ dB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{R_{7}//R_{8}}{R_{7}//R_{8}+R_{6}}=10^{-\frac{1}{2}}\label{eq:section_4_gain_attenuation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The resistors R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+, R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+
+ can be any values, as long as the values of the resistors meet the requirement
+ for the boost to be 10dB with the potentiometer in maximum position.
+\end_layout
+
+\begin_layout Standard
+It is best if R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+7 
+\end_layout
+
+\end_inset
+
+is equal to R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+
+ because the boost and attenuation of the bass and treble will differ.
+ R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+
+can be calculated by substituting the value of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_4_gain_boost"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:section_4_gain_attenuation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{7}//R_{8}+19,409}{R_{7}//R_{8}}=10^{\frac{1}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{7}//R_{8}+19409=3,16\cdot R_{7}//R_{8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{7}//R_{8}=8,900\ \Omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{7}=R_{8}=17,800\ \Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With a cut-off frequency of 100 kHz for the LPF in section 4, the capacitor
+ C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+ can be calculated with the formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{4}=\frac{1}{2π\cdot(R_{7}//R_{8})\cdot100\cdot10^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{4}=180\ pF
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Section 5
+\end_layout
+
+\begin_layout Standard
+The BPF
+\end_layout
+
+\begin_layout Standard
+The frequency range must be between 2 Hz and 400 kHz and the gain at these
+ frequencies must be -3dB.
+ Therefore the resistors and capacitors can be calculated for the band-pass
+ filter with the formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{cut-off}=\frac{1}{2π\cdot R\cdot C}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the design of the band-pass filter, a value of 820 nF is chosen for
+ capacitor C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+
+.
+ The resistors can now be calculated.
+\end_layout
+
+\begin_layout Standard
+For the HPF part of the band-pass filter is the resistor R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+ equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{4}=\frac{1}{2π\cdot2\cdot820\cdot10^{-9}}=97,045\ \Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The balance control and the volume control regulate the gain of the preamplifier.
+ Therefore the band-pass filter does not need to amplify the signal.
+ Thus it is neccessary for R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+ to be equal to R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+to attain a gain of 1 (0 dB).
+\end_layout
+
+\begin_layout Standard
+For the LPF part of the band-pass filter, the capacitor is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{10}=\frac{1}{2π\cdot400\cdot10^{3}\cdot97,045}=4.1\ pF
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Volume control
+\end_layout
+
+\begin_layout Standard
+With an input voltage of 200mV, an output voltage of 2V must be acquired
+ with the balance control in flat position, tone (bass and treble) control
+ switched off and the volume control at maximum.
+ With a gain of approximately 1.26 in the balance control and a gain of 1
+ in the tone control, the voltage at the input of the volume control is
+ approximately equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{input-volume-control}=1.26\cdot1\cdot200mV=252\ mV
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The input voltage of the volume control is now known and because the volume
+ control is at maximum, the voltage at the output of U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+ is equal to the input voltage of the volume control.
+ The values of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+
+ can be calculated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{18}}{R_{17}}\cdot U_{input-volume-control}=2\ V
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{18}}{R_{17}}\cdot0.252V=2\ V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\frac{R_{18}}{R_{17}}=7.94
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The ratio between R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+
+ is 7,94.
+ The values of R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+
+ can be determined.
+ The following values have been chosen for R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+
+ and R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{18}=7,940\ \Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{17}=1,000\ \Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With the volume control at minimum, the gain should be very low (-∞dB) but
+ that is impossible in practice.
+ Therefore simulations are required to determine what the gain can be if
+ the volume control is almost set to the minimum (99%).
+ The gain with the volume control set almost to the minimum is approximately
+ -50dB.
+ The gain with the potentiometer in middle position (50%) is equal to:
+\begin_inset Formula 
+\[
+17.95dB-(\frac{17.95dB--50dB}{2})=-16\ dB
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resistor R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+
+ can be calculated to acquire an approximate logarithmic control function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot log|\frac{R_{16}}{5,000+R_{16}}\cdot\frac{7,940}{1,000}|=-16\ dB
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+log(\frac{R_{16}}{5,000+R_{16}}\cdot\frac{7,940}{1,000})=-\frac{16}{20}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{R_{16}}{5,000+R_{16}}\cdot\frac{7,940}{1,000}=10^{-\frac{16}{20}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{16}=100\ \Omega
+\end{equation}
+
+\end_inset
+
 
 \end_layout
 
@@ -363,6 +1867,12 @@ name "fig:preamplifier_measurement_attenuation"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The bode plots of the measurements correspond with the bode plots of the
+ simulations.
+ 
 \end_layout
 
 \end_body

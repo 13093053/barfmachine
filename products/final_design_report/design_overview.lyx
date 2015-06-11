@@ -103,7 +103,18 @@ Preamplifier
 \end_layout
 
 \begin_layout Standard
-The design of the preamplifier can be split up in the following parts:
+The design of the preamplifier can be
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+split up.
+ divided sounds nicer
+\end_layout
+
+\end_inset
+
+ divided in the following parts:
 \end_layout
 
 \begin_layout Itemize
@@ -141,6 +152,8 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
 	filename design_preamplifier_with_division.png
 	lyxscale 50
@@ -178,6 +191,78 @@ name "fig:Schematic-preamplifier"
 
 \begin_layout Standard
 All parts of the preamplifier have been realized on prototyping boards.
+\end_layout
+
+\begin_layout Standard
+A capacitor that filters out the AC signal removing the noise and provides
+ a DC signal is known as a bypass capacitor.
+ The capacitors connected at V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+cc
+\end_layout
+
+\end_inset
+
+ and V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+ee
+\end_layout
+
+\end_inset
+
+ in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:schematic_bypass_capacitors_opamps"
+
+\end_inset
+
+ is a bypass capacitor bypassing AC noise and allowing pure DC signal to
+ pass through the component.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename example_bypass_capacitor.jpg
+	lyxscale 50
+	width 25col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic preamplifier
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:schematic_bypass_capacitors_opamps"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
