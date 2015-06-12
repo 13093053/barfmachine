@@ -120,9 +120,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
 	filename digipot_photo.jpg
-	width 100col%
+	width 70col%
 
 \end_inset
 
