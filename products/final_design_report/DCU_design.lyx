@@ -94,18 +94,9 @@ The DCU, related components, and its connection to the rest of the system
 \begin_layout Standard
 The choice to use MIDI messages as input for the DCU was made with the idea
  that MIDI hardware is generally designed for use with music and/or audio.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Profesional mixers can be controlled using a computer program, so presets
- can be loaded with a few clicks.
-\end_layout
-
-\end_inset
-
-Many MIDI devices include twisting knobs which act as potentiometers, and
+ On top of that, professional mixing devices can be controlled using computer
+ software, allowing preset settings to be loaded in a matter of a few clicks.
+ Many MIDI devices include twisting knobs which act as potentiometers, and
  thus being able to use a MIDI device to control the various controls in
  the circuitry allows for an intuitive and easily expandable/customizable
  user interface.
@@ -174,7 +165,7 @@ These models hold two potentiometers per package, and expect incoming commands
  As illustrated in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Schematic-DCU_2"
+reference "fig:block-diagram-DCU_2"
 
 \end_inset
 
@@ -204,7 +195,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename schematic_DCU.png
+	filename block_diagram_DCU.png
 	width 100col%
 
 \end_inset
@@ -216,7 +207,7 @@ status open
 Block diagram of DCU
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Schematic-DCU_2"
+name "fig:block-diagram-DCU_2"
 
 \end_inset
 
@@ -241,7 +232,7 @@ name "fig:Schematic-DCU_2"
 As seen in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Schematic-DCU_2"
+reference "fig:block-diagram-DCU_2"
 
 \end_inset
 
@@ -254,6 +245,60 @@ reference "fig:Schematic-DCU_2"
  This protects both devices from overvoltage and static discharges.
  It also makes it possible to swap out midi cables while the speaker system
  is powered on.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-DCU"
+
+\end_inset
+
+ shows the schematic of the DCU part.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename schematic_DCU2.png
+	lyxscale 40
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of DCU
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-DCU"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

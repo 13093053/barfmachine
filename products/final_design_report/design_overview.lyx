@@ -706,7 +706,7 @@ MIDI messages will be used to pass commands to the DCU
 Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Schematic-DCU"
+reference "fig:block-diagram-DCU"
 
 \end_inset
 
@@ -721,7 +721,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename schematic_DCU.png
+	filename block_diagram_DCU.png
 	width 100col%
 
 \end_inset
@@ -733,7 +733,7 @@ status open
 Schematic of DCU
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Schematic-DCU"
+name "fig:block-diagram-DCU"
 
 \end_inset
 
