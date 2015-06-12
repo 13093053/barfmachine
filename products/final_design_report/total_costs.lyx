@@ -72,6 +72,13 @@
 
 \begin_layout Section
 Total costs of system
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:total-costs"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -84,7 +91,7 @@ The following components are required to build the power amplifier, preamplifier
 \begin_layout Standard
 \begin_inset External
 	template GnumericSpreadsheet
-	filename /home/koen/Documents/School/barkmachine/bom/ProQ2-group1-BOM.xlsx
+	filename ../../bom/ProQ2-group1-BOM.xlsx
 
 \end_inset
 

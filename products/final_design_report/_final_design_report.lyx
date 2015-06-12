@@ -162,7 +162,122 @@ Summary
 \end_layout
 
 \begin_layout Standard
-[Summary of report]
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Introduction"
+
+\end_inset
+
+ gives an introduction of the project PRO-Q2 of team 1.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:project-problem"
+
+\end_inset
+
+ explains the problem description regarding the design of the active loudspeaker
+ in detail.
+ The specifications and the preconditions are also presented in section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:project-problem"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:design-overview"
+
+\end_inset
+
+ shows the design overview of the active loudspeaker.
+ Schematics of the preamplifier, power supply, power amplifier and the DCU
+ are presented in this section.
+ The values of the components are also presented in the schematics.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:preamp-analysis"
+
+\end_inset
+
+ gives an in-depth analysis of the preamplifiers regarding the calculations,
+ simulations and measurements.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:power-supply-design"
+
+\end_inset
+
+ explains the design of the power supply in detail.
+ It explains what choices were made in the design of the power supply
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:DCU-design"
+
+\end_inset
+
+ explains what choices were made in designing the DCU, what code the DCU
+ consists of and how the DCU functions.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:test-procedures"
+
+\end_inset
+
+ gives the results of the test procedure and how the tests were done.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:total-costs"
+
+\end_inset
+
+ gives the total cost of the system.
+ The prices and the types of the components are presentend in this section.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:conclusions"
+
+\end_inset
+
+ gives the conclusion and recommendations of the project as a whole.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -171,6 +286,13 @@ Summary
 
 \begin_layout Section
 Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Introduction"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -72,6 +72,13 @@
 
 \begin_layout Section
 The project problem, specifications and preconditions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:project-problem"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

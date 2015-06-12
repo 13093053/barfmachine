@@ -72,6 +72,13 @@
 
 \begin_layout Section
 Power supply design
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:power-supply-design"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
