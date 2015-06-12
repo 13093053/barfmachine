@@ -76,7 +76,14 @@ The project problem, specifications and preconditions
 
 \begin_layout Standard
 The project problem introduces the fictional company BARK, a small yet well-know
-n manufacturer of loudspeakers.
+n manufacturer of loudspeakers 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "project-manual"
+
+\end_inset
+
+.
  For some time, BARK has contemplated the development of a series of active
  speakers using built-in power amplifiers.
  The market price of these types of speakers have shown a significant reduction
