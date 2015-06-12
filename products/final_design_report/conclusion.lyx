@@ -82,7 +82,51 @@ name "sec:conclusions"
 \end_layout
 
 \begin_layout Standard
-[What it says on the tin]
+After approximately 2 months for working on PRO-Q2, the active loudspeaker
+ was finally finished by connecting the the power supply, the power amplifier
+ and the preamplifier.
+ After testing the active loudspeaker as a whole, it can be concluded that
+ the active loudspeaker works.
+ The sound may not be perfect but sound can be heard from the speaker.
+ Unfortunately the DCU was not tested.
+\end_layout
+
+\begin_layout Standard
+The bass and treble also works well when turning the bass and treble on
+ and off.
+ The volume control works well when turning the volume off and on.
+ The balance control works when turning the balance control on and off.
+ The preamplifier was simulated and measured and the bode plots of the simulatio
+ns and measurements corresponds with each other as seen in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:preamp-analysis"
+
+\end_inset
+
+.
+  It can be concluded that the calculations of the components of the preamplifie
+r are correct and that the preamplifier meets the specifications.
+\end_layout
+
+\begin_layout Standard
+The power supply meets all specifications and it supplies all voltages required
+ to make the system work.
+\end_layout
+
+\begin_layout Standard
+The power amplifier meets all specifications, it does not get too hot and
+ it produces clean audio.
+\end_layout
+
+\begin_layout Standard
+As the source code in the appendices already notes, at the time of writing
+ the DCU had not been connected and tested yet.
+ Building the code resulted in the expected errors associated with the yet-to-be
+-defined values in the header files, but all other errors that were previously
+ present have been succesfully ironed out.
+ In short, source-code-wise the DCU is fully finished, although its functionalit
+y is yet to be proven.
 \end_layout
 
 \end_body
