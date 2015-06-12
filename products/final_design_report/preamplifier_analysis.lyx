@@ -277,16 +277,15 @@ A_{high}=10^{\frac{3}{10}}\approx2\label{eq:Gain-high-position}
 \end_layout
 
 \begin_layout Standard
-Equation 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:Gain-flat-position"
 
 \end_inset
 
-can be substituted in 
+ can be substituted in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:Gain-balance-control"
 
 \end_inset
@@ -309,7 +308,7 @@ L
 
 \end_inset
 
- are 5,000Ω.
+ are 5,000 Ω.
 \end_layout
 
 \begin_layout Standard
@@ -347,14 +346,14 @@ R_{2}=\frac{3,700\cdot R_{1}-6.5\cdot10^{6}}{1.26\cdot R_{1}+1,300)}\label{eq:R2
 
 \begin_layout Standard
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:Gain-high-position"
 
 \end_inset
 
-can be substitute in 
+ can be substituted in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:Gain-balance-control"
 
 \end_inset
@@ -387,7 +386,7 @@ L
 
 \end_inset
 
-is actually very small (±0,5 Ω) but because the value is very small, R
+is actually very small (±0.5 Ω) but because the value is very small, R
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -423,14 +422,14 @@ R_{2}=\frac{10,000\cdot R_{1}}{(R_{1}+10,000)}\label{eq:R2-equation2}
 
 \begin_layout Standard
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:R2-equation2"
 
 \end_inset
 
-can be substituted in 
+ can be substituted in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:R2-equation1"
 
 \end_inset
@@ -523,7 +522,7 @@ A resistor can never have a negative value so therefore R
 
 \end_inset
 
- is equal to 3,107Ω.
+ is equal to 3,107 Ω.
  To calculate R
 \begin_inset script subscript
 
@@ -535,21 +534,21 @@ A resistor can never have a negative value so therefore R
 
  , 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:R1-equation"
 
 \end_inset
 
  can be filled in in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:R2-equation1"
 
 \end_inset
 
  or 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:R2-equation2"
 
 \end_inset
@@ -684,7 +683,7 @@ C_{3}=\frac{1}{2π\cdot R_{12}\cdot10000}\label{eq:section_1_C3_10}
 \end_layout
 
 \begin_layout Standard
-At a frequency of 2,5 kHz
+At a frequency of 2.5 kHz
 \end_layout
 
 \begin_layout Standard
@@ -710,16 +709,16 @@ C_{3}=\frac{1}{2π\cdot(R_{12}+10000)\cdot2500}\label{eq:section_1_C3_2,5}
 \end_layout
 
 \begin_layout Standard
-Substitube 
+Substitute 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_1_C3_10"
 
 \end_inset
 
  in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_1_C3_2,5"
 
 \end_inset
@@ -752,26 +751,26 @@ R_{12}=3333.33\ \Omega\label{eq:section_1_R12}
 \begin_layout Standard
 Substitute 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_1_R12"
 
 \end_inset
 
  in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_1_C3_2,5"
 
 \end_inset
 
  or 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_1_C3_10"
 
 \end_inset
 
-to calculate the capacitor
+ to calculate the capacitor
 \end_layout
 
 \begin_layout Standard
@@ -794,7 +793,7 @@ The LPF
 \end_layout
 
 \begin_layout Standard
-At a frequency of 400Hz
+At a frequency of 400 Hz
 \end_layout
 
 \begin_layout Standard
@@ -820,7 +819,7 @@ C_{2}=\frac{1}{2π\cdot R_{10}\cdot400}\label{eq:section_2_C2_400}
 \end_layout
 
 \begin_layout Standard
-At a frequency of 100Hz
+At a frequency of 100 Hz
 \end_layout
 
 \begin_layout Standard
@@ -848,14 +847,14 @@ C_{2}=\frac{1}{2π\cdot(R_{10}+10000)\cdot100}\label{eq:section_2_C2_100}
 \begin_layout Standard
 Substitute 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_2_C2_400"
 
 \end_inset
 
  in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_2_C2_100"
 
 \end_inset
@@ -888,21 +887,21 @@ R_{10}=3333,33\ \Omega\label{eq:section_2_R10}
 \begin_layout Standard
 Substitute 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_2_R10"
 
 \end_inset
 
  in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_2_C2_400"
 
 \end_inset
 
  or 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_2_C2_100"
 
 \end_inset
@@ -945,7 +944,7 @@ Capacitor C
 
 \end_inset
 
- is chosen for 820 nF and with a cut-off frequency of 10Hz for the HPF,
+ is chosen for 820 nF and with a cut-off frequency of 10 Hz for the HPF,
  the resistor R
 \begin_inset script subscript
 
@@ -989,8 +988,8 @@ The LPF
 \end_layout
 
 \begin_layout Standard
-The maximum boost or attenuation of the bass must be 10dB at 400Hz and the
- maximum boost or attenuation of the treble must be 10dB at 2.5kHz.
+The maximum boost or attenuation of the bass must be 10 dB at 400 Hz and
+ the maximum boost or attenuation of the treble must be 10 dB at 2.5 kHz.
  
 \end_layout
 
@@ -1149,14 +1148,14 @@ can be calculated by substituting the value of R
 
  in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_4_gain_boost"
 
 \end_inset
 
  or 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:section_4_gain_attenuation"
 
 \end_inset
@@ -1254,7 +1253,7 @@ The BPF
 
 \begin_layout Standard
 The frequency range must be between 2 Hz and 400 kHz and the gain at these
- frequencies must be -3dB.
+ frequencies must be -3 dB.
  Therefore the resistors and capacitors can be calculated for the band-pass
  filter with the formula:
 \end_layout
@@ -1454,7 +1453,7 @@ The ratio between R
 
 \end_inset
 
- is 7,94.
+ is 7.94.
  The values of R
 \begin_inset script subscript
 
@@ -1518,12 +1517,12 @@ R_{17}=1,000\ \Omega
 \end_layout
 
 \begin_layout Standard
-With the volume control at minimum, the gain should be very low (-∞dB) but
- that is impossible in practice.
+With the volume control at minimum, the gain should be very low (-∞ dB)
+ but that is impossible in practice.
  Therefore simulations are required to determine what the gain can be if
  the volume control is almost set to the minimum (99%).
  The gain with the volume control set almost to the minimum is approximately
- -50dB.
+ -50 dB.
  The gain with the potentiometer in middle position (50%) is equal to:
 \begin_inset Formula 
 \[
@@ -1601,7 +1600,7 @@ reference "fig:preamplifier_simulation_boost"
  shows a simulation of the bode plot of the preamplifier with the bass and
  treble both at maximum boost, the volume control in mid position, the balance
  control in mid position, the bass corner frequency at 400 Hz and the treble
- corner frequency at 2,5 kHz..
+ corner frequency at 2.5 kHz.
 \end_layout
 
 \begin_layout Standard
@@ -1664,7 +1663,7 @@ reference "fig:preamplifier_simulation_attenuation"
  shows the simulation of the bode plot of the preamplifier with the bass
  and treble both at maximum attenuation, the volume control in mid position,
  the balance control in mid position, the bass corner frequency at 400 Hz
- and the treble corner frequency at 2,5 kHz..
+ and the treble corner frequency at 2.5 kHz.
 \end_layout
 
 \begin_layout Standard
@@ -1724,7 +1723,7 @@ reference "fig:preamplifier_measurement_boost"
  shows a bode plot of the preamplifier with the bass and treble both at
  maximum boost, the volume control in mid position, the balance control
  in mid position, the bass corner frequency at 400 Hz and the treble corner
- frequency at 2,5 kHz.
+ frequency at 2.5 kHz.
  The measurements for determining the bode plot in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1739,7 +1738,14 @@ reference "tab:preamplifier_measurements_boost"
 
 \end_inset
 
- in appendix.
+ in 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Appendix-preamp"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1802,7 +1808,7 @@ reference "fig:preamplifier_measurement_attenuation"
  shows a bode plot of the preamplifier with the bass and treble both at
  maximum attenuation, the volume control in mid position, the balance control
  in mid position, the bass corner frequency at 400 Hz and the treble corner
- frequency at 2,5 kHz.
+ frequency at 2.5 kHz.
  The measurements for determining the bode plot in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1817,7 +1823,14 @@ reference "tab:preamplifier_measurements_attenuation"
 
 \end_inset
 
- in appendix
+ in 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Appendix-preamp"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

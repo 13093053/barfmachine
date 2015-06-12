@@ -71,7 +71,14 @@
 \begin_body
 
 \begin_layout Section*
-Appendix preamp
+Appendix A
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Appendix-preamp"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2264,7 +2271,7 @@ Gain (dB)
 \end_layout
 
 \begin_layout Section*
-Appendix DCU
+Appendix B
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Appendix-DCU"
