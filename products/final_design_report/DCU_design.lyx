@@ -224,12 +224,172 @@ name "fig:Schematic-DCU_2"
 
 \end_layout
 
+\begin_layout Standard
+As seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-DCU_2"
+
+\end_inset
+
+, the control bus (ATmega328 SPI output) is connected to all parts of the
+ preamplifier.
+ The control bus consists of seven signal lines: six CS (chip select) lines
+ and one data line (carrying the value to be read by the digital potentiometer.
+ Between the MIDI input and the USART of the ATmega328, an isolator is placed
+ to electrically isolate the MIDI device from the microcontroller, protecting
+ the devices from overvoltage.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Might need some more info on the isolator here
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 C code
 \end_layout
 
 \begin_layout Standard
-The C code can be divided into the following 
+The C code can be divided into the following subsections:
+\end_layout
+
+\begin_layout Itemize
+Headers for digital potentiometers and MIDI
+\end_layout
+
+\begin_layout Itemize
+Initialization
+\end_layout
+
+\begin_layout Itemize
+Main program loop
+\end_layout
+
+\begin_layout Itemize
+MIDI input functions
+\end_layout
+
+\begin_layout Itemize
+Digital potentiometer output functions
+\end_layout
+
+\begin_layout Standard
+The individual blocks of code will be discussed and explained.
+ In order to see how the different parts of the code are connected to each
+ other, the complete C code can be found in 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Appendix-DCU"
+
+\end_inset
+
+.
+ When addressing specific pieces of code, references will be made to the
+ line numbers as seen in these appendices.
+\end_layout
+
+\begin_layout Subsubsection
+digipots.h and midi.h
+\end_layout
+
+\begin_layout Standard
+The two custom header files used in the code contain all the constants asssociat
+ed with the ports (and pins) connected to the peripheral devices.
+ As seen in 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Appendix-DCU"
+
+\end_inset
+
+, digipots.h contains the correct values to set the DDR and PORT registers
+ associated with the potentiometers.
+ The 
+\family typewriter
+*_CS_PIN
+\family default
+ constants define the correct value to be written to the PORT register that
+ drive the 
+\begin_inset Formula $\overline{CS}$
+\end_inset
+
+ pins of the digital potentiometers.
+ Since there is only one data line for all of the controls, when writing
+ a value to the digital potentiometers, only the appropriate 
+\begin_inset Formula $\overline{CS}$
+\end_inset
+
+ pins are to be driven.
+ This will become more clear when the output functions are discussed.
+ midi.h contains all the constants associated with the incoming MIDI data.
+ MIDI messages consist of at least one byte.
+ In case of MIDI Control Change messages which we are concerned with, a
+ full message consist of three bytes: 
+\family typewriter
+1011nnnn
+\family default
+, 
+\family typewriter
+0ccccccc
+\family default
+ and 
+\family typewriter
+0vvvvvvv
+\family default
+ respectively where 
+\family typewriter
+nnnn
+\family default
+ denotes the MIDI channel, 
+\family typewriter
+ccccccc
+\family default
+ denotes the controller number and 
+\family typewriter
+vvvvvvv
+\family default
+ denotes the value of the controller.
+ 
+\family typewriter
+CTRL_CH
+\family default
+ is the byte value in the MIDI message that denotes the type of MIDI command
+ (in our case, Control Change).
+ The 
+\family typewriter
+*_CTRL
+\family default
+ constants are used to define what controller number (in the 
+\family typewriter
+0ccccccc
+\family default
+ byte) correspond to what control.
+ This way the program will be able to determine which 
+\begin_inset Formula $\overline{CS}$
+\end_inset
+
+ pin should be driven when the received controller value is passsed on to
+ the digital potentiometers.
+\end_layout
+
+\begin_layout Subsubsection
+Initialization
+\end_layout
+
+\begin_layout Standard
+The initializations are made in dcu.c, from the beginning to line number
+ 66.
+ The global variables are declared, appropriate DDR registers are set, the
+ USART registers are set, and the SPI registers are set.
+ Finally, all controls are reset by initializing the digital potentiometers
+ to maximum position.
 \end_layout
 
 \end_body

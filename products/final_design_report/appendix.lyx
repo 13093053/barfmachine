@@ -70,8 +70,8 @@
 
 \begin_body
 
-\begin_layout Section
-Appendix
+\begin_layout Section*
+Appendix preamp
 \end_layout
 
 \begin_layout Standard
@@ -2265,6 +2265,13 @@ Gain (dB)
 
 \begin_layout Section*
 Appendix DCU
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Appendix-DCU"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
