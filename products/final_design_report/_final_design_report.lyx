@@ -162,7 +162,54 @@ Summary
 \end_layout
 
 \begin_layout Standard
-[Summary of report]
+Chapter 2 gives an introduction of the project PRO-Q2 of team 1.
+\end_layout
+
+\begin_layout Standard
+Chapter 3 explains the problem description regarding the design of the active
+ loudspeaker in detail.
+ The specifications and the preconditions are also presented in chapter
+ 3.
+\end_layout
+
+\begin_layout Standard
+Chapter 4 shows the design overview of the active loudspeaker.
+ Schematics of the preamplifier, power supply, power amplifier and the DCU
+ are presented in this chapter.
+ The values of the components are also presented in the schematics.
+\end_layout
+
+\begin_layout Standard
+Chapter 5 gives an in-depth analysis of the preamplifiers regarding the
+ calculations, simulations and measurements.
+\end_layout
+
+\begin_layout Standard
+Chapter 6 explains the design of the power supply in detail.
+ It explains what choices were made in the design of the power supply
+\end_layout
+
+\begin_layout Standard
+Chapter 7 explains what choices were made in designing the DCU, what code
+ the DCU consists of and how the DCU functions.
+\end_layout
+
+\begin_layout Standard
+Chapter 8 gives the results of the test procedure and how the tests were
+ done.
+\end_layout
+
+\begin_layout Standard
+Chapter 9 gives the total cost of the system.
+ The prices and the types of the components are presentend in this chapter.
+\end_layout
+
+\begin_layout Standard
+Chapter 10 gives the conclusion and recommendations of the project as a
+ whole.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
