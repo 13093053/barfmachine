@@ -84,7 +84,7 @@ The following components are required to build the power amplifier, preamplifier
 \begin_layout Standard
 \begin_inset External
 	template GnumericSpreadsheet
-	filename /home/koen/Documents/School/barkmachine/bom/ProQ2-group1-BOM.xlsx
+	filename ../../bom/ProQ2-group1-BOM.xlsx
 
 \end_inset
 
