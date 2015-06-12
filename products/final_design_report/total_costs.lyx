@@ -75,7 +75,20 @@ Total costs of system
 \end_layout
 
 \begin_layout Standard
-[Breakdown of the total costs required to build the design]
+The following components are required to build the power amplifier, preamplifier
+, power supply and digital control unit.
+ Please note that these prices are only an indication.
+ Prices may change over time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template GnumericSpreadsheet
+	filename /home/koen/Documents/School/barkmachine/bom/ProQ2-group1-BOM.xlsx
+
+\end_inset
+
+
 \end_layout
 
 \end_body
