@@ -280,6 +280,26 @@ filename "conclusion.lyx"
 
 \end_layout
 
+\begin_layout Section
+Source
+\end_layout
+
+\begin_layout Standard
+[1] J.
+ op den Brouw and M.
+ Can.
+ (2015, May 21).
+ Project Manual PRO-Q2 (version 1.3) [Online].
+ Available: https://blackboard.hhs.nl/
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \noindent
 \begin_inset CommandInset include
