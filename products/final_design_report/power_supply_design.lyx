@@ -76,7 +76,14 @@ Power supply design
 
 \begin_layout Standard
 The power supply is a linear non-switching supply, which uses a toroidal
- transformer to take 230V mains down to 36V [reference].
+ transformer to take 230 V mains down to 36 V 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "transformer-datasheet"
+
+\end_inset
+
+.
  The power amplifier and the preamplifier require a split supply by design,
  so a transformer with two secondary windings is used.
  After the transformer comes a bridge rectifier which converts the AC signal
@@ -155,11 +162,11 @@ Protection
 \begin_layout Standard
 The power supply is fused on both secondary windings to protect the transformer
  against high currents.
- The nominal current of the secondary windings of the transformer is 0.420A
- while the power amplifier takes 0.694A from the supply at max power .
+ The nominal current of the secondary windings of the transformer is 0.420
+ A while the power amplifier takes 0.694 A from the supply at max power .
  The capacitors in the power supply will smooth out the load on the transformer,
  so it does not exceed the nominal current.
- The fuses on the secondary windings are rated 2A, so they only blow on
+ The fuses on the secondary windings are rated 2 A, so they only blow on
  a short circuit.
  The primary winding could be fused optionally.
  
@@ -182,8 +189,8 @@ Efficiency
 \begin_layout Standard
 As said before, the power amplifier's power rails are unregulated.
  This is required to meet the 80% energy efficiency requirement.
- If linear regulators were used to regulate 25 down to 20V at 0.5A this would
- result in a 2.5W loss in the regulator.
+ If linear regulators were used to regulate 25 down to 20 V at 0.5 A this
+ would result in a 2.5 W loss in the regulator.
  In this case the energy efficiency would be 80% for the regulator stage
  alone.
  The power dissipated in the linear regulators for the preamp and dcu is
@@ -258,21 +265,9 @@ Power supply board layout
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-[reference] Multicomp.
- (2014, June).
- "Toroidal Transformers, General Purpose" [on-line].
- Available: http://www.farnell.com/datasheets/182927 8.pdf [June 15, 2015]
- 
 \end_layout
 
 \end_body
