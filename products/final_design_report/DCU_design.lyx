@@ -331,15 +331,15 @@ reference "sec:Appendix-DCU"
  midi.h contains all the constants associated with the incoming MIDI data.
  MIDI messages consist of at least one byte.
  In case of MIDI Control Change messages which we are concerned with, a
- full message consist of three bytes: 
+ full message consist of three bytes: a command byte 
 \family typewriter
 1011nnnn
 \family default
-, 
+, and Controller Number byte 
 \family typewriter
 0ccccccc
 \family default
- and 
+ and a Controller Value byte 
 \family typewriter
 0vvvvvvv
 \family default
@@ -390,6 +390,171 @@ The initializations are made in dcu.c, from the beginning to line number
  USART registers are set, and the SPI registers are set.
  Finally, all controls are reset by initializing the digital potentiometers
  to maximum position.
+ The appropriate values to be loaded into the UBRRH and UBRRL registers
+ of the USART have been calculated based on the values defined in line numbers
+ 20 to 24.
+ The for-loop on lines 61 to 63 set the digital potentiometers to the maximum
+ value one by one.
+\end_layout
+
+\begin_layout Subsubsection
+Main program loop
+\end_layout
+
+\begin_layout Standard
+The main program loop, an infinitely looping while-loop from lines 69 to
+ 106, calls the appropriate functions to control the digital potentiometers
+ whenever new data is received from the MIDI device through the USART.
+ The program will wait at the 
+\family typewriter
+while (rxcnt == 0);
+\family default
+ lines for a new byte to arrive through the USART.
+ On line 73, a command byte will be expected.
+ If a new byte is received, it is stored into 
+\family typewriter
+cmd
+\family default
+.
+ On line 74, the command byte is checked for validity.
+ If valid, the program continues and the error LED is turned off.
+ Otherwise, the program will end up waiting at line 72 again for a valid
+ command byte.
+ After passing the command validity check, the same process is repeated
+ for the Controller Number and Contorller Value bytes.
+ If either of these checks fail, the else-statement is executed and a LED
+ is switched on using 
+\family typewriter
+toggleErrorLED()
+\family default
+.
+ When all received bytes are valid (making up a complete valid three-byte
+ Control Change message), a switch case at lines 83 to 95 will select the
+ appropriate action.
+ There is only one case in this case (excluding the default case), but the
+ system can be expanded in the future to include more functionality using
+ this switch case.
+\end_layout
+
+\begin_layout Subsubsection
+MIDI input functions
+\end_layout
+
+\begin_layout Standard
+There are two blocks of code dealing with the incoming MIDI messages.
+ They are the interrupt service routine (ISR) 
+\family typewriter
+USART_RXC_vect
+\family default
+ (lines 151 to 169) and the function 
+\family typewriter
+ugetc()
+\family default
+ (lines 185 to 192).
+ Whenever a MIDI device sends a byte to the ATmega328, the ISR is executed
+ and the incoming data is checked.
+ If the USART deems the data valid, the UDR is unloaded into variable 
+\family typewriter
+c
+\family default
+ and stored into the buffer 
+\family typewriter
+sb
+\family default
+ if it is not full yet.
+ Finally, 
+\family typewriter
+rxcnt
+\family default
+ is incremented.
+ One can now see that in the main loop, the program will only pass the 'waiting'
+ lines when 
+\family typewriter
+rxcnt
+\family default
+ is not equal to zero, which means one or more unread bytes are stored in
+ the buffer.
+\end_layout
+
+\begin_layout Standard
+When a message byte needs to be stored into the variables in the main loop,
+ 
+\family typewriter
+ugetc()
+\family default
+ is called.
+ This function selects the correct byte in the buffer and stores it in local
+ variable 
+\family typewriter
+c
+\family default
+.
+ It then decrements 
+\family typewriter
+rxcnt
+\family default
+ and returns 
+\family typewriter
+c
+\family default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Digital potentiometer output functions
+\end_layout
+
+\begin_layout Standard
+There are two functions related to the output controlling the digital potentiome
+ters.
+ They are 
+\family typewriter
+spiSend()
+\family default
+ (lines 112 to 117) and 
+\family typewriter
+setPot()
+\family default
+ (lines 119 to 139).
+ When 
+\family typewriter
+setPot()
+\family default
+ is called, a switch case chooses the appropriate case based on the parameter
+ 
+\family typewriter
+potno
+\family default
+.
+ Inside each case, the appropriate 
+\begin_inset Formula $\overline{CS}$
+\end_inset
+
+ pin is driven and 
+\family typewriter
+spiSend()
+\family default
+ is called with the appropriate parameters.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+spiSend()
+\family default
+ takes two arguments, the memory address value 
+\family typewriter
+memcom
+\family default
+ and the control value 
+\family typewriter
+val
+\family default
+.
+ This function does nothing more but transmitting the two bytes over SPI
+ one by one.
+ The while statements force the program to wait with continuing untill the
+ SPI is finished with he transmission.
 \end_layout
 
 \end_body

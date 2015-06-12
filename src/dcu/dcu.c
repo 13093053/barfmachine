@@ -34,7 +34,7 @@ void uputs(char str[]);
 char ugetc();
 void spiSend(uint8_t memcom, uint8_t data);
 void setPot(int potno, uint8_t val);
-void toggleErrorLED(void);
+void toggleErrorLED(int onoff);
 
 
 int main(void) {
@@ -72,7 +72,7 @@ int main(void) {
 		while (rxcnt == 0); /* Wait for buffer to be empty */
 		cmd = (uint8_t)ugetc();
 		if (cmd & 0x80) { /* Check if 0b1xxxxxxx (valid MIDI command) */
-			toggleErrorLED(); /* Turn off error LED */
+			toggleErrorLED(0); /* Turn off error LED */
 			while (rxcnt == 0);
 			cc = ugetc(); /* Acquire controller number */
 			if (~cc & 0x80) { /* Check if 0b0xxxxxxx (valid controller number value) */
@@ -95,10 +95,10 @@ int main(void) {
 					}
 				}
 				else {
-					toggleErrorLED(); /* Turn on error LED */ 
+					toggleErrorLED(1); /* Turn on error LED */ 
 				}			}
 			else {
-				toggleErrorLED(); /* Turn on error LED */ 
+				toggleErrorLED(1); /* Turn on error LED */ 
 			}
 		}
 	}
@@ -138,8 +138,14 @@ void setPot(int potno, uint8_t val) {
 
 }
 
-void toggleErrorLED(void) {
-	PORTLEDS ^= 0x00; /* Toggle error LED. CORRECT VALUE TO-BE-FILLED-IN */
+void toggleErrorLED(int onoff) {
+	if (onoff = 0) {
+		PORTLEDS = 0x00; /* Toggle error LED. CORRECT VALUE TO-BE-FILLED-IN */
+	}
+	else {
+		PORTLEDS = 0xFF; /* Toggle error LED. CORRECT VALUE TO-BE-FILLED-IN */
+	}
+	
 }
 
 ISR (USART_RXC_vect) {
