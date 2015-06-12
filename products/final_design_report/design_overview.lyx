@@ -155,7 +155,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename design_preamplifier_with_division.png
+	filename PreAmplifier_schematics/Pre-amp.PNG
 	lyxscale 50
 	width 100col%
 
@@ -292,7 +292,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../measurement_reports/balance_control/design/design.png
+	filename PreAmplifier_schematics/balance_control.PNG
 	width 100col%
 
 \end_inset
@@ -348,7 +348,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../measurement_reports/tone_control/design/tone_control.png
+	filename PreAmplifier_schematics/tone_control.PNG
 	width 100col%
 
 \end_inset
@@ -404,7 +404,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../measurement_reports/volume_control/design/design.png
+	filename PreAmplifier_schematics/volume_control.PNG
 	width 100col%
 
 \end_inset
