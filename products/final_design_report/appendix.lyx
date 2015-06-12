@@ -2256,5 +2256,56 @@ Gain (dB)
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Appendix DCU
+\end_layout
+
+\begin_layout Standard
+The following pages show all C code involved used in the ATmega328 microcontroll
+er to make the DCU function.
+ The first two pages show the two .h files where several constants such as
+ ports, pins, and MIDI-related values.
+ Then, the main program file follows showing the main program loop and all
+ used functions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename digipots.h.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename midi.h.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename dcu.c.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
