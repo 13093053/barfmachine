@@ -24,7 +24,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement tph
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -116,6 +116,213 @@ EQ2.c
 
 \begin_layout Date
 May 29th, 2015
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Members
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not sure if this is relevant but it would be nice to add a picture of the
+ members and maybe minor information
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename unknown_person.jpg
+	width 20mm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Daan Conijn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is Daan Conijn.
+ He is the chairman.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename unknown_person.jpg
+	width 20mm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Andrew Lau
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is Andrew Lau.
+ He is the minute secretary.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename unknown_person.jpg
+	width 20mm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kevin Oei
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is Kevin Oei.
+ He is an employee.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename unknown_person.jpg
+	width 20mm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Koen van Vliet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is Koen van Vliet.
+ He is an employee.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -348,6 +555,12 @@ th
 
 \end_layout
 
+\begin_layout Standard
+Worked on research paper.
+ Koen and Andrew researched on bridge- unbridge and Kevin and Daan researched
+ on EMI
+\end_layout
+
 \begin_layout Subsection*
 6
 \begin_inset script superscript
@@ -383,6 +596,12 @@ th
 
 \end_layout
 
+\begin_layout Standard
+Worked on research paper.
+ Koen and Andrew researched on bridge- unbridge and Kevin and Daan researched
+ on EMI
+\end_layout
+
 \begin_layout Subsection*
 7
 \begin_inset script superscript
@@ -407,6 +626,25 @@ th
 \end_inset
 
  till april the 3
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Worked on research paper.
+ Koen and Andrew researched on bridge- unbridge and Kevin and Daan researched
+ on EMI
+\end_layout
+
+\begin_layout Standard
+Research papers handed in on april the 3
 \begin_inset script superscript
 
 \begin_layout Plain Layout
