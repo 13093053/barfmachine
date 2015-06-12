@@ -80,8 +80,9 @@ The DCU's entire functionality was to be determined by the project team.
  or similar controllers, and some kind of interaction with the analogue
  part of the system.
  In team 1's case, the DCU allows control of all audio controls (potentiometers)
- in the analogue circuits using MIDI messages that, after going through
- the DCU, adjust the values of digital potentiometers placed in the circuits.
+ in the analogue circuits using MIDI messages.
+ The DCU then adjusts the values of digital potentiometers placed in the
+ circuits based on the incoming MIDI message.
  First, the physical design of the DCU and related components are discussed.
  After that, the code used for the DCU will be looked at.
 \end_layout
@@ -95,8 +96,132 @@ The choice to use MIDI messages as input for the DCU was made with the idea
  that MIDI hardware is generally designed for use with music and/or audio.
  Many MIDI devices include twisting knobs which act as potentiometers, and
  thus being able to use a MIDI device to control the various controls in
- the circuitry allows for an intuitive and easily expandable user interface.
- The type of digital potentiometers used in combination with the DCU is
+ the circuitry allows for an intuitive and easily expandable/customizable
+ user interface.
+ The type of digital potentiometers used in combination with the DCU are
+ the MCP4251-103E/P (see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DigiPot-photo"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename digipot_photo.jpg
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The MCP4251-103E/P
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:DigiPot-photo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These models hold two potentiometers per package, and expect incoming commands
+ through SPI which makes them easily usable with the ATmega328 which supports
+ a direct SPI connection.
+ As illustrated in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schematic-DCU_2"
+
+\end_inset
+
+, the digital potentiometers allow the DCU to take over control of the balance
+ control, bass cut-off control, treble cut-off control, bass boost control,
+ treble boost control and volume control.
+ In its current state, the code only handles so-called 'Control Change'
+ MIDI messages which indicate the change of a physical control, such as
+ a knob.
+ These messages include a value indicating the position of the knob as well
+ as an identifier indicating which specific knob was changed.
+ The message is processed in the DCU and the correct command is passed on
+ to the appropriate potentiometer over the SPI connection.
+ Only when a new 'Control Change' message is received, will the digital
+ potentiometer(s) be adjusted accordingly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename schematic_DCU.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of DCU
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schematic-DCU_2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

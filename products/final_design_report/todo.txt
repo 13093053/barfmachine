@@ -8,7 +8,7 @@ Todo list for the final design report:
 4 Design overview
 * System architecture and how all modules interact with eachother
 
-5 Preamplifier analysis
+5 Preamplifier analysis										DONE!
 * Everything
 
 
@@ -24,8 +24,11 @@ Todo list for the final design report:
 9 Total cost of system
 * Bill of materials for electronics components as well as cost for the enclosure and PCB.
 
+<<<<<<< HEAD
 10. Conclusions and recommendations
 * Recommend different specifications that make the product cheaper to produce.
 * Discuss what could be improved and what went well.
 * Were the customers' specifications met?
 * Great success?
+=======
+>>>>>>> fbe7357a4f85b981b76977355d655cb07c7fb443
