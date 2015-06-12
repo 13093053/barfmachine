@@ -82,8 +82,8 @@ reference "fig:the_built_active_loudspeaker_system"
 
 \end_inset
 
- shows the built active loudspeaker system.
- This acive loudspeaker system was tested using the procedures below.
+ shows the complete loudspeaker system.
+ This active loudspeaker system was tested using the procedures below.
 \end_layout
 
 \begin_layout Standard
@@ -134,28 +134,38 @@ Equipment
 \end_layout
 
 \begin_layout Standard
-The following equipments are used to test the active loudspeaker system:
+The following equipment was
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Improved structure
+\end_layout
+
+\end_inset
+
+ used to test the active loudspeaker system:
 \end_layout
 
 \begin_layout Itemize
-A mobile phone with music
+Audio source (e.g.
+ phone)
 \end_layout
 
 \begin_layout Itemize
-An audio cable
+Audio cable
 \end_layout
 
 \begin_layout Itemize
-A power cable
+Power cable
 \end_layout
 
 \begin_layout Itemize
-An oscilloscope 'TEKTRONIX DPO2004B' used to measure certain signals in
- the preamplifier, power amplifier and power supply.
+'TEKTRONIX DPO2004B' oscilloscope
 \end_layout
 
 \begin_layout Itemize
-A speaker 
+8Ohm speaker
 \end_layout
 
 \begin_layout Subsection
@@ -163,28 +173,48 @@ Setup
 \end_layout
 
 \begin_layout Itemize
-Make sure that the power switch is turned off before proceeding
+Remove all power and audio cables from the speaker system and make sure
+ the power switch is turned off before proceeding.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Merged some items and changed order
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Connect the speaker at the output of the power amplifier
+Connect the speaker to the output of the power amplifier.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Changed 'connect at' to 'connect to' in a few cases
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Connect the mobile phone through an audio cable at the input of of the preamplif
-ier
+Connect the audio source to the input of of the preamplifier.
 \end_layout
 
 \begin_layout Itemize
-Connect the power cable at the input of the power supply
+Connect the power cable to the input of the power supply.
 \end_layout
 
 \begin_layout Itemize
-Make sure that everything is connected before switching the power on
+Make sure that everything is connected before switching the power on.
 \end_layout
 
 \begin_layout Itemize
-Play music and test the active loudspeaker system.
+Switch the power on.
 \end_layout
 
 \begin_layout Subsection
@@ -220,7 +250,7 @@ name "tab:test_results"
 \noindent
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="4">
+<lyxtabular version="3" rows="12" columns="4">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="6cm">
@@ -269,33 +299,68 @@ Pass/Fail
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Play music from the audio source
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Changed some steps
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Observe of heatsink of the power amplifier
+Test the volume of the preamplifier.
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -311,7 +376,24 @@ Observe of heatsink of the power amplifier
 \uwave off
 \noun off
 \color none
-The heatsink of the power amplifier will remail cool (24°-28°)	
+No audible sound when the volume control adjust is turned down to the minimum.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+The sound will get louder as the volume control is turned up to the maximum
 \end_layout
 
 \end_inset
@@ -336,45 +418,20 @@ Pass
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Observe the control of the volume control
+Is the sound clear?
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-There will be no sound when the volume control is switched to the minimum
- and the sound will get louder as the volume control is turned to the maximum
+No distortion, no clipping, little mains hum
 \end_layout
 
 \end_inset
@@ -399,20 +456,31 @@ Pass
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Observe the music coming from the speaker
+Test the bass of the preamplifier
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-The music from the speaker will sound not perfect but also not bad
+Low frequencies will be heard when the bass is in maximum boost.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Cutoff adjust test required for both bass and treble
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -433,45 +501,6 @@ Pass
 
 \begin_layout Plain Layout
 4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Test the bass of the preamplifier
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Low frequencies will be heard when the bass is in maximum boost.
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Pass
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5
 \end_layout
 
 \end_inset
@@ -505,6 +534,209 @@ Pass
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Switch off the unit and remove the heatsink.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Turn up the volume.
+\end_layout
+
+\begin_layout Plain Layout
+Does the thermal shutdown feature of the amplifier work?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The amplifier should shut down when it reaches 170°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pass
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Power supply measurements required
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -527,6 +759,15 @@ Test the DCU system
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+No test results yet, so we cannot add these yet.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -559,7 +800,6 @@ Test the DCU system
 \noun off
 \color none
 	 	 			
-
 \end_layout
 
 \end_inset
@@ -572,7 +812,7 @@ Notes on the test
 \end_layout
 
 \begin_layout Standard
-There were some problems with test number 3 in table 
+There were some problems with test number 2 in table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:test_results"
@@ -590,8 +830,20 @@ reference "tab:test_results"
  a signal at the preamplifier.
  This means that the problem lies within the power amplifier.
  After examining the power amplifier, it was discovered that the transistor
- wasn't well attached to the heatsink.
- After solving this problem, no shutdown of the sound occurs anymore.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+it's not a transistor.
+ it's a power amplifier
+\end_layout
+
+\end_inset
+
+ wasn't attached well to the heatsink, so it would become too hot and shut
+ itself down.
+ After tightening the bolt that clamps the heatsink to the power amplifier
+ there have been no more thermal shutdowns.
 \end_layout
 
 \end_body
