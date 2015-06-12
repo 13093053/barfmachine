@@ -398,7 +398,7 @@ Volume control
 \end_layout
 
 \begin_layout Standard
-The schematic of the balance control is as shown in figure 
+The schematic of the Volume control is as shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Schematic-volume-control"
@@ -406,6 +406,9 @@ reference "fig:Schematic-volume-control"
 \end_inset
 
 .
+ The volume control is used to boost or attenuat the signal as a whole.
+ By adjusting the digital potetiometer the signal can be boosted or attenuated
+ within an range of -24dB through 18dB.
 \end_layout
 
 \begin_layout Standard
@@ -413,62 +416,6 @@ reference "fig:Schematic-volume-control"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename PreAmplifier_schematics/tone_control.PNG
-	width 100col%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Schematic of tone control
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Schematic-tone-control-1"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Volume control
-\end_layout
-
-\begin_layout Plain Layout
-The schematic of the balance control is as shown in figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Schematic-volume-control"
-
-\end_inset
-
-.
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -735,10 +682,6 @@ name "fig:PCB-design-power-supply"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
