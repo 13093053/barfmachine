@@ -23,3 +23,9 @@ Todo list for the final design report:
 
 9 Total cost of system
 * Bill of materials for electronics components as well as cost for the enclosure and PCB.
+
+10. Conclusions and recommendations
+* Recommend different specifications that make the product cheaper to produce.
+* Discuss what could be improved and what went well.
+* Were the customers' specifications met?
+* Great success?
