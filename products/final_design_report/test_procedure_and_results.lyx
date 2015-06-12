@@ -288,7 +288,7 @@ Expected Results
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pass/Fail
+Pass / Fail / Not Tested
 \end_layout
 
 \end_inset
@@ -317,16 +317,7 @@ Play music from the audio source
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Changed some steps
-\end_layout
-
-\end_inset
-
-
+Hear music coming from the speaker regardless the performance of the sound.
 \end_layout
 
 \end_inset
@@ -335,7 +326,7 @@ Changed some steps
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+Pass
 \end_layout
 
 \end_inset
@@ -777,7 +768,7 @@ No test results yet, so we cannot add these yet.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Not Tested
 \end_layout
 
 \end_inset
