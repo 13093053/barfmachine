@@ -82,12 +82,13 @@ name "sec:conclusions"
 \end_layout
 
 \begin_layout Standard
-After approximately 2 months for working on PRO-Q2, the active loudspeaker
- was finally finished by connecting the the power supply, the power amplifier
+After approximately 2 months of working on PRO-Q2, the active loudspeaker
+ was finally finished by connecting the power supply, the power amplifier
  and the preamplifier.
- After testing the active loudspeaker as a whole, it can be concluded that
+ After testing the active loudspeaker as a whole, the team concluded that
  the active loudspeaker works.
- The sound may not be perfect but sound can be heard from the speaker.
+ The sound may not be perfect but at the very least the speaker is able
+ to reproduce sound without excessive distortions.
  Unfortunately the DCU was not tested.
 \end_layout
 
@@ -97,7 +98,7 @@ The bass and treble also works well when turning the bass and treble on
  The volume control works well when turning the volume off and on.
  The balance control works when turning the balance control on and off.
  The preamplifier was simulated and measured and the bode plots of the simulatio
-ns and measurements corresponds with each other as seen in section 
+ns and measurements correspond with each other as seen in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:preamp-analysis"
@@ -105,8 +106,8 @@ reference "sec:preamp-analysis"
 \end_inset
 
 .
-  It can be concluded that the calculations of the components of the preamplifie
-r are correct and that the preamplifier meets the specifications.
+  The conclusion can be made that the calculations of the components of
+ the preamplifier are correct and that the preamplifier meets the specifications.
 \end_layout
 
 \begin_layout Standard
@@ -115,8 +116,8 @@ The power supply meets all specifications and it supplies all voltages required
 \end_layout
 
 \begin_layout Standard
-The power amplifier meets all specifications, it does not get too hot and
- it produces clean audio.
+The power amplifier meets all specifications, its temperature stays within
+ the accepted range and it produces clean audio.
 \end_layout
 
 \begin_layout Standard
