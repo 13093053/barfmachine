@@ -72,6 +72,13 @@
 
 \begin_layout Section
 Preamplifier analysis
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:preamp-analysis"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

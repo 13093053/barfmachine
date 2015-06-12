@@ -72,6 +72,13 @@
 
 \begin_layout Section
 Design overview
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:design-overview"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
