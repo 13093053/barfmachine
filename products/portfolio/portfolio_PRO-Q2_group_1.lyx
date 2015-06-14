@@ -9,7 +9,7 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman lmodern
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -56,7 +56,7 @@
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
-\defskip smallskip
+\defskip bigskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -178,7 +178,7 @@ Daan Conijn
 
 \begin_layout Standard
 This is Daan Conijn.
- He is the chairman of group one.
+ He is the chairman of group 1.
 \end_layout
 
 \begin_layout Standard
@@ -272,7 +272,17 @@ Kevin Oei
 
 \begin_layout Standard
 This is Kevin Oei.
- He is an employee.
+ He is a regular team member.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I personally prefer this over 'employee' considering the project setting
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -319,7 +329,7 @@ Koen van Vliet
 
 \begin_layout Standard
 This is Koen van Vliet.
- He is an employee.
+ He is a regular team member.
 \end_layout
 
 \begin_layout Standard
@@ -339,7 +349,7 @@ status open
 
 \begin_layout Plain Layout
 The assignment of the portfolio is to describe the process of how the project
- management assignments were carries out by the group.
+ management assignments were carried out by the group.
  What was difficult? What was easy? Where did the group disagree or agree
  on? How did you reach consensus? Just for the assignments as given during
  class.
@@ -364,7 +374,7 @@ st
 \end_layout
 
 \begin_layout Standard
-The first week of term 3 ran from februari the 9
+The first week of term 3 ran from february the 9
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -373,7 +383,7 @@ th
 
 \end_inset
 
- till februari the 13
+ till february the 13
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -393,19 +403,19 @@ The project management assignments of the first week are:
 Make an excel sheet and add all the deliverables from the manual in the
  excel sheet.
  The deliverables are to be divided in three columns (school products, managemen
-t products and project products)
+t products and project products);
 \end_layout
 
 \begin_layout Itemize
-Make a folder structure in Dropbox in accordance with prescribed structure
+Make a folder structure in Dropbox in accordance with the prescribed structure.
 \end_layout
 
 \begin_layout Standard
-The members of group one held a meeting after the first project management
- lessen.
- During the meeting it was discussed which deliverable belongs to which
- products (school, management or project products).
- The result of the division of the deliverables is in table 
+The members of group 1 held a meeting after the first project management
+ lesson.
+ During the meeting the team discussed which deliverable belongs to which
+ product type (school, management or project products).
+ The result of the sorting of the deliverables is in table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:assignment_1_deliverables"
@@ -425,7 +435,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Division of the deliverables
+Sorting of the deliverables
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:assignment_1_deliverables"
@@ -605,22 +615,23 @@ Design active loudspeaker system
 \end_layout
 
 \begin_layout Standard
-Group one also held a meeting regarding the folder structure in Dropbox.
- There was a decision whether to use Dropbox or GitHub.
- After 10 to 15 minutes of discussion, it is chosen for GitHub instead of
- Dropbox because GitHub is ....
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Why again? It's easier, it's free, it saves all the things it's done.
- It has a built in log etc.
- 
-\end_layout
-
-\end_inset
-
-...........
+Group 1 also held a meeting regarding the folder structure in Dropbox.
+ In fact, rather than using Dropbox, the question was raised whether GitHub
+ would be used instead.
+ After 10 to 15 minutes of discussion, the team agreed on using GitHub instead
+ of Dropbox because of its focus on file versioning rather than purely file-sync
+ing.
+ Using the GitHub website in combination with Git allows for easy reversion
+ of changes and detailed logging of changes made to files, which is very
+ useful in case of writing programming code and working on reports collaborative
+ly.
+ The main point of discussion for the choice of Dropbox vs.
+ GitHub was the ease-of-use.
+ Dropbox's user-friendliness is undeniably better compared to using Git/GitHub.
+ But considering the aforementioned benefits, Git (with GitHub) ended up
+ being the preferred choice.
+ Previous (mostly positive) experience working with Git and GitHub also
+ played a significant role in this.
 \end_layout
 
 \begin_layout Standard
@@ -638,11 +649,11 @@ What went good? What went bad?
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Founded group one.
- Group one consist of Daan Conijn, Kevin Oei, Andrew Lau and Koen van Vliet.
+Founded group 1.
+ Group 1 consist of Daan Conijn, Kevin Oei, Andrew Lau and Koen van Vliet.
 \end_layout
 
 \begin_layout Plain Layout
@@ -668,7 +679,7 @@ nd
 \end_layout
 
 \begin_layout Standard
-The second week of term 3 ran from februari the 16
+The second week of term 3 ran from february the 16
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -677,7 +688,7 @@ th
 
 \end_inset
 
- till februari the 20
+ till february the 20
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -694,27 +705,27 @@ The project management assignments of the second week are:
 \end_layout
 
 \begin_layout Itemize
-Creat the work breakdown structure (WBS) for your project
+Create the work breakdown structure (WBS) for your project;
 \end_layout
 
 \begin_layout Itemize
-Put it in GitHub
+Put the WBS in Dropbox (GitHub in our case);
 \end_layout
 
 \begin_layout Itemize
-Create an entry in the portfolio on the process of creating the WBS 
+Create an entry in the portfolio on the process of creating the WBS.
 \end_layout
 
 \begin_layout Standard
 During the project management lesson in the second week, lectures were given
  regarding the work breakdown structure (WBS) and the product breakdown
  structure (PBS).
- Also exercises were given regarding the WBS and PBS that were discussed.
+ At the end, exercises were given regarding the WBS and PBS that were discussed.
  This way, the students got more insight in the WBS and PBS.
 \end_layout
 
 \begin_layout Standard
-After the second project management lecture, group one held a meeting regarding
+After the second project management lecture, group 1 held a meeting regarding
  the project management assignment that needs to be handed in at the end
  of the second week.
  The assignment was to create a WBS for the project, 'PRO-Q2'.
@@ -740,6 +751,17 @@ status open
 \begin_inset Graphics
 	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/assignments/project_management_week_2_WBS-speaker.jpeg
 	width 100text%
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+For Andrew: please fix the path name.
+ Remember what I said about absolute paths vs relative paths c:
+\end_layout
 
 \end_inset
 
@@ -776,8 +798,8 @@ Rough sketch of the WBS
 \begin_layout Standard
 After the sketch, one project member made a final design at home.
  The next day the project member brought the final design to school and
- showed all the project members.
- All the project members verified if the WBS was good enough to be sent.
+ showed it to the other project members.
+ All the project members verified the WBS was good enough to be sent.
 \end_layout
 
 \begin_layout Standard
@@ -999,262 +1021,6 @@ th
 
 \begin_layout Plain Layout
 rd
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Term 4
-\end_layout
-
-\begin_layout Subsection*
-1
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-st
-\end_layout
-
-\end_inset
-
- week
-\end_layout
-
-\begin_layout Standard
-The first week of term 4 ran from april the 27
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- till may the 1
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-st
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-2
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-nd
-\end_layout
-
-\end_inset
-
- week
-\end_layout
-
-\begin_layout Standard
-The second week of term 4 ran from may the 4
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- till may the 8
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-3
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-rd
-\end_layout
-
-\end_inset
-
- week
-\end_layout
-
-\begin_layout Standard
-The third week of term 4 ran from may the 11
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- till may the 15
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-4
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- week
-\end_layout
-
-\begin_layout Standard
-The fourth week of term 4 ran from may the 18
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- till may the 22
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-5
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- week
-\end_layout
-
-\begin_layout Standard
-The fifth week of term 4 ran from may the 25
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- till may the 29
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-6
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- week
-\end_layout
-
-\begin_layout Standard
-The sixth week of term 4 ran from june the 1
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-st
-\end_layout
-
-\end_inset
-
- till june the 5
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-7
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- week
-\end_layout
-
-\begin_layout Standard
-The seventh week of term 4 ran from june the 8
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
-\end_layout
-
-\end_inset
-
- till june the 12
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-th
 \end_layout
 
 \end_inset
