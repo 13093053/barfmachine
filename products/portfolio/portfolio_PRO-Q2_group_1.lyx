@@ -374,7 +374,7 @@ st
 \end_layout
 
 \begin_layout Standard
-The first week of term 3 ran from february the 9
+The first week of term 3 ran from February the 9
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -383,7 +383,7 @@ th
 
 \end_inset
 
- till february the 13
+ till February the 13
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -392,7 +392,7 @@ th
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -679,7 +679,7 @@ nd
 \end_layout
 
 \begin_layout Standard
-The second week of term 3 ran from february the 16
+The second week of term 3 ran from February the 16
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -688,7 +688,7 @@ th
 
 \end_inset
 
- till february the 20
+ till February the 20
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -697,7 +697,7 @@ th
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -803,9 +803,9 @@ After the sketch, one project member made a final design at home.
 \end_layout
 
 \begin_layout Standard
-The process of completing the assignment of the second week went admirably
+The process of completing the assignment of the second week went favorable
  in general.
- There were no quarrels between the team members.
+ There were no disputes between the team members.
  There were some light disagreements but those disagreements were easily
  solved by discussing the members' opinions and making a decision that all
  the project members could agree on.
@@ -825,7 +825,7 @@ rd
 \end_layout
 
 \begin_layout Standard
-The third week of term 3 ran from march the 2
+The third week of term 3 ran from March the 2
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -834,7 +834,7 @@ nd
 
 \end_inset
 
- till march the 6
+ till March the 6
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -843,7 +843,7 @@ th
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -852,40 +852,80 @@ The project management assignments of the third week are:
 
 \begin_layout Itemize
 Create a planning (in Excel) based on the PBS/WBS that was created in the
- second week using the seven steps
+ second week using the seven steps;
 \end_layout
 
 \begin_layout Itemize
-Create an entry in the portfolio on the process of creating the planning
- 
+Create an entry in the portfolio on the process of creating the planning.
 \end_layout
 
 \begin_layout Standard
 Planning was discussed during the project management lectures in the third
  week of term 3.
- Planning can be done by using the seven steps.
- There was also one topic that was covered and that is multitasking.
- Multitasking kills you.
- There was an exercise done regarding multitasking and the results were
- staggering.
- The results of the exercise concludes that multitasking does indeed kills
- you and therefore focusing on task is best before proceeding to the next
- task.
+ Planning can be done by using the seven steps:
+\end_layout
+
+\begin_layout Enumerate
+Determine dependencies between activities;
+\end_layout
+
+\begin_layout Enumerate
+Divide activities between team members (or 3
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+rd
+\end_layout
+
+\end_inset
+
+ parties);
+\end_layout
+
+\begin_layout Enumerate
+Determine Milestones;
+\end_layout
+
+\begin_layout Enumerate
+Estimate the Work and Duration times of the activities;
+\end_layout
+
+\begin_layout Enumerate
+Calculate the total estimated duration of the project and the Critical Path;
+\end_layout
+
+\begin_layout Enumerate
+Align start and end dates of activities with team member agendas;
+\end_layout
+
+\begin_layout Enumerate
+Compare planning with existing preconditions.
 \end_layout
 
 \begin_layout Standard
-After the lectures, the members of team one came together for a meeting.
+There was also one other topic that was covered and that was multitasking.
+ 'Multitasking kills you', was the message conveyed in this part of the
+ lesson.
+ There was an exercise done regarding multitasking and the results spoke
+ for themselves.
+ It was not hard to deduce that multitasking can indeed be a dangerous this
+ to do and therefore focusing on one task at a time is best before proceeding
+ to the next one.
+\end_layout
+
+\begin_layout Standard
+After the lectures, the members of team 1 came together for a meeting.
  During the meeting the members checked all the deadlines of all the deliverable
-s in the manual and jointly made a draft of what the planning in excel can
+s in the manual and jointly made a draft of what the planning in excel could
  look like; when the deadlines of the deliverables are and which team member
  will complete it.
  Once the draft was complete, one team member edited all the information
  of the draft in the excel sheet.
- After the excel sheet was finished, it was send to all other team members
+ After the excel sheet was finished, it was sent to all other team members
  for feedback.
- The planning in the excel sheet was edited a few times until it reaches
- consensus.
- The planning was then sent at the end of week 3 to the teachers.
+ The planning in the excel sheet was edited a few times until all members
+ agreed with it.
+ The planning was then sent to the teachers at the end of week 3.
 \end_layout
 
 \begin_layout Subsection*
@@ -902,7 +942,7 @@ th
 \end_layout
 
 \begin_layout Standard
-The fourth week of term 3 ran from march the 9
+The fourth week of term 3 ran from March the 9
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -911,7 +951,7 @@ th
 
 \end_inset
 
- till march the 13
+ till March the 13
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -920,7 +960,41 @@ th
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+The project management assignment of the third week is:
+\end_layout
+
+\begin_layout Itemize
+Write a short statement on how you as a team will handle ‘Project Execution’.
+\end_layout
+
+\begin_layout Standard
+During the lesson, an eighth step was introduced in addition to the seven
+ steps presented in the previous week: 'Monitor progress'.
+ The concept of visualizing 'project control' was presented as well.
+ Time, money and the scope of the project could be graded as 'most flexible',
+ 'optimize' and 'least flexible'.
+ Each grade can only be assigned once.
+\end_layout
+
+\begin_layout Standard
+Later that day, during the meeting with project coach Mr.
+ op den Brouw, the project control visualization was explained and Mr.
+ op den Brouw, representing the management of (the fictional company) BARK,
+ was asked to fill in a table where the three aspects and three grades of
+ flexibility were lined up.
+ This way the team would have a better idea of the preferred priorities
+ for the three aspects.
+\end_layout
+
+\begin_layout Standard
+Later that week, a member of the team wrote the initial version of the project
+ execution statement.
+ After it was read through and approved by the other members, the final
+ version was submitted.
 \end_layout
 
 \begin_layout Subsection*
@@ -937,7 +1011,7 @@ th
 \end_layout
 
 \begin_layout Standard
-The fifth week of term 3 ran from march the 16
+The fifth week of term 3 ran from March the 16
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -946,7 +1020,7 @@ th
 
 \end_inset
 
- till march the 20
+ till March the 20
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -972,7 +1046,7 @@ th
 \end_layout
 
 \begin_layout Standard
-The sixth week of term 3 ran from march the 23
+The sixth week of term 3 ran from March the 23
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -981,7 +1055,7 @@ th
 
 \end_inset
 
- till march the 27
+ till March the 27
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1007,7 +1081,7 @@ th
 \end_layout
 
 \begin_layout Standard
-The seventh week of term 3 ran from march the 30
+The seventh week of term 3 ran from March the 30
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1016,7 +1090,7 @@ th
 
 \end_inset
 
- till april the 3
+ till April the 3
 \begin_inset script superscript
 
 \begin_layout Plain Layout
