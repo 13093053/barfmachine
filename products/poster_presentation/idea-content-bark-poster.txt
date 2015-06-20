@@ -1,0 +1,52 @@
+1. Introduction
+The company BARK is a small and well-known loudspeaker manufacturer. 
+BARK have been planning to develop a series of active speakers, using built-in power amplifiers but  BARK 
+however have limited knowledge on analogue and digital electronics systems. It is up to group one to conduct research and 
+design an active loudspeaker with the conditions that BARK has given.
+
+
+2. Design
+Insert figure 10 and 22 (final design report)
+The figure 10 shows the block-diagram of the BARK-machine and figure 22 shows the final design of the BARK-Machine.
+
+
+3. Components
+The speaker system consist of the following parts:
+	Digital control unitThe following features and choices have been chosen/made for the implementation
+of the DCU:
+• For the microcontroller, an ATmega328 will be used since it bears a lot of
+235 similarity with the ATmega32 which the team is most familiar with.
+• The DCU will allow digital control of the balance, tone, bass, treble and
+volume controls through the use of digital potentiometers.
+• MIDI messages will be used to pass commands to the DCU 
+  	Power amplifier
+ 	Power supply
+	The preamplifier
+ 	   Volume control
+ 	   Tone control
+	   Balance control
+
+
+
+4. Research
+	a. Simulations
+		Insert figure 13 and 14
+Figure 13 shows a simulation of the bode plot of the preamplifier with the bass
+and treble both at maximum boost
+Figure 14 shows the simulation of the bode plot of the preamplifier with the bass
+and treble both at maximum attenuation
+
+	b. Measurements
+		Insert figure 15 and 16
+Figure 15 shows a bode plot of the preamplifier with the bass and treble both at
+maximum boost
+Figure 16 shows a bode plot of the preamplifier with the bass and treble both at
+maximum attenuation
+
+5. results
+Insert table 1 in chapter 8.3 of the final design report
+
+
+
+6. conclusion
+The BARK-machine meets the specification set by the company BARK after testing and measuring the Bark-machine.
