@@ -634,37 +634,6 @@ ly.
  played a significant role in this.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-What went good? What went bad?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Founded group 1.
- Group 1 consist of Daan Conijn, Kevin Oei, Andrew Lau and Koen van Vliet.
-\end_layout
-
-\begin_layout Plain Layout
-Work done on the cooperation Agreement.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
 2
 \begin_inset script superscript
@@ -730,69 +699,7 @@ After the second project management lecture, group 1 held a meeting regarding
  of the second week.
  The assignment was to create a WBS for the project, 'PRO-Q2'.
  During the meeting the team discussed how the WBS would be drawn.
- After 20 to 30 minutes of discussion, a sketch was made as seen in figure
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:assignment_2_WBS"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename C:/Users/Andrew/Documents/GitHub/barkmachine/products/assignments/project_management_week_2_WBS-speaker.jpeg
-	width 100text%
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-For Andrew: please fix the path name.
- Remember what I said about absolute paths vs relative paths c:
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:assignment_2_WBS"
-
-\end_inset
-
-Rough sketch of the WBS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ After 20 to 30 minutes of discussion, a sketch was made.
 \end_layout
 
 \begin_layout Standard
@@ -1042,7 +949,7 @@ Execute the first four Risk Management Steps.
 \end_layout
 
 \begin_layout Itemize
-Answering the question: "How do you handle Mitigating & Corrective Actions?";
+Answering the question: "How do you handle Mitigating & Corrective Actions?"
 \end_layout
 
 \begin_layout Itemize
@@ -1078,7 +985,7 @@ Monitor Actions
 \end_layout
 
 \begin_layout Standard
-All of these assignments were supposed to be processed into the team's Action
+All of the above mentioned assignments are processed in the team's Action
  Plan.
 \end_layout
 
@@ -1087,6 +994,7 @@ Throughout the week, two members worked on the assignment with the assistance
  of and additional input from the rest of the team.
  By friday, the assignment was finished and the action plan was fully expanded
  with the required information.
+ The fully expanded action plan was the submitted.
  
 \begin_inset Note Note
 status open
@@ -1094,6 +1002,16 @@ status open
 \begin_layout Plain Layout
 Probably needs more info but I can't really recall anything more from this
  week :c
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Yeah, This is all Andrew can remember.
 \end_layout
 
 \end_inset
@@ -1213,6 +1131,27 @@ Send your portfolio by mail to marten@inspiring-people.nl ( And yes, this
 \end_layout
 
 \begin_layout Standard
+The last project management lesson is given in the seventh week.
+ For the assignment given this week, the team needs to prepare weekly reports
+ regarding the project PRO-Q2.
+ This is done by using GitHub.
+ By syncing the files and work that are done, GitHub automatically saves
+ the progress that has been done by every team member that commits.
+\end_layout
+
+\begin_layout Standard
+At the end of the project, a project evaluation workshop will be performed
+ by the team members.
+ Every team member will give their opinion on what went wrong and what went
+ well during the project.
+ 
+\end_layout
+
+\begin_layout Standard
+The results of every meeting is in the next chapter.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -1225,6 +1164,113 @@ status open
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Do not fret.
+ Andrew is here to save the day!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Results of the Meetings in Term 4
+\end_layout
+
+\begin_layout Standard
+Results of the meeting on the 7
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ of may:
+\end_layout
+
+\begin_layout Itemize
+Agreements were made between the team members.
+\end_layout
+
+\begin_layout Itemize
+There was a discussion of who will do what tasks.
+\end_layout
+
+\begin_layout Itemize
+The discussion didn't take long.
+\end_layout
+
+\begin_layout Itemize
+The team members took the initiative to perform certain tasks.
+\end_layout
+
+\begin_layout Standard
+Results of the meeting on the 13
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ of may:
+\end_layout
+
+\begin_layout Itemize
+Questions were asked to
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Crap, is this the correct voortzetsel?
+\end_layout
+
+\end_inset
+
+ the projectcoach regarding the design of the preamplifier.
+\end_layout
+
+\begin_layout Itemize
+New deadlines for all the deliverables were made.
+\end_layout
+
+\begin_layout Itemize
+All the new deadlines that were made, are a few days before the actuall
+ deadlines.
+\end_layout
+
+\begin_layout Standard
+Results of the meeting on the 6
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ of june:
+\end_layout
+
+\begin_layout Itemize
+Division of the tasks were made.
+\end_layout
+
+\begin_layout Itemize
+There was a discussion who will do what tasks.
+\end_layout
+
+\begin_layout Itemize
+After the division of the tasks were made, all team members discussed whether
+ they agree on the division of the task or not.
+ 
 \end_layout
 
 \end_body
