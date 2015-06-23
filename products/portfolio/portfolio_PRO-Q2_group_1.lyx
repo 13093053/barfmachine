@@ -116,220 +116,6 @@ EQ2.c
 
 \begin_layout Date
 May 29th, 2015
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Members
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not sure if this is relevant but it would be nice to add a picture of the
- members and maybe minor information
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename unknown_person.jpg
-	width 20mm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Daan Conijn
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This is Daan Conijn.
- He is the chairman of group 1.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename unknown_person.jpg
-	width 20mm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Andrew Lau
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This is Andrew Lau.
- He is the minutes secretary.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename unknown_person.jpg
-	width 20mm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Kevin Oei
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This is Kevin Oei.
- He is a regular team member.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-I personally prefer this over 'employee' considering the project setting
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename unknown_person.jpg
-	width 20mm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Koen van Vliet
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This is Koen van Vliet.
- He is a regular team member.
 \end_layout
 
 \begin_layout Standard
@@ -994,7 +780,7 @@ Throughout the week, two members worked on the assignment with the assistance
  of and additional input from the rest of the team.
  By friday, the assignment was finished and the action plan was fully expanded
  with the required information.
- The fully expanded action plan was the submitted.
+ The fully expanded action plan was then submitted.
  
 \begin_inset Note Note
 status open
@@ -1131,12 +917,13 @@ Send your portfolio by mail to marten@inspiring-people.nl ( And yes, this
 \end_layout
 
 \begin_layout Standard
-The last project management lesson is given in the seventh week.
- For the assignment given this week, the team needs to prepare weekly reports
- regarding the project PRO-Q2.
- This is done by using GitHub.
- By syncing the files and work that are done, GitHub automatically saves
- the progress that has been done by every team member that commits.
+The last project management lesson was given in this.
+ For the assignment given this week, the team needed to prepare weekly reports
+ regarding the progress on project PRO-Q2.
+ This was done by using GitHub.
+ By syncing the files and work through the platform, GitHub automatically
+ logs the progress that has been done by every team member that makes the
+ 'commits'.
 \end_layout
 
 \begin_layout Standard
@@ -1148,37 +935,12 @@ At the end of the project, a project evaluation workshop will be performed
 \end_layout
 
 \begin_layout Standard
-The results of every meeting is in the next chapter.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-.............
- well, there isn't really much to say here.
- What do we do?
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Do not fret.
- Andrew is here to save the day!
-\end_layout
-
-\end_inset
-
-
+The results of every meeting in the following term are described in the
+ next section.
 \end_layout
 
 \begin_layout Section*
-Results of the Meetings in Term 4
+Results of the meetings in term 4
 \end_layout
 
 \begin_layout Standard
@@ -1191,15 +953,15 @@ th
 
 \end_inset
 
- of may:
+ of May:
 \end_layout
 
 \begin_layout Itemize
-Agreements were made between the team members.
+There was a discussion about who would do what tasks.
 \end_layout
 
 \begin_layout Itemize
-There was a discussion of who will do what tasks.
+Agreements on this were made between the team members.
 \end_layout
 
 \begin_layout Itemize
@@ -1220,21 +982,12 @@ th
 
 \end_inset
 
- of may:
+ of May:
 \end_layout
 
 \begin_layout Itemize
-Questions were asked to
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Crap, is this the correct voortzetsel?
-\end_layout
-
-\end_inset
-
- the projectcoach regarding the design of the preamplifier.
+Questions were asked to the project coach regarding the design of the preamplifi
+er.
 \end_layout
 
 \begin_layout Itemize
@@ -1242,8 +995,7 @@ New deadlines for all the deliverables were made.
 \end_layout
 
 \begin_layout Itemize
-All the new deadlines that were made, are a few days before the actuall
- deadlines.
+All the new deadlines that were made, are a few days before the actual deadlines.
 \end_layout
 
 \begin_layout Standard
@@ -1256,7 +1008,7 @@ th
 
 \end_inset
 
- of june:
+ of June:
 \end_layout
 
 \begin_layout Itemize
@@ -1269,7 +1021,7 @@ There was a discussion who will do what tasks.
 
 \begin_layout Itemize
 After the division of the tasks were made, all team members discussed whether
- they agree on the division of the task or not.
+ they agreed on the division of the tasks or not.
  
 \end_layout
 
