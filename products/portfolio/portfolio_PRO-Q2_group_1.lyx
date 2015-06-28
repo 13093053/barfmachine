@@ -1022,10 +1022,10 @@ End of project evaluation
 \end_layout
 
 \begin_layout Standard
-Project PRO-Q2 finally reached it's end.
- The active loudspeaker is built and design by team 1 and demonstrated in
- room 1.052.
- However, good things and bad things happened in the proces of carrying
+Project PRO-Q2 finally reached its end.
+ The active loudspeaker was designed and built by team 1 and eventually
+ succesfully demonstrated in room 1.052.
+ However, good things and bad things happened in the process of carrying
  out PRO-Q2.
  
 \end_layout
@@ -1035,19 +1035,25 @@ The good things:
 \end_layout
 
 \begin_layout Itemize
-All the members of team 1 shared the files easily via GitHub
+All the members of team 1 shared and collaborated on files easily via GitHub;
 \end_layout
 
 \begin_layout Itemize
-All the members of team 1 worked very hard because team 1 consists of only
- 4 members.
- Therefore everyone is guaranteed to be responsible of one or more diliverable
- since there were many deliverables.
+Considering all documentation was made in LaTeX, there was no time and discussio
+n wasted on document layout.
+ Everything was focused on content, which allowed for a more efficient workflow.
 \end_layout
 
 \begin_layout Itemize
-Some members took initiative even before discussing about the division of
- the tasks.
+All the members of team 1 put plenty of effort into the project because
+ the team consisted of only 4 members.
+ Therefore everyone was guaranteed to be responsible for one or more deliverable
+ since there were many deliverables;
+\end_layout
+
+\begin_layout Itemize
+Some members took the initiative of picking up tasks even before discussing
+ the division of these tasks;
 \end_layout
 
 \begin_layout Itemize
@@ -1060,14 +1066,14 @@ The things that can be improved:
 
 \begin_layout Itemize
 The communication can improve.
- Some members had to wait an hour or two to get a reply through Telegram.
+ Some members had to wait an hour or two to get a reply through Telegram;
 \end_layout
 
 \begin_layout Itemize
 Student-syndrome was problematic.
- Some deliverables were done at the last minute but team 1 still managed
- to complete the deliverables before the deadline.
- 
+ Although team 1 still managed to complete the deliverables before the deadline,
+ some deliverables were finished at the last minute despite the intention
+ to have them finished several days before the real deadline.
 \end_layout
 
 \end_body
