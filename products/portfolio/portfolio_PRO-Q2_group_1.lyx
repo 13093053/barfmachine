@@ -95,7 +95,7 @@ Koen van Vliet, 13093053
 \begin_inset Newline newline
 \end_inset
 
-Group 1
+Team 1
 \begin_inset Newline newline
 \end_inset
 
@@ -115,7 +115,7 @@ EQ2.c
 \end_layout
 
 \begin_layout Date
-June 25
+June 28
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -189,9 +189,9 @@ Make a folder structure in Dropbox in accordance with the prescribed structure.
 \end_layout
 
 \begin_layout Standard
-The members of group 1 held a meeting after the first project management
+The members of team 1 held a meeting after the first project management
  lesson.
- During the meeting the team discussed which deliverable belongs to which
+ During the meeting, the team discussed which deliverable belongs to which
  product type (school, management or project products).
  The result of the sorting of the deliverables is in table 
 \begin_inset CommandInset ref
@@ -393,7 +393,7 @@ Design active loudspeaker system
 \end_layout
 
 \begin_layout Standard
-Group 1 also held a meeting regarding the folder structure in Dropbox.
+Team 1 also held a meeting regarding the folder structure in Dropbox.
  In fact, rather than using Dropbox, the question was raised whether GitHub
  would be used instead.
  After 10 to 15 minutes of discussion, the team agreed on using GitHub instead
@@ -472,7 +472,7 @@ During the project management lesson in the second week, lectures were given
 \end_layout
 
 \begin_layout Standard
-After the second project management lecture, group 1 held a meeting regarding
+After the second project management lecture, team 1 held a meeting regarding
  the project management assignment that needs to be handed in at the end
  of the second week.
  The assignment was to create a WBS for the project, 'PRO-Q2'.
@@ -556,7 +556,7 @@ Determine dependencies between activities;
 
 \begin_layout Enumerate
 Divide activities between team members (or 3
-\begin_inset script subscript
+\begin_inset script superscript
 
 \begin_layout Plain Layout
 rd
@@ -773,7 +773,9 @@ Throughout the week, two members worked on the assignment with the assistance
  By friday, the assignment was finished and the action plan was fully expanded
  with the required information.
  The fully expanded action plan was then submitted.
- 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -927,8 +929,7 @@ At the end of the project, a project evaluation workshop will be performed
 \end_layout
 
 \begin_layout Standard
-The results of every meeting in the following term are described in the
- next section.
+The results of every meeting in term 4 are described in the next section.
 \end_layout
 
 \begin_layout Section*
